@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A plain-language ADHD resource: the science, signs, red flags, a self-check, focus tools, and a full medication guide with pros and cons. Educational only — not medical advice.">
+<meta name="theme-color" content="#f2551f">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The ADHD Field Guide">
+<meta property="og:description" content="Everything about ADHD in one place: science, signs, self-check, focus tools, and a full medication guide.">
+<meta property="og:image" content="icon-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ADHD Guide">
+<meta name="google-adsense-account" content="ca-pub-1777721543328970">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1777721543328970" crossorigin="anonymous"></script>
+<meta property="og:url" content="__SITE_URL__/">
+<link rel="canonical" href="__SITE_URL__/">
+<link rel="alternate" hreflang="en" href="__SITE_URL__/">
+<link rel="alternate" hreflang="ar" href="__SITE_URL__/ar.html">
+<link rel="alternate" hreflang="x-default" href="__SITE_URL__/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The ADHD Field Guide","url":"__SITE_URL__/","inLanguage":"en","description":"A plain-language ADHD resource: science, signs, a self-check, focus tools, and a full medication guide."}</script>
+<title>The ADHD Field Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root{
+    --paper:#eef1f5;
+    --surface:#ffffff;
+    --surface-2:#f6f8fa;
+    --ink:#181f2a;
+    --ink-soft:#3a4351;
+    --grey:#59626f;
+    --line:#d9dfe6;
+    --accent:#f2551f;
+    --accent-soft:#ffe9df;
+    --teal:#0f857f;
+    --teal-soft:#dff0ee;
+    --red:#cf3d3d;
+    --amber:#c9781b;
+    --green:#2f9268;
+    --shadow:0 1px 2px rgba(24,31,42,.04),0 8px 24px rgba(24,31,42,.06);
+    --shadow-lg:0 2px 6px rgba(24,31,42,.06),0 18px 46px rgba(24,31,42,.12);
+    --maxw:1080px;
+    --read:66ch;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#11151c;
+      --surface:#1a202a;
+      --surface-2:#20272f;
+      --ink:#eef2f6;
+      --ink-soft:#c3ccd6;
+      --grey:#94a0ad;
+      --line:#2c353f;
+      --accent:#ff6a3d;
+      --accent-soft:#3a2117;
+      --teal:#3bb6ac;
+      --teal-soft:#14312e;
+      --red:#e8615f;
+      --amber:#e0a144;
+      --green:#4bb98a;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+      --shadow-lg:0 2px 6px rgba(0,0,0,.4),0 18px 46px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#11151c;
+    --surface:#1a202a;
+    --surface-2:#20272f;
+    --ink:#eef2f6;
+    --ink-soft:#c3ccd6;
+    --grey:#94a0ad;
+    --line:#2c353f;
+    --accent:#ff6a3d;
+    --accent-soft:#3a2117;
+    --teal:#3bb6ac;
+    --teal-soft:#14312e;
+    --red:#e8615f;
+    --amber:#e0a144;
+    --green:#4bb98a;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+    --shadow-lg:0 2px 6px rgba(0,0,0,.4),0 18px 46px rgba(0,0,0,.5);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Serif 4",Georgia,serif;
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4,.display{font-family:"Bricolage Grotesque","Bricolage Grotesque",system-ui,sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.01em;text-wrap:balance;margin:0}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+  a{color:var(--accent);text-underline-offset:3px}
+  ::selection{background:var(--accent);color:#fff}
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb,var(--paper) 82%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;gap:1.5rem}
+  .brand{display:flex;align-items:center;gap:.6rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:-.02em;margin-right:auto}
+  .brand .dot{width:14px;height:14px;border-radius:50%;background:var(--accent);flex:0 0 auto;box-shadow:0 0 0 4px var(--accent-soft)}
+  .nav-links{display:flex;gap:1.3rem}
+  .nav-links a{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--grey);text-decoration:none;transition:color .15s}
+  .nav-links a:hover{color:var(--accent)}
+  .theme-btn{font-family:"IBM Plex Mono",monospace;font-size:.72rem;background:var(--surface);border:1px solid var(--line);color:var(--ink-soft);border-radius:999px;padding:.35rem .7rem;cursor:pointer;transition:border-color .15s}
+  .theme-btn:hover{border-color:var(--accent)}
+  @media(max-width:760px){.nav-links{display:none}}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.5rem}
+  section{scroll-margin-top:70px}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:.5rem;margin-bottom:1rem}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--accent)}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;overflow:hidden;padding:5.5rem 0 3.5rem}
+  .hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:3rem;align-items:center}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:2.2rem}}
+  .hero h1{font-size:clamp(2.7rem,7vw,4.9rem);letter-spacing:-.03em}
+  .hero h1 .hl{color:var(--accent);position:relative;white-space:nowrap}
+  .hero .lede{font-size:1.22rem;color:var(--ink-soft);max-width:34ch;margin:1.4rem 0 2rem}
+  .hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+  .btn{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.98rem;padding:.8rem 1.4rem;border-radius:12px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;border:1px solid transparent;transition:transform .12s,box-shadow .12s}
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* attention meter graphic */
+  .focus-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.6rem;box-shadow:var(--shadow-lg)}
+  .focus-card h4{font-size:.8rem;font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--grey);font-weight:500;margin-bottom:1rem}
+  .wave{width:100%;height:96px;display:block}
+  .focus-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.1rem}
+  .tag{font-family:"IBM Plex Mono",monospace;font-size:.7rem;padding:.28rem .6rem;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-soft)}
+
+  /* ---------- DISCLAIMER ---------- */
+  .disclaimer{display:flex;gap:1rem;align-items:flex-start;background:var(--amber-bg,var(--surface));border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:12px;padding:1.1rem 1.3rem;margin:1.5rem 0 0;box-shadow:var(--shadow)}
+  .disclaimer .ic{color:var(--amber);flex:0 0 auto;margin-top:.15rem}
+  .disclaimer p{margin:0;font-size:.98rem;color:var(--ink-soft)}
+  .disclaimer strong{color:var(--ink)}
+
+  /* ---------- SECTION HEADS ---------- */
+  .sec{padding:4.2rem 0;border-top:1px solid var(--line)}
+  .sec-head{max-width:var(--read)}
+  .sec-head h2{font-size:clamp(1.9rem,4.5vw,2.9rem)}
+  .sec-head p{color:var(--grey);font-size:1.1rem;margin:.9rem 0 0}
+
+  /* ---------- PRESENTATION CARDS ---------- */
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.4rem}
+  @media(max-width:820px){.cards3{grid-template-columns:1fr}}
+  .pcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.6rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.7rem;transition:transform .15s,box-shadow .15s}
+  .pcard:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+  .pcard .num{font-family:"IBM Plex Mono",monospace;font-size:.75rem;color:var(--accent);letter-spacing:.08em}
+  .pcard h3{font-size:1.35rem}
+  .pcard p{margin:0;font-size:1rem;color:var(--ink-soft)}
+  .pcard ul{margin:.3rem 0 0;padding-left:1.1rem;color:var(--grey);font-size:.95rem}
+  .pcard li{margin:.25rem 0}
+  .pcard .icon{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;color:var(--accent);margin-bottom:.3rem}
+
+  /* ---------- STATS ---------- */
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-top:2.4rem}
+  @media(max-width:820px){.stat-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:460px){.stat-grid{grid-template-columns:1fr}}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.4rem;box-shadow:var(--shadow)}
+  .stat .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2.6rem;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .stat .lbl{margin-top:.5rem;font-size:.95rem;color:var(--ink-soft);line-height:1.4}
+  .stat.teal .big{color:var(--teal)}
+
+  /* executive function */
+  .ef-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:1.6rem}
+  @media(max-width:820px){.ef-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:460px){.ef-grid{grid-template-columns:1fr}}
+  .ef{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem}
+  .ef h4{font-family:"Bricolage Grotesque",sans-serif;font-size:1.02rem;font-weight:600;margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem}
+  .ef h4 .d{width:9px;height:9px;border-radius:50%;background:var(--teal)}
+  .ef p{margin:0;font-size:.92rem;color:var(--grey)}
+
+  .source-note{font-family:"IBM Plex Mono",monospace;font-size:.75rem;color:var(--grey);margin-top:1.6rem;line-height:1.6}
+
+  /* ---------- RED FLAGS ---------- */
+  .toggle{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:.3rem;margin-top:2rem;gap:.2rem}
+  .toggle button{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.9rem;border:none;background:transparent;color:var(--grey);padding:.55rem 1.2rem;border-radius:999px;cursor:pointer;transition:all .15s}
+  .toggle button[aria-selected="true"]{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+  .flags{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:1.7rem}
+  @media(max-width:760px){.flags{grid-template-columns:1fr}}
+  .flag{display:flex;gap:.9rem;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem 1.15rem;box-shadow:var(--shadow)}
+  .flag .sev{flex:0 0 auto;width:8px;align-self:stretch;border-radius:99px;background:var(--grey)}
+  .flag.high .sev{background:var(--red)}
+  .flag.med .sev{background:var(--amber)}
+  .flag.low .sev{background:var(--teal)}
+  .flag h4{font-family:"Bricolage Grotesque",sans-serif;font-size:1.02rem;font-weight:600;margin:0 0 .2rem}
+  .flag p{margin:0;font-size:.92rem;color:var(--grey)}
+  .legend{display:flex;gap:1.3rem;flex-wrap:wrap;margin-top:1.3rem;font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--grey)}
+  .legend span{display:inline-flex;align-items:center;gap:.4rem}
+  .legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+  /* ---------- CHECKLIST ---------- */
+  .check-shell{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:2rem;margin-top:2.4rem;box-shadow:var(--shadow-lg)}
+  @media(max-width:640px){.check-shell{padding:1.4rem}}
+  .check-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.4rem;margin:1.5rem 0}
+  @media(max-width:640px){.check-grid{grid-template-columns:1fr}}
+  .ck{display:flex;gap:.75rem;align-items:flex-start;padding:.55rem .2rem;cursor:pointer;border-radius:8px}
+  .ck input{position:absolute;opacity:0;width:0;height:0}
+  .ck .box{flex:0 0 auto;width:22px;height:22px;border-radius:6px;border:2px solid var(--line);background:var(--surface-2);display:grid;place-items:center;margin-top:.15rem;transition:all .12s}
+  .ck .box svg{opacity:0;transform:scale(.6);transition:all .12s;color:#fff}
+  .ck input:checked ~ .box{background:var(--accent);border-color:var(--accent)}
+  .ck input:checked ~ .box svg{opacity:1;transform:scale(1)}
+  .ck input:focus-visible ~ .box{outline:2px solid var(--accent);outline-offset:2px}
+  .ck span.t{font-size:.98rem;color:var(--ink-soft);line-height:1.4}
+  .ck input:checked ~ span.t{color:var(--ink)}
+  .meter-row{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.4rem}
+  .meter-num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2.4rem;color:var(--accent);font-variant-numeric:tabular-nums;min-width:2.5ch}
+  .meter-track{flex:1;min-width:180px;height:12px;background:var(--surface-2);border:1px solid var(--line);border-radius:99px;overflow:hidden}
+  .meter-fill{height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--accent));border-radius:99px;transition:width .35s cubic-bezier(.2,.8,.2,1)}
+  .meter-msg{font-size:.95rem;color:var(--ink-soft);flex-basis:100%;margin-top:.3rem}
+  .reset{font-family:"IBM Plex Mono",monospace;font-size:.72rem;background:transparent;border:1px solid var(--line);color:var(--grey);border-radius:999px;padding:.4rem .8rem;cursor:pointer}
+  .reset:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- STRATEGIES ---------- */
+  .strat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:2.2rem}
+  @media(max-width:760px){.strat-grid{grid-template-columns:1fr}}
+  .strat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.5rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.5rem}
+  .strat .k{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+  .strat h3{font-size:1.22rem}
+  .strat p{margin:0;font-size:.97rem;color:var(--ink-soft)}
+  .strat ul{margin:.4rem 0 0;padding-left:1.15rem;color:var(--grey);font-size:.94rem}
+  .strat li{margin:.35rem 0}
+
+  /* treatment row */
+  .treat{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1.6rem}
+  @media(max-width:820px){.treat{grid-template-columns:1fr}}
+  .tbox{border:1px solid var(--line);border-radius:16px;padding:1.4rem;background:var(--surface-2)}
+  .tbox h3{font-size:1.15rem;display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem}
+  .tbox .ti{width:36px;height:36px;border-radius:10px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;flex:0 0 auto}
+  .tbox p{margin:0;font-size:.94rem;color:var(--ink-soft)}
+
+  /* ---------- MEDICATIONS ---------- */
+  .med-overview{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2.2rem}
+  @media(max-width:760px){.med-overview{grid-template-columns:1fr}}
+  .movr{border:1px solid var(--line);border-radius:18px;padding:1.6rem;box-shadow:var(--shadow);background:var(--surface)}
+  .movr.stim{border-top:4px solid var(--accent)}
+  .movr.nonstim{border-top:4px solid var(--teal)}
+  .movr h3{font-size:1.3rem;display:flex;align-items:center;gap:.6rem;margin-bottom:.3rem}
+  .movr .badge{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .55rem;border-radius:999px}
+  .badge.stim{background:var(--accent-soft);color:var(--accent)}
+  .badge.nonstim{background:var(--teal-soft);color:var(--teal)}
+  .movr>p{margin:.2rem 0 0;font-size:.97rem;color:var(--ink-soft)}
+  .pc{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.1rem}
+  @media(max-width:460px){.pc{grid-template-columns:1fr}}
+  .pc h5{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .5rem;display:flex;align-items:center;gap:.35rem}
+  .pc .pro-h{color:var(--green)}
+  .pc .con-h{color:var(--red)}
+  .pc ul{list-style:none;margin:0;padding:0}
+  .pc li{font-size:.9rem;color:var(--ink-soft);line-height:1.4;padding-left:1.3rem;position:relative;margin:.4rem 0}
+  .pc li::before{position:absolute;left:0;top:0;font-family:"IBM Plex Mono",monospace;font-weight:600}
+  .pc .pros li::before{content:"+";color:var(--green)}
+  .pc .cons li::before{content:"–";color:var(--red)}
+
+  .med-filter{display:inline-flex;flex-wrap:wrap}
+  .med-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:1.8rem}
+  @media(max-width:820px){.med-grid{grid-template-columns:1fr}}
+  .medcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.4rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.55rem}
+  .medcard.hide{display:none}
+  .medcard .mhead{display:flex;justify-content:space-between;align-items:flex-start;gap:.8rem}
+  .medcard h4{font-family:"Bricolage Grotesque",sans-serif;font-size:1.18rem;font-weight:800}
+  .medcard .brands{font-size:.86rem;color:var(--grey);font-style:italic;margin-top:.1rem}
+  .medcard .meta{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.2rem}
+  .medcard .chip{font-family:"IBM Plex Mono",monospace;font-size:.66rem;padding:.24rem .5rem;border-radius:6px;background:var(--surface-2);border:1px solid var(--line);color:var(--grey)}
+  .medcard .how{font-size:.92rem;color:var(--ink-soft);margin:.2rem 0 0}
+  .medcard .mpc{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:.5rem;border-top:1px solid var(--line);padding-top:.8rem}
+  @media(max-width:460px){.medcard .mpc{grid-template-columns:1fr}}
+  .medcard .mpc ul{list-style:none;margin:0;padding:0}
+  .medcard .mpc li{font-size:.86rem;color:var(--ink-soft);line-height:1.35;padding-left:1.15rem;position:relative;margin:.32rem 0}
+  .medcard .mpc li::before{position:absolute;left:0;top:0;font-family:"IBM Plex Mono",monospace;font-weight:700}
+  .medcard .mpc .pros li::before{content:"+";color:var(--green)}
+  .medcard .mpc .cons li::before{content:"–";color:var(--red)}
+  .medcard .mpc h5{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;margin:0 0 .35rem}
+  .medcard .mpc .pro-h{color:var(--green)}
+  .medcard .mpc .con-h{color:var(--red)}
+  .med-badge{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.05em;text-transform:uppercase;padding:.22rem .5rem;border-radius:999px;flex:0 0 auto;white-space:nowrap}
+
+  /* ---------- HELP / CALLOUT ---------- */
+  .help{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:2.2rem;box-shadow:var(--shadow-lg);border-top:5px solid var(--red);margin-top:2rem}
+  .help h3{font-size:1.5rem;margin-bottom:.7rem}
+  .help ul{margin:.6rem 0 0;padding-left:1.2rem;color:var(--ink-soft)}
+  .help li{margin:.5rem 0}
+
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--line);padding:3rem 0;margin-top:1rem}
+  footer .fnote{font-size:.9rem;color:var(--grey);max-width:var(--read)}
+  footer .fbrand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:.8rem;display:flex;align-items:center;gap:.5rem}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.meter-fill{transition:none}}
+
+  /* ---------- SCROLL PROGRESS ---------- */
+  .scroll-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--teal),var(--accent));z-index:60;transition:width .1s linear}
+
+  /* ---------- NAV TOOLS ---------- */
+  .nav-tools{display:flex;align-items:center;gap:.5rem}
+  .icon-btn{font-family:"IBM Plex Mono",monospace;font-size:.72rem;background:var(--surface);border:1px solid var(--line);color:var(--ink-soft);border-radius:999px;padding:.4rem .7rem;cursor:pointer;transition:border-color .15s,color .15s;display:inline-flex;align-items:center;gap:.4rem;line-height:1}
+  .icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+  .icon-btn kbd{font-family:inherit;font-size:.64rem;background:var(--surface-2);border:1px solid var(--line);border-radius:4px;padding:.05rem .3rem;color:var(--grey)}
+  @media(max-width:620px){.icon-btn .lbl,.icon-btn kbd{display:none}}
+
+  /* ---------- COMMAND PALETTE ---------- */
+  .cmdk-back{position:fixed;inset:0;z-index:100;background:rgba(10,14,20,.5);backdrop-filter:blur(4px);display:none;align-items:flex-start;justify-content:center;padding:12vh 1rem 1rem}
+  .cmdk-back.open{display:flex}
+  .cmdk{width:100%;max-width:560px;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-lg);overflow:hidden}
+  .cmdk input{width:100%;border:none;background:transparent;color:var(--ink);font-family:"Source Serif 4",serif;font-size:1.1rem;padding:1.1rem 1.3rem;outline:none;border-bottom:1px solid var(--line)}
+  .cmdk-list{max-height:46vh;overflow-y:auto;padding:.4rem}
+  .cmdk-item{display:flex;align-items:center;gap:.7rem;padding:.7rem .9rem;border-radius:10px;cursor:pointer;color:var(--ink-soft)}
+  .cmdk-item .kind{font-family:"IBM Plex Mono",monospace;font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--grey);margin-left:auto;padding:.15rem .45rem;border:1px solid var(--line);border-radius:99px}
+  .cmdk-item .nm{font-size:.98rem}
+  .cmdk-item.active,.cmdk-item:hover{background:var(--accent-soft);color:var(--accent)}
+  .cmdk-item.active .kind{border-color:var(--accent);color:var(--accent)}
+  .cmdk-empty{padding:1.4rem;text-align:center;color:var(--grey);font-size:.95rem}
+
+  /* ---------- ACCESSIBILITY PANEL ---------- */
+  .a11y-wrap{position:relative}
+  .a11y-panel{position:absolute;right:0;top:calc(100% + .6rem);width:250px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg);padding:1rem;z-index:70;display:none}
+  .a11y-panel.open{display:block}
+  .a11y-panel h4{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);font-weight:500;margin:0 0 .7rem}
+  .a11y-row{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.45rem 0}
+  .a11y-row + .a11y-row{border-top:1px solid var(--line)}
+  .a11y-row .lab{font-family:"Source Serif 4",serif;font-size:.92rem;color:var(--ink-soft)}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg button{border:none;background:var(--surface-2);color:var(--grey);font-family:"IBM Plex Mono",monospace;font-size:.72rem;padding:.3rem .55rem;cursor:pointer}
+  .seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+  .sw{width:42px;height:24px;border-radius:99px;border:1px solid var(--line);background:var(--surface-2);position:relative;cursor:pointer;flex:0 0 auto;transition:background .15s}
+  .sw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:var(--grey);transition:transform .15s,background .15s}
+  .sw[aria-pressed="true"]{background:var(--accent)}
+  .sw[aria-pressed="true"]::after{transform:translateX(18px);background:#fff}
+
+  /* text-size zoom + calm + readable */
+  body{zoom:var(--zoom,1)}
+  :root[data-text="lg"]{--zoom:1.09}
+  :root[data-text="xl"]{--zoom:1.19}
+  :root[data-calm="on"]{--accent:#c07a5e;--accent-soft:rgba(192,122,94,.15)}
+  :root[data-calm="on"] *{animation:none!important;transition-duration:.001s!important}
+  :root[data-calm="on"] body{line-height:1.85}
+  :root[data-calm="on"] .hero .lede,:root[data-calm="on"] p{line-height:1.9}
+  :root[data-readable="on"] body{font-family:"Verdana",Tahoma,sans-serif;letter-spacing:.02em;word-spacing:.06em;line-height:1.9}
+
+  /* ---------- FOCUS TOOLS ---------- */
+  .tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2.2rem}
+  @media(max-width:760px){.tools-grid{grid-template-columns:1fr}}
+  .tool{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.6rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.9rem}
+  .tool h3{font-size:1.25rem;display:flex;align-items:center;gap:.55rem}
+  .tool .ti{width:34px;height:34px;border-radius:10px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;flex:0 0 auto}
+  .tool p.sub{margin:0;font-size:.92rem;color:var(--grey)}
+  .timer-face{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:3.4rem;letter-spacing:-.02em;font-variant-numeric:tabular-nums;text-align:center;color:var(--accent);line-height:1;margin:.3rem 0}
+  .timer-face.break{color:var(--teal)}
+  .timer-mode{text-align:center;font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+  .timer-btns{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+  .tbtn{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.9rem;padding:.6rem 1.1rem;border-radius:10px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);cursor:pointer}
+  .tbtn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .braindump{width:100%;min-height:150px;resize:vertical;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);color:var(--ink);font-family:"Source Serif 4",serif;font-size:1rem;padding:.9rem 1rem;line-height:1.6;outline:none}
+  .braindump:focus{border-color:var(--accent)}
+  .dump-foot{display:flex;justify-content:space-between;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--grey)}
+
+  /* ---------- MYTHS ---------- */
+  .myth-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:2.2rem}
+  @media(max-width:760px){.myth-grid{grid-template-columns:1fr}}
+  .myth{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.4rem 1.5rem;box-shadow:var(--shadow)}
+  .myth .mm{display:flex;align-items:flex-start;gap:.6rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.05rem;color:var(--red)}
+  .myth .mf{display:flex;align-items:flex-start;gap:.6rem;font-size:.96rem;color:var(--ink-soft);margin-top:.7rem;padding-top:.7rem;border-top:1px solid var(--line)}
+  .myth .tagm{font-family:"IBM Plex Mono",monospace;font-size:.6rem;font-weight:600;letter-spacing:.05em;padding:.15rem .4rem;border-radius:5px;flex:0 0 auto;margin-top:.15rem}
+  .myth .tagm.m{background:rgba(207,61,61,.12);color:var(--red)}
+  .myth .tagm.f{background:var(--teal-soft);color:var(--teal)}
+
+  /* ---------- ACCORDION (living with ADHD) ---------- */
+  .acc{margin-top:2rem;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+  .acc details{border-bottom:1px solid var(--line)}
+  .acc details:last-child{border-bottom:none}
+  .acc summary{list-style:none;cursor:pointer;padding:1.15rem 1.4rem;display:flex;align-items:center;gap:.9rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1.1rem}
+  .acc summary::-webkit-details-marker{display:none}
+  .acc summary .plus{margin-left:auto;width:22px;height:22px;flex:0 0 auto;position:relative;transition:transform .2s}
+  .acc summary .plus::before,.acc summary .plus::after{content:"";position:absolute;background:var(--accent);border-radius:2px}
+  .acc summary .plus::before{top:10px;left:2px;right:2px;height:2px}
+  .acc summary .plus::after{left:10px;top:2px;bottom:2px;width:2px;transition:opacity .2s}
+  .acc details[open] summary .plus::after{opacity:0}
+  .acc summary .en{width:30px;height:30px;border-radius:8px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:0 0 auto}
+  .acc .body{padding:0 1.4rem 1.3rem 3.7rem;color:var(--ink-soft);font-size:.98rem}
+  .acc .body ul{margin:.4rem 0 0;padding-left:1.1rem;color:var(--grey)}
+  .acc .body li{margin:.35rem 0}
+
+  /* ---------- COMPARISON TABLE ---------- */
+  .table-wrap{margin-top:2rem;overflow-x:auto;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+  table.cmp{border-collapse:collapse;width:100%;min-width:640px;font-size:.9rem}
+  table.cmp th,table.cmp td{text-align:left;padding:.8rem 1rem;border-bottom:1px solid var(--line)}
+  table.cmp thead th{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--grey);background:var(--surface-2);cursor:pointer;user-select:none;white-space:nowrap;position:sticky;top:0}
+  table.cmp thead th .ar{opacity:.4;margin-left:.3rem}
+  table.cmp thead th[aria-sort="ascending"] .ar,table.cmp thead th[aria-sort="descending"] .ar{opacity:1;color:var(--accent)}
+  table.cmp tbody tr:hover{background:var(--surface-2)}
+  table.cmp td:first-child{font-weight:600;color:var(--ink);font-family:"Bricolage Grotesque",sans-serif}
+  table.cmp .pill{font-family:"IBM Plex Mono",monospace;font-size:.66rem;padding:.2rem .5rem;border-radius:99px;white-space:nowrap}
+  table.cmp .pill.s{background:var(--accent-soft);color:var(--accent)}
+  table.cmp .pill.n{background:var(--teal-soft);color:var(--teal)}
+  table.cmp .yes{color:var(--red);font-weight:600}
+  table.cmp .no{color:var(--green);font-weight:600}
+
+  /* ---------- SOURCES ---------- */
+  .src-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+  @media(max-width:820px){.src-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.src-grid{grid-template-columns:1fr}}
+  .src{display:flex;flex-direction:column;gap:.3rem;padding:1.2rem 1.3rem;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:var(--shadow);text-decoration:none;transition:transform .15s,border-color .15s}
+  .src:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .src .org{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.02rem;color:var(--ink);display:flex;align-items:center;gap:.4rem}
+  .src .org .ext{color:var(--accent)}
+  .src .desc{font-size:.88rem;color:var(--grey)}
+  .reviewed{font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--grey);margin-top:1.6rem;display:inline-flex;align-items:center;gap:.5rem}
+  .reviewed .d{width:8px;height:8px;border-radius:50%;background:var(--green)}
+
+  /* ---------- TABLE OF CONTENTS ---------- */
+  .toc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:2rem}
+  @media(max-width:820px){.toc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.toc-grid{grid-template-columns:1fr}}
+  .toc-item{display:flex;gap:.9rem;align-items:flex-start;padding:1rem 1.1rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);text-decoration:none;transition:transform .15s,border-color .15s,box-shadow .15s}
+  .toc-item:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow-lg)}
+  .toc-item:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .toc-item .tnum{font-family:"IBM Plex Mono",monospace;font-size:.85rem;font-weight:600;color:var(--accent);flex:0 0 auto;min-width:2.2ch;font-variant-numeric:tabular-nums;padding-top:.1rem}
+  .toc-item .ttx{display:flex;flex-direction:column;gap:.15rem;min-width:0}
+  .toc-item .tt{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1rem;color:var(--ink);line-height:1.2}
+  .toc-item .td{font-size:.85rem;color:var(--grey);line-height:1.35}
+
+  /* ---------- STORY ---------- */
+  .story-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:2.2rem 2.4rem;box-shadow:var(--shadow-lg);margin-top:1.5rem;overflow:hidden}
+  @media(max-width:560px){.story-card{padding:1.6rem 1.5rem}}
+  .story-card::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(var(--accent),var(--teal))}
+  [dir="rtl"] .story-card::before{inset:0 0 0 auto}
+  .story-card .q{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.28;color:var(--ink);letter-spacing:-.01em;text-wrap:balance;margin:0}
+  .story-card p:not(.q){font-size:1.05rem;color:var(--ink-soft);line-height:1.7;margin:1rem 0 0;max-width:60ch}
+  .story-card .sig{margin-top:1.4rem;font-family:"IBM Plex Mono",monospace;font-size:.8rem;letter-spacing:.05em;color:var(--accent)}
+
+  /* ---------- MED TRACKER ---------- */
+  .tracker-shell{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.8rem;box-shadow:var(--shadow);margin-top:2rem}
+  @media(max-width:560px){.tracker-shell{padding:1.3rem}}
+  .tracker-form{display:grid;grid-template-columns:1.5fr 1fr auto;gap:.7rem;align-items:end}
+  @media(max-width:680px){.tracker-form{grid-template-columns:1fr}}
+  .tracker-form label{display:flex;flex-direction:column;gap:.35rem;font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--grey)}
+  .tracker-form input,.tracker-form select,.tracker-notes input{font-family:"Source Serif 4",serif;font-size:.98rem;padding:.6rem .8rem;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);color:var(--ink);outline:none}
+  .tracker-form input:focus,.tracker-form select:focus,.tracker-notes input:focus{border-color:var(--accent)}
+  .tracker-form .addbtn{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.95rem;padding:.68rem 1.2rem;border-radius:10px;background:var(--accent);color:#fff;border:1px solid var(--accent);cursor:pointer;white-space:nowrap}
+  .tracker-notes{margin-top:.7rem}
+  .tracker-notes input{width:100%}
+  .medlog{display:flex;flex-direction:column;gap:.7rem;margin-top:1.4rem}
+  .medlog-empty{color:var(--grey);font-size:.95rem;text-align:center;padding:1rem}
+  .medlog-item{display:flex;align-items:flex-start;gap:.9rem;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem}
+  .medlog-item .mi{flex:1;min-width:0}
+  .medlog-item .nm{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1rem;color:var(--ink)}
+  .medlog-item .nt{font-size:.9rem;color:var(--grey);margin-top:.2rem;overflow-wrap:break-word}
+  .ml-date{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--grey);margin-top:.25rem;opacity:.85;letter-spacing:.01em}
+  .medlog-item .oc{font-family:"IBM Plex Mono",monospace;font-size:.66rem;padding:.26rem .55rem;border-radius:999px;white-space:nowrap;flex:0 0 auto}
+  .oc.good{background:var(--teal-soft);color:var(--teal)}
+  .oc.some{background:var(--accent-soft);color:var(--accent)}
+  .oc.none{background:var(--surface);color:var(--grey);border:1px solid var(--line)}
+  .oc.bad{background:rgba(207,61,61,.12);color:var(--red)}
+  .oc.stop{background:rgba(201,120,27,.14);color:var(--amber)}
+  .medlog-item .del{background:transparent;border:none;color:var(--grey);cursor:pointer;font-size:1rem;line-height:1;padding:.2rem;flex:0 0 auto}
+  .medlog-item .del:hover{color:var(--red)}
+
+  /* ---------- ADVOCATE ---------- */
+  .adv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:2rem}
+  @media(max-width:760px){.adv-grid{grid-template-columns:1fr}}
+  .adv{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.5rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.4rem}
+  .adv .n{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--accent);font-weight:600}
+  .adv h3{font-size:1.14rem}
+  .adv p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+  .adv ul{margin:.4rem 0 0;padding-left:1.1rem;color:var(--grey);font-size:.92rem}
+  .adv li{margin:.3rem 0}
+  [dir="rtl"] .adv ul{padding-left:0;padding-right:1.15rem}
+
+  /* ---------- FAITH / REASSURANCE ---------- */
+  .faith-intro{display:flex;gap:1rem;align-items:flex-start;background:var(--teal-soft);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.3rem;margin-top:1.8rem}
+  .faith-intro svg{color:var(--teal);flex:0 0 auto;margin-top:.15rem}
+  .faith-intro p{margin:0;font-size:.96rem;color:var(--ink-soft)}
+  .faith-group-title{display:flex;align-items:center;gap:.7rem;margin:2.6rem 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.3rem;color:var(--ink)}
+  .faith-group-title .gi{width:34px;height:34px;border-radius:10px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;flex:0 0 auto}
+  .faith-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:1.5rem}
+  @media(max-width:760px){.faith-grid{grid-template-columns:1fr}}
+  .faith-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.7rem 1.6rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:1rem;text-align:center}
+  .faith-card .star{color:var(--teal);font-size:1.3rem;line-height:1;opacity:.85}
+  .faith-card .ayah{font-family:"Amiri","Amiri Quran",serif;direction:rtl;font-size:1.7rem;line-height:2.15;color:var(--ink);font-weight:400}
+  .faith-card.hadith .ayah{font-size:1.4rem;line-height:2.05}
+  .faith-card .ref{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--teal);letter-spacing:.03em}
+  .faith-card .mt{align-self:center;font-family:"IBM Plex Mono",monospace;font-size:.64rem;background:var(--teal-soft);color:var(--teal);padding:.24rem .6rem;border-radius:999px;letter-spacing:.03em}
+  .faith-card .trans{font-size:1.02rem;color:var(--ink-soft);font-style:italic;line-height:1.6}
+  .faith-card .why{font-size:.9rem;color:var(--grey);border-top:1px solid var(--line);padding-top:.9rem;text-align:start;line-height:1.55}
+  .faith-card.dua .ayah{font-size:1.42rem;line-height:2.05}
+  .faith-card .translit{font-size:.85rem;color:var(--grey);font-style:italic;line-height:1.5}
+  .faith-card .listen{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--teal);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:.28rem .8rem;align-self:center;display:inline-flex;align-items:center;gap:.35rem;transition:border-color .15s,background .15s}
+  .faith-card .listen:hover{border-color:var(--teal);background:var(--teal-soft)}
+  .faith-close{margin-top:2.2rem;text-align:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1.15rem;color:var(--ink);max-width:34ch;margin-inline:auto;line-height:1.4}
+  .isl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:1.5rem}
+  @media(max-width:760px){.isl-grid{grid-template-columns:1fr}}
+  .isl-card{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:16px;padding:1.4rem 1.5rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.5rem}
+  .isl-card h4{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.08rem;color:var(--ink);display:flex;gap:.6rem;align-items:flex-start;line-height:1.3}
+  .isl-card h4 .ic{color:var(--teal);flex:0 0 auto;margin-top:.15rem}
+  .isl-card p{margin:0;font-size:.95rem;color:var(--ink-soft);line-height:1.6}
+  .isl-card .src2{font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:var(--teal);margin-top:.2rem;letter-spacing:.02em}
+
+  /* ---------- DOCTOR SUMMARY / PRINT ---------- */
+  .summary-overlay{position:fixed;inset:0;z-index:110;background:rgba(10,14,20,.55);backdrop-filter:blur(4px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:4vh 1rem}
+  .summary-overlay.open{display:flex}
+  #printSummary{background:#fff;color:#111;width:100%;max-width:640px;border-radius:14px;padding:2.2rem;box-shadow:var(--shadow-lg);font-family:"Source Serif 4",serif}
+  #printSummary h2{font-family:"Bricolage Grotesque",sans-serif;color:#111;font-size:1.5rem;margin-bottom:.2rem}
+  #printSummary .meta{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:#666;margin-bottom:1.2rem}
+  #printSummary h3{font-family:"Bricolage Grotesque",sans-serif;font-size:1rem;color:#111;margin:1.3rem 0 .5rem}
+  #printSummary ul{margin:0;padding-left:1.2rem;color:#222}
+  #printSummary li{margin:.35rem 0}
+  #printSummary .none{color:#777;font-style:italic}
+  #printSummary .disc{margin-top:1.5rem;padding-top:1rem;border-top:1px solid #ddd;font-size:.82rem;color:#666}
+  .sum-actions{display:flex;gap:.7rem;margin-top:1.6rem;flex-wrap:wrap}
+  .sum-actions button{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.92rem;padding:.65rem 1.2rem;border-radius:10px;cursor:pointer;border:1px solid var(--line)}
+  .sum-actions .go{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .sum-actions .close{background:transparent;color:#444}
+  .btn-mini{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.82rem;padding:.5rem .9rem;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+  .btn-mini:hover{border-color:var(--accent);color:var(--accent)}
+
+  @media print{
+    body{zoom:1;background:#fff!important}
+    body>*:not(#summaryOverlay){display:none!important}
+    .summary-overlay{position:static!important;inset:auto!important;margin:0!important;padding:0!important;background:#fff!important;display:block!important;max-height:none!important;overflow:visible!important}
+    .summary-overlay .sum-actions{display:none!important}
+    #printSummary{box-shadow:none!important;max-width:none!important;max-height:none!important;overflow:visible!important;padding:0!important}
+  }
+</style>
+
+<div class="scroll-prog" id="scrollProg"></div>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="brandmark" style="display:inline-flex;align-items:center;flex:0 0 auto"><svg width="26" height="26" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" aria-label="brain logo"><g stroke="#f2551f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M31 13 C22 9,11 14,13 23 C6 25,7 35,13 37 C9 42,14 51,22 49 C24 54,31 53,31 46 Z"/><path d="M31 13 C22 9,11 14,13 23 C6 25,7 35,13 37 C9 42,14 51,22 49 C24 54,31 53,31 46 Z" transform="translate(64,0) scale(-1,1)"/><path d="M31 21 C25 21,24 26,27 28 M31 31 C23 31,22 37,26 39 M31 40 C26 40,25 44,28 46"/><path d="M31 21 C25 21,24 26,27 28 M31 31 C23 31,22 37,26 39 M31 40 C26 40,25 44,28 46" transform="translate(64,0) scale(-1,1)"/><line x1="32" y1="15" x2="32" y2="45"/></g><g fill="#f2551f"><circle cx="18" cy="24" r="2.1"/><circle cx="46" cy="24" r="2.1"/><circle cx="20" cy="39" r="2.1"/><circle cx="44" cy="39" r="2.1"/></g><path d="M50 6 L51.5 11.5 L57 13 L51.5 14.5 L50 20 L48.5 14.5 L43 13 L48.5 11.5 Z" fill="#c9781b"/></svg></span>ADHD Field Guide</div>
+    <div class="nav-links">
+      <a href="#contents">Contents</a>
+      <a href="#basics">Basics</a>
+      <a href="#science">Research</a>
+      <a href="#signs">Signs</a>
+      <a href="#check">Self-check</a>
+      <a href="#cope">Strategies</a>
+      <a href="#meds">Meds</a>
+      <a href="#faith">Faith</a>
+      <a href="#sources">Sources</a>
+    </div>
+    <div class="nav-tools">
+      <a class="icon-btn" id="langSwitch" href="ar.html" style="font-family:'Tajawal','Cairo',sans-serif">العربية</a>
+      <button class="icon-btn" id="authBtn" style="display:none">Sign in</button>
+      <button class="icon-btn" id="searchBtn" aria-label="Search this guide">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="lbl">Search</span><kbd>⌘K</kbd>
+      </button>
+      <div class="a11y-wrap">
+        <button class="icon-btn" id="a11yBtn" aria-label="Accessibility &amp; reading options" aria-expanded="false">Aa</button>
+        <div class="a11y-panel" id="a11yPanel">
+          <h4>Reading &amp; comfort</h4>
+          <div class="a11y-row">
+            <span class="lab">Text size</span>
+            <div class="seg" id="segText" role="group" aria-label="Text size">
+              <button data-size="" aria-pressed="true">A</button>
+              <button data-size="lg" aria-pressed="false">A+</button>
+              <button data-size="xl" aria-pressed="false">A++</button>
+            </div>
+          </div>
+          <div class="a11y-row">
+            <span class="lab">Calm mode</span>
+            <button class="sw" id="swCalm" role="switch" aria-pressed="false" aria-label="Calm mode: mute colour and motion"></button>
+          </div>
+          <div class="a11y-row">
+            <span class="lab">Readable font</span>
+            <button class="sw" id="swRead" role="switch" aria-pressed="false" aria-label="Readable font with extra spacing"></button>
+          </div>
+          <div class="a11y-row">
+            <span class="lab">Dark theme</span>
+            <button class="sw" id="swTheme" role="switch" aria-pressed="false" aria-label="Dark theme"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <div class="eyebrow">A plain-language resource</div>
+      <h1>Attention isn't broken. It's <span class="hl">regulated differently.</span></h1>
+      <p class="lede">Everything worth knowing about ADHD in one place — the science, the signs, the data, the red flags, and the practical strategies that actually help.</p>
+      <div class="hero-cta">
+        <a href="#basics" class="btn btn-primary">Start reading →</a>
+        <a href="#check" class="btn btn-ghost">Try the self-check</a>
+      </div>
+    </div>
+    <div class="reveal in">
+      <div class="focus-card">
+        <h4>A typical attention profile</h4>
+        <svg class="wave" viewBox="0 0 320 96" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="wg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="var(--accent)" stop-opacity=".35"/>
+              <stop offset="1" stop-color="var(--accent)" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path id="wpath" d="M0,60 C20,58 28,20 40,22 C55,25 58,74 74,72 C92,70 96,34 112,40 C128,46 130,80 150,64 C168,50 172,10 190,14 C210,18 210,70 230,66 C250,62 252,30 272,44 C292,58 300,52 320,50 L320,96 L0,96 Z" fill="url(#wg)"/>
+          <path d="M0,60 C20,58 28,20 40,22 C55,25 58,74 74,72 C92,70 96,34 112,40 C128,46 130,80 150,64 C168,50 172,10 190,14 C210,18 210,70 230,66 C250,62 252,30 272,44 C292,58 300,52 320,50" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <p style="margin:.4rem 0 0;font-size:.9rem;color:var(--grey)">Interest and stimulation drive focus more than importance does — hence deep hyperfocus on some tasks and near-zero traction on others.</p>
+        <div class="focus-tags">
+          <span class="tag">hyperfocus</span>
+          <span class="tag">time blindness</span>
+          <span class="tag">novelty-seeking</span>
+          <span class="tag">emotional intensity</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="disclaimer reveal">
+      <svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+      <p><strong>This is education, not diagnosis.</strong> ADHD can only be diagnosed by a qualified clinician. Nothing here — including the self-check — is a medical assessment or a substitute for professional care. If any of this resonates, take it to a doctor, psychologist, or psychiatrist.</p>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENTS -->
+<section class="sec" style="padding-bottom:1rem"><div class="wrap"><div class="sec-head reveal"><div class="eyebrow">Watch</div><h2>Take a moment</h2></div><video controls preload="metadata" playsinline class="reveal" style="width:100%;max-width:440px;margin:2rem auto 0;display:block;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow-lg)"><source src="vid-en.mp4" type="video/mp4"></video></div></section><style>.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}@media(max-width:820px){.gallery{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.gallery{grid-template-columns:1fr}}.gallery img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow);display:block;transition:transform .15s}.gallery img:hover{transform:translateY(-3px)}</style><section id="illustrated" class="sec"><div class="wrap"><div class="sec-head reveal"><div class="eyebrow">You will recognise these</div><h2>ADHD, illustrated</h2><p>The everyday moments — the doom piles, time blindness, the paralysis, the hyperfocus. If any of these feel familiar: you are not broken, and you are not alone.</p></div><div class="gallery reveal"><img src="g1.jpg" alt="Illustrated ADHD reminder" loading="lazy"><img src="g2.jpg" alt="Illustrated ADHD reminder" loading="lazy"><img src="g3.jpg" alt="Illustrated ADHD reminder" loading="lazy"><img src="g4.jpg" alt="Illustrated ADHD reminder" loading="lazy"><img src="g5.jpg" alt="Illustrated ADHD reminder" loading="lazy"><img src="g6.jpg" alt="Illustrated ADHD reminder" loading="lazy"><img src="g7.jpg" alt="Illustrated ADHD reminder" loading="lazy"></div></div></section><style>.dl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2rem}@media(max-width:820px){.dl-grid{grid-template-columns:1fr}}.dl-card{display:flex;gap:1rem;align-items:flex-start;padding:1.3rem;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);text-decoration:none;transition:transform .15s,border-color .15s}.dl-card:hover{transform:translateY(-3px);border-color:var(--accent)}.dl-ic{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}.dl-tx{display:flex;flex-direction:column;min-width:0}.dl-t{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1.05rem;color:var(--ink)}.dl-d{font-size:.9rem;color:var(--grey);line-height:1.4;margin-top:.15rem}.dl-go{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--accent);margin-top:.5rem}</style><section id="downloads" class="sec"><div class="wrap"><div class="sec-head reveal"><div class="eyebrow">Free handouts</div><h2>Downloadable guides</h2><p>Print-friendly PDF handouts to keep, share, or bring to an appointment — free to download.</p></div><div class="dl-grid"><a class="dl-card" href="adhd-patient-handout.pdf" download><span class="dl-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg></span><span class="dl-tx"><span class="dl-t">ADHD: a patient handout</span><span class="dl-d">A clear, plain-language overview of ADHD to keep or share.</span><span class="dl-go">Download PDF ↓</span></span></a><a class="dl-card" href="adhd-worried-parent.pdf" download><span class="dl-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg></span><span class="dl-tx"><span class="dl-t">For a worried parent</span><span class="dl-d">What to know and do if you think your child may have ADHD.</span><span class="dl-go">Download PDF ↓</span></span></a><a class="dl-card" href="adhd-adult-newly-diagnosed.pdf" download><span class="dl-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg></span><span class="dl-tx"><span class="dl-t">Newly diagnosed as an adult</span><span class="dl-d">A gentle starting guide for the weeks after an adult diagnosis.</span><span class="dl-go">Download PDF ↓</span></span></a></div></div></section><style>.exp-card{display:block;text-decoration:none;color:#fff;background:linear-gradient(135deg,#ff7a45 0%,#f2551f 55%,#d8410f 100%);border-radius:22px;padding:2rem 2.2rem;box-shadow:0 18px 44px rgba(242,85,31,.28);transition:transform .18s,box-shadow .18s}.exp-card:hover{transform:translateY(-4px);box-shadow:0 26px 60px rgba(242,85,31,.36)}.exp-badge{display:inline-block;font-family:"IBM Plex Mono","Tajawal",monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:.3rem .75rem;margin-bottom:.9rem}.exp-badge .dot{color:#bfffce}.exp-card h2{color:#fff!important;margin:0 0 .5rem;font-size:1.85rem;line-height:1.15}.exp-card p{color:rgba(255,255,255,.93);margin:0 0 1.15rem;max-width:54ch;line-height:1.6}.exp-go{display:inline-flex;align-items:center;gap:.4rem;background:#fff;color:#f2551f;font-weight:800;border-radius:999px;padding:.6rem 1.3rem;font-size:.95rem}</style><section id="experience" class="sec"><div class="wrap"><div class="reveal"><a class="exp-card" href="https://day-with-adhd.netlify.app" target="_blank" rel="noopener"><div class="exp-badge"><span class="dot">●</span> Live &middot; Interactive</div><h2>Live a day with ADHD</h2><p>Step into an interactive simulation — pick a scenario and move through a morning the way an ADHD mind does, watching your mental capacity, dopamine, and unfinished “threads” shift in real time. It shows why a simple day doesn’t feel simple.</p><span class="exp-go">Start the experience →</span></a></div></div></section><section id="contents" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Table of contents</div>
+      <h2>What's inside</h2>
+      <p>Tap any section to jump straight to it.</p>
+    </div>
+    <div class="toc-grid reveal">
+      
+      <a class="toc-item" href="#basics"><span class="tnum">01</span><span class="ttx"><span class="tt">The basics</span><span class="td">What ADHD actually is</span></span></a>
+      <a class="toc-item" href="#science"><span class="tnum">02</span><span class="ttx"><span class="tt">Research &amp; data</span><span class="td">What the evidence says</span></span></a>
+      <a class="toc-item" href="#myths"><span class="tnum">03</span><span class="ttx"><span class="tt">Myths vs facts</span><span class="td">Clearing misconceptions</span></span></a>
+      <a class="toc-item" href="#signs"><span class="tnum">04</span><span class="ttx"><span class="tt">Signs &amp; red flags</span><span class="td">What to look out for</span></span></a>
+      <a class="toc-item" href="#check"><span class="tnum">05</span><span class="ttx"><span class="tt">Self-check</span><span class="td">A quick reflection tool</span></span></a>
+      <a class="toc-item" href="#tools"><span class="tnum">06</span><span class="ttx"><span class="tt">Focus tools</span><span class="td">Pomodoro &amp; brain dump</span></span></a>
+      <a class="toc-item" href="#cope"><span class="tnum">07</span><span class="ttx"><span class="tt">Strategies</span><span class="td">What actually helps</span></span></a>
+      <a class="toc-item" href="#living"><span class="tnum">08</span><span class="ttx"><span class="tt">Living with ADHD</span><span class="td">Work, relationships &amp; more</span></span></a>
+      <a class="toc-item" href="#meds"><span class="tnum">09</span><span class="ttx"><span class="tt">Medications</span><span class="td">Every type, pros &amp; cons</span></span></a>
+      <a class="toc-item" href="#tracker"><span class="tnum">10</span><span class="ttx"><span class="tt">Medication tracker</span><span class="td">Log your own trials</span></span></a>
+      <a class="toc-item" href="#faith"><span class="tnum">11</span><span class="ttx"><span class="tt">Faith &amp; reassurance</span><span class="td">You are not alone</span></span></a>
+      <a class="toc-item" href="#advocate"><span class="tnum">12</span><span class="ttx"><span class="tt">Advocate with your doctor</span><span class="td">How to be heard</span></span></a>
+      <a class="toc-item" href="#help"><span class="tnum">13</span><span class="ttx"><span class="tt">When to get help</span><span class="td">Where the line is</span></span></a>
+      <a class="toc-item" href="#sources"><span class="tnum">14</span><span class="ttx"><span class="tt">Sources</span><span class="td">Where this comes from</span></span></a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- BASICS -->
+<section id="basics" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">The basics</div>
+      <h2>What ADHD actually is</h2>
+      <p>ADHD (Attention-Deficit/Hyperactivity Disorder) is a neurodevelopmental condition affecting how the brain regulates attention, impulses, and self-direction. It's rooted in differences in dopamine signalling and the brain's executive-function networks — not in intelligence, effort, or upbringing. It shows up in three recognised presentations.</p>
+    </div>
+    <div class="cards3">
+      <article class="pcard reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="num">PRESENTATION 01</div>
+        <h3>Inattentive</h3>
+        <p>The quiet, easily-overlooked profile. Attention drifts; details slip.</p>
+        <ul>
+          <li>Loses focus, misses details</li>
+          <li>Forgetful, disorganised</li>
+          <li>Avoids sustained mental effort</li>
+          <li>Often mislabelled "dreamy" or "lazy"</li>
+        </ul>
+      </article>
+      <article class="pcard reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <div class="num">PRESENTATION 02</div>
+        <h3>Hyperactive-Impulsive</h3>
+        <p>The restless, act-first profile. Energy and impulse outrun the brakes.</p>
+        <ul>
+          <li>Fidgety, restless, "driven by a motor"</li>
+          <li>Interrupts, blurts, acts before thinking</li>
+          <li>Struggles to wait or sit still</li>
+          <li>Impatient with slow pace</li>
+        </ul>
+      </article>
+      <article class="pcard reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18"/></svg></div>
+        <div class="num">PRESENTATION 03</div>
+        <h3>Combined</h3>
+        <p>The most common presentation — significant traits from both of the above.</p>
+        <ul>
+          <li>Inattention <em>and</em> hyperactivity</li>
+          <li>Presentation can shift with age</li>
+          <li>Hyperactivity often turns inward as adults</li>
+          <li>Diagnosed most frequently overall</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE -->
+<section id="science" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Research &amp; data</div>
+      <h2>What the evidence tells us</h2>
+      <p>ADHD is one of the most-studied conditions in psychiatry. The numbers below are consensus estimates drawn from large meta-analyses and diagnostic manuals — ranges, not exact counts, because prevalence depends on how and where it's measured.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat reveal"><div class="big">~5–7%</div><div class="lbl">of children worldwide meet diagnostic criteria</div></div>
+      <div class="stat teal reveal"><div class="big">~2.5–5%</div><div class="lbl">of adults live with ADHD, often undiagnosed</div></div>
+      <div class="stat reveal"><div class="big">~74%</div><div class="lbl">heritability — one of the most genetic conditions in psychiatry</div></div>
+      <div class="stat teal reveal"><div class="big">~60%</div><div class="lbl">of childhood cases carry meaningful symptoms into adulthood</div></div>
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:3rem">
+      <h2 style="font-size:clamp(1.5rem,3.5vw,2rem)">The real deficit is executive function</h2>
+      <p>"Attention deficit" is a misleading name. The core difficulty is <strong>self-regulation</strong> — the brain's set of management skills that turn intention into action. When these run differently, knowing what to do and actually doing it come apart.</p>
+    </div>
+    <div class="ef-grid">
+      <div class="ef reveal"><h4><span class="d"></span>Working memory</h4><p>Holding information "online" long enough to use it — instructions, mid-task steps, why you walked into the room.</p></div>
+      <div class="ef reveal"><h4><span class="d"></span>Inhibition</h4><p>The pause between impulse and action. Filtering distractions, resisting the tangent, not blurting.</p></div>
+      <div class="ef reveal"><h4><span class="d"></span>Task initiation</h4><p>Getting started — the wall between "I should" and beginning, even on things you want to do.</p></div>
+      <div class="ef reveal"><h4><span class="d"></span>Time perception</h4><p>"Time blindness" — poor sense of how long things take and how much has passed. Now vs. not-now.</p></div>
+      <div class="ef reveal"><h4><span class="d"></span>Emotional regulation</h4><p>Managing the intensity and duration of feelings. Frustration, rejection, and excitement land harder.</p></div>
+      <div class="ef reveal"><h4><span class="d"></span>Cognitive flexibility</h4><p>Shifting gears, switching tasks, and adapting when the plan changes without getting stuck or overwhelmed.</p></div>
+    </div>
+
+    <p class="source-note reveal">On co-occurrence: ADHD rarely travels alone. Anxiety, depression, sleep disorders, and learning differences (like dyslexia) are common companions — which is one reason self-diagnosis is unreliable and professional assessment matters.<br>
+    Figures reflect estimates from sources including the DSM-5-TR, the World Federation of ADHD, and published meta-analyses. Treat them as orientation, not precision.</p>
+  </div>
+</section>
+
+<!-- SIGNS -->
+<section id="signs" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Red flags &amp; signs</div>
+      <h2>What to look out for</h2>
+      <p>ADHD looks different across a lifetime. These patterns become meaningful when they're <strong>persistent, present in more than one setting, and genuinely disruptive</strong> — not the occasional off day everyone has. Colour marks how strongly each tends to point toward assessment.</p>
+    </div>
+
+    <div class="toggle reveal" role="tablist" aria-label="Choose age group">
+      <button role="tab" aria-selected="true" data-group="adult">In adults</button>
+      <button role="tab" aria-selected="false" data-group="child">In children</button>
+    </div>
+
+    <div class="flags" id="flagsAdult">
+      <div class="flag high reveal"><div class="sev"></div><div><h4>Chronic procrastination &amp; unfinished projects</h4><p>Starting strong, stalling out, and a graveyard of half-done things — despite caring about them.</p></div></div>
+      <div class="flag high reveal"><div class="sev"></div><div><h4>Time blindness &amp; lateness</h4><p>Consistently underestimating time, losing hours, missing deadlines even with effort and reminders.</p></div></div>
+      <div class="flag high reveal"><div class="sev"></div><div><h4>Emotional dysregulation</h4><p>Fast, intense reactions; low frustration tolerance; feeling rejection acutely (often called RSD).</p></div></div>
+      <div class="flag med reveal"><div class="sev"></div><div><h4>Disorganisation &amp; lost items</h4><p>Keys, wallet, phone, deadlines, threads of conversation — slipping through the cracks routinely.</p></div></div>
+      <div class="flag med reveal"><div class="sev"></div><div><h4>Impulsivity</h4><p>Interrupting, impulse spending, snap decisions, blurting — acting before the consequence registers.</p></div></div>
+      <div class="flag med reveal"><div class="sev"></div><div><h4>Inner restlessness</h4><p>Hyperactivity gone internal: a racing mind, difficulty relaxing, needing constant stimulation.</p></div></div>
+      <div class="flag low reveal"><div class="sev"></div><div><h4>Hyperfocus on the wrong things</h4><p>Hours vanish on something engaging while urgent-but-boring tasks are untouchable.</p></div></div>
+      <div class="flag low reveal"><div class="sev"></div><div><h4>Overwhelm from admin</h4><p>Forms, emails, and errands pile into a paralysing backlog out of proportion to their actual size.</p></div></div>
+    </div>
+
+    <div class="flags" id="flagsChild" hidden>
+      <div class="flag high reveal"><div class="sev"></div><div><h4>Can't sustain attention on tasks</h4><p>Careless mistakes, unfinished schoolwork, seems not to listen even when spoken to directly.</p></div></div>
+      <div class="flag high reveal"><div class="sev"></div><div><h4>Constant motion</h4><p>Can't stay seated, climbs and runs at the wrong times, "always on the go," fidgets relentlessly.</p></div></div>
+      <div class="flag high reveal"><div class="sev"></div><div><h4>Blurting &amp; can't wait a turn</h4><p>Answers before questions finish, interrupts games and conversations, struggles with waiting.</p></div></div>
+      <div class="flag med reveal"><div class="sev"></div><div><h4>Loses and forgets things</h4><p>Homework, jackets, supplies; forgets daily routines and multi-step instructions.</p></div></div>
+      <div class="flag med reveal"><div class="sev"></div><div><h4>Easily distracted</h4><p>Pulled off task by any sight or sound; jumps between activities without finishing.</p></div></div>
+      <div class="flag med reveal"><div class="sev"></div><div><h4>Avoids sustained mental effort</h4><p>Resists or dreads homework and tasks that require sitting and concentrating.</p></div></div>
+      <div class="flag low reveal"><div class="sev"></div><div><h4>Big emotional reactions</h4><p>Meltdowns, quick frustration, and difficulty calming relative to same-age peers.</p></div></div>
+      <div class="flag low reveal"><div class="sev"></div><div><h4>Trouble with friendships</h4><p>Impulsivity and missed social cues can make peer relationships harder to maintain.</p></div></div>
+    </div>
+
+    <div class="legend reveal">
+      <span><i style="background:var(--red)"></i>Strong indicator</span>
+      <span><i style="background:var(--amber)"></i>Notable pattern</span>
+      <span><i style="background:var(--teal)"></i>Supporting sign</span>
+    </div>
+  </div>
+</section>
+
+<!-- MYTHS -->
+<section id="myths" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Myths vs. facts</div>
+      <h2>Clearing up the misconceptions</h2>
+      <p>ADHD is one of the most misunderstood conditions there is. Stigma comes from stale ideas — here's what the evidence actually says.</p>
+    </div>
+    <div class="myth-grid">
+      <div class="myth reveal"><div class="mm"><span class="tagm m">Myth</span>"ADHD isn't real — it's just bad discipline or bad parenting."</div><div class="mf"><span class="tagm f">Fact</span>ADHD is a well-established neurodevelopmental condition with measurable brain and genetic differences, recognised by every major medical body. It's about regulation, not willpower.</div></div>
+      <div class="myth reveal"><div class="mm"><span class="tagm m">Myth</span>"Only hyperactive little boys have ADHD."</div><div class="mf"><span class="tagm f">Fact</span>It affects all genders and ages. Girls and women are widely under-diagnosed because inattentive traits are quieter, and many are only recognised as adults.</div></div>
+      <div class="myth reveal"><div class="mm"><span class="tagm m">Myth</span>"You'll grow out of it."</div><div class="mf"><span class="tagm f">Fact</span>Around 60% of children keep meaningful symptoms into adulthood. Hyperactivity often just turns inward as restlessness rather than disappearing.</div></div>
+      <div class="myth reveal"><div class="mm"><span class="tagm m">Myth</span>"Medication is a crutch or a personality change."</div><div class="mf"><span class="tagm f">Fact</span>For most people, correctly-dosed medication reduces symptoms without changing who they are — much like glasses for vision. It's evidence-based, not a shortcut.</div></div>
+      <div class="myth reveal"><div class="mm"><span class="tagm m">Myth</span>"If you can focus on video games, you can't have ADHD."</div><div class="mf"><span class="tagm f">Fact</span>ADHD is a problem of <em>regulating</em> attention, not a lack of it. Hyperfocus on stimulating, high-reward tasks is a classic feature.</div></div>
+      <div class="myth reveal"><div class="mm"><span class="tagm m">Myth</span>"Everyone's a little ADHD these days."</div><div class="mf"><span class="tagm f">Fact</span>Everyone gets distracted sometimes. ADHD is a persistent, lifelong pattern that significantly impairs daily functioning across multiple settings — a clinical threshold, not a personality quirk.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SELF CHECK -->
+<section id="check" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Self-reflection tool</div>
+      <h2>A quick self-check</h2>
+      <p>Tick what genuinely sounds like your everyday experience over the last six months. This is a <strong>reflection prompt, not a test</strong> — it can't diagnose anything. It's built to help you decide whether a conversation with a professional is worth having.</p>
+    </div>
+
+    <div class="check-shell reveal">
+      <div class="check-grid" id="checkGrid">
+        <!-- items injected -->
+      </div>
+      <div class="meter-row">
+        <div class="meter-num" id="score">0</div>
+        <div class="meter-track"><div class="meter-fill" id="fill"></div></div>
+        <button class="reset" id="resetBtn">Reset</button>
+        <p class="meter-msg" id="msg">Tick the statements that ring true for you.</p>
+      </div>
+      <div style="margin-top:1.3rem">
+        <button class="btn-mini" id="summaryBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:.3rem"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+          Build a summary for my doctor
+        </button>
+      </div>
+    </div>
+    <p class="source-note reveal">Remember: many people relate to a few of these on a stressful week. What matters clinically is a <em>consistent, life-long pattern that impairs daily functioning across settings</em> — something only a trained clinician can evaluate.</p>
+  </div>
+</section>
+
+<!-- FOCUS TOOLS -->
+<section id="tools" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Focus tools</div>
+      <h2>Try the strategies right here</h2>
+      <p>Two of the most-recommended ADHD techniques, built in and ready to use. Everything you type stays private in your own browser — nothing is sent anywhere.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool reveal">
+        <h3><span class="ti"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg></span>Pomodoro timer</h3>
+        <p class="sub">Work in short, finite sprints to beat the "starting" wall. 25 minutes on, 5 off.</p>
+        <div class="timer-mode" id="timerMode">Focus session</div>
+        <div class="timer-face" id="timerFace">25:00</div>
+        <div class="timer-btns">
+          <button class="tbtn primary" id="timerStart">Start</button>
+          <button class="tbtn" id="timerReset">Reset</button>
+          <button class="tbtn" id="timerSwitch">Switch to break</button>
+        </div>
+      </div>
+      <div class="tool reveal">
+        <h3><span class="ti"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>Brain dump</h3>
+        <p class="sub">Get the swirling thoughts out of your head and onto the page. Auto-saves as you type.</p>
+        <textarea class="braindump" id="braindump" placeholder="Everything that's rattling around — tasks, worries, half-ideas. Just get it out…" aria-label="Brain dump notes"></textarea>
+        <div class="dump-foot"><span id="dumpStatus">Saved locally</span><button class="reset" id="dumpClear">Clear</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COPE -->
+<section id="cope" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">How to deal with it</div>
+      <h2>Strategies that actually work</h2>
+      <p>You don't out-discipline ADHD — you build scaffolding around it. The winning approach is nearly always <strong>combined</strong>: external systems + supportive habits + professional treatment. Here's the toolkit, starting with what you can do yourself.</p>
+    </div>
+
+    <div class="strat-grid">
+      <article class="strat reveal">
+        <div class="k">Externalise everything</div>
+        <h3>Get it out of your head</h3>
+        <p>Working memory is unreliable, so stop relying on it. Make the invisible visible.</p>
+        <ul>
+          <li>One capture inbox for every task and idea</li>
+          <li>Reminders and alarms for time-based things</li>
+          <li>Visible clocks and timers to fight time blindness</li>
+          <li>"A place for everything" to stop losing items</li>
+        </ul>
+      </article>
+      <article class="strat reveal">
+        <div class="k">Lower the activation cost</div>
+        <h3>Make starting easier</h3>
+        <p>Task initiation is the hardest wall. Shrink it until stepping over is trivial.</p>
+        <ul>
+          <li>Break tasks into absurdly small first steps</li>
+          <li>Timeboxing / Pomodoro — work in short sprints</li>
+          <li>"Body doubling" — work alongside someone</li>
+          <li>Remove one point of friction before you start</li>
+        </ul>
+      </article>
+      <article class="strat reveal">
+        <div class="k">Design the environment</div>
+        <h3>Reduce the friction around you</h3>
+        <p>Willpower is finite; environment is permanent. Change the room, not just the resolve.</p>
+        <ul>
+          <li>Cut distractions: notifications off, phone away</li>
+          <li>Single-task; close the extra tabs</li>
+          <li>Routines and checklists for recurring things</li>
+          <li>Novelty on purpose — rotate tools and setups</li>
+        </ul>
+      </article>
+      <article class="strat reveal">
+        <div class="k">Fuel the system</div>
+        <h3>Protect the biological basics</h3>
+        <p>Sleep, movement, and food aren't side-quests — they directly move the dial on symptoms.</p>
+        <ul>
+          <li>Consistent sleep — the single biggest lever</li>
+          <li>Regular exercise boosts dopamine &amp; focus</li>
+          <li>Protein-forward meals; don't skip them</li>
+          <li>Manage stress — it amplifies everything</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:3rem">
+      <h2 style="font-size:clamp(1.5rem,3.5vw,2rem)">Professional treatment</h2>
+      <p>Self-help works best on top of proper care. These are the evidence-based pillars — all of them decided with a qualified clinician, never self-prescribed.</p>
+    </div>
+    <div class="treat">
+      <div class="tbox reveal">
+        <h3><span class="ti"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0H5a2 2 0 0 1-2-2v-4m6 6h10a2 2 0 0 0 2-2v-4"/></svg></span>Assessment</h3>
+        <p>A structured evaluation of history, symptoms, and impact — the only route to a real diagnosis and a starting point for everything else.</p>
+      </div>
+      <div class="tbox reveal">
+        <h3><span class="ti"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8M4 12H2m2 8H2M22 12h-2m2 8h-2M8 20H4m16 0h-4M12 20v-4"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg></span>Medication</h3>
+        <p>Stimulant and non-stimulant options can substantially improve focus and impulse control. Prescribed, dosed, and monitored only by a doctor.</p>
+      </div>
+      <div class="tbox reveal">
+        <h3><span class="ti"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>Therapy &amp; coaching</h3>
+        <p>CBT and ADHD coaching build practical skills, reframe self-blame, and treat the anxiety or low mood that so often ride along.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVING WITH ADHD -->
+<section id="living" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Living with ADHD</div>
+      <h2>How it shows up in real life</h2>
+      <p>ADHD doesn't stay in one lane — it touches work, study, relationships, and identity. Open a topic to see how it tends to play out and what helps.</p>
+    </div>
+    <div class="acc reveal">
+      <details>
+        <summary><span class="en"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>At work &amp; school<span class="plus"></span></summary>
+        <div class="body">
+          <p>Deadlines, admin, meetings, and long solo tasks are where ADHD bites hardest — but structure and interest turn it around.</p>
+          <ul>
+            <li>Break big projects into visible, tiny milestones with their own deadlines</li>
+            <li>Ask about reasonable accommodations — quiet space, written instructions, flexible hours, deadline reminders</li>
+            <li>Use "focus sprints," noise-cancelling headphones, and a single-tab work mode</li>
+            <li>Play to strengths: creativity, problem-solving, energy in crisis, and hyperfocus on engaging work</li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary><span class="en"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.4 3-5.5A5.5 5.5 0 0 0 12 5 5.5 5.5 0 0 0 2 8.5c0 2.1 1.5 4 3 5.5l7 7z"/></svg></span>Relationships<span class="plus"></span></summary>
+        <div class="body">
+          <p>Forgotten plans, interrupting, or emotional intensity can be misread as "not caring." Naming the mechanism helps partners and friends respond with teamwork, not blame.</p>
+          <ul>
+            <li>Externalise shared commitments — a joint calendar beats "I'll remember"</li>
+            <li>Name patterns out loud: "my time blindness, not my priorities"</li>
+            <li>Watch for rejection sensitivity and take a beat before reacting</li>
+            <li>Couples or family therapy can reframe recurring friction</li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary><span class="en"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></span>Women &amp; late diagnosis<span class="plus"></span></summary>
+        <div class="body">
+          <p>Many women and girls are missed for decades because their traits are more inattentive and internalised. A late diagnosis is common — and often a huge relief.</p>
+          <ul>
+            <li>Traits masked by anxiety, perfectionism, or people-pleasing</li>
+            <li>Symptoms can intensify with hormonal shifts (cycle, pregnancy, menopause)</li>
+            <li>Years of being called "scattered" can dent self-esteem — a diagnosis reframes the story</li>
+            <li>It's never too late to be assessed and supported</li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary><span class="en"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 4 2 7h10c0-3 2-4 2-7a7 7 0 0 0-7-7zM9 21h6"/></svg></span>Co-occurring conditions<span class="plus"></span></summary>
+        <div class="body">
+          <p>ADHD rarely travels alone. Recognising what rides alongside it is key to getting the right support — and one reason self-diagnosis is unreliable.</p>
+          <ul>
+            <li>Anxiety and depression — very common companions</li>
+            <li>Learning differences like dyslexia and dyscalculia</li>
+            <li>Sleep problems, which amplify every other symptom</li>
+            <li>Autism spectrum overlap; and, if unmanaged, higher risk of burnout</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- MEDICATIONS -->
+<section id="meds" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Medication guide</div>
+      <h2>Every class of ADHD medication</h2>
+      <p>Medication is one of the most effective tools for ADHD, but there's no single "best" drug — it's a matter of matching the right molecule and dose to the individual. Below is every major type, with an honest ledger of pros and cons for each.</p>
+    </div>
+
+    <div class="disclaimer reveal" style="margin-top:1.6rem">
+      <svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+      <p><strong>This is not a prescription or medical advice.</strong> Never start, stop, switch, or dose ADHD medication on your own. Every option here is prescription-only, individual response varies enormously, and the right choice depends on your full medical history. This list is to help you have an <em>informed conversation</em> with a prescriber — nothing more.</p>
+    </div>
+
+    <!-- two family overviews -->
+    <div class="med-overview">
+      <div class="movr stim reveal">
+        <h3><span class="badge stim">First-line</span>Stimulants</h3>
+        <p>Boost dopamine and norepinephrine in the brain's attention circuits. Roughly 70–80% of people respond, often the same day. Two chemical families: methylphenidate and amphetamine.</p>
+        <div class="pc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul>
+            <li>Most effective option; works fast</li>
+            <li>Decades of research and clinical use</li>
+            <li>Flexible — short or long-acting</li>
+            <li>Effect can be judged within days</li>
+          </ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul>
+            <li>Controlled substances; misuse/diversion risk</li>
+            <li>Appetite loss, insomnia, raised heart rate/BP</li>
+            <li>Possible "rebound" or irritability as it wears off</li>
+            <li>Caution with heart conditions or high anxiety</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <div class="movr nonstim reveal">
+        <h3><span class="badge nonstim">Alternative</span>Non-stimulants</h3>
+        <p>Work differently — mostly on norepinephrine or the brain's alpha receptors. Slower to kick in but non-controlled, with smoother all-day coverage. Chosen when stimulants don't suit.</p>
+        <div class="pc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul>
+            <li>Not controlled substances; no misuse potential</li>
+            <li>Steady 24-hour coverage, no "wear-off"</li>
+            <li>Good when anxiety, tics, or sleep are issues</li>
+            <li>Can be combined with a stimulant</li>
+          </ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul>
+            <li>Take 2–6 weeks to reach full effect</li>
+            <li>On average less effective than stimulants</li>
+            <li>Can cause fatigue, nausea, or low blood pressure</li>
+            <li>Some carry specific monitoring warnings</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- filter -->
+    <div class="toggle med-filter reveal" role="tablist" aria-label="Filter medications" style="margin-top:2.4rem">
+      <button role="tab" aria-selected="true" data-filter="all">All</button>
+      <button role="tab" aria-selected="false" data-filter="mph">Methylphenidate</button>
+      <button role="tab" aria-selected="false" data-filter="amp">Amphetamine</button>
+      <button role="tab" aria-selected="false" data-filter="non">Non-stimulant</button>
+    </div>
+
+    <div class="med-grid" id="medGrid">
+
+      <!-- Methylphenidate -->
+      <article class="medcard reveal" data-cat="mph">
+        <div class="mhead">
+          <div><h4>Methylphenidate</h4><div class="brands">Ritalin · Concerta · Medikinet · Equasym</div></div>
+          <span class="med-badge badge stim">Stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">Methylphenidate class</span><span class="chip">IR 3–4h · XL 8–12h</span></div>
+        <p class="how">The most-prescribed ADHD medicine worldwide. Blocks dopamine reuptake. Comes short-acting (Ritalin) or long-acting (Concerta) so coverage can be tailored to the day.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Huge track record, incl. in children</li><li>Fine-grained dose control</li><li>Long-acting versions last a school/work day</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Appetite &amp; sleep suppression</li><li>Multiple daily doses for IR form</li><li>Rebound dip as it wears off</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Dexmethylphenidate -->
+      <article class="medcard reveal" data-cat="mph">
+        <div class="mhead">
+          <div><h4>Dexmethylphenidate</h4><div class="brands">Focalin · Focalin XR</div></div>
+          <span class="med-badge badge stim">Stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">Methylphenidate class</span><span class="chip">Refined isomer</span></div>
+        <p class="how">The active "d-isomer" of methylphenidate — essentially a more concentrated, cleaner version, so a lower dose does the same job.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Effective at lower doses</li><li>Some find fewer side effects</li><li>Smooth XR option</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Same class-wide stimulant risks</li><li>Can be costlier than generic MPH</li></ul></div>
+        </div>
+      </article>
+
+      <!-- MPH transdermal / liquid -->
+      <article class="medcard reveal" data-cat="mph">
+        <div class="mhead">
+          <div><h4>Methylphenidate — patch &amp; liquid</h4><div class="brands">Daytrana (patch) · Quillivant / Quillichew</div></div>
+          <span class="med-badge badge stim">Stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">Methylphenidate class</span><span class="chip">Non-pill delivery</span></div>
+        <p class="how">Alternative formats for people who can't swallow pills — a skin patch you remove to end the effect, or a chewable/liquid dose.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>No pill-swallowing needed</li><li>Patch lets you control the "off" time</li><li>Easy dose-splitting for kids</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Patch can cause skin irritation</li><li>Slower on/off with the patch</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Amphetamine mixed salts -->
+      <article class="medcard reveal" data-cat="amp">
+        <div class="mhead">
+          <div><h4>Mixed amphetamine salts</h4><div class="brands">Adderall · Adderall XR</div></div>
+          <span class="med-badge badge stim">Stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">Amphetamine class</span><span class="chip">IR 4–6h · XR 10–12h</span></div>
+        <p class="how">A blend of amphetamine salts that both release and block reuptake of dopamine. Often stronger, dose-for-dose, than methylphenidate.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Very effective; longer-lasting than IR MPH</li><li>Works for many who don't respond to MPH</li><li>Cheap generics available</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Higher misuse potential than MPH</li><li>More appetite/sleep/BP effects for some</li><li>Can heighten anxiety or irritability</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Lisdexamfetamine -->
+      <article class="medcard reveal" data-cat="amp">
+        <div class="mhead">
+          <div><h4>Lisdexamfetamine</h4><div class="brands">Vyvanse · Elvanse</div></div>
+          <span class="med-badge badge stim">Stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">Amphetamine class</span><span class="chip">Prodrug · 10–14h</span></div>
+        <p class="how">An inactive "prodrug" the body slowly converts to active amphetamine. That gradual release gives smooth, long coverage and a lower abuse ceiling.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Smooth, long, all-day effect</li><li>Lower misuse potential (prodrug)</li><li>Less pronounced rebound</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Can't fine-tune timing once taken</li><li>Often more expensive (brand)</li><li>Same amphetamine side-effect profile</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Dexamfetamine -->
+      <article class="medcard reveal" data-cat="amp">
+        <div class="mhead">
+          <div><h4>Dexamfetamine</h4><div class="brands">Dexedrine · Mydayis · Zenzedi</div></div>
+          <span class="med-badge badge stim">Stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">Amphetamine class</span><span class="chip">IR 4–6h · Mydayis up to 16h</span></div>
+        <p class="how">Pure dextroamphetamine. A long-standing option; Mydayis is an extended formulation engineered for an especially long day.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Simple, well-understood molecule</li><li>Ultra-long option (Mydayis)</li><li>Effective and predictable</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Long formulations may disturb sleep</li><li>Class-wide stimulant cautions apply</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Atomoxetine -->
+      <article class="medcard reveal" data-cat="non">
+        <div class="mhead">
+          <div><h4>Atomoxetine</h4><div class="brands">Strattera</div></div>
+          <span class="med-badge badge nonstim">Non-stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">SNRI</span><span class="chip">24-hour · non-controlled</span></div>
+        <p class="how">The first non-stimulant approved for ADHD. Raises norepinephrine by blocking its reuptake. Builds up over weeks rather than working on day one.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Not a controlled drug; no "high"</li><li>Steady 24-hour cover, incl. mornings</li><li>Good with anxiety or substance-use history</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Takes 4–6 weeks to fully work</li><li>Nausea, fatigue, sexual side effects</li><li>Warning for rare mood/liver effects — monitored</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Viloxazine -->
+      <article class="medcard reveal" data-cat="non">
+        <div class="mhead">
+          <div><h4>Viloxazine</h4><div class="brands">Qelbree</div></div>
+          <span class="med-badge badge nonstim">Non-stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">SNRI</span><span class="chip">Once daily · newer</span></div>
+        <p class="how">A newer non-stimulant (approved for children and adults) that also acts on norepinephrine, with some serotonin activity. Once-daily dosing.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Works faster than atomoxetine for some</li><li>Non-controlled, once daily</li><li>Option for kids and adults alike</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Sleepiness, reduced appetite, headache</li><li>Interacts with several other drugs</li><li>Mood-monitoring warning applies</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Alpha agonists -->
+      <article class="medcard reveal" data-cat="non">
+        <div class="mhead">
+          <div><h4>Guanfacine &amp; Clonidine</h4><div class="brands">Intuniv (guanfacine) · Kapvay (clonidine)</div></div>
+          <span class="med-badge badge nonstim">Non-stimulant</span>
+        </div>
+        <div class="meta"><span class="chip">Alpha-2 agonists</span><span class="chip">Often add-on</span></div>
+        <p class="how">Originally blood-pressure drugs, these calm the nervous system's overactivity. Especially useful for hyperactivity, impulsivity, tics, and sleep — often added to a stimulant.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Great for hyperactivity, tics, and sleep</li><li>Non-controlled; combines with stimulants</li><li>Can ease evening "rebound"</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Sedation, dizziness, low blood pressure</li><li>Must not be stopped abruptly</li><li>Weaker effect on core inattention</li></ul></div>
+        </div>
+      </article>
+
+      <!-- Bupropion / off-label -->
+      <article class="medcard reveal" data-cat="non">
+        <div class="mhead">
+          <div><h4>Bupropion &amp; other off-label</h4><div class="brands">Wellbutrin · tricyclic antidepressants</div></div>
+          <span class="med-badge badge nonstim">Off-label</span>
+        </div>
+        <div class="meta"><span class="chip">Antidepressant</span><span class="chip">Off-label for ADHD</span></div>
+        <p class="how">Not officially approved for ADHD, but sometimes prescribed off-label — particularly when depression co-occurs. Bupropion affects dopamine and norepinephrine.</p>
+        <div class="mpc">
+          <div class="pros"><h5 class="pro-h">Pros</h5><ul><li>Treats co-occurring depression too</li><li>Non-controlled; no misuse potential</li><li>An option when others fail or aren't tolerated</li></ul></div>
+          <div class="cons"><h5 class="con-h">Cons</h5><ul><li>Off-label — weaker ADHD evidence</li><li>Bupropion can lower the seizure threshold</li><li>Generally less effective for core symptoms</li></ul></div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:3rem">
+      <h2 style="font-size:clamp(1.5rem,3.5vw,2rem)">Side-by-side comparison</h2>
+      <p>The same medications at a glance. Click any column heading to sort — handy when weighing onset, how long a dose lasts, or whether it's a controlled substance.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="cmp" id="cmpTable">
+        <thead>
+          <tr>
+            <th data-key="name" data-type="text" aria-sort="none">Medication<span class="ar">↕</span></th>
+            <th data-key="type" data-type="text" aria-sort="none">Type<span class="ar">↕</span></th>
+            <th data-key="class" data-type="text" aria-sort="none">Class<span class="ar">↕</span></th>
+            <th data-key="onset" data-type="num" data-onset aria-sort="none">Onset<span class="ar">↕</span></th>
+            <th data-key="duration" data-type="num" aria-sort="none">Duration<span class="ar">↕</span></th>
+            <th data-key="controlled" data-type="text" aria-sort="none">Controlled?<span class="ar">↕</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Methylphenidate</td><td data-sort="stim"><span class="pill s">Stimulant</span></td><td>Methylphenidate</td><td data-num="0.5">~30–60 min</td><td data-num="4">3–12 h</td><td data-sort="yes"><span class="yes">Yes</span></td></tr>
+          <tr><td>Dexmethylphenidate</td><td data-sort="stim"><span class="pill s">Stimulant</span></td><td>Methylphenidate</td><td data-num="0.5">~30–60 min</td><td data-num="6">4–12 h</td><td data-sort="yes"><span class="yes">Yes</span></td></tr>
+          <tr><td>Amphetamine salts</td><td data-sort="stim"><span class="pill s">Stimulant</span></td><td>Amphetamine</td><td data-num="0.5">~30–60 min</td><td data-num="5">4–12 h</td><td data-sort="yes"><span class="yes">Yes</span></td></tr>
+          <tr><td>Lisdexamfetamine</td><td data-sort="stim"><span class="pill s">Stimulant</span></td><td>Amphetamine</td><td data-num="1.5">~1–2 h</td><td data-num="12">10–14 h</td><td data-sort="yes"><span class="yes">Yes</span></td></tr>
+          <tr><td>Dexamfetamine</td><td data-sort="stim"><span class="pill s">Stimulant</span></td><td>Amphetamine</td><td data-num="0.5">~30–60 min</td><td data-num="8">4–16 h</td><td data-sort="yes"><span class="yes">Yes</span></td></tr>
+          <tr><td>Atomoxetine</td><td data-sort="non"><span class="pill n">Non-stim</span></td><td>SNRI</td><td data-num="336">2–6 weeks</td><td data-num="24">24 h</td><td data-sort="no"><span class="no">No</span></td></tr>
+          <tr><td>Viloxazine</td><td data-sort="non"><span class="pill n">Non-stim</span></td><td>SNRI</td><td data-num="168">1–2 weeks</td><td data-num="24">24 h</td><td data-sort="no"><span class="no">No</span></td></tr>
+          <tr><td>Guanfacine / Clonidine</td><td data-sort="non"><span class="pill n">Non-stim</span></td><td>Alpha-2 agonist</td><td data-num="168">1–2 weeks</td><td data-num="20">12–24 h</td><td data-sort="no"><span class="no">No</span></td></tr>
+          <tr><td>Bupropion</td><td data-sort="non"><span class="pill n">Non-stim</span></td><td>Antidepressant</td><td data-num="336">2–6 weeks</td><td data-num="24">All day</td><td data-sort="no"><span class="no">No</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="source-note reveal">How prescribing usually goes: most guidelines start with a stimulant, trial it, and adjust dose or switch classes based on response and side effects. Finding the right fit often takes a few tries — that's normal, not failure. Brand names vary by country; the same molecule may have different names where you live.</p>
+  </div>
+</section>
+
+<!-- MED TRACKER -->
+<div class="wrap"><div class="ad-slot" data-adslot="mid"></div></div>
+<section id="tracker" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">For your prescriber</div>
+      <h2>Track your medication trials</h2>
+      <p>One of the hardest parts of getting medication right is remembering what you actually tried and how each one felt. Log them here as you go — then bring the record, or add it to your doctor summary in the self-check, to your next appointment. It stays private on this device.</p>
+    </div>
+    <div class="tracker-shell reveal">
+      <div class="tracker-form">
+        <label>Medication &amp; dose<input id="medName" type="text" placeholder="e.g. Concerta 36mg" autocomplete="off"></label>
+        <label>How it went<select id="medOutcome">
+          <option value="good">Helped a lot</option>
+          <option value="some">Helped somewhat</option>
+          <option value="none">No effect</option>
+          <option value="bad">Bad side effects</option>
+          <option value="stop">Stopped it</option>
+        </select></label>
+        <button class="addbtn" id="medAdd">Add to log</button>
+      </div>
+      <div class="tracker-notes"><input id="medNotes" type="text" placeholder="Notes — side effects, how long you tried it, dose changes… (optional)" autocomplete="off"></div>
+      <div class="medlog" id="medLog"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAITH -->
+<section id="faith" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Faith &amp; reassurance</div>
+      <h2>You are never alone</h2>
+      <p>For those who draw strength from faith, Islam offers deep reassurance to anyone living with ADHD: your daily struggle is seen, it is never wasted, and Allah is nearer to you than you imagine. Below are verses from the Qur'an and authentic hadith — <strong>agreed upon (متفق عليه)</strong>, narrated by both Bukhari and Muslim.</p>
+    </div>
+
+    <div class="faith-intro reveal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 8 5 9 7 12 7s4-2 6.5-2C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg>
+      <p>This section is offered gently, for readers who find comfort in Islam. The Arabic is quoted directly; the English gives the meaning, and the reflection beneath each is our own note connecting it to life with ADHD — never a claim about the text itself.</p>
+    </div>
+
+    <div class="faith-group-title reveal"><span class="gi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 4 2 7h10c0-3 2-4 2-7a7 7 0 0 0-7-7zM9 21h6"/></svg></span>What Islam says about mental health &amp; ADHD</div>
+    <div class="isl-grid">
+      <article class="isl-card reveal"><h4><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Illness is a test — not a punishment, never wasted</h4><p>Islam frames hardship, including mental and emotional struggle, as a test that can wipe away sins and raise a person's rank — not a sign of divine anger or personal failure.</p><div class="src2">Qur'an 2:155–156 · Bukhari &amp; Muslim</div></article>
+      <article class="isl-card reveal"><h4><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Seeking treatment is part of the faith</h4><p>The Prophet ﷺ taught that Allah sent down no disease without also sending its cure, and told us to seek treatment. Seeing a doctor, taking medication, and therapy are encouraged — not a weakness of faith.</p><div class="src2">Bukhari 5678 · Abu Dawud &amp; Tirmidhi</div></article>
+      <article class="isl-card reveal"><h4><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Trust Allah and take the means</h4><p>When a man asked whether to tie his camel or rely on Allah, the Prophet ﷺ said: “Tie it, and trust in Allah.” Du'ā and treatment work together — faith complements medicine, it doesn't replace it.</p><div class="src2">Tirmidhi (hasan)</div></article>
+      <article class="isl-card reveal"><h4><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Your worth is not your productivity</h4><p>“Allah does not look at your bodies or your forms, but He looks at your hearts and your deeds.” What you achieve, or how well you function, does not measure your value to your Creator.</p><div class="src2">Muslim 2564</div></article>
+      <article class="isl-card reveal"><h4><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Allah knows your capacity — and accounts for it</h4><p>No soul is burdened beyond what it can bear, and Islam explicitly recognises that a person's mental state affects their accountability. Allah is fully aware of what you carry, and is just and merciful about it.</p><div class="src2">Qur'an 2:286 · Abu Dawud &amp; Tirmidhi</div></article>
+      <article class="isl-card reveal"><h4><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Even prophets grieved — pain is not weak faith</h4><p>Prophet Yaʿqub wept until his sight faded; Prophet Yunus called out from deep distress; the Prophet ﷺ knew a “Year of Grief.” Feeling anxiety, sadness, or exhaustion does not diminish your faith.</p><div class="src2">Qur'an 12:84–86 · 21:87</div></article>
+    </div>
+
+    <div class="faith-group-title reveal"><span class="gi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>From the Qur'an</div>
+    <div class="faith-grid">
+      <article class="faith-card reveal">
+        <div class="star">۞</div>
+        <div class="ayah">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+        <div class="ref">Qur'an — Ash-Sharh 94:5–6</div>
+        <div class="trans">“So, truly, with hardship comes ease. Truly, with hardship comes ease.”</div>
+        <div class="why">On the hard days — the unfinished tasks, the overwhelm — ease is promised <em>alongside</em> the hardship, not only after it passes.</div>
+        <a class="listen" href="https://quran.com/94/5-6" target="_blank" rel="noopener noreferrer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Listen ↗</a>
+      </article>
+      <article class="faith-card reveal">
+        <div class="star">۞</div>
+        <div class="ayah">لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا</div>
+        <div class="ref">Qur'an — Al-Baqarah 2:286</div>
+        <div class="trans">“Allah does not burden a soul beyond what it can bear.”</div>
+        <div class="why">Your mind works differently, and your Lord knows your exact capacity. You are asked only for what is genuinely within your reach.</div>
+        <a class="listen" href="https://quran.com/2/286" target="_blank" rel="noopener noreferrer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Listen ↗</a>
+      </article>
+      <article class="faith-card reveal">
+        <div class="star">۞</div>
+        <div class="ayah">وَهُوَ مَعَكُمْ أَيْنَ مَا كُنْتُمْ</div>
+        <div class="ref">Qur'an — Al-Hadid 57:4</div>
+        <div class="trans">“And He is with you wherever you are.”</div>
+        <div class="why">In the scattered moments and the quiet ones alike, you are never truly alone.</div>
+        <a class="listen" href="https://quran.com/57/4" target="_blank" rel="noopener noreferrer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Listen ↗</a>
+      </article>
+      <article class="faith-card reveal">
+        <div class="star">۞</div>
+        <div class="ayah">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+        <div class="ref">Qur'an — Ar-Ra'd 13:28</div>
+        <div class="trans">“Truly, it is in the remembrance of Allah that hearts find rest.”</div>
+        <div class="why">When the mind races, turning to remembrance (dhikr) can be an anchor that steadies a restless heart.</div>
+        <a class="listen" href="https://quran.com/13/28" target="_blank" rel="noopener noreferrer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Listen ↗</a>
+      </article>
+      <article class="faith-card reveal">
+        <div class="star">۞</div>
+        <div class="ayah">وَلَا تَيْأَسُوا مِنْ رَوْحِ اللَّهِ</div>
+        <div class="ref">Qur'an — Yusuf 12:87</div>
+        <div class="trans">“And do not despair of the mercy of Allah.”</div>
+        <div class="why">However many times you feel you've fallen short, the door of hope never closes on you.</div>
+        <a class="listen" href="https://quran.com/12/87" target="_blank" rel="noopener noreferrer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Listen ↗</a>
+      </article>
+    </div>
+
+    <div class="faith-group-title reveal"><span class="gi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/></svg></span>From the Sunnah — agreed-upon hadith</div>
+    <div class="faith-grid">
+      <article class="faith-card hadith reveal">
+        <div class="mt">متفق عليه · Agreed upon</div>
+        <div class="ayah">الْمَاهِرُ بِالْقُرْآنِ مَعَ السَّفَرَةِ الْكِرَامِ الْبَرَرَةِ، وَالَّذِي يَقْرَأُ الْقُرْآنَ وَيَتَتَعْتَعُ فِيهِ وَهُوَ عَلَيْهِ شَاقٌّ لَهُ أَجْرَانِ</div>
+        <div class="ref">Bukhari &amp; Muslim</div>
+        <div class="trans">“The one proficient in the Qur'an is with the noble, righteous scribe-angels; and the one who recites it haltingly, finding it hard, has two rewards.”</div>
+        <div class="why">The very struggle to focus and push through is not a failing in Allah's sight — that difficulty earns a <strong>double reward</strong>.</div>
+      </article>
+      <article class="faith-card hadith reveal">
+        <div class="mt">متفق عليه · Agreed upon</div>
+        <div class="ayah">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلَا وَصَبٍ وَلَا هَمٍّ وَلَا حُزْنٍ وَلَا أَذًى وَلَا غَمٍّ حَتَّى الشَّوْكَةِ يُشَاكُهَا إِلَّا كَفَّرَ اللَّهُ بِهَا مِنْ خَطَايَاهُ</div>
+        <div class="ref">Bukhari &amp; Muslim</div>
+        <div class="trans">“No fatigue, illness, worry, grief, hurt, or distress befalls a Muslim — even the prick of a thorn — without Allah wiping away some of his sins by it.”</div>
+        <div class="why">The exhaustion and frustration you carry are not wasted; they are seen, and can be a means of mercy and cleansing.</div>
+      </article>
+      <article class="faith-card hadith reveal">
+        <div class="mt">متفق عليه · Agreed upon</div>
+        <div class="ayah">يَقُولُ اللَّهُ تَعَالَى: أَنَا عِنْدَ ظَنِّ عَبْدِي بِي</div>
+        <div class="ref">Bukhari &amp; Muslim (Hadith Qudsi)</div>
+        <div class="trans">Allah says: “I am as My servant expects Me to be.”</div>
+        <div class="why">Expect mercy; expect help. Hold on to a good opinion of your Lord, especially on the days you are hardest on yourself.</div>
+      </article>
+      <article class="faith-card hadith reveal">
+        <div class="mt">متفق عليه · Agreed upon</div>
+        <div class="ayah">لَلَّهُ أَرْحَمُ بِعِبَادِهِ مِنْ هَذِهِ بِوَلَدِهَا</div>
+        <div class="ref">Bukhari &amp; Muslim</div>
+        <div class="trans">Seeing a mother rush to her child, the Prophet ﷺ said: “Allah is more merciful to His servants than this woman is to her child.”</div>
+        <div class="why">Whatever guilt you feel for the things left undone, His mercy toward you is greater than a mother's love for her child.</div>
+      </article>
+      <article class="faith-card hadith reveal">
+        <div class="mt">متفق عليه · Agreed upon</div>
+        <div class="ayah">إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى</div>
+        <div class="ref">Bukhari &amp; Muslim</div>
+        <div class="trans">“Actions are but by intentions, and each person will have only what they intended.”</div>
+        <div class="why">On the days the results fall short of the effort, your sincere intention still counts fully — that is what is weighed.</div>
+      </article>
+    </div>
+
+    <div class="faith-group-title reveal"><span class="gi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 8c-2 0-4 1.5-4 4v8h8v-8c0-2.5-2-4-4-4zM7 12H5a2 2 0 0 0-2 2v6h4M17 12h2a2 2 0 0 1 2 2v6h-4"/></svg></span>Supplications for ease &amp; focus</div>
+    <p style="color:var(--grey);font-size:.96rem;margin:.5rem 0 0;max-width:var(--read)">Short du'ās to say before a hard task, or when the overwhelm hits. Sources are noted for each — two from the Qur'an, and two authentic prophetic supplications.</p>
+    <div class="faith-grid">
+      <article class="faith-card dua reveal">
+        <div class="star">۞</div>
+        <div class="ayah">رَبِّ اشْرَحْ لِي صَدْرِي ۝ وَيَسِّرْ لِي أَمْرِي</div>
+        <div class="translit">Rabbi-shraḥ lī ṣadrī, wa yassir lī amrī</div>
+        <div class="ref">Qur'an — Ta-Ha 20:25–26</div>
+        <div class="trans">“My Lord, expand my chest for me and ease my task for me.”</div>
+        <div class="why">The prayer of Musa (Moses ﷺ) before a daunting task — beautiful to say before anything you're dreading to start.</div>
+        <a class="listen" href="https://quran.com/20/25-26" target="_blank" rel="noopener noreferrer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Listen ↗</a>
+      </article>
+      <article class="faith-card dua reveal">
+        <div class="star">۞</div>
+        <div class="ayah">اللَّهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهُ سَهْلًا، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلًا</div>
+        <div class="translit">Allāhumma lā sahla illā mā jaʿaltahu sahlā, wa anta tajʿalu-l-ḥazna idhā shiʾta sahlā</div>
+        <div class="ref">Reported by Ibn Ḥibbān (authentic)</div>
+        <div class="trans">“O Allah, nothing is easy except what You make easy, and You make the hard, if You will, easy.”</div>
+        <div class="why">A short, powerful line to breathe out when a task feels impossibly heavy.</div>
+      </article>
+      <article class="faith-card dua reveal">
+        <div class="star">۞</div>
+        <div class="ayah">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ</div>
+        <div class="translit">Allāhumma innī aʿūdhu bika mina-l-hammi wa-l-ḥazan, wa-l-ʿajzi wa-l-kasal</div>
+        <div class="ref">Bukhari</div>
+        <div class="trans">“O Allah, I seek refuge in You from worry and grief, from incapacity and laziness.”</div>
+        <div class="why">The Prophet ﷺ taught this against the very weights ADHD can pile on — worry, overwhelm, and the paralysis that looks like laziness but isn't.</div>
+      </article>
+      <article class="faith-card dua reveal">
+        <div class="star">۞</div>
+        <div class="ayah">لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ</div>
+        <div class="translit">Lā ilāha illā anta subḥānaka innī kuntu mina-ẓ-ẓālimīn</div>
+        <div class="ref">Qur'an — Al-Anbiya 21:87</div>
+        <div class="trans">“There is no god but You; glory be to You. Indeed, I was among the wrongdoers.”</div>
+        <div class="why">The call of Yunus (Jonah ﷺ) from the depths — a lifeline for moments of despair or being overwhelmed.</div>
+        <a class="listen" href="https://quran.com/21/87" target="_blank" rel="noopener noreferrer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>Listen ↗</a>
+      </article>
+    </div>
+
+    <p class="faith-close reveal">Your worth was never measured by your productivity. You are seen, you are loved, and you are never alone.</p>
+  </div>
+</section>
+
+<!-- ADVOCATE -->
+<section id="advocate" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Self-advocacy</div>
+      <h2>How to advocate for yourself with a doctor</h2>
+      <p>Being taken seriously can be the hardest step — especially if you've been dismissed before. Here's how to walk in prepared and leave with a plan.</p>
+    </div>
+    <div class="adv-grid">
+      <article class="adv reveal"><div class="n">STEP 01</div><h3>Come with evidence, not just feelings</h3><p>A vague "I can't focus" is easy to wave away. Bring specifics.</p><ul><li>Concrete examples from work, study, home, and relationships</li><li>How long it's been happening — ideally since childhood</li><li>Any family history of ADHD or related conditions</li><li>Use the self-check and doctor summary on this site</li></ul></article>
+      <article class="adv reveal"><div class="n">STEP 02</div><h3>Name the impact across your life</h3><p>Diagnosis rests on impairment in more than one setting — so spell that out.</p><ul><li>Missed deadlines, lost jobs, money trouble</li><li>Strain on relationships, low self-esteem</li><li>Say it plainly: "this is affecting my daily functioning"</li></ul></article>
+      <article class="adv reveal"><div class="n">STEP 03</div><h3>Ask directly — and don't stop at "no"</h3><p>You are allowed to ask for exactly what you need.</p><ul><li>"I'd like to be assessed for ADHD," or ask for a referral</li><li>If you're dismissed, seek a second opinion or a specialist</li><li>A psychiatrist or psychologist can do a full assessment</li></ul></article>
+      <article class="adv reveal"><div class="n">STEP 04</div><h3>Treat medication as a process</h3><p>A medication that doesn't work is data, not failure — this is normal.</p><ul><li>Track each med, dose, and effect (use the tracker above)</li><li>Report side effects; ask about other options if one fails</li><li>There are several stimulant and non-stimulant choices</li><li>Don't give up after a single try</li></ul></article>
+    </div>
+    <p class="source-note reveal">You have the right to ask questions, request your records, and change providers if you're not being heard. Persistence isn't being difficult — it's advocating for your own health.</p>
+  </div>
+</section>
+
+<!-- HELP -->
+<section id="help" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">When to get help</div>
+      <h2>Where the line is</h2>
+      <p>Everyone is distractible and impulsive sometimes. It's worth speaking to a professional when the pattern is long-standing and it's costing you — at work, at school, in relationships, or in how you feel about yourself.</p>
+    </div>
+    <div class="help reveal">
+      <h3>Reach out to a GP or mental-health professional if…</h3>
+      <ul>
+        <li>The difficulties have been present since childhood, not just recently.</li>
+        <li>They show up in <strong>more than one area</strong> of life — home, work/school, and relationships.</li>
+        <li>They're causing real problems: missed deadlines, financial trouble, conflict, underachievement.</li>
+        <li>You're struggling with low mood, anxiety, or self-esteem that may be tied to years of coping.</li>
+      </ul>
+      <p style="margin:1.3rem 0 0;font-size:.98rem;color:var(--ink-soft)"><strong>If you're in crisis or thinking about harming yourself, this page can't help — contact your local emergency number or a crisis line right now.</strong> A diagnosis is a beginning, not a label: it's the door to support, strategies, and treatment that genuinely change daily life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<style>.support-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:2.2rem;text-align:center;max-width:44rem;margin:0 auto}.support-emoji{font-size:2.4rem;line-height:1}.support-card h2{margin:.6rem 0 .4rem}.support-card p{color:var(--grey);max-width:32rem;margin:0 auto 1.3rem}.kofi-btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.7rem;border-radius:999px;transition:transform .15s,filter .15s}.kofi-btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.aff-disc{font-size:.85rem;color:var(--grey);max-width:40rem}.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.6rem}@media(max-width:680px){.tools-grid{grid-template-columns:1fr}}.tool-card{display:flex;gap:1rem;align-items:flex-start;padding:1.15rem 1.25rem;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);text-decoration:none}.tool-card:hover{border-color:var(--accent)}.tool-emoji{font-size:1.7rem;flex:0 0 auto}.tool-t{font-weight:700;color:var(--ink)}.tool-d{font-size:.9rem;color:var(--grey);line-height:1.4;margin-top:.1rem}.tool-go{font-size:.8rem;color:var(--accent);margin-top:.35rem}</style><section id="gear" class="sec"><div class="wrap"><div class="sec-head reveal"><div class="eyebrow">Helpful tools</div><h2>Tools some people find helpful</h2><p class="aff-disc">Completely optional. Some links below may be affiliate links — if you buy through them it may support this free site, at no extra cost to you. Only things genuinely useful for ADHD are here.</p></div><div class="tools-grid"><a class="tool-card" href="https://www.amazon.com/s?k=visual+timer" target="_blank" rel="nofollow sponsored noopener"><span class="tool-emoji">⏱️</span><span><span class="tool-t">A visual timer</span><span class="tool-d">Watch time pass — helps with time blindness.</span><span class="tool-go">View →</span></span></a><a class="tool-card" href="https://www.amazon.com/s?k=noise+cancelling+headphones" target="_blank" rel="nofollow sponsored noopener"><span class="tool-emoji">🎧</span><span><span class="tool-t">Noise-cancelling headphones</span><span class="tool-d">Cut distractions and focus in noisy spaces.</span><span class="tool-go">View →</span></span></a><a class="tool-card" href="https://www.amazon.com/s?k=magnetic+weekly+planner+whiteboard" target="_blank" rel="nofollow sponsored noopener"><span class="tool-emoji">🗓️</span><span><span class="tool-t">A weekly whiteboard / planner</span><span class="tool-d">Get tasks out of your head and in front of your eyes.</span><span class="tool-go">View →</span></span></a><a class="tool-card" href="https://www.amazon.com/s?k=fidget+tools+for+adults" target="_blank" rel="nofollow sponsored noopener"><span class="tool-emoji">🧩</span><span><span class="tool-t">Fidget tools</span><span class="tool-d">A little movement can help focus and calm.</span><span class="tool-go">View →</span></span></a></div></div></section><section id="sources" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Sources &amp; further reading</div>
+      <h2>Where this comes from</h2>
+      <p>Everything here is drawn from mainstream medical and research bodies. For anything that affects your health, go to a professional and to primary sources like these — not a single web page.</p>
+    </div>
+    <div class="src-grid">
+      <a class="src reveal" href="https://www.cdc.gov/adhd/" target="_blank" rel="noopener noreferrer"><span class="org">CDC <span class="ext">↗</span></span><span class="desc">US public-health overview, data, and symptom criteria.</span></a>
+      <a class="src reveal" href="https://www.nice.org.uk/guidance/ng87" target="_blank" rel="noopener noreferrer"><span class="org">NICE (NG87) <span class="ext">↗</span></span><span class="desc">UK clinical guideline for diagnosis and management.</span></a>
+      <a class="src reveal" href="https://www.who.int/" target="_blank" rel="noopener noreferrer"><span class="org">WHO <span class="ext">↗</span></span><span class="desc">Global health guidance and the ICD classification.</span></a>
+      <a class="src reveal" href="https://www.psychiatry.org/patients-families/adhd" target="_blank" rel="noopener noreferrer"><span class="org">APA / DSM-5-TR <span class="ext">↗</span></span><span class="desc">The diagnostic manual's ADHD criteria, explained.</span></a>
+      <a class="src reveal" href="https://chadd.org/" target="_blank" rel="noopener noreferrer"><span class="org">CHADD <span class="ext">↗</span></span><span class="desc">Leading non-profit: education, support, and resources.</span></a>
+      <a class="src reveal" href="https://www.additudemag.com/" target="_blank" rel="noopener noreferrer"><span class="org">ADDitude <span class="ext">↗</span></span><span class="desc">Expert-reviewed articles for living well with ADHD.</span></a>
+    </div>
+    <div class="reviewed reveal"><span class="d"></span>Content last reviewed: August 2026 · General educational summary, not a substitute for professional care.</div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-adslot="foot"></div></div>
+<footer>
+  <div class="wrap">
+    <div class="fbrand"><span class="dot" style="width:12px;height:12px;border-radius:50%;background:var(--accent);display:inline-block"></span>ADHD Field Guide</div>
+    <p class="fnote">Built as a general educational overview. It is not medical advice and cannot diagnose, treat, or replace assessment by a qualified professional. Statistics are consensus estimates and vary by source and population. If anything here resonates, take it to a clinician — that's what it's for.</p>
+  <p class="fnote" style="margin-top:1rem"><a href="about.html" style="color:var(--accent)">About</a> · <a href="contact.html" style="color:var(--accent)">Contact</a> · <a href="privacy.html" style="color:var(--accent)">Privacy</a></p>
+  </div>
+</footer>
+
+<!-- COMMAND PALETTE -->
+<div class="cmdk-back" id="cmdkBack" role="dialog" aria-modal="true" aria-label="Search the guide">
+  <div class="cmdk">
+    <input type="text" id="cmdkInput" placeholder="Jump to a section or medication…" autocomplete="off" spellcheck="false">
+    <div class="cmdk-list" id="cmdkList"></div>
+  </div>
+</div>
+
+<!-- DOCTOR SUMMARY -->
+<div class="summary-overlay" id="summaryOverlay" role="dialog" aria-modal="true" aria-label="Summary for your doctor">
+  <div id="printSummary"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var root=document.documentElement;
+  function currentDark(){
+    var t=root.getAttribute('data-theme');
+    if(t) return t==='dark';
+    return window.matchMedia('(prefers-color-scheme:dark)').matches;
+  }
+
+  // ---- Preferences (text size, calm, readable font, theme) ----
+  var PKEY='adhd-prefs-v1', prefs={};
+  try{ prefs=JSON.parse(localStorage.getItem(PKEY)||'{}')||{}; }catch(e){ prefs={}; }
+  function savePrefs(){ try{ localStorage.setItem(PKEY,JSON.stringify(prefs)); }catch(e){} }
+
+  function applyPrefs(){
+    if(prefs.text){ root.setAttribute('data-text',prefs.text); } else { root.removeAttribute('data-text'); }
+    root.setAttribute('data-calm', prefs.calm?'on':'off');
+    root.setAttribute('data-readable', prefs.readable?'on':'off');
+    if(prefs.theme){ root.setAttribute('data-theme',prefs.theme); }
+    // sync controls
+    document.querySelectorAll('#segText button').forEach(function(b){
+      b.setAttribute('aria-pressed', (b.dataset.size||'')===(prefs.text||'') ? 'true':'false');
+    });
+    setSwitch('swCalm', !!prefs.calm);
+    setSwitch('swRead', !!prefs.readable);
+    setSwitch('swTheme', currentDark());
+  }
+  function setSwitch(id,on){ var el=document.getElementById(id); if(el) el.setAttribute('aria-pressed', on?'true':'false'); }
+
+  document.querySelectorAll('#segText button').forEach(function(b){
+    b.addEventListener('click',function(){ prefs.text=b.dataset.size||''; savePrefs(); applyPrefs(); });
+  });
+  document.getElementById('swCalm').addEventListener('click',function(){ prefs.calm=!prefs.calm; savePrefs(); applyPrefs(); });
+  document.getElementById('swRead').addEventListener('click',function(){ prefs.readable=!prefs.readable; savePrefs(); applyPrefs(); });
+  document.getElementById('swTheme').addEventListener('click',function(){
+    prefs.theme = currentDark() ? 'light' : 'dark'; savePrefs(); applyPrefs();
+  });
+  applyPrefs();
+
+  // ---- Accessibility panel open/close ----
+  var a11yBtn=document.getElementById('a11yBtn'), a11yPanel=document.getElementById('a11yPanel');
+  a11yBtn.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=a11yPanel.classList.toggle('open');
+    a11yBtn.setAttribute('aria-expanded', open?'true':'false');
+  });
+  document.addEventListener('click',function(e){
+    if(!a11yPanel.contains(e.target) && e.target!==a11yBtn){ a11yPanel.classList.remove('open'); a11yBtn.setAttribute('aria-expanded','false'); }
+  });
+
+  // ---- Scroll progress ----
+  var prog=document.getElementById('scrollProg');
+  function onScroll(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0 ? (window.scrollY/h*100) : 0)+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // ---- In-page navigation (works inside the merged app's frame too) ----
+  function scrollToId(id){ var el=id && document.getElementById(id); if(el){ el.scrollIntoView({behavior:'smooth',block:'start'}); return true; } return false; }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest && e.target.closest('a[href^="#"]');
+    if(a){ var href=a.getAttribute('href'); if(href.length>1 && document.getElementById(href.slice(1))){ e.preventDefault(); scrollToId(href.slice(1)); } }
+  },false);
+
+  // ---- Command palette ----
+  var idx=[
+    {nm:'Table of contents',hash:'#contents',kind:'Section'},
+    
+    {nm:'Track your medication trials',hash:'#tracker',kind:'Tool'},
+    {nm:'Advocate for yourself with a doctor',hash:'#advocate',kind:'Guide'},
+    {nm:'Basics — what ADHD is',hash:'#basics',kind:'Section'},
+    {nm:'Research & data',hash:'#science',kind:'Section'},
+    {nm:'Executive function',hash:'#science',kind:'Section'},
+    {nm:'Myths vs facts',hash:'#myths',kind:'Section'},
+    {nm:'Signs & red flags',hash:'#signs',kind:'Section'},
+    {nm:'Self-check',hash:'#check',kind:'Section'},
+    {nm:'Focus tools — Pomodoro & brain dump',hash:'#tools',kind:'Section'},
+    {nm:'Strategies that work',hash:'#cope',kind:'Section'},
+    {nm:'Living with ADHD',hash:'#living',kind:'Section'},
+    {nm:'Work & school',hash:'#living',kind:'Topic'},
+    {nm:'Relationships',hash:'#living',kind:'Topic'},
+    {nm:'Women & late diagnosis',hash:'#living',kind:'Topic'},
+    {nm:'Medications',hash:'#meds',kind:'Section'},
+    {nm:'Comparison table',hash:'#meds',kind:'Section'},
+    {nm:'Faith & reassurance — you are not alone',hash:'#faith',kind:'Section'},
+    {nm:'What Islam says about mental health & ADHD',hash:'#faith',kind:'Faith'},
+    {nm:'Quran verses',hash:'#faith',kind:'Faith'},
+    {nm:'Agreed-upon hadith (Bukhari & Muslim)',hash:'#faith',kind:'Faith'},
+    {nm:'Duas for ease & focus',hash:'#faith',kind:'Faith'},
+    {nm:'Get help — when to reach out',hash:'#help',kind:'Section'},
+    {nm:'Sources & further reading',hash:'#sources',kind:'Section'},
+    {nm:'Methylphenidate (Ritalin, Concerta)',hash:'#meds',kind:'Med'},
+    {nm:'Dexmethylphenidate (Focalin)',hash:'#meds',kind:'Med'},
+    {nm:'Amphetamine salts (Adderall)',hash:'#meds',kind:'Med'},
+    {nm:'Lisdexamfetamine (Vyvanse, Elvanse)',hash:'#meds',kind:'Med'},
+    {nm:'Dexamfetamine (Dexedrine)',hash:'#meds',kind:'Med'},
+    {nm:'Atomoxetine (Strattera)',hash:'#meds',kind:'Med'},
+    {nm:'Viloxazine (Qelbree)',hash:'#meds',kind:'Med'},
+    {nm:'Guanfacine & Clonidine (Intuniv, Kapvay)',hash:'#meds',kind:'Med'},
+    {nm:'Bupropion (Wellbutrin)',hash:'#meds',kind:'Med'}
+  ];
+  var back=document.getElementById('cmdkBack'), inp=document.getElementById('cmdkInput'), list=document.getElementById('cmdkList');
+  var active=0, results=idx.slice();
+  function renderList(){
+    if(!results.length){ list.innerHTML='<div class="cmdk-empty">No matches</div>'; return; }
+    list.innerHTML=results.map(function(r,i){
+      return '<div class="cmdk-item'+(i===active?' active':'')+'" data-i="'+i+'"><span class="nm">'+r.nm+'</span><span class="kind">'+r.kind+'</span></div>';
+    }).join('');
+  }
+  function filter(q){
+    q=q.trim().toLowerCase();
+    results = q ? idx.filter(function(r){return r.nm.toLowerCase().indexOf(q)>-1 || r.kind.toLowerCase().indexOf(q)>-1;}) : idx.slice();
+    active=0; renderList();
+  }
+  function openCmd(){ back.classList.add('open'); inp.value=''; filter(''); setTimeout(function(){inp.focus();},30); }
+  function closeCmd(){ back.classList.remove('open'); }
+  function goTo(r){ if(!r) return; closeCmd(); scrollToId(r.hash.slice(1)); }
+  document.getElementById('searchBtn').addEventListener('click',openCmd);
+  inp.addEventListener('input',function(){ filter(inp.value); });
+  inp.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){ e.preventDefault(); active=Math.min(active+1,results.length-1); renderList(); }
+    else if(e.key==='ArrowUp'){ e.preventDefault(); active=Math.max(active-1,0); renderList(); }
+    else if(e.key==='Enter'){ e.preventDefault(); goTo(results[active]); }
+    else if(e.key==='Escape'){ closeCmd(); }
+  });
+  list.addEventListener('click',function(e){
+    var it=e.target.closest('.cmdk-item'); if(it) goTo(results[+it.dataset.i]);
+  });
+  back.addEventListener('click',function(e){ if(e.target===back) closeCmd(); });
+  document.addEventListener('keydown',function(e){
+    if((e.metaKey||e.ctrlKey) && (e.key==='k'||e.key==='K')){ e.preventDefault(); back.classList.contains('open')?closeCmd():openCmd(); }
+  });
+
+  // ---- Pomodoro ----
+  var FOCUS=25*60, BREAK=5*60;
+  var mode='focus', remain=FOCUS, ticking=false, tid=null;
+  var face=document.getElementById('timerFace'), modeEl=document.getElementById('timerMode');
+  var startBtn=document.getElementById('timerStart'), switchBtn=document.getElementById('timerSwitch');
+  function fmt(s){ var m=Math.floor(s/60), r=s%60; return (m<10?'0':'')+m+':'+(r<10?'0':'')+r; }
+  function drawTimer(){
+    face.textContent=fmt(remain);
+    face.classList.toggle('break', mode==='break');
+    modeEl.textContent = mode==='focus'?'Focus session':'Break';
+  }
+  function tick(){
+    if(remain>0){ remain--; drawTimer(); }
+    else{ pause(); try{ if(window.AudioContext||window.webkitAudioContext){ var ac=new (window.AudioContext||window.webkitAudioContext)(); var o=ac.createOscillator(); var g=ac.createGain(); o.connect(g); g.connect(ac.destination); o.frequency.value=660; g.gain.value=.08; o.start(); setTimeout(function(){o.stop();ac.close();},450);} }catch(e){} }
+  }
+  function play(){ if(ticking) return; ticking=true; startBtn.textContent='Pause'; tid=setInterval(tick,1000); }
+  function pause(){ ticking=false; startBtn.textContent='Start'; if(tid) clearInterval(tid); }
+  startBtn.addEventListener('click',function(){ ticking?pause():play(); });
+  document.getElementById('timerReset').addEventListener('click',function(){ pause(); remain=(mode==='focus'?FOCUS:BREAK); drawTimer(); });
+  switchBtn.addEventListener('click',function(){
+    pause(); mode=(mode==='focus'?'break':'focus'); remain=(mode==='focus'?FOCUS:BREAK);
+    switchBtn.textContent = mode==='focus'?'Switch to break':'Switch to focus'; drawTimer();
+  });
+  drawTimer();
+
+  // ---- Brain dump ----
+  var dump=document.getElementById('braindump'), dumpStatus=document.getElementById('dumpStatus'), DKEY='adhd-braindump-v1';
+  try{ dump.value=localStorage.getItem(DKEY)||''; }catch(e){}
+  var dumpTimer=null;
+  dump.addEventListener('input',function(){
+    dumpStatus.textContent='Saving…';
+    clearTimeout(dumpTimer);
+    dumpTimer=setTimeout(function(){ try{ localStorage.setItem(DKEY,dump.value); }catch(e){} dumpStatus.textContent='Saved locally'; },400);
+  });
+  document.getElementById('dumpClear').addEventListener('click',function(){
+    dump.value=''; try{ localStorage.removeItem(DKEY); }catch(e){} dumpStatus.textContent='Cleared';
+  });
+
+  // ---- Sortable comparison table ----
+  var table=document.getElementById('cmpTable');
+  if(table){
+    var tbody=table.querySelector('tbody');
+    var rowsArr=[].slice.call(tbody.querySelectorAll('tr'));
+    table.querySelectorAll('thead th').forEach(function(th,col){
+      th.addEventListener('click',function(){
+        var cur=th.getAttribute('aria-sort'), dir=(cur==='ascending')?'descending':'ascending';
+        table.querySelectorAll('thead th').forEach(function(o){o.setAttribute('aria-sort','none');});
+        th.setAttribute('aria-sort',dir);
+        var isNum=th.dataset.type==='num';
+        rowsArr.sort(function(a,b){
+          var ca=a.children[col], cb=b.children[col];
+          var va=isNum ? parseFloat(ca.dataset.num) : (ca.dataset.sort||ca.textContent).trim().toLowerCase();
+          var vb=isNum ? parseFloat(cb.dataset.num) : (cb.dataset.sort||cb.textContent).trim().toLowerCase();
+          if(va<vb) return dir==='ascending'?-1:1;
+          if(va>vb) return dir==='ascending'?1:-1;
+          return 0;
+        });
+        rowsArr.forEach(function(r){ tbody.appendChild(r); });
+      });
+    });
+  }
+
+  // ---- Medication tracker ----
+  function escHtml(s){ return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  var MLKEY='adhd-medlog-v1';
+  var mlOutcomes={good:'Helped a lot',some:'Helped somewhat',none:'No effect',bad:'Bad side effects',stop:'Stopped it'};
+  var medLogEl=document.getElementById('medLog');
+  function fmtMedDate(ts){try{var d=new Date(ts);return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})+' · '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false});}catch(e){return '';}}
+  function loadMedlog(){ try{ return JSON.parse(localStorage.getItem(MLKEY)||'[]')||[]; }catch(e){ return []; } }
+  function saveMedlog(a){ try{ localStorage.setItem(MLKEY,JSON.stringify(a)); }catch(e){} }
+  function renderMedlog(){
+    var a=loadMedlog();
+    if(!a.length){ medLogEl.innerHTML='<div class="medlog-empty">No entries yet — add the medications you\'ve tried above.</div>'; return; }
+    medLogEl.innerHTML=a.map(function(m,i){
+      return '<div class="medlog-item"><div class="mi"><div class="nm">'+escHtml(m.t)+'</div>'+(m.n?'<div class="nt">'+escHtml(m.n)+'</div>':'')+(m.ts?'<div class="ml-date">'+fmtMedDate(m.ts)+'</div>':'')+'</div><span class="oc '+m.o+'">'+mlOutcomes[m.o]+'</span><button class="del" data-i="'+i+'" aria-label="Remove entry">✕</button></div>';
+    }).join('');
+  }
+  function addMed(){
+    var nameEl=document.getElementById('medName'), notesEl=document.getElementById('medNotes');
+    var t=nameEl.value.trim(); if(!t) return;
+    var a=loadMedlog(); a.push({t:t,o:document.getElementById('medOutcome').value,n:notesEl.value.trim(),ts:Date.now()}); saveMedlog(a);
+    nameEl.value=''; notesEl.value=''; nameEl.focus(); renderMedlog();
+  }
+  document.getElementById('medAdd').addEventListener('click',addMed);
+  ['medName','medNotes'].forEach(function(id){ document.getElementById(id).addEventListener('keydown',function(e){ if(e.key==='Enter') addMed(); }); });
+  medLogEl.addEventListener('click',function(e){ var b=e.target.closest('.del'); if(!b) return; var a=loadMedlog(); a.splice(+b.dataset.i,1); saveMedlog(a); renderMedlog(); });
+  renderMedlog();
+
+  // ---- Doctor summary ----
+  var sumOverlay=document.getElementById('summaryOverlay'), sumBox=document.getElementById('printSummary');
+  document.getElementById('summaryBtn').addEventListener('click',function(){
+    var checked=[].slice.call(document.querySelectorAll('#checkGrid input:checked')).map(function(b){
+      return b.parentElement.querySelector('.t').textContent;
+    });
+    var d=new Date().toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'});
+    var itemsHtml = checked.length ? '<ul>'+checked.map(function(t){return '<li>'+t+'</li>';}).join('')+'</ul>'
+                                   : '<p class="none">No statements were ticked in the self-reflection.</p>';
+    var mlog=loadMedlog();
+    var mlHtml = mlog.length ? '<h3>Medications I have tried</h3><ul>'+mlog.map(function(m){return '<li>'+escHtml(m.t)+' — '+mlOutcomes[m.o]+(m.ts?' \u00b7 '+fmtMedDate(m.ts):'')+(m.n?' ('+escHtml(m.n)+')':'')+'</li>';}).join('')+'</ul>' : '';
+    sumBox.innerHTML =
+      '<h2>ADHD self-reflection summary</h2>'+
+      '<div class="meta">Prepared '+d+' · '+checked.length+' of 12 statements ticked</div>'+
+      '<h3>Experiences I identified with over the past 6 months</h3>'+
+      itemsHtml+
+      mlHtml+
+      '<h3>What I would like to discuss</h3>'+
+      '<ul><li>Whether these patterns are worth a formal assessment</li><li>How long they have been present and how they affect daily life</li><li>Next steps, options, and any concerns I have</li></ul>'+
+      '<div class="disc"><strong>Note for the reader:</strong> This is a personal, self-completed reflection generated from an educational website. It is <em>not</em> a diagnostic tool, screening questionnaire, or medical record, and should be interpreted only alongside a proper clinical assessment.</div>'+
+      '<div class="sum-actions"><button class="go" id="doPrint">Print / Save as PDF</button><button class="close" id="closeSum">Close</button></div>';
+    sumOverlay.classList.add('open');
+    document.getElementById('doPrint').addEventListener('click',function(){ window.print(); });
+    document.getElementById('closeSum').addEventListener('click',function(){ sumOverlay.classList.remove('open'); });
+  });
+  sumOverlay.addEventListener('click',function(e){ if(e.target===sumOverlay) sumOverlay.classList.remove('open'); });
+
+  // ---- Signs toggle ----
+
+  // ---- Signs toggle ----
+  var tabs=document.querySelectorAll('.toggle button');
+  var adult=document.getElementById('flagsAdult'), child=document.getElementById('flagsChild');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      tabs.forEach(function(b){b.setAttribute('aria-selected','false');});
+      btn.setAttribute('aria-selected','true');
+      var isAdult=btn.dataset.group==='adult';
+      adult.hidden=!isAdult; child.hidden=isAdult;
+    });
+  });
+
+  // ---- Medication filter ----
+  var medTabs=document.querySelectorAll('.med-filter button');
+  var medCards=document.querySelectorAll('#medGrid .medcard');
+  medTabs.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      medTabs.forEach(function(b){b.setAttribute('aria-selected','false');});
+      btn.setAttribute('aria-selected','true');
+      var f=btn.dataset.filter;
+      medCards.forEach(function(c){
+        c.classList.toggle('hide', f!=='all' && c.dataset.cat!==f);
+      });
+    });
+  });
+
+  // ---- Self-check ----
+  var items=[
+    "I often start tasks with enthusiasm but struggle to finish them",
+    "I frequently lose track of time or misjudge how long things take",
+    "I regularly misplace everyday items (keys, phone, wallet)",
+    "My mind feels restless or racing, even when I'm sitting still",
+    "I put off boring-but-important tasks until the last possible moment",
+    "I interrupt people or blurt things out before thinking",
+    "I get intensely absorbed in some things and can't engage with others",
+    "Everyday admin (forms, emails, errands) piles up and overwhelms me",
+    "My emotions can feel bigger and faster than the situation warrants",
+    "I'm easily pulled off-task by distractions around me",
+    "I make impulsive decisions or purchases I later regret",
+    "I've felt this way for as long as I can remember, not just lately"
+  ];
+  var grid=document.getElementById('checkGrid');
+  var scoreEl=document.getElementById('score');
+  var fill=document.getElementById('fill');
+  var msg=document.getElementById('msg');
+  var KEY='adhd-selfcheck-v1';
+  var saved={};
+  try{ saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ saved={}; }
+
+  var checkSvg='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+
+  items.forEach(function(text,i){
+    var lab=document.createElement('label');
+    lab.className='ck';
+    var isChecked = saved[i]===true;
+    lab.innerHTML='<input type="checkbox" data-i="'+i+'"'+(isChecked?' checked':'')+'><span class="box">'+checkSvg+'</span><span class="t">'+text+'</span>';
+    grid.appendChild(lab);
+  });
+
+  function update(){
+    var boxes=grid.querySelectorAll('input');
+    var n=0, state={};
+    boxes.forEach(function(b){ if(b.checked){n++; state[b.dataset.i]=true;} });
+    scoreEl.textContent=n;
+    fill.style.width=(n/items.length*100)+'%';
+    if(n===0) msg.textContent='Tick the statements that ring true for you.';
+    else if(n<=3) msg.textContent='A few of these are common for everyone. If they rarely disrupt your life, there may be little to worry about.';
+    else if(n<=6) msg.textContent='A noticeable cluster. If these are persistent and get in your way, a chat with a professional could be worthwhile.';
+    else msg.textContent='Many of these resonate. This isn’t a diagnosis — but it’s a strong nudge to book an assessment with a qualified clinician.';
+    try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+  }
+  grid.addEventListener('change',update);
+  document.getElementById('resetBtn').addEventListener('click',function(){
+    grid.querySelectorAll('input').forEach(function(b){b.checked=false;});
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    update();
+  });
+  update();
+
+  // ---- Reveal on scroll ----
+  var els=document.querySelectorAll('.reveal:not(.in)');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    },{threshold:.12});
+    els.forEach(function(el){io.observe(el);});
+  }else{
+    els.forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
+
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+<style>.auth-back{position:fixed;inset:0;z-index:130;background:rgba(10,14,20,.55);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:1rem}.auth-back.open{display:flex}.auth-modal{position:relative;width:100%;max-width:400px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-lg);padding:1.9rem}.auth-modal h3{font-family:"Bricolage Grotesque",sans-serif;font-size:1.3rem;margin:0 0 .4rem;color:var(--ink)}.auth-sub{font-size:.9rem;color:var(--grey);margin:0 0 1.1rem;line-height:1.55}.auth-modal label{display:flex;flex-direction:column;gap:.35rem;font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--grey);margin-bottom:.8rem}.auth-modal input{font-family:"Source Serif 4",serif;font-size:1rem;padding:.65rem .8rem;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);color:var(--ink);outline:none}.auth-modal input:focus{border-color:var(--accent)}.auth-primary{width:100%;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1rem;padding:.75rem;border-radius:10px;background:var(--accent);color:#fff;border:none;cursor:pointer;margin-top:.3rem}.auth-primary:disabled{opacity:.6;cursor:default}.auth-msg{font-size:.85rem;min-height:1.1em;margin:.3rem 0 .5rem;line-height:1.4}.auth-msg.err{color:var(--red)}.auth-msg.ok{color:var(--green)}.auth-alt{display:flex;justify-content:space-between;gap:.6rem;margin-top:1rem;flex-wrap:wrap}.auth-link{background:none;border:none;color:var(--accent);font-size:.85rem;cursor:pointer;padding:0;font-family:"Source Serif 4",serif}.auth-close{position:absolute;top:.7rem;right:.9rem;background:none;border:none;color:var(--grey);font-size:1.1rem;cursor:pointer;line-height:1}[dir="rtl"] .auth-close{right:auto;left:.9rem}.auth-danger{width:100%;margin-top:.8rem;font-family:"Source Serif 4",serif;font-size:.85rem;padding:.55rem;border-radius:9px;background:transparent;color:var(--red);border:1px solid var(--line);cursor:pointer}.auth-danger:hover{border-color:var(--red)}.auth-danger:disabled{opacity:.6;cursor:default}.auth-privacy{margin-top:1rem;font-size:.78rem;color:var(--grey);text-align:center}.auth-privacy a{color:var(--accent)}</style><style>.ad-slot{display:none;max-width:100%;margin:2.5rem auto;text-align:center}.ad-slot::before{content:"Advertisement";display:block;font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);margin-bottom:.4rem;opacity:.65}[dir="rtl"] .ad-slot::before{content:"إعلان";letter-spacing:normal}.ad-slot .adsbygoogle{display:block;min-height:90px}.ad-consent{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:140;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg);padding:1rem 1.2rem;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:.9rem;color:var(--ink-soft);line-height:1.5}.ad-consent .acm{flex:1;min-width:220px}.ad-consent a{color:var(--accent)}.ad-consent .acb{display:flex;gap:.5rem;flex-wrap:wrap}.ad-consent button{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.85rem;padding:.5rem .95rem;border-radius:8px;cursor:pointer;border:1px solid var(--line)}.ad-consent .ac-accept{background:var(--accent);color:#fff;border-color:var(--accent)}.ad-consent .ac-decline{background:transparent;color:var(--ink)}@media(max-width:560px){.ad-consent{left:.5rem;right:.5rem;bottom:.5rem;padding:.9rem}}</style><div class="auth-back" id="authBack" role="dialog" aria-modal="true" aria-label="Account"><div class="auth-modal"><button class="auth-close" id="authClose" aria-label="Close">✕</button><div id="authSignedOut"><h3 id="authTitle">Sign in to save your progress</h3><p class="auth-sub">Optional — but your ADHD brain shouldn’t have to remember everything. A free account keeps your medication tracker, self-check, notes, and custom layout safe and synced across your devices. The guide stays free either way.</p><form id="authForm"><label>Email<input type="email" id="authEmail" autocomplete="email" required></label><label>Password<input type="password" id="authPass" autocomplete="current-password" minlength="6" required></label><div class="auth-msg" id="authMsg"></div><button type="submit" class="auth-primary" id="authSubmit">Sign in</button></form><div class="auth-alt"><button class="auth-link" id="authToggle">New here? Create an account</button><button class="auth-link" id="authForgot">Forgot password?</button></div></div><div id="authSignedIn" hidden><h3>You're signed in</h3><p class="auth-sub" id="authWho"></p><p class="auth-sub">Your progress syncs automatically across your devices.</p><button class="auth-primary" id="authSignout">Sign out</button><button class="auth-danger" id="authDelete">Delete my account &amp; data</button></div><div class="auth-privacy"><a href="privacy.html">Privacy &amp; data policy</a></div></div></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="analytics.js"></script><script src="auth.js"></script><script src="ads.js"></script>
+<script src="personalize.js"></script>
+<script src="signup-nudge.js"></script>
+<script src="bookmarks.js"></script>
+<script src="reports.js"></script>
+<script src="save-limit.js"></script>
+</html>

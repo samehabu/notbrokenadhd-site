@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacy — The ADHD Field Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{--paper:#eef1f5;--surface:#fff;--ink:#181f2a;--ink-soft:#3a4351;--grey:#59626f;--line:#d9dfe6;--accent:#f2551f;--amber:#c9781b;--amber-soft:#fbe6cf}
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#11151c;--surface:#1a202a;--ink:#eef2f6;--ink-soft:#c3ccd6;--grey:#94a0ad;--line:#2c353f;--accent:#ff6a3d;--amber:#e0a144;--amber-soft:#31281a}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;line-height:1.7;font-size:18px}
+  .wrap{max-width:56ch;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+  a{color:var(--accent)}
+  .back{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;display:inline-block;margin-bottom:2rem}
+  h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2.2rem;line-height:1.1;letter-spacing:-.02em;margin:0 0 .4rem}
+  h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1.25rem;margin:2.2rem 0 .5rem;color:var(--ink)}
+  p,li{color:var(--ink-soft)}
+  .eff{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--grey);margin:0 0 1.5rem}
+  ul{padding-left:1.2rem}
+  li{margin:.35rem 0}
+  strong{color:var(--ink)}
+  .ownernote{background:var(--amber-soft);border:1px dashed var(--amber);border-radius:12px;padding:1rem 1.2rem;margin-bottom:2rem;font-size:.9rem;color:var(--ink-soft)}
+  .ownernote b{color:var(--ink)}
+  footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.2rem;font-size:.85rem;color:var(--grey)}
+</style>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Back to the guide</a>
+
+  <h1>Privacy &amp; your data</h1>
+  <p class="eff">Effective date: August 2026 · Last updated: August 2026</p>
+
+  <p>This ADHD guide is an educational resource. Your privacy matters here — especially because health is a sensitive topic. This page explains, in plain language, what is and isn't collected.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>You can read the entire guide <strong>without an account and without giving any information</strong>.</li>
+    <li>Anything you fill in (self-check, medication tracker, notes) is saved <strong>on your own device</strong> unless you choose to create an account.</li>
+    <li>We don't sell or share your data, run ads, or track you across the web.</li>
+  </ul>
+
+  <h2>Information collected</h2>
+  <p><strong>Without an account:</strong> nothing is sent to us. Your self-check answers, medication log, notes, and display preferences are stored only in your browser (via <em>local storage</em>) on the device you use. Clearing your browser data removes them.</p>
+  <p><strong>With an optional account:</strong> if you choose to sign in to sync across devices, we store:</p>
+  <ul>
+    <li>your <strong>email address</strong> (to sign you in), and</li>
+    <li>the <strong>progress data you choose to save</strong> (self-check, tracker, notes).</li>
+  </ul>
+  <p>Accounts and sign-in are handled by <strong>Supabase</strong>, our authentication and database provider. Your password is hashed by Supabase — this site never sees or stores your raw password.</p>
+
+  <h2>How it's used</h2>
+  <p>Solely to provide the service you asked for: to sign you in and sync your saved progress between your own devices. That's it. No advertising, no profiling, no selling, no sharing with third parties beyond the hosting/auth provider needed to run the site.</p>
+
+  <h2>Storage &amp; security</h2>
+  <ul>
+    <li>Account data is stored with Supabase and transmitted over encrypted connections (HTTPS).</li>
+    <li>Access rules ensure each account can only ever read or change <strong>its own</strong> data.</li>
+    <li>No system is perfectly secure, so we keep what we collect to the minimum — an email and your own saved progress.</li>
+  </ul>
+
+  <h2>Cookies &amp; local storage</h2>
+  <p>This site uses your browser's <em>local storage</em> to remember your preferences and (if you don't sign in) your saved progress. If you sign in, a secure session token is also stored so you stay logged in.</p>
+
+  <h2>Advertising</h2>
+  <p>This site may show ads to stay free. If ads are enabled, they are provided by <strong>Google AdSense</strong>, and:</p>
+  <ul>
+    <li>No ad and no advertising cookie loads until you make a choice on the consent banner.</li>
+    <li>Choosing <strong>"Non-personalised"</strong> shows ads without personalisation cookies.</li>
+    <li>Google may use cookies to serve ads based on your visits to this and other sites; you can review and control this at <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google Ad Center</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's ads policy</a>.</li>
+    <li>We block sensitive ad categories where possible and keep ads out of the personal, faith, and crisis sections.</li>
+  </ul>
+
+  <h2>Your choices &amp; rights</h2>
+  <ul>
+    <li><strong>Use it anonymously</strong> — never create an account.</li>
+    <li><strong>Delete everything, anytime</strong> — open the sign-in panel and choose <em>"Delete my account &amp; data."</em> This permanently removes your account and all synced data. To clear device-only data, clear your browser storage.</li>
+    <li><strong>Access or correct</strong> your data, or ask a question — contact us below.</li>
+    <li>Depending on where you live, you may have additional rights (access, portability, erasure, objection). We honour these.</li>
+  </ul>
+
+  <h2>Data retention</h2>
+  <p>Account data is kept until you delete your account. Device-only data lives on your device until you clear it.</p>
+
+  <h2>Children</h2>
+  <p>This guide is intended for a general adult and teenage audience. It is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the date above will be updated. Meaningful changes will be noted on this page.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about your privacy or data? Contact <strong><a href="mailto:notbrokenadhd@gmail.com">notbrokenadhd@gmail.com</a></strong>.</p>
+
+  <footer>This page is provided for transparency and is not medical or legal advice.</footer>
+</div>
+</body>
+</html>

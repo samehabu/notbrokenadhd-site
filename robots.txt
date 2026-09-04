@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace https://notbrokenadhd.com with your real domain (see SEO_SETUP.md)
+Sitemap: https://notbrokenadhd.com/sitemap.xml
