@@ -5,7 +5,7 @@
   "use strict";
   var isAr = document.documentElement.dir === 'rtl';
   var KEY = 'adhd-bookmarks-v1';
-  var SKIP = { illustrated: 1, downloads: 1, contents: 1, sources: 1, gear: 1, experience: 1 };
+  var SKIP = { illustrated: 1, downloads: 1, contents: 1, sources: 1, gear: 1, experience: 1, brainmap: 1 };
 
   var T = isAr ? {
     savedBtn: 'المحفوظات', title: 'أقسامك المحفوظة',

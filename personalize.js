@@ -9,7 +9,7 @@
   // Reorderable / hideable sections (the readable content block, in default order)
   var SECTIONS = isAr ? [
     { id: 'basics', label: 'ما هو ADHD' }, { id: 'science', label: 'الأدلة' },
-    { id: 'signs', label: 'العلامات' }, { id: 'myths', label: 'الخرافات' },
+    { id: 'signs', label: 'العلامات' }, { id: 'diagnosis', label: 'كيف يُشخَّص' }, { id: 'agecompare', label: 'الأطفال والبالغون' }, { id: 'myths', label: 'الخرافات' },
     { id: 'check', label: 'الاختبار الذاتي' }, { id: 'tools', label: 'أدوات التركيز' },
     { id: 'cope', label: 'استراتيجيات' }, { id: 'living', label: 'في الحياة اليومية' },
     { id: 'meds', label: 'الأدوية' }, { id: 'tracker', label: 'متتبّع الأدوية' },
@@ -17,7 +17,7 @@
     { id: 'help', label: 'متى تطلب المساعدة' }
   ] : [
     { id: 'basics', label: 'What ADHD is' }, { id: 'science', label: 'The evidence' },
-    { id: 'signs', label: 'Signs' }, { id: 'myths', label: 'Myths' },
+    { id: 'signs', label: 'Signs' }, { id: 'diagnosis', label: 'How it’s diagnosed' }, { id: 'agecompare', label: 'Children vs adults' }, { id: 'myths', label: 'Myths' },
     { id: 'check', label: 'Self-check' }, { id: 'tools', label: 'Focus tools' },
     { id: 'cope', label: 'Strategies' }, { id: 'living', label: 'In real life' },
     { id: 'meds', label: 'Medications' }, { id: 'tracker', label: 'Med tracker' },
