@@ -1,5 +1,5 @@
 /* ADHD Field Guide - offline service worker (network-first) */
-const CACHE = 'adhd-guide-v6';
+const CACHE = 'adhd-guide-v8';
 const ASSETS = ['./', './index.html', './ar.html', './manifest.json', './manifest-ar.json', './icon-192.png', './icon-512.png', './config.js', './auth.js', './personalize.js', './signup-nudge.js', './bookmarks.js', './brain.js', './reports.js', './save-limit.js', './reveal-fix.js', './ads.js', './analytics.js'];
 
 self.addEventListener('install', (e) => {
