@@ -1638,7 +1638,7 @@
 
   var els=document.querySelectorAll('.reveal:not(.in)');
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(entries){ entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }); },{threshold:.12});
+    var io=new IntersectionObserver(function(entries){ entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }); },{threshold:0,rootMargin:"0px 0px -4% 0px"});
     els.forEach(function(el){io.observe(el);});
   }else{ els.forEach(function(el){el.classList.add('in');}); }
 })();
@@ -1651,4 +1651,5 @@
 <script src="brain.js"></script>
 <script src="reports.js"></script>
 <script src="save-limit.js"></script>
+<script src="reveal-fix.js"></script>
 </html>
