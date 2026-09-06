@@ -1599,7 +1599,7 @@
 
   var tabs=document.querySelectorAll('.toggle:not(.med-filter) button');
   var adult=document.getElementById('flagsAdult'), child=document.getElementById('flagsChild');
-  tabs.forEach(function(btn){ btn.addEventListener('click',function(){ tabs.forEach(function(b){b.setAttribute('aria-selected','false');}); btn.setAttribute('aria-selected','true'); var isAdult=btn.dataset.group==='adult'; adult.hidden=!isAdult; child.hidden=isAdult; }); });
+  tabs.forEach(function(btn){ btn.addEventListener('click',function(){ tabs.forEach(function(b){b.setAttribute('aria-selected','false');}); btn.setAttribute('aria-selected','true'); var isAdult=btn.dataset.group==='adult'; adult.hidden=!isAdult; child.hidden=isAdult; var _shown=isAdult?adult:child; [].forEach.call(_shown.querySelectorAll('.reveal'),function(el){el.classList.add('in');}); }); });
 
   var medTabs=document.querySelectorAll('.med-filter button');
   var medCards=document.querySelectorAll('#medGrid .medcard');

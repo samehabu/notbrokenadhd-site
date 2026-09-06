@@ -1628,6 +1628,8 @@
       btn.setAttribute('aria-selected','true');
       var isAdult=btn.dataset.group==='adult';
       adult.hidden=!isAdult; child.hidden=isAdult;
+      var _shown=isAdult?adult:child;
+      [].forEach.call(_shown.querySelectorAll('.reveal'),function(el){el.classList.add('in');});
     });
   });
 
