@@ -5,7 +5,8 @@
 (function () {
   "use strict";
   var LIMIT = 2;
-  var isAr = document.documentElement.dir === 'rtl';
+  var isHe = document.documentElement.lang === 'he';
+  var isAr = document.documentElement.dir === 'rtl' && !isHe;
 
   function signedIn() { var si = document.getElementById('authSignedIn'); return !!(si && si.hidden === false); }
   function accountsOn() { var b = document.getElementById('authBtn'); return !!(b && getComputedStyle(b).display !== 'none'); }
@@ -16,7 +17,10 @@
   var trackerBox = (document.getElementById('medLog') || {}).parentNode;
   if (!nameEl || !trackerBox) return;
 
-  var T = isAr ? {
+  var T = isHe ? {
+    msg: 'שמרת שתי תרופות — זהו המגבלה החינמית ללא חשבון. צור חשבון חינמי כדי להמשיך להוסיף ולסנכרן את היומן שלך בכל המכשירים. (חינם לגמרי, ושתי הראשונות נשמרות לך.)',
+    cta: 'צור חשבון חינמי', close: 'סגירה'
+  } : isAr ? {
     msg: 'حفظت دواءين — وهو الحدّ المجاني دون حساب. أنشئ حساباً مجانياً لمواصلة الإضافة ومزامنة سجلّك عبر كل أجهزتك. (مجاني تماماً، وأول دواءين محفوظان لك.)',
     cta: 'أنشئ حساباً مجانياً', close: 'إغلاق'
   } : {
@@ -52,7 +56,7 @@
     trackerBox.appendChild(gate);
     gate.querySelector('.g-cta').addEventListener('click', function () {
       var ab = document.getElementById('authBtn'); if (ab) ab.click();
-      var tog = document.getElementById('authToggle'), hint = isAr ? 'جديد' : 'New here';
+      var tog = document.getElementById('authToggle'), hint = isHe ? 'חדש כאן' : isAr ? 'جديد' : 'New here';
       if (tog && tog.textContent.indexOf(hint) > -1) tog.click();
     });
     gate.querySelector('.g-no').addEventListener('click', removeGate);

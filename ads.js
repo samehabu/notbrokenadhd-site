@@ -11,8 +11,12 @@
   // Not set up → hide the slots, show no banner, set no cookies.
   if (!configured) { slots.forEach(function (s) { s.style.display = 'none'; }); return; }
 
-  var isAr = document.documentElement.dir === 'rtl';
-  var T = isAr ? {
+  var isHe = document.documentElement.lang === 'he';
+  var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var T = isHe ? {
+    msg: 'אנחנו מציגים פרסומות כדי לשמור על המדריך הזה חינמי. לאשר פרסומות מותאמות אישית (הן משתמשות בעוגיות)? המדריך נשאר חינמי בכל מקרה.',
+    accept: 'אישור', decline: 'לא מותאמות אישית', privacy: 'פרטיות'
+  } : isAr ? {
     msg: 'نعرض إعلانات لإبقاء هذا الدليل مجانياً. هل توافق على إعلانات مخصّصة (تستخدم الكوكيز)؟ يبقى الدليل مجانياً في الحالتين.',
     accept: 'أوافق', decline: 'إعلانات غير مخصّصة', privacy: 'الخصوصية'
   } : {
@@ -74,7 +78,7 @@
     banner.className = 'ad-consent';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Ad consent');
-    var priv = isAr ? 'privacy-ar.html' : 'privacy.html';
+    var priv = isHe ? 'privacy-he.html' : isAr ? 'privacy-ar.html' : 'privacy.html';
     banner.innerHTML =
       '<span class="acm">' + T.msg + ' <a href="' + priv + '">' + T.privacy + '</a></span>' +
       '<span class="acb"><button type="button" class="ac-decline">' + T.decline + '</button>' +

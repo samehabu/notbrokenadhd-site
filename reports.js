@@ -3,17 +3,29 @@
    Reuses the summary overlay + print. Reads the (synced) medication log. */
 (function () {
   "use strict";
-  var isAr = document.documentElement.dir === 'rtl';
+  var isHe = document.documentElement.lang === 'he';
+  var isAr = document.documentElement.dir === 'rtl' && !isHe;
   var sumBtn = document.getElementById('summaryBtn');
   var overlay = document.getElementById('summaryOverlay');
   var box = document.getElementById('printSummary');
   if (!sumBtn || !overlay || !box) return;
 
-  var OUT = isAr
+  var OUT = isHe
+    ? { good: 'עזר מאוד', some: 'עזר במעט', none: 'ללא השפעה', bad: 'תופעות לוואי', stop: 'הפסקתי' }
+    : isAr
     ? { good: 'جيد جداً', some: 'ساعد قليلاً', none: 'بلا أثر', bad: 'آثار جانبية', stop: 'أوقفته' }
     : { good: 'Helped a lot', some: 'Helped somewhat', none: 'No effect', bad: 'Bad side effects', stop: 'Stopped it' };
 
-  var L = isAr ? {
+  var L = isHe ? {
+    wk: '📅 סיכום שבועי', mo: '📅 סיכום חודשי',
+    wkTitle: 'סיכום תרופות שבועי', moTitle: 'סיכום תרופות חודשי',
+    prep: 'הוכן ב־ ', last: 'ב־ ', days: ' הימים האחרונים',
+    logged: function (p) { return 'תרופות שתועדו ' + (p === 'week' ? 'השבוע' : 'החודש'); },
+    none: function (d) { return 'לא תועדו תרופות ב־' + d + ' הימים האחרונים. הוסף רשומות במעקב וההתקדמות שלך תופיע כאן.'; },
+    discuss: 'מה שהייתי רוצה לדון בו', d1: 'איך הרגשתי עם כל תרופה בתקופה הזו', d2: 'כל תופעת לוואי או שאלות על מינון', d3: 'צעדים הבאים או התאמות',
+    note: '<strong>הערה:</strong> יומן תרופות אישי שנוצר מאתר חינוכי — אינו רשומה רפואית; עבור עליו עם הרופא שלך.',
+    print: 'הדפס / שמור PDF', close: 'סגירה'
+  } : isAr ? {
     wk: '📅 ملخّص أسبوعي', mo: '📅 ملخّص شهري',
     wkTitle: 'ملخّص الأدوية الأسبوعي', moTitle: 'ملخّص الأدوية الشهري',
     prep: 'أُعِدّ في ', last: 'آخر ', days: ' يوماً',
@@ -37,9 +49,8 @@
   function fmt(ts) {
     try {
       var d = new Date(ts);
-      return isAr
-        ? d.toLocaleDateString('ar', { day: 'numeric', month: 'long', year: 'numeric' }) + ' · ' + d.toLocaleTimeString('ar', { hour: '2-digit', minute: '2-digit' })
-        : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) + ' · ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false });
+      var loc = isHe ? 'he' : isAr ? 'ar' : 'en-GB';
+      return d.toLocaleDateString(loc, { day: 'numeric', month: isAr || isHe ? 'long' : 'short', year: 'numeric' }) + ' · ' + d.toLocaleTimeString(loc, { hour: '2-digit', minute: '2-digit', hour12: false });
     } catch (e) { return ''; }
   }
   function medlog() { try { return JSON.parse(localStorage.getItem('adhd-medlog-v1') || '[]') || []; } catch (e) { return []; } }

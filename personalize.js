@@ -3,11 +3,20 @@
    'adhd-layout-v1', which auth.js syncs to the signed-in account. */
 (function () {
   "use strict";
-  var isAr = document.documentElement.dir === 'rtl';
+  var isHe = document.documentElement.lang === 'he';
+  var isAr = document.documentElement.dir === 'rtl' && !isHe;
   var KEY = 'adhd-layout-v1';
 
   // Reorderable / hideable sections (the readable content block, in default order)
-  var SECTIONS = isAr ? [
+  var SECTIONS = isHe ? [
+    { id: 'basics', label: 'יסודות' }, { id: 'science', label: 'המחקר' },
+    { id: 'signs', label: 'סימנים' }, { id: 'diagnosis', label: 'איך מאבחנים' }, { id: 'agecompare', label: 'ילדים ומבוגרים' }, { id: 'myths', label: 'מיתוסים' },
+    { id: 'check', label: 'בדיקה עצמית' }, { id: 'tools', label: 'כלי מיקוד' },
+    { id: 'cope', label: 'אסטרטגיות' }, { id: 'living', label: 'בחיים האמיתיים' },
+    { id: 'meds', label: 'תרופות' }, { id: 'tracker', label: 'מעקב תרופות' },
+    { id: 'advocate', label: 'הגנה עצמית' },
+    { id: 'help', label: 'מתי לבקש עזרה' }
+  ] : isAr ? [
     { id: 'basics', label: 'ما هو ADHD' }, { id: 'science', label: 'الأدلة' },
     { id: 'signs', label: 'العلامات' }, { id: 'diagnosis', label: 'كيف يُشخَّص' }, { id: 'agecompare', label: 'الأطفال والبالغون' }, { id: 'myths', label: 'الخرافات' },
     { id: 'check', label: 'الاختبار الذاتي' }, { id: 'tools', label: 'أدوات التركيز' },
@@ -26,7 +35,11 @@
   ];
   var TAIL = ['gear', 'sources']; // always kept after the managed block
 
-  var TXT = isAr ? {
+  var TXT = isHe ? {
+    customize: 'התאמה אישית', title: 'התאם את הפריסה שלך',
+    desc: 'הצג, הסתר וסדר מחדש חלקים כדי לבנות את העמוד סביב מה שאתה צריך. נשמר במכשיר שלך — ומסונכרן כשאתה מחובר.',
+    hide: 'הסתר', show: 'הצג', reset: 'איפוס', done: 'סיום'
+  } : isAr ? {
     customize: 'تخصيص', title: 'خصّص ترتيب صفحتك',
     desc: 'أظهِر الأقسام وأخفِها وأعد ترتيبها لتبني الصفحة حول ما يهمّك. تُحفظ على جهازك — وتُزامَن عند تسجيل الدخول.',
     hide: 'إخفاء', show: 'إظهار', reset: 'إعادة الضبط', done: 'تم'

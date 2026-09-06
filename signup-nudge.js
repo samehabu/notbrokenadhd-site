@@ -4,7 +4,8 @@
    Fully dismissible; never nags again once dismissed. No popups, no walls. */
 (function () {
   "use strict";
-  var isAr = document.documentElement.dir === 'rtl';
+  var isHe = document.documentElement.lang === 'he';
+  var isAr = document.documentElement.dir === 'rtl' && !isHe;
   var DKEY = 'adhd-nudge-dismissed';
   var shown = false;
 
@@ -13,7 +14,10 @@
   function accountsOn() { var b = document.getElementById('authBtn'); return !!(b && getComputedStyle(b).display !== 'none'); }
   function signedIn() { var si = document.getElementById('authSignedIn'); return !!(si && si.hidden === false); }
 
-  var T = isAr ? {
+  var T = isHe ? {
+    msg: 'נשמר במכשיר הזה בלבד. המוח שלך עם ADHD לא אמור לזכור הכול — צור חשבון חינמי שישמור את ההתקדמות שלך ויסנכרן אותה בכל המכשירים, כדי שלעולם לא תאבד אותה.',
+    cta: 'צור חשבון חינמי', no: 'לא עכשיו'
+  } : isAr ? {
     msg: 'محفوظ على هذا الجهاز فقط. دماغك المصاب بـ ADHD لا ينبغي أن يتذكّر كل شيء — أنشئ حساباً مجانياً ليحفظ تقدّمك ويُزامنه عبر كل أجهزتك، فلا تفقده أبداً.',
     cta: 'أنشئ حساباً مجانياً', no: 'ليس الآن'
   } : {
@@ -49,7 +53,7 @@
       var ab = document.getElementById('authBtn'); if (ab) ab.click();
       // switch straight to the "create account" view if we opened on sign-in
       var tog = document.getElementById('authToggle');
-      var signinHint = isAr ? 'جديد' : 'New here';
+      var signinHint = isHe ? 'חדש כאן' : isAr ? 'جديد' : 'New here';
       if (tog && tog.textContent.indexOf(signinHint) > -1) tog.click();
     });
     n.querySelector('.ng-no').addEventListener('click', function () { setDismissed(); n.parentNode && n.parentNode.removeChild(n); });

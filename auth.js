@@ -18,8 +18,20 @@
     return;
   }
 
-  var isAr = document.documentElement.dir === 'rtl';
-  var T = isAr ? {
+  var isHe = document.documentElement.lang === 'he';
+  var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var T = isHe ? {
+    signinTitle: 'התחבר כדי לשמור את ההתקדמות שלך', signupTitle: 'צור את החשבון שלך',
+    signinSubmit: 'התחברות', signupSubmit: 'צור חשבון',
+    toggleToSignup: 'חדש כאן? צור חשבון', toggleToSignin: 'כבר יש לך חשבון? התחבר',
+    working: 'מעבד…', signInBtn: 'התחברות',
+    whoPrefix: 'מחובר כ־ ', created: 'החשבון נוצר — בדוק את הדוא"ל לאישור, ואז התחבר.',
+    resetSent: 'נשלח דוא"ל לאיפוס הסיסמה — בדוק את תיבת הדואר שלך.',
+    enterEmailFirst: 'הזן קודם את הדוא"ל שלך למעלה.', enterBoth: 'אנא הזן דוא"ל וסיסמה.',
+    signedInMsg: 'התחברת!', genericErr: 'משהו השתבש.',
+    deleteBtn: 'מחק את החשבון והנתונים שלי', confirmDelete: 'למחוק לצמיתות את החשבון ואת כל ההתקדמות השמורה? לא ניתן לבטל פעולה זו.',
+    deleted: 'החשבון והנתונים שלך נמחקו.', deleteErr: 'לא ניתן היה למחוק את החשבון. אם זה חוזר, פנה לבעל האתר.'
+  } : isAr ? {
     signinTitle: 'سجّل الدخول لحفظ تقدّمك', signupTitle: 'أنشئ حسابك',
     signinSubmit: 'تسجيل الدخول', signupSubmit: 'إنشاء حساب',
     toggleToSignup: 'جديد هنا؟ أنشئ حساباً', toggleToSignin: 'لديك حساب؟ سجّل الدخول',

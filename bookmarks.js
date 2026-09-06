@@ -3,11 +3,16 @@
    Stored under 'adhd-bookmarks-v1' (synced to the account via auth.js). */
 (function () {
   "use strict";
-  var isAr = document.documentElement.dir === 'rtl';
+  var isHe = document.documentElement.lang === 'he';
+  var isAr = document.documentElement.dir === 'rtl' && !isHe;
   var KEY = 'adhd-bookmarks-v1';
   var SKIP = { illustrated: 1, downloads: 1, contents: 1, sources: 1, gear: 1, experience: 1, brainmap: 1 };
 
-  var T = isAr ? {
+  var T = isHe ? {
+    savedBtn: 'שמורים', title: 'החלקים השמורים שלך',
+    empty: 'עדיין לא נשמר דבר — הקש ☆ ליד כותרת של כל חלק כדי לשמור אותו ולחזור אליו במהירות.',
+    go: 'מעבר', remove: 'הסרה', close: 'סגירה', save: 'שמור חלק', saved: 'נשמר'
+  } : isAr ? {
     savedBtn: 'المحفوظات', title: 'أقسامك المحفوظة',
     empty: 'لا أقسام محفوظة بعد — اضغط ☆ بجانب عنوان أي قسم لحفظه، لتعود إليه بسرعة.',
     go: 'انتقال', remove: 'إزالة', close: 'إغلاق', save: 'حفظ القسم', saved: 'محفوظ'
