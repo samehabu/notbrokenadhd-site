@@ -4,6 +4,7 @@
 (function () {
   "use strict";
   var URL = 'https://cadenceadhd.com';
+  function u(c){ return URL + '/?utm_source=notbrokenadhd&utm_medium=referral&utm_campaign=' + c; }
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
   var T = isHe ? {
@@ -82,7 +83,7 @@
   var sec = document.createElement('section');
   sec.id = 'cadence'; sec.className = 'sec';
   sec.innerHTML =
-    '<div class="wrap"><a class="cad-card" href="' + URL + '" target="_blank" rel="noopener">' +
+    '<div class="wrap"><a class="cad-card" href="' + u('card') + '" target="_blank" rel="noopener">' +
     '<span class="cad-mark"></span>' +
     '<span class="cad-badge">' + T.badge + '<span class="cad-stars">★★★★★</span></span>' +
     '<h2 class="cad-h">' + T.h + '</h2>' +
@@ -104,7 +105,7 @@
   var tools = document.querySelector('.nav-tools');
   if (tools) {
     var a = document.createElement('a');
-    a.className = 'icon-btn cad-nav'; a.href = URL; a.target = '_blank'; a.rel = 'noopener';
+    a.className = 'icon-btn cad-nav'; a.href = u('nav'); a.target = '_blank'; a.rel = 'noopener';
     a.textContent = NAV; a.setAttribute('aria-label', 'Cadence — ' + T.badge);
     tools.appendChild(a);
   }
@@ -114,7 +115,7 @@
   if (footer) {
     var priv = footer.querySelector('a[href*="privacy"]');
     var fa = document.createElement('a');
-    fa.className = 'cad-foot'; fa.href = URL; fa.target = '_blank'; fa.rel = 'noopener'; fa.textContent = 'Cadence';
+    fa.className = 'cad-foot'; fa.href = u('footer'); fa.target = '_blank'; fa.rel = 'noopener'; fa.textContent = 'Cadence';
     if (priv && priv.parentNode) { priv.parentNode.insertBefore(document.createTextNode(' · '), priv.nextSibling); priv.parentNode.insertBefore(fa, priv.nextSibling.nextSibling); }
     else { footer.appendChild(document.createTextNode(' · ')); footer.appendChild(fa); }
   }
@@ -123,7 +124,7 @@
   var srcGrid = document.querySelector('#sources .src-grid');
   if (srcGrid) {
     var sa = document.createElement('a');
-    sa.className = 'src cad-src'; sa.href = URL; sa.target = '_blank'; sa.rel = 'noopener';
+    sa.className = 'src cad-src'; sa.href = u('sources'); sa.target = '_blank'; sa.rel = 'noopener';
     sa.innerHTML = '<span class="org">Cadence <span class="ext">↗</span></span><span class="desc">' + T.srcDesc + '</span>';
     srcGrid.appendChild(sa);
   }
@@ -133,7 +134,7 @@
   if (toolsWrap) {
     var tin = document.createElement('div'); tin.className = 'cad-tin reveal in';
     tin.innerHTML = '<div><p class="tt">' + T2.toolsH + '</p><p class="td">' + T2.toolsP + '</p></div>' +
-      '<a class="b" href="' + URL + '" target="_blank" rel="noopener">' + T2.toolsBtn + '</a>';
+      '<a class="b" href="' + u('strategies') + '" target="_blank" rel="noopener">' + T2.toolsBtn + '</a>';
     toolsWrap.appendChild(tin);
   }
 
@@ -141,7 +142,7 @@
   var gearGrid = document.querySelector('#gear .tools-grid');
   if (gearGrid) {
     var gc = document.createElement('a');
-    gc.className = 'tool-card cad-gear'; gc.href = URL; gc.target = '_blank'; gc.rel = 'noopener';
+    gc.className = 'tool-card cad-gear'; gc.href = u('tools'); gc.target = '_blank'; gc.rel = 'noopener';
     gc.innerHTML = '<span class="tool-emoji">📚</span><span><span class="tool-t">Cadence</span>' +
       '<span class="tool-d">' + T2.gearDesc + '</span><span class="tool-go">' + T2.gearGo + '</span></span>';
     gearGrid.insertBefore(gc, gearGrid.firstChild);
@@ -151,7 +152,7 @@
   if (footer) {
     var fw = footer.querySelector('.wrap') || footer;
     var cr = document.createElement('p'); cr.className = 'cad-credit';
-    cr.innerHTML = '★ ' + T2.credit + ' <a href="' + URL + '" target="_blank" rel="noopener">cadenceadhd.com</a>';
+    cr.innerHTML = '★ ' + T2.credit + ' <a href="' + u('credit') + '" target="_blank" rel="noopener">cadenceadhd.com</a>';
     fw.appendChild(cr);
   }
 })();
