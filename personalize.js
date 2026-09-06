@@ -30,7 +30,7 @@
     { id: 'check', label: 'Self-check' }, { id: 'tools', label: 'Focus tools' },
     { id: 'cope', label: 'Strategies' }, { id: 'living', label: 'In real life' },
     { id: 'meds', label: 'Medications' }, { id: 'tracker', label: 'Med tracker' },
-    { id: 'faith', label: 'Faith' }, { id: 'advocate', label: 'Advocate' },
+    { id: 'advocate', label: 'Advocate' },
     { id: 'help', label: 'When to get help' }
   ];
   var TAIL = ['gear', 'sources']; // always kept after the managed block
