@@ -5,6 +5,14 @@
    dynamically-injected sections, and guarantees nothing stays permanently hidden. */
 (function () {
   "use strict";
+  // The adult/child toggle groups use class="flags" with display:grid, which overrides the
+  // browser's default [hidden]{display:none} — so toggling never actually hid a group and both
+  // stayed on screen. Force hidden to win. (!important beats the .flags display rule.)
+  try {
+    var _fix = document.createElement('style');
+    _fix.textContent = '[hidden]{display:none!important}';
+    document.head.appendChild(_fix);
+  } catch (e) {}
   function reveal(e) { e.classList.add('in'); }
   function inView(e) {
     var r = e.getBoundingClientRect();
