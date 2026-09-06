@@ -10,22 +10,47 @@
     badge: 'אפליקציית לימוד ל-ADHD',
     h: 'תלמד עם המוח שלך עם ADHD — לא נגדו',
     p: 'Cadence הופך את ההערות שלך לסבבי למידה רגועים מבוססי-היזכרות — מרווחים, מתגמלים ומתוזמנים לאיך שמוח ADHD באמת מתמקד וזוכר.',
-    meta: 'ניסיון חינם 3 ימים · נבדק על ידי קלינאים',
-    cta: 'נסה את Cadence בחינם ←'
+    quote: '«מבריק.»', cite: 'פרופ׳ ד״ר אדה פרצ׳סקה · יו״ר הפסיכיאטריה, אוניברסיטת דברצן',
+    meta: 'נבדק על ידי יו״ר פסיכיאטריה · מבוסס על ~100 מחקרים · ניסיון חינם 3 ימים',
+    cta: 'נסה את Cadence בחינם ←',
+    srcDesc: 'אפליקציית לימוד ל-ADHD — הופכת הערות לסבבי היזכרות. נבדקה על ידי קלינאים.'
   } : isAr ? {
     badge: 'تطبيق مذاكرة لـ ADHD',
     h: 'ذاكِر مع دماغك المصاب بـ ADHD — لا ضدّه',
     p: 'يحوّل Cadence ملاحظاتك إلى جولات مذاكرة هادئة قائمة على الاسترجاع — متباعدة، ومكافِئة، ومضبوطة الإيقاع وفق طريقة عمل دماغ ADHD في التركيز والتذكّر.',
-    meta: 'تجربة مجانية 3 أيام · مراجَع من مختصّين',
-    cta: 'جرّب Cadence مجاناً ←'
+    quote: '«رائع.»', cite: 'أ.د. إيدي فريتشكا · رئيس قسم الطب النفسي، جامعة دبرتسن',
+    meta: 'مراجَع من رئيس قسم الطب النفسي · مبنيّ على ~100 دراسة · تجربة مجانية 3 أيام',
+    cta: 'جرّب Cadence مجاناً ←',
+    srcDesc: 'تطبيق مذاكرة لـ ADHD — يحوّل ملاحظاتك إلى جولات استرجاع. مراجَع من مختصّين.'
   } : {
     badge: 'A study app for ADHD',
     h: 'Study with your ADHD brain — not against it',
     p: 'Cadence turns your notes into calm, recall-first study rounds — spaced, rewarded and paced for how an ADHD brain actually focuses and remembers.',
-    meta: 'Free 3-day trial · reviewed by clinicians',
-    cta: 'Try Cadence free →'
+    quote: '“Brilliant.”', cite: 'Prof. Dr. Ede Frecska · Chair of Psychiatry, University of Debrecen',
+    meta: 'Reviewed by a Chairman of Psychiatry · built on ~100 studies · free 3-day trial',
+    cta: 'Try Cadence free →',
+    srcDesc: 'A study app for ADHD — turns notes into recall-first study rounds. Reviewed by clinicians.'
   };
-  var NAV = isHe ? 'Cadence' : isAr ? 'Cadence' : 'Cadence';
+  var NAV = 'Cadence';
+  var T2 = isHe ? {
+    toolsH: 'רוצה את זה כמערכת לימוד שלמה?',
+    toolsP: 'Cadence היא אפליקציית הלימוד ל-ADHD הבנויה על אותם עקרונות — הפוך את ההערות שלך לסבבי למידה מונחים מבוססי-היזכרות.',
+    toolsBtn: 'פתח את Cadence ←',
+    gearDesc: 'אפליקציית לימוד ל-ADHD — סבבי היזכרות רגועים. ניסיון חינם 3 ימים.', gearGo: 'נסה ←',
+    credit: 'בזכות Cadence, האתר הזה קם לחיים.'
+  } : isAr ? {
+    toolsH: 'تريد هذا كنظام مذاكرة كامل؟',
+    toolsP: 'Cadence هو تطبيق المذاكرة لـ ADHD المبنيّ على المبادئ نفسها — حوّل ملاحظاتك إلى جولات مذاكرة موجَّهة قائمة على الاسترجاع.',
+    toolsBtn: 'افتح Cadence ←',
+    gearDesc: 'تطبيق مذاكرة لـ ADHD — جولات قائمة على الاسترجاع. تجربة مجانية 3 أيام.', gearGo: 'جرّب ←',
+    credit: 'بفضل Cadence، خرج هذا الموقع إلى النور.'
+  } : {
+    toolsH: 'Want this as a full study system?',
+    toolsP: 'Cadence is the ADHD study app built on these same principles — turn your own notes into guided, recall-first study rounds.',
+    toolsBtn: 'Open Cadence →',
+    gearDesc: 'A study app for ADHD — recall-first study rounds. Free 3-day trial.', gearGo: 'Try it →',
+    credit: 'Thanks to Cadence, this website came to life.'
+  };
 
   // ---- styles ----
   var css =
@@ -34,11 +59,23 @@
     '#cadence .cad-badge{display:inline-block;font-family:"IBM Plex Mono","Tajawal","Heebo",monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:.3rem .75rem;margin-bottom:.9rem}' +
     '#cadence h2.cad-h{font-size:1.9rem;line-height:1.12;margin:0 0 .6rem;color:#fff;max-width:24ch}' +
     '#cadence .cad-p{margin:0 0 .8rem;color:rgba(255,255,255,.92);font-size:1.02rem;line-height:1.5;max-width:60ch}' +
-    '#cadence .cad-meta{display:block;font-family:"IBM Plex Mono","Tajawal","Heebo",monospace;font-size:.8rem;color:rgba(255,255,255,.85);margin-bottom:1.1rem}' +
-    '#cadence .cad-cta{display:inline-block;background:#fff;color:#1f4e86;font-weight:700;border-radius:999px;padding:.7rem 1.4rem;font-size:.95rem}' +
-    '#cadence .cad-mark{position:absolute;inset-inline-end:-30px;top:-30px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.09)}' +
+    '#cadence .cad-quote{margin:.2rem 0 .9rem;padding-inline-start:.85rem;border-inline-start:3px solid rgba(255,255,255,.55);max-width:52ch}' +
+    '#cadence .cad-quote b{font-size:1.15rem;color:#fff}' +
+    '#cadence .cad-quote cite{display:block;font-style:normal;font-size:.82rem;color:rgba(255,255,255,.8);margin-top:.2rem}' +
+    '#cadence .cad-stars{color:#ffd45e;font-size:.95rem;letter-spacing:2px;margin-inline-start:.5rem}' +
+    '#cadence .cad-meta{display:block;font-family:"IBM Plex Mono","Tajawal","Heebo",monospace;font-size:.8rem;color:rgba(255,255,255,.9);margin-bottom:1.1rem}' +
+    '#cadence .cad-cta{display:inline-block;background:#fff;color:#1f4e86;font-weight:800;border-radius:999px;padding:.8rem 1.6rem;font-size:1rem;box-shadow:0 6px 18px rgba(0,0,0,.18)}' +
+    '#cadence .cad-mark{position:absolute;inset-inline-end:-30px;top:-30px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.09)}' +
+    '#sources a.src.cad-src .org{color:#2f6db5}' +
     '.cad-nav{background:var(--accent,#f2551f)!important;color:#fff!important;border-color:var(--accent,#f2551f)!important;font-weight:700}' +
-    '.cad-foot{color:inherit}';
+    '.cad-foot{color:inherit}' +
+    '.cad-tin{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem;justify-content:space-between;background:linear-gradient(135deg,#eef4fb,#e7f1f0);border:1px solid #cfe0f3;border-radius:16px;padding:1.1rem 1.3rem;margin-top:1.6rem}' +
+    '.cad-tin .tt{font-weight:800;color:#123a63;font-size:1.05rem;margin:0 0 .2rem}' +
+    '.cad-tin .td{color:#3a4351;font-size:.92rem;margin:0;max-width:62ch}' +
+    '.cad-tin a.b{flex:0 0 auto;background:#2f6db5;color:#fff;font-weight:700;border-radius:999px;padding:.6rem 1.2rem;text-decoration:none;white-space:nowrap}' +
+    '.cad-credit{margin:.4rem 0 0;font-weight:700;color:#2f6db5}' +
+    '.cad-credit a{color:#2f6db5;font-weight:800}' +
+    '#sources a.src.cad-src .org{color:#2f6db5}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   // ---- promo card (study-relevant spot) ----
@@ -47,9 +84,10 @@
   sec.innerHTML =
     '<div class="wrap"><a class="cad-card" href="' + URL + '" target="_blank" rel="noopener">' +
     '<span class="cad-mark"></span>' +
-    '<span class="cad-badge">' + T.badge + '</span>' +
+    '<span class="cad-badge">' + T.badge + '<span class="cad-stars">★★★★★</span></span>' +
     '<h2 class="cad-h">' + T.h + '</h2>' +
     '<p class="cad-p">' + T.p + '</p>' +
+    '<blockquote class="cad-quote"><b>' + T.quote + '</b><cite>' + T.cite + '</cite></blockquote>' +
     '<span class="cad-meta">' + T.meta + '</span>' +
     '<span class="cad-cta">' + T.cta + '</span></a></div>';
 
@@ -79,5 +117,41 @@
     fa.className = 'cad-foot'; fa.href = URL; fa.target = '_blank'; fa.rel = 'noopener'; fa.textContent = 'Cadence';
     if (priv && priv.parentNode) { priv.parentNode.insertBefore(document.createTextNode(' · '), priv.nextSibling); priv.parentNode.insertBefore(fa, priv.nextSibling.nextSibling); }
     else { footer.appendChild(document.createTextNode(' · ')); footer.appendChild(fa); }
+  }
+
+  // ---- entry in the Sources & further reading grid (labeled as a study tool) ----
+  var srcGrid = document.querySelector('#sources .src-grid');
+  if (srcGrid) {
+    var sa = document.createElement('a');
+    sa.className = 'src cad-src'; sa.href = URL; sa.target = '_blank'; sa.rel = 'noopener';
+    sa.innerHTML = '<span class="org">Cadence <span class="ext">↗</span></span><span class="desc">' + T.srcDesc + '</span>';
+    srcGrid.appendChild(sa);
+  }
+
+  // ---- CTA at the end of "Try the strategies right here" (#tools) ----
+  var toolsWrap = document.querySelector('#tools .wrap');
+  if (toolsWrap) {
+    var tin = document.createElement('div'); tin.className = 'cad-tin reveal in';
+    tin.innerHTML = '<div><p class="tt">' + T2.toolsH + '</p><p class="td">' + T2.toolsP + '</p></div>' +
+      '<a class="b" href="' + URL + '" target="_blank" rel="noopener">' + T2.toolsBtn + '</a>';
+    toolsWrap.appendChild(tin);
+  }
+
+  // ---- Cadence card, first, in "Tools some people find helpful" (#gear) ----
+  var gearGrid = document.querySelector('#gear .tools-grid');
+  if (gearGrid) {
+    var gc = document.createElement('a');
+    gc.className = 'tool-card cad-gear'; gc.href = URL; gc.target = '_blank'; gc.rel = 'noopener';
+    gc.innerHTML = '<span class="tool-emoji">📚</span><span><span class="tool-t">Cadence</span>' +
+      '<span class="tool-d">' + T2.gearDesc + '</span><span class="tool-go">' + T2.gearGo + '</span></span>';
+    gearGrid.insertBefore(gc, gearGrid.firstChild);
+  }
+
+  // ---- clear "thanks to Cadence" credit in the footer ----
+  if (footer) {
+    var fw = footer.querySelector('.wrap') || footer;
+    var cr = document.createElement('p'); cr.className = 'cad-credit';
+    cr.innerHTML = '★ ' + T2.credit + ' <a href="' + URL + '" target="_blank" rel="noopener">cadenceadhd.com</a>';
+    fw.appendChild(cr);
   }
 })();
