@@ -35,4 +35,76 @@
   <url><loc>https://notbrokenadhd.com/contact.html</loc><priority>0.5</priority></url>
   <url><loc>https://notbrokenadhd.com/contact-ar.html</loc><priority>0.5</priority></url>
   <url><loc>https://notbrokenadhd.com/contact-he.html</loc><priority>0.5</priority></url>
+  <url>
+    <loc>https://notbrokenadhd.com/how-to-study-with-adhd.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/how-to-study-with-adhd-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/how-to-study-with-adhd-he.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/adhd-and-exams.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/adhd-and-exams-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/adhd-and-exams-he.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
