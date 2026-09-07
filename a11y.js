@@ -13,19 +13,34 @@
   var T = isHe ? {
     min: 'דק׳ קריאה', top: 'חזרה למעלה', progress: 'התקדמות בקריאה',
     prevLbl: 'הקודם', nextLbl: 'הבא', nowLbl: 'עכשיו',
-    creditH: 'בנוי על מחקר',
+    evLead: 'בנוי על מדע שנבדק בעמיתים.',
+    evMid: ' המדריך מבוסס על בסיס הראיות הרפואי — כולל ',
+    evStmt: 'הצהרת הקונצנזוס הבינלאומית של הפדרציה העולמית ל-ADHD',
+    evMeta: ' — 208 מסקנות מבוססות-ראיות (Faraone ועמיתיו, 2021, Neuroscience & Biobehavioral Reviews). ',
+    evSources: 'לכל המקורות ←',
+    creditH: 'בנוי על מחקר', creditSci: 'מקור מדעי מרכזי:',
     creditP: 'התוכן במדריך הזה מבוסס על מקורות רפואיים ומדעיים, והמבנה והעיצוב שלו נבנו לפי מחקר נגישות קוגניטיבית שפורסם עבור קוראים עם ADHD ומוחות נוירו-שונים:',
     srcContent: 'המקורות הרפואיים למידע עצמו'
   } : isAr ? {
     min: 'دقيقة قراءة', top: 'العودة إلى الأعلى', progress: 'تقدّم القراءة',
     prevLbl: 'السابق', nextLbl: 'التالي', nowLbl: 'الآن',
-    creditH: 'مبنيّ على البحث العلمي',
+    evLead: 'مبنيّ على علمٍ محكَّم.',
+    evMid: ' يستند هذا الدليل إلى قاعدة الأدلة الطبية — بما في ذلك ',
+    evStmt: 'بيان الإجماع الدولي للاتحاد العالمي لـ ADHD',
+    evMeta: ' — 208 استنتاجاً قائماً على الأدلة (Faraone وزملاؤه، 2021، Neuroscience & Biobehavioral Reviews). ',
+    evSources: 'اطّلع على كل المصادر ←',
+    creditH: 'مبنيّ على البحث العلمي', creditSci: 'المرجع العلمي الأساسي:',
     creditP: 'محتوى هذا الدليل مبنيّ على مصادر طبية وعلمية، وبنيته وتصميمه مبنيّان على أبحاث منشورة في تيسير الوصول الإدراكي لأصحاب ADHD والأدمغة المختلفة:',
     srcContent: 'المصادر الطبية للمعلومات نفسها'
   } : {
     min: 'min read', top: 'Back to top', progress: 'Reading progress',
     prevLbl: 'Previous', nextLbl: 'Next', nowLbl: 'Now',
-    creditH: 'Built on research',
+    evLead: 'Built on peer-reviewed science.',
+    evMid: ' This guide is grounded in the medical evidence base — including the ',
+    evStmt: 'World Federation of ADHD International Consensus Statement',
+    evMeta: ' — 208 evidence-based conclusions (Faraone et al., 2021, Neuroscience & Biobehavioral Reviews). ',
+    evSources: 'See all sources →',
+    creditH: 'Built on research', creditSci: 'Key scientific reference:',
     creditP: 'The information in this guide is grounded in clinical and scientific sources, and the way it is laid out follows published cognitive-accessibility research for people with ADHD and neurodivergent minds:',
     srcContent: 'the medical sources for the information itself'
   };
@@ -37,6 +52,9 @@
     ['Stéphanie Walter — Neurodiversity & UX: cognitive-accessibility resources', 'https://stephaniewalter.design/blog/neurodiversity-and-ux-essential-resources-for-cognitive-accessibility/'],
     ['UserWay — Designing for people with ADHD', 'https://userway.org/blog/people-with-adhd/']
   ];
+
+  // Flagship scientific reference for the guide's CONTENT (peer-reviewed, PubMed/NIH).
+  var STMT = 'https://pubmed.ncbi.nlm.nih.gov/33549739/';
 
   // Sections that are "reading" (get a reading-time badge if long enough).
   var READ = {basics:1, science:1, signs:1, diagnosis:1, agecompare:1, myths:1,
@@ -70,6 +88,18 @@
     '.rsch-credit ul{margin:.2rem 0 0;padding-inline-start:1.1rem;font-size:.85rem;line-height:1.65}' +
     '.rsch-credit li{margin:.25rem 0}' +
     '.rsch-credit a{color:var(--accent,#f2551f);font-weight:600}' +
+    '.rsch-credit strong{color:var(--ink,#141a21)}' +
+    // "built on research" evidence bar at the top of the page
+    '#evbar{max-width:var(--maxw,1080px);margin:1.3rem auto 0;padding:0 1.5rem;box-sizing:border-box}' +
+    '#evbar .in{display:flex;gap:.75rem;align-items:flex-start;background:var(--surface,#fff);' +
+      'border:1px solid var(--line,#dbe1e8);border-inline-start:3px solid var(--accent,#f2551f);' +
+      'border-radius:12px;padding:.8rem 1.05rem;box-shadow:var(--shadow);' +
+      'font-size:.9rem;line-height:1.55;color:var(--ink-soft,#39424e)}' +
+    '#evbar .ic{font-size:1.15rem;flex:none;line-height:1.35}' +
+    '#evbar p{margin:0}' +
+    '#evbar strong{color:var(--ink,#141a21)}' +
+    '#evbar a{color:var(--accent,#f2551f);font-weight:700;text-decoration:none}' +
+    '#evbar a:hover{text-decoration:underline}' +
     // section pager (previous / next category), sticky under the nav
     '#a11y-pager{position:fixed;inset-inline:0;z-index:40;display:flex;gap:.4rem;align-items:center;' +
       'justify-content:space-between;padding:.28rem clamp(.5rem,3vw,1.4rem);' +
@@ -98,12 +128,26 @@
     // Quiet mode: no motion anywhere, and reveals shown instantly
     ':root[data-calm="on"] #a11y-prog{transition:none}' +
     ':root[data-calm="on"] #a11y-top{transition:none}' +
-    ':root[data-calm="on"] .reveal{opacity:1!important;transform:none!important;transition:none!important}';
+    ':root[data-calm="on"] .reveal{opacity:1!important;transform:none!important;transition:none!important}' +
+    // print / PDF export: drop the chrome, keep the content
+    '@media print{#a11y-prog,#a11y-top,#a11y-pager,#evbar,.nav{display:none!important}' +
+      '.reveal{opacity:1!important;transform:none!important}body{background:#fff!important}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   function calmOn(){ return document.documentElement.getAttribute('data-calm') === 'on'; }
 
   document.addEventListener('DOMContentLoaded', function () {
+    // ---- "built on research" evidence bar (top of page, guide pages only) ----
+    var hero = document.querySelector('.hero');
+    if (hero && document.getElementById('sources')) {
+      var ev = document.createElement('div'); ev.id = 'evbar';
+      ev.innerHTML = '<div class="in"><span class="ic" aria-hidden="true">🔬</span>' +
+        '<p><strong>' + T.evLead + '</strong>' + T.evMid +
+        '<a href="' + STMT + '" target="_blank" rel="noopener">' + T.evStmt + '</a>' +
+        T.evMeta + '<a href="#sources">' + T.evSources + '</a></p></div>';
+      hero.parentNode.insertBefore(ev, hero.nextSibling);
+    }
+
     // ---- reading-time badges ----
     Object.keys(READ).forEach(function (id) {
       var sec = document.getElementById(id);
@@ -218,8 +262,10 @@
       var lis = SRC.map(function (s) {
         return '<li><a href="' + s[1] + '" target="_blank" rel="noopener">' + s[0] + '</a></li>';
       }).join('');
+      var sci = '<p><strong>' + T.creditSci + '</strong> ' +
+        '<a href="' + STMT + '" target="_blank" rel="noopener">' + T.evStmt + '</a>' + T.evMeta + '</p>';
       box.innerHTML = '<h3><span aria-hidden="true">🔬</span>' + T.creditH + '</h3>' +
-                      '<p>' + content + '</p><ul>' + lis + '</ul>';
+                      '<p>' + content + '</p>' + sci + '<ul>' + lis + '</ul>';
       wrap.appendChild(box);
     }
   });

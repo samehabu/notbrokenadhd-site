@@ -77,6 +77,14 @@ body{
 /* ---- chips / pills / badges: a touch softer ---- */
 .chip,.pill,.badge{border-radius:999px}
 
+/* ---- logo / wordmark: never wrap to 3 lines ---- */
+.nav-inner .brand{flex:0 0 auto;white-space:nowrap;font-size:1.02rem}
+.nav-inner .brand .brandmark{flex:0 0 auto}
+/* when the row is tight, let items wrap to a second line instead of overlapping */
+.nav-inner{flex-wrap:wrap;row-gap:.45rem}
+.nav-inner .nav-links{flex:0 0 auto}
+@media (max-width:430px){ .nav-inner .brand{font-size:.95rem} }
+
 /* ---- dark mode: dim the glows, keep them alive ---- */
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]) body{
