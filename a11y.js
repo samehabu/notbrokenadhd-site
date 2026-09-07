@@ -18,6 +18,7 @@
     evStmt: 'הצהרת הקונצנזוס הבינלאומית של הפדרציה העולמית ל-ADHD',
     evMeta: ' — 208 מסקנות מבוססות-ראיות (Faraone ועמיתיו, 2021, Neuroscience & Biobehavioral Reviews). ',
     evSources: 'לכל המקורות ←',
+    evLayout: ' והאופן שבו האתר בנוי עוקב אחר <a href="#builton">מחקר נגישות קוגניטיבית שפורסם</a> עבור אנשים עם ADHD ומוחות נוירו-שונים. ',
     creditH: 'בנוי על מחקר', creditSci: 'מקור מדעי מרכזי:',
     creditP: 'התוכן במדריך הזה מבוסס על מקורות רפואיים ומדעיים, והמבנה והעיצוב שלו נבנו לפי מחקר נגישות קוגניטיבית שפורסם עבור קוראים עם ADHD ומוחות נוירו-שונים:',
     srcContent: 'המקורות הרפואיים למידע עצמו'
@@ -29,6 +30,7 @@
     evStmt: 'بيان الإجماع الدولي للاتحاد العالمي لـ ADHD',
     evMeta: ' — 208 استنتاجاً قائماً على الأدلة (Faraone وزملاؤه، 2021، Neuroscience & Biobehavioral Reviews). ',
     evSources: 'اطّلع على كل المصادر ←',
+    evLayout: ' كما تتبع طريقة تنظيم الموقع <a href="#builton">أبحاثاً منشورة في تيسير الوصول الإدراكي</a> لأصحاب ADHD والأدمغة المختلفة عصبياً. ',
     creditH: 'مبنيّ على البحث العلمي', creditSci: 'المرجع العلمي الأساسي:',
     creditP: 'محتوى هذا الدليل مبنيّ على مصادر طبية وعلمية، وبنيته وتصميمه مبنيّان على أبحاث منشورة في تيسير الوصول الإدراكي لأصحاب ADHD والأدمغة المختلفة:',
     srcContent: 'المصادر الطبية للمعلومات نفسها'
@@ -40,6 +42,7 @@
     evStmt: 'World Federation of ADHD International Consensus Statement',
     evMeta: ' — 208 evidence-based conclusions (Faraone et al., 2021, Neuroscience & Biobehavioral Reviews). ',
     evSources: 'See all sources →',
+    evLayout: ' The way it\'s laid out follows <a href="#builton">published cognitive-accessibility research</a> for people with ADHD and neurodivergent brains. ',
     creditH: 'Built on research', creditSci: 'Key scientific reference:',
     creditP: 'The information in this guide is grounded in clinical and scientific sources, and the way it is laid out follows published cognitive-accessibility research for people with ADHD and neurodivergent minds:',
     srcContent: 'the medical sources for the information itself'
@@ -144,7 +147,7 @@
       ev.innerHTML = '<div class="in"><span class="ic" aria-hidden="true">🔬</span>' +
         '<p><strong>' + T.evLead + '</strong>' + T.evMid +
         '<a href="' + STMT + '" target="_blank" rel="noopener">' + T.evStmt + '</a>' +
-        T.evMeta + '<a href="#sources">' + T.evSources + '</a></p></div>';
+        T.evMeta + T.evLayout + '<a href="#sources">' + T.evSources + '</a></p></div>';
       hero.parentNode.insertBefore(ev, hero.nextSibling);
     }
 
@@ -254,7 +257,7 @@
     var footer = document.querySelector('footer');
     if (footer) {
       var wrap = footer.querySelector('.wrap') || footer;
-      var box = document.createElement('div'); box.className = 'rsch-credit';
+      var box = document.createElement('div'); box.className = 'rsch-credit'; box.id = 'builton';
       var srcSec = document.getElementById('sources');
       var content = srcSec
         ? T.creditP.replace(/:$/, '') + ' — <a href="#sources">' + T.srcContent + '</a>:'
