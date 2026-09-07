@@ -80,9 +80,15 @@ body{
 /* ---- logo / wordmark: never wrap to 3 lines ---- */
 .nav-inner .brand{flex:0 0 auto;white-space:nowrap;font-size:1.02rem}
 .nav-inner .brand .brandmark{flex:0 0 auto}
-/* when the row is tight, let items wrap to a second line instead of overlapping */
-.nav-inner{flex-wrap:wrap;row-gap:.45rem}
+/* Stable 2-row nav: brand + links on row 1, tools ALWAYS on their own row 2.
+   Forcing tools to a full-width row means late-injected buttons and font swaps
+   fill row 2 horizontally instead of changing the row COUNT — so the nav height
+   stays fixed from first paint and the hero never gets pushed down (fixes CLS). */
+.nav-inner{flex-wrap:wrap;row-gap:.5rem;align-content:flex-start}
 .nav-inner .nav-links{flex:0 0 auto}
+.nav-inner .nav-tools{flex-basis:100%;justify-content:flex-end;margin:0}
+/* keep the secondary links from wrapping to a 3rd row on mid widths */
+@media (max-width:900px){ .nav-inner .nav-links{display:none} }
 @media (max-width:430px){ .nav-inner .brand{font-size:.95rem} }
 
 /* ---- dark mode: dim the glows, keep them alive ---- */
