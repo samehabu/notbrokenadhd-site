@@ -4,6 +4,7 @@
 (function () {
   "use strict";
   var URL = 'https://cadenceadhd.com';
+  function u(c){ return URL + '/?utm_source=notbrokenadhd&utm_medium=referral&utm_campaign=' + c; }
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
   var T = isHe ? {
@@ -32,6 +33,25 @@
     srcDesc: 'A study app for ADHD — turns notes into recall-first study rounds. Reviewed by clinicians.'
   };
   var NAV = 'Cadence';
+  var T2 = isHe ? {
+    toolsH: 'רוצה את זה כמערכת לימוד שלמה?',
+    toolsP: 'Cadence היא אפליקציית הלימוד ל-ADHD הבנויה על אותם עקרונות — הפוך את ההערות שלך לסבבי למידה מונחים מבוססי-היזכרות.',
+    toolsBtn: 'פתח את Cadence ←',
+    gearDesc: 'אפליקציית לימוד ל-ADHD — סבבי היזכרות רגועים. ניסיון חינם 3 ימים.', gearGo: 'נסה ←',
+    credit: 'בזכות Cadence, האתר הזה קם לחיים.'
+  } : isAr ? {
+    toolsH: 'تريد هذا كنظام مذاكرة كامل؟',
+    toolsP: 'Cadence هو تطبيق المذاكرة لـ ADHD المبنيّ على المبادئ نفسها — حوّل ملاحظاتك إلى جولات مذاكرة موجَّهة قائمة على الاسترجاع.',
+    toolsBtn: 'افتح Cadence ←',
+    gearDesc: 'تطبيق مذاكرة لـ ADHD — جولات قائمة على الاسترجاع. تجربة مجانية 3 أيام.', gearGo: 'جرّب ←',
+    credit: 'بفضل Cadence، خرج هذا الموقع إلى النور.'
+  } : {
+    toolsH: 'Want this as a full study system?',
+    toolsP: 'Cadence is the ADHD study app built on these same principles — turn your own notes into guided, recall-first study rounds.',
+    toolsBtn: 'Open Cadence →',
+    gearDesc: 'A study app for ADHD — recall-first study rounds. Free 3-day trial.', gearGo: 'Try it →',
+    credit: 'Thanks to Cadence, this website came to life.'
+  };
 
   // ---- styles ----
   var css =
@@ -49,14 +69,21 @@
     '#cadence .cad-mark{position:absolute;inset-inline-end:-30px;top:-30px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.09)}' +
     '#sources a.src.cad-src .org{color:#2f6db5}' +
     '.cad-nav{background:var(--accent,#f2551f)!important;color:#fff!important;border-color:var(--accent,#f2551f)!important;font-weight:700}' +
-    '.cad-foot{color:inherit}';
+    '.cad-foot{color:inherit}' +
+    '.cad-tin{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem;justify-content:space-between;background:linear-gradient(135deg,#eef4fb,#e7f1f0);border:1px solid #cfe0f3;border-radius:16px;padding:1.1rem 1.3rem;margin-top:1.6rem}' +
+    '.cad-tin .tt{font-weight:800;color:#123a63;font-size:1.05rem;margin:0 0 .2rem}' +
+    '.cad-tin .td{color:#3a4351;font-size:.92rem;margin:0;max-width:62ch}' +
+    '.cad-tin a.b{flex:0 0 auto;background:#2f6db5;color:#fff;font-weight:700;border-radius:999px;padding:.6rem 1.2rem;text-decoration:none;white-space:nowrap}' +
+    '.cad-credit{margin:.4rem 0 0;font-weight:700;color:#2f6db5}' +
+    '.cad-credit a{color:#2f6db5;font-weight:800}' +
+    '#sources a.src.cad-src .org{color:#2f6db5}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   // ---- promo card (study-relevant spot) ----
   var sec = document.createElement('section');
   sec.id = 'cadence'; sec.className = 'sec';
   sec.innerHTML =
-    '<div class="wrap"><a class="cad-card" href="' + URL + '" target="_blank" rel="noopener">' +
+    '<div class="wrap"><a class="cad-card" href="' + u('card') + '" target="_blank" rel="noopener">' +
     '<span class="cad-mark"></span>' +
     '<span class="cad-badge">' + T.badge + '<span class="cad-stars">★★★★★</span></span>' +
     '<h2 class="cad-h">' + T.h + '</h2>' +
@@ -78,7 +105,7 @@
   var tools = document.querySelector('.nav-tools');
   if (tools) {
     var a = document.createElement('a');
-    a.className = 'icon-btn cad-nav'; a.href = URL; a.target = '_blank'; a.rel = 'noopener';
+    a.className = 'icon-btn cad-nav'; a.href = u('nav'); a.target = '_blank'; a.rel = 'noopener';
     a.textContent = NAV; a.setAttribute('aria-label', 'Cadence — ' + T.badge);
     tools.appendChild(a);
   }
@@ -88,7 +115,7 @@
   if (footer) {
     var priv = footer.querySelector('a[href*="privacy"]');
     var fa = document.createElement('a');
-    fa.className = 'cad-foot'; fa.href = URL; fa.target = '_blank'; fa.rel = 'noopener'; fa.textContent = 'Cadence';
+    fa.className = 'cad-foot'; fa.href = u('footer'); fa.target = '_blank'; fa.rel = 'noopener'; fa.textContent = 'Cadence';
     if (priv && priv.parentNode) { priv.parentNode.insertBefore(document.createTextNode(' · '), priv.nextSibling); priv.parentNode.insertBefore(fa, priv.nextSibling.nextSibling); }
     else { footer.appendChild(document.createTextNode(' · ')); footer.appendChild(fa); }
   }
@@ -97,8 +124,35 @@
   var srcGrid = document.querySelector('#sources .src-grid');
   if (srcGrid) {
     var sa = document.createElement('a');
-    sa.className = 'src cad-src'; sa.href = URL; sa.target = '_blank'; sa.rel = 'noopener';
+    sa.className = 'src cad-src'; sa.href = u('sources'); sa.target = '_blank'; sa.rel = 'noopener';
     sa.innerHTML = '<span class="org">Cadence <span class="ext">↗</span></span><span class="desc">' + T.srcDesc + '</span>';
     srcGrid.appendChild(sa);
+  }
+
+  // ---- CTA at the end of "Try the strategies right here" (#tools) ----
+  var toolsWrap = document.querySelector('#tools .wrap');
+  if (toolsWrap) {
+    var tin = document.createElement('div'); tin.className = 'cad-tin reveal in';
+    tin.innerHTML = '<div><p class="tt">' + T2.toolsH + '</p><p class="td">' + T2.toolsP + '</p></div>' +
+      '<a class="b" href="' + u('strategies') + '" target="_blank" rel="noopener">' + T2.toolsBtn + '</a>';
+    toolsWrap.appendChild(tin);
+  }
+
+  // ---- Cadence card, first, in "Tools some people find helpful" (#gear) ----
+  var gearGrid = document.querySelector('#gear .tools-grid');
+  if (gearGrid) {
+    var gc = document.createElement('a');
+    gc.className = 'tool-card cad-gear'; gc.href = u('tools'); gc.target = '_blank'; gc.rel = 'noopener';
+    gc.innerHTML = '<span class="tool-emoji">📚</span><span><span class="tool-t">Cadence</span>' +
+      '<span class="tool-d">' + T2.gearDesc + '</span><span class="tool-go">' + T2.gearGo + '</span></span>';
+    gearGrid.insertBefore(gc, gearGrid.firstChild);
+  }
+
+  // ---- clear "thanks to Cadence" credit in the footer ----
+  if (footer) {
+    var fw = footer.querySelector('.wrap') || footer;
+    var cr = document.createElement('p'); cr.className = 'cad-credit';
+    cr.innerHTML = '★ ' + T2.credit + ' <a href="' + u('credit') + '" target="_blank" rel="noopener">cadenceadhd.com</a>';
+    fw.appendChild(cr);
   }
 })();
