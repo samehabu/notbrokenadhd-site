@@ -1,9 +1,11 @@
-/* ADHD Field Guide — Cadence outbound-click counter.
-   Logs an anonymous row to Supabase whenever a visitor clicks a link to
-   cadenceadhd.com. Records ONLY: which placement (utm_campaign), the page
-   language, and the page path. No cookies, no IP, no personal data.
-   Read the totals in your Supabase dashboard (SQL at the bottom of this file).
-   Fails silently until the `cadence_clicks` table exists. */
+/* ADHD Field Guide — outbound-click counter.
+   Logs an anonymous row to Supabase whenever a visitor clicks a tracked
+   outbound link:
+     • cadenceadhd.com          -> campaign = its utm_campaign (card/nav/…)
+     • day-with-adhd.netlify.app -> campaign = 'day-with-adhd'
+   Records ONLY: which link (campaign), the page language, and the page path.
+   No cookies, no IP, no personal data. Read totals in the Supabase dashboard
+   (SQL at the bottom). Fails silently until the `cadence_clicks` table exists. */
 (function () {
   "use strict";
   var cfg = window.ADHD_CONFIG || {};
@@ -18,15 +20,23 @@
     catch (e) { return 'other'; }
   }
 
+  // returns the campaign label for a tracked outbound link, or null if not tracked
+  function trackedCampaign(href) {
+    if (href.indexOf('cadenceadhd.com') !== -1) return String(campaignOf(href)).slice(0, 60);
+    if (href.indexOf('day-with-adhd') !== -1) return 'day-with-adhd';
+    return null;
+  }
+
   document.addEventListener('click', function (e) {
     var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
     if (!a) return;
     var href = a.getAttribute('href') || '';
-    if (href.indexOf('cadenceadhd.com') === -1) return;
+    var campaign = trackedCampaign(href);
+    if (campaign === null) return;
 
     var lang = document.documentElement.lang;
     var body = JSON.stringify({
-      campaign: String(campaignOf(href)).slice(0, 60),
+      campaign: campaign,
       lang: (lang === 'ar' || lang === 'he') ? lang : 'en',
       path: String(location.pathname || '/').slice(0, 120)
     });
