@@ -1,0 +1,121 @@
+/* ADHD Field Guide — visual polish layer (loaded AFTER the inline styles).
+   Enhances the existing design: depth, gradient accents, softer dividers,
+   nicer buttons & card hovers. Deliberately CALM — no autoplay motion, only
+   hover lifts. Quiet mode (data-calm) and reduced-motion flatten everything. */
+
+/* ---- richer, warmer background depth ---- */
+body{
+  background:
+    radial-gradient(1100px 620px at 100% -8%, rgba(242,85,31,.055), transparent 60%),
+    radial-gradient(950px 700px at -12% 112%, rgba(15,133,127,.05), transparent 55%),
+    var(--paper);
+  background-attachment:fixed;
+}
+
+/* ---- hero: soft glow + gradient headline word ---- */
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(560px 320px at 18% 22%, rgba(242,85,31,.12), transparent 62%),
+    radial-gradient(520px 340px at 92% 8%, rgba(15,133,127,.08), transparent 60%);
+}
+.hero .wrap{position:relative;z-index:1}
+/* gradient headline word — only when NOT in quiet mode (quiet keeps solid accent) */
+:root:not([data-calm="on"]) .hl{
+  background:linear-gradient(115deg,#ff8a3d 0%,#f2551f 52%,#e0431a 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  color:var(--accent);
+}
+.hl::after{
+  content:"";position:absolute;inset-inline:0;bottom:.02em;height:.26em;z-index:-1;
+  background:linear-gradient(90deg,rgba(242,85,31,.20),rgba(255,138,61,.10));
+  border-radius:.2em;
+}
+
+/* ---- focus card: deeper, warmer lift ---- */
+.focus-card{
+  border-radius:22px;
+  box-shadow:0 2px 8px rgba(24,31,42,.05),0 34px 60px -24px rgba(242,85,31,.22);
+}
+
+/* ---- buttons: gradient primary + gentle lift ---- */
+.btn{transition:transform .18s ease,box-shadow .18s ease,background .18s ease,border-color .18s ease,color .18s ease}
+.btn-primary{
+  background:linear-gradient(135deg,#ff7a45 0%,#f2551f 100%);
+  box-shadow:0 6px 18px -5px rgba(242,85,31,.55);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px -7px rgba(242,85,31,.6)}
+.btn-ghost{background:var(--surface)}
+.btn-ghost:hover{transform:translateY(-2px)}
+
+/* ---- unify card hovers & soften corners ---- */
+.medcard,.dx-card,.dl-card{
+  border-radius:18px;
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.medcard:hover,.dx-card:hover,.dl-card:hover{
+  transform:translateY(-3px);
+  border-color:color-mix(in srgb,var(--accent) 45%,var(--line));
+  box-shadow:var(--shadow-lg);
+}
+.toc-item{border-radius:16px}
+
+/* ---- section dividers: soft centered gradient hairline instead of a hard line ---- */
+.sec{border-top:none;position:relative}
+.sec::before{
+  content:"";position:absolute;top:0;inset-inline:0;margin-inline:auto;
+  width:min(1080px,92%);height:1px;
+  background:linear-gradient(90deg,transparent,var(--line) 18%,var(--line) 82%,transparent);
+}
+
+/* ---- eyebrow kicker: gradient dash ---- */
+.eyebrow::before{
+  width:30px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,var(--accent),#ff9a5c);
+}
+
+/* ---- chips / pills / badges: a touch softer ---- */
+.chip,.pill,.badge{border-radius:999px}
+
+/* ---- dark mode: dim the glows, keep them alive ---- */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) body{
+    background:
+      radial-gradient(1100px 620px at 100% -8%, rgba(255,122,69,.10), transparent 60%),
+      radial-gradient(950px 700px at -12% 112%, rgba(59,182,172,.08), transparent 55%),
+      var(--paper);
+  }
+  :root:not([data-theme="light"]):not([data-calm="on"]) .hl{
+    background:linear-gradient(115deg,#ffa066,#ff7a45 55%,#ff6a3d);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  :root:not([data-theme="light"]) .focus-card{
+    box-shadow:0 2px 8px rgba(0,0,0,.4),0 34px 64px -24px rgba(255,122,69,.28);
+  }
+}
+:root[data-theme="dark"] body{
+  background:
+    radial-gradient(1100px 620px at 100% -8%, rgba(255,122,69,.10), transparent 60%),
+    radial-gradient(950px 700px at -12% 112%, rgba(59,182,172,.08), transparent 55%),
+    var(--paper);
+}
+:root[data-theme="dark"]:not([data-calm="on"]) .hl{
+  background:linear-gradient(115deg,#ffa066,#ff7a45 55%,#ff6a3d);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+:root[data-theme="dark"] .focus-card{
+  box-shadow:0 2px 8px rgba(0,0,0,.4),0 34px 64px -24px rgba(255,122,69,.28);
+}
+
+/* ---- QUIET MODE: strip every gradient/glow back to a flat, calm palette ---- */
+:root[data-calm="on"] body{background:var(--paper)}
+:root[data-calm="on"] .hero::before{display:none}
+:root[data-calm="on"] .hl{-webkit-text-fill-color:var(--accent)!important;color:var(--accent)}
+:root[data-calm="on"] .hl::after{display:none}
+:root[data-calm="on"] .btn-primary{background:var(--accent);box-shadow:var(--shadow)}
+:root[data-calm="on"] .eyebrow::before{background:var(--accent)}
+
+/* ---- reduced motion: no hover translate ---- */
+@media (prefers-reduced-motion:reduce){
+  .btn-primary:hover,.btn-ghost:hover,.medcard:hover,.dx-card:hover,.dl-card:hover{transform:none}
+}
