@@ -9,6 +9,7 @@
   "use strict";
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
 
   var T = isHe ? {
     min: 'דק׳ קריאה', top: 'חזרה למעלה', progress: 'התקדמות בקריאה',
@@ -34,6 +35,18 @@
     creditH: 'مبنيّ على البحث العلمي', creditSci: 'المرجع العلمي الأساسي:',
     creditP: 'محتوى هذا الدليل مبنيّ على مصادر طبية وعلمية، وبنيته وتصميمه مبنيّان على أبحاث منشورة في تيسير الوصول الإدراكي لأصحاب ADHD والأدمغة المختلفة:',
     srcContent: 'المصادر الطبية للمعلومات نفسها'
+  } : isHu ? {
+    min: 'perc olvasás', top: 'Vissza a tetejére', progress: 'Olvasási haladás',
+    prevLbl: 'Előző', nextLbl: 'Következő', nowLbl: 'Most',
+    evLead: 'Szakértők által lektorált tudományra épül.',
+    evMid: ' Ez az útmutató az orvosi bizonyítékokon alapul — beleértve a ',
+    evStmt: 'World Federation of ADHD nemzetközi konszenzusnyilatkozatát',
+    evMeta: ' — 208 bizonyítékokon alapuló megállapítás (Faraone et al., 2021, Neuroscience & Biobehavioral Reviews). ',
+    evSources: 'Összes forrás megtekintése →',
+    evLayout: ' Az elrendezése <a href="#builton">publikált kognitív-akadálymentességi kutatást</a> követ az ADHD-s és neurodivergens agyú emberek számára. ',
+    creditH: 'Kutatásra építve', creditSci: 'Fő tudományos forrás:',
+    creditP: 'Az útmutató információi klinikai és tudományos forrásokon alapulnak, elrendezése pedig publikált kognitív-akadálymentességi kutatást követ az ADHD-s és neurodivergens elméjű emberek számára:',
+    srcContent: 'az információ orvosi forrásai'
   } : {
     min: 'min read', top: 'Back to top', progress: 'Reading progress',
     prevLbl: 'Previous', nextLbl: 'Next', nowLbl: 'Now',

@@ -5,6 +5,7 @@
   "use strict";
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
   var KEY = 'adhd-bookmarks-v1';
   var SKIP = { illustrated: 1, downloads: 1, contents: 1, sources: 1, gear: 1, experience: 1, brainmap: 1 };
 
@@ -16,6 +17,10 @@
     savedBtn: 'المحفوظات', title: 'أقسامك المحفوظة',
     empty: 'لا أقسام محفوظة بعد — اضغط ☆ بجانب عنوان أي قسم لحفظه، لتعود إليه بسرعة.',
     go: 'انتقال', remove: 'إزالة', close: 'إغلاق', save: 'حفظ القسم', saved: 'محفوظ'
+  } : isHu ? {
+    savedBtn: 'Mentett', title: 'Mentett szakaszaid',
+    empty: 'Még nincs mentve semmi — koppints a ☆-ra bármely szakasz címe mellett, hogy elmentsd és később gyorsan visszaugorj.',
+    go: 'Ugrás', remove: 'Eltávolítás', close: 'Bezárás', save: 'Szakasz mentése', saved: 'Mentve'
   } : {
     savedBtn: 'Saved', title: 'Your saved sections',
     empty: 'Nothing saved yet — tap ☆ next to any section title to save it and jump back later.',

@@ -6,6 +6,7 @@
   "use strict";
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
   var DKEY = 'adhd-nudge-dismissed';
   var shown = false;
 
@@ -20,6 +21,9 @@
   } : isAr ? {
     msg: 'محفوظ على هذا الجهاز فقط. دماغك المصاب بـ ADHD لا ينبغي أن يتذكّر كل شيء — أنشئ حساباً مجانياً ليحفظ تقدّمك ويُزامنه عبر كل أجهزتك، فلا تفقده أبداً.',
     cta: 'أنشئ حساباً مجانياً', no: 'ليس الآن'
+  } : isHu ? {
+    msg: 'Csak ezen az eszközön mentve. Az ADHD-agyadnak nem kell mindenre emlékeznie — hozz létre egy ingyenes fiókot, hogy a haladásod biztonságban és szinkronban legyen minden eszközödön, és soha ne veszítsd el.',
+    cta: 'Ingyenes fiók létrehozása', no: 'Most nem'
   } : {
     msg: 'Saved on this device only. Your ADHD brain shouldn’t have to remember everything — create a free account to keep your progress safe and synced across all your devices, so you never lose it.',
     cta: 'Create a free account', no: 'Not now'
@@ -53,7 +57,7 @@
       var ab = document.getElementById('authBtn'); if (ab) ab.click();
       // switch straight to the "create account" view if we opened on sign-in
       var tog = document.getElementById('authToggle');
-      var signinHint = isHe ? 'חדש כאן' : isAr ? 'جديد' : 'New here';
+      var signinHint = isHe ? 'חדש כאן' : isAr ? 'جديد' : isHu ? 'Új' : 'New here';
       if (tog && tog.textContent.indexOf(signinHint) > -1) tog.click();
     });
     n.querySelector('.ng-no').addEventListener('click', function () { setDismissed(); n.parentNode && n.parentNode.removeChild(n); });

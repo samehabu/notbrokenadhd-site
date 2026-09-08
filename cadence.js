@@ -7,6 +7,7 @@
   function u(c){ return URL + '/?utm_source=notbrokenadhd&utm_medium=referral&utm_campaign=' + c; }
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
   var T = isHe ? {
     badge: 'אפליקציית לימוד ל-ADHD',
     h: 'תלמד עם המוח שלך עם ADHD — לא נגדו',
@@ -23,6 +24,14 @@
     meta: 'مراجَع من رئيس قسم الطب النفسي · مبنيّ على ~100 دراسة · تجربة مجانية 3 أيام',
     cta: 'جرّب Cadence مجاناً ←',
     srcDesc: 'تطبيق مذاكرة لـ ADHD — يحوّل ملاحظاتك إلى جولات استرجاع. مراجَع من مختصّين.'
+  } : isHu ? {
+    badge: 'Tanulóapp ADHD-hoz',
+    h: 'Tanulj az ADHD-agyaddal — ne ellene',
+    p: 'A Cadence a jegyzeteidet nyugodt, felidézés-alapú tanulókörökké alakítja — időzítve, jutalmazva és olyan ütemben, ahogy egy ADHD-agy valóban fókuszál és emlékszik.',
+    quote: '„Zseniális.”', cite: 'Prof. Dr. Ede Frecska · a Debreceni Egyetem pszichiátria tanszékének vezetője',
+    meta: 'Pszichiátria-tanszékvezető által lektorálva · ~100 tanulmányra épül · ingyenes 3 napos próba',
+    cta: 'Próbáld ki a Cadence-t ingyen →',
+    srcDesc: 'Tanulóapp ADHD-hoz — a jegyzeteket felidézés-alapú tanulókörökké alakítja. Klinikusok által lektorálva.'
   } : {
     badge: 'A study app for ADHD',
     h: 'Study with your ADHD brain — not against it',
@@ -45,6 +54,12 @@
     toolsBtn: 'افتح Cadence ←',
     gearDesc: 'تطبيق مذاكرة لـ ADHD — جولات قائمة على الاسترجاع. تجربة مجانية 3 أيام.', gearGo: 'جرّب ←',
     credit: 'بفضل Cadence، خرج هذا الموقع إلى النور.'
+  } : isHu ? {
+    toolsH: 'Szeretnéd ezt teljes tanulórendszerként?',
+    toolsP: 'A Cadence az ADHD-tanulóapp, amely ugyanezekre az elvekre épül — alakítsd a saját jegyzeteidet vezetett, felidézés-alapú tanulókörökké.',
+    toolsBtn: 'Cadence megnyitása →',
+    gearDesc: 'Tanulóapp ADHD-hoz — felidézés-alapú tanulókörök. Ingyenes 3 napos próba.', gearGo: 'Kipróbálom →',
+    credit: 'A Cadence-nek köszönhetően jött létre ez a weboldal.'
   } : {
     toolsH: 'Want this as a full study system?',
     toolsP: 'Cadence is the ADHD study app built on these same principles — turn your own notes into guided, recall-first study rounds.',

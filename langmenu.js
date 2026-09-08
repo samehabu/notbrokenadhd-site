@@ -5,12 +5,14 @@
   "use strict";
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
-  var cur = isHe ? 'he' : isAr ? 'ar' : 'en';
+  var isHu = document.documentElement.lang === 'hu';
+  var cur = isHe ? 'he' : isAr ? 'ar' : isHu ? 'hu' : 'en';
 
   var LANGS = [
     { code: 'en', label: 'English', href: 'index.html', font: "'Bricolage Grotesque','Segoe UI',sans-serif" },
     { code: 'ar', label: 'العربية', href: 'ar.html',    font: "'Tajawal','Cairo','Segoe UI',sans-serif" },
-    { code: 'he', label: 'עברית',   href: 'he.html',    font: "'Heebo','Rubik','Segoe UI',sans-serif" }
+    { code: 'he', label: 'עברית',   href: 'he.html',    font: "'Heebo','Rubik','Segoe UI',sans-serif" },
+    { code: 'hu', label: 'Magyar', href: 'hu.html',    font: "'Bricolage Grotesque','Segoe UI',sans-serif" }
   ];
   var ARIA = 'Language · اللغة · שפה';
 

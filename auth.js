@@ -20,6 +20,7 @@
 
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
   var T = isHe ? {
     signinTitle: 'התחבר כדי לשמור את ההתקדמות שלך', signupTitle: 'צור את החשבון שלך',
     signinSubmit: 'התחברות', signupSubmit: 'צור חשבון',
@@ -42,6 +43,17 @@
     signedInMsg: 'تم تسجيل الدخول!', genericErr: 'حدث خطأ ما.',
     deleteBtn: 'حذف حسابي وبياناتي', confirmDelete: 'حذف حسابك وكل تقدّمك المحفوظ نهائياً؟ لا يمكن التراجع عن هذا.',
     deleted: 'تم حذف حسابك وبياناتك.', deleteErr: 'تعذّر حذف الحساب. إن تكرّر هذا، تواصل مع صاحب الموقع.'
+  } : isHu ? {
+    signinTitle: 'Jelentkezz be a haladásod mentéséhez', signupTitle: 'Hozd létre a fiókod',
+    signinSubmit: 'Bejelentkezés', signupSubmit: 'Fiók létrehozása',
+    toggleToSignup: 'Új vagy itt? Hozz létre fiókot', toggleToSignin: 'Van már fiókod? Jelentkezz be',
+    working: 'Feldolgozás…', signInBtn: 'Bejelentkezés',
+    whoPrefix: 'Bejelentkezve: ', created: 'Fiók létrehozva — erősítsd meg az e-mailben, majd jelentkezz be.',
+    resetSent: 'Jelszó-visszaállító e-mail elküldve — nézd meg a postaládád.',
+    enterEmailFirst: 'Először add meg fent az e-mail-címed.', enterBoth: 'Kérlek, add meg az e-mailt és a jelszót.',
+    signedInMsg: 'Bejelentkeztél!', genericErr: 'Valami hiba történt.',
+    deleteBtn: 'Fiókom és adataim törlése', confirmDelete: 'Véglegesen törlöd a fiókod és az összes mentett haladást? Ez nem vonható vissza.',
+    deleted: 'A fiókod és az adataid törölve.', deleteErr: 'Nem sikerült törölni a fiókot. Ha ez ismétlődik, lépj kapcsolatba az oldal tulajdonosával.'
   } : {
     signinTitle: 'Sign in to save your progress', signupTitle: 'Create your account',
     signinSubmit: 'Sign in', signupSubmit: 'Create account',

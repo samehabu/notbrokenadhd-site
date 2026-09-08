@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Adatvédelem — Az ADHD Terepkalauz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=optional">
+<style>
+  :root{--paper:#eef1f5;--surface:#fff;--ink:#181f2a;--ink-soft:#3a4351;--grey:#59626f;--line:#d9dfe6;--accent:#f2551f;--amber:#c9781b;--amber-soft:#fbe6cf}
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#11151c;--surface:#1a202a;--ink:#eef2f6;--ink-soft:#c3ccd6;--grey:#94a0ad;--line:#2c353f;--accent:#ff6a3d;--amber:#e0a144;--amber-soft:#31281a}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;line-height:1.7;font-size:18px}
+  .wrap{max-width:56ch;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+  a{color:var(--accent)}
+  .back{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;display:inline-block;margin-bottom:2rem}
+  h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2.2rem;line-height:1.1;letter-spacing:-.02em;margin:0 0 .4rem}
+  h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1.25rem;margin:2.2rem 0 .5rem;color:var(--ink)}
+  p,li{color:var(--ink-soft)}
+  .eff{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--grey);margin:0 0 1.5rem}
+  ul{padding-left:1.2rem}
+  li{margin:.35rem 0}
+  strong{color:var(--ink)}
+  footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.2rem;font-size:.85rem;color:var(--grey)}
+</style>
+<body>
+<div class="wrap">
+  <a class="back" href="hu.html">← Vissza az útmutatóhoz</a>
+
+  <h1>Adatvédelem &amp; az adataid</h1>
+  <p class="eff">Hatálybalépés: 2026. augusztus · Utolsó frissítés: 2026. augusztus</p>
+
+  <p>Ez az ADHD-útmutató oktatási forrás. Az adatvédelmed itt számít — különösen mert az egészség érzékeny téma. Ez az oldal közérthetően elmagyarázza, mit gyűjtünk és mit nem.</p>
+
+  <h2>A rövid változat</h2>
+  <ul>
+    <li>Az egész útmutatót elolvashatod <strong>fiók nélkül és bármilyen adat megadása nélkül</strong>.</li>
+    <li>Amit kitöltesz (önteszt, gyógyszernapló, jegyzetek), az <strong>a saját eszközödön</strong> tárolódik, hacsak nem hozol létre fiókot.</li>
+    <li>Nem adjuk el és nem osztjuk meg az adataidat, és nem követünk a weben keresztül.</li>
+  </ul>
+
+  <h2>Milyen adatot gyűjtünk</h2>
+  <p><strong>Fiók nélkül:</strong> semmi sem kerül hozzánk. Az önteszted válaszai, a gyógyszernaplód, a jegyzeteid és a megjelenítési beállításaid kizárólag a böngésződben (<em>helyi tárolóban</em>) tárolódnak azon az eszközön, amelyet használsz. A böngésződ adatainak törlése eltávolítja őket.</p>
+  <p><strong>Opcionális fiókkal:</strong> ha úgy döntesz, hogy bejelentkezel az eszközök közötti szinkronizáláshoz, akkor a következőket tároljuk:</p>
+  <ul>
+    <li>az <strong>e-mail-címedet</strong> (a bejelentkezéshez), és</li>
+    <li>a <strong>haladási adatokat, amelyeket menteni választasz</strong> (önteszt, napló, jegyzetek).</li>
+  </ul>
+  <p>A fiókokat és a bejelentkezést a <strong>Supabase</strong>, a hitelesítési és adatbázis-szolgáltatónk kezeli. A jelszavadat a Supabase kódolja (hasheli) — ez az oldal soha nem látja és nem tárolja a nyers jelszavadat.</p>
+
+  <h2>Hogyan használjuk</h2>
+  <p>Kizárólag a kért szolgáltatás nyújtására: hogy bejelentkeztessünk és szinkronizáljuk a mentett haladásodat a saját eszközeid között. Ennyi. Nincs hirdetés-alapú profilozás, nincs eladás, és a működtetéshez szükséges tárhely-/hitelesítési szolgáltatón túl nincs megosztás harmadik felekkel.</p>
+
+  <h2>Tárolás &amp; biztonság</h2>
+  <ul>
+    <li>A fiókadatok a Supabase-nél tárolódnak, és titkosított kapcsolaton (HTTPS) keresztül továbbítódnak.</li>
+    <li>A hozzáférési szabályok biztosítják, hogy minden fiók csak a <strong>saját</strong> adatait olvashassa vagy módosíthassa.</li>
+    <li>Egyetlen rendszer sem tökéletesen biztonságos, ezért a lehető legkevesebbet gyűjtjük — egy e-mailt és a saját mentett haladásodat.</li>
+  </ul>
+
+  <h2>Sütik &amp; helyi tároló</h2>
+  <p>Ez az oldal a böngésződ <em>helyi tárolóját</em> használja a beállításaid és (ha nem jelentkezel be) a mentett haladásod megjegyzésére. Ha bejelentkezel, egy biztonságos munkamenet-token is tárolódik, hogy bejelentkezve maradj.</p>
+
+  <h2>Hirdetések</h2>
+  <p>Ez az oldal hirdetéseket jeleníthet meg, hogy ingyenes maradjon. Ha a hirdetések engedélyezve vannak, azokat a <strong>Google AdSense</strong> szolgáltatja, és:</p>
+  <ul>
+    <li>Egyetlen hirdetés és hirdetési süti sem töltődik be, amíg nem választasz a hozzájárulási sávon.</li>
+    <li>A <strong>„Nem személyre szabott”</strong> választásával a hirdetések személyre szabási sütik nélkül jelennek meg.</li>
+    <li>A Google sütiket használhat, hogy a látogatásaid alapján jelenítsen meg hirdetéseket ezen és más oldalakon; ezt a <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google Ad Center</a> és a <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google hirdetési szabályzata</a> oldalon nézheted meg és szabályozhatod.</li>
+    <li>Ahol lehet, blokkoljuk az érzékeny hirdetéskategóriákat, és a személyes és krízis-szakaszokból kihagyjuk a hirdetéseket.</li>
+  </ul>
+
+  <h2>A választásaid &amp; jogaid</h2>
+  <ul>
+    <li><strong>Használd névtelenül</strong> — soha ne hozz létre fiókot.</li>
+    <li><strong>Törölj mindent, bármikor</strong> — nyisd meg a bejelentkezési panelt, és válaszd a <em>„Fiókom &amp; adataim törlése”</em> lehetőséget. Ez véglegesen eltávolítja a fiókodat és minden szinkronizált adatot. Az eszközön tárolt adatok törléséhez ürítsd a böngésződ tárolóját.</li>
+    <li><strong>Hozzáférhetsz vagy javíthatod</strong> az adataidat, vagy kérdezhetsz — lépj velünk kapcsolatba lent.</li>
+    <li>Attól függően, hol élsz, további jogaid lehetnek (hozzáférés, hordozhatóság, törlés, tiltakozás). Ezeket tiszteletben tartjuk.</li>
+  </ul>
+
+  <h2>Adatmegőrzés</h2>
+  <p>A fiókadatokat a fiókod törléséig őrizzük. Az eszközön tárolt adatok addig maradnak az eszközödön, amíg ki nem törlöd őket.</p>
+
+  <h2>Gyermekek</h2>
+  <p>Ez az útmutató általános felnőtt és tinédzser közönségnek készült. Nem 13 év alatti gyermekeknek szól, és tudatosan nem gyűjtünk tőlük adatot.</p>
+
+  <h2>A szabályzat módosításai</h2>
+  <p>Ha ez a szabályzat módosul, a fenti dátum frissül. A lényeges változásokat ezen az oldalon jelöljük.</p>
+
+  <h2>Kapcsolat</h2>
+  <p>Kérdés az adatvédelemről vagy az adataidról? Írj a <strong><a href="mailto:notbrokenadhd@gmail.com">notbrokenadhd@gmail.com</a></strong> címre.</p>
+
+  <footer>Ez az oldal az átláthatóság kedvéért készült, és nem orvosi vagy jogi tanács.</footer>
+</div>
+</body>
+</html>
