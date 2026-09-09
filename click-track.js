@@ -2,7 +2,7 @@
    Logs an anonymous row to Supabase whenever a visitor clicks a tracked
    outbound link:
      • cadenceadhd.com          -> campaign = its utm_campaign (card/nav/…)
-     • day-with-adhd.netlify.app -> campaign = 'day-with-adhd'
+     • adhd-simulations.netlify.app (or day-with-adhd) -> campaign = 'day-with-adhd'
    Records ONLY: which link (campaign), the page language, and the page path.
    No cookies, no IP, no personal data. Read totals in the Supabase dashboard
    (SQL at the bottom). Fails silently until the `cadence_clicks` table exists. */
@@ -23,7 +23,7 @@
   // returns the campaign label for a tracked outbound link, or null if not tracked
   function trackedCampaign(href) {
     if (href.indexOf('cadenceadhd.com') !== -1) return String(campaignOf(href)).slice(0, 60);
-    if (href.indexOf('day-with-adhd') !== -1) return 'day-with-adhd';
+    if (href.indexOf('day-with-adhd') !== -1 || href.indexOf('adhd-simulations') !== -1) return 'day-with-adhd';
     return null;
   }
 
