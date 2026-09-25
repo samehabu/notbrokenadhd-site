@@ -5,6 +5,7 @@
   "use strict";
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
   var sumBtn = document.getElementById('summaryBtn');
   var overlay = document.getElementById('summaryOverlay');
   var box = document.getElementById('printSummary');
@@ -14,6 +15,8 @@
     ? { good: 'עזר מאוד', some: 'עזר במעט', none: 'ללא השפעה', bad: 'תופעות לוואי', stop: 'הפסקתי' }
     : isAr
     ? { good: 'جيد جداً', some: 'ساعد قليلاً', none: 'بلا أثر', bad: 'آثار جانبية', stop: 'أوقفته' }
+    : isHu
+    ? { good: 'Sokat segített', some: 'Kicsit segített', none: 'Nem hatott', bad: 'Kellemetlen mellékhatások', stop: 'Abbahagytam' }
     : { good: 'Helped a lot', some: 'Helped somewhat', none: 'No effect', bad: 'Bad side effects', stop: 'Stopped it' };
 
   var L = isHe ? {
@@ -34,6 +37,15 @@
     discuss: 'ما أودّ مناقشته', d1: 'كيف شعرت مع كل دواء في هذه الفترة', d2: 'أي آثار جانبية أو أسئلة عن الجرعة', d3: 'الخطوات التالية أو التعديلات',
     note: '<strong>ملاحظة:</strong> هذا سجلّ أدوية شخصي من موقع تثقيفي — وليس سجلّاً طبياً؛ راجعه مع طبيبك.',
     print: 'اطبع / احفظ PDF', close: 'إغلاق'
+  } : isHu ? {
+    wk: '📅 Ez a hét', mo: '📅 Ez a hónap',
+    wkTitle: 'Heti gyógyszer-összefoglaló', moTitle: 'Havi gyógyszer-összefoglaló',
+    prep: 'Készült: ', last: 'utolsó ', days: ' nap',
+    logged: function (p) { return 'Az ezen a ' + (p === 'week' ? 'héten' : 'hónapban') + ' rögzített gyógyszerek'; },
+    none: function (d) { return 'Nincs gyógyszer rögzítve az utolsó ' + d + ' napban. Adj hozzá bejegyzéseket a nyilvántartóhoz, és a haladásod itt jelenik meg.'; },
+    discuss: 'Amiről beszélni szeretnék', d1: 'Hogyan éreztem magam az egyes gyógyszerekkel ebben az időszakban', d2: 'Mellékhatások vagy adagolási kérdések', d3: 'Következő lépések vagy módosítások',
+    note: '<strong>Megjegyzés:</strong> Személyes gyógyszernapló egy oktatási célú weboldalról — nem orvosi dokumentáció; néztesd át az orvosoddal.',
+    print: 'Nyomtatás / mentés PDF-ként', close: 'Bezárás'
   } : {
     wk: '📅 This week', mo: '📅 This month',
     wkTitle: 'Weekly medication summary', moTitle: 'Monthly medication summary',
@@ -49,8 +61,8 @@
   function fmt(ts) {
     try {
       var d = new Date(ts);
-      var loc = isHe ? 'he' : isAr ? 'ar' : 'en-GB';
-      return d.toLocaleDateString(loc, { day: 'numeric', month: isAr || isHe ? 'long' : 'short', year: 'numeric' }) + ' · ' + d.toLocaleTimeString(loc, { hour: '2-digit', minute: '2-digit', hour12: false });
+      var loc = isHe ? 'he' : isAr ? 'ar' : isHu ? 'hu' : 'en-GB';
+      return d.toLocaleDateString(loc, { day: 'numeric', month: isAr || isHe || isHu ? 'long' : 'short', year: 'numeric' }) + ' · ' + d.toLocaleTimeString(loc, { hour: '2-digit', minute: '2-digit', hour12: false });
     } catch (e) { return ''; }
   }
   function medlog() { try { return JSON.parse(localStorage.getItem('adhd-medlog-v1') || '[]') || []; } catch (e) { return []; } }

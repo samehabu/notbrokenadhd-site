@@ -13,12 +13,16 @@
 
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
   var T = isHe ? {
     msg: 'אנחנו מציגים פרסומות כדי לשמור על המדריך הזה חינמי. לאשר פרסומות מותאמות אישית (הן משתמשות בעוגיות)? המדריך נשאר חינמי בכל מקרה.',
     accept: 'אישור', decline: 'לא מותאמות אישית', privacy: 'פרטיות'
   } : isAr ? {
     msg: 'نعرض إعلانات لإبقاء هذا الدليل مجانياً. هل توافق على إعلانات مخصّصة (تستخدم الكوكيز)؟ يبقى الدليل مجانياً في الحالتين.',
     accept: 'أوافق', decline: 'إعلانات غير مخصّصة', privacy: 'الخصوصية'
+  } : isHu ? {
+    msg: 'Hirdetéseket mutatunk, hogy ez az útmutató ingyenes maradhasson. Elfogadod a személyre szabott hirdetéseket (sütiket használnak)? Az útmutató mindenképp ingyenes marad.',
+    accept: 'Elfogadom', decline: 'Nem személyre szabott', privacy: 'Adatvédelem'
   } : {
     msg: 'We show ads to keep this guide free. Allow personalised ads (they use cookies)? The guide stays free either way.',
     accept: 'Accept', decline: 'Non-personalised', privacy: 'Privacy'
@@ -78,7 +82,7 @@
     banner.className = 'ad-consent';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Ad consent');
-    var priv = isHe ? 'privacy-he.html' : isAr ? 'privacy-ar.html' : 'privacy.html';
+    var priv = isHe ? 'privacy-he.html' : isAr ? 'privacy-ar.html' : isHu ? 'privacy-hu.html' : 'privacy.html';
     banner.innerHTML =
       '<span class="acm">' + T.msg + ' <a href="' + priv + '">' + T.privacy + '</a></span>' +
       '<span class="acb"><button type="button" class="ac-decline">' + T.decline + '</button>' +

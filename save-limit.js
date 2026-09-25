@@ -7,6 +7,7 @@
   var LIMIT = 2;
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
+  var isHu = document.documentElement.lang === 'hu';
 
   function signedIn() { var si = document.getElementById('authSignedIn'); return !!(si && si.hidden === false); }
   function accountsOn() { var b = document.getElementById('authBtn'); return !!(b && getComputedStyle(b).display !== 'none'); }
@@ -23,6 +24,9 @@
   } : isAr ? {
     msg: 'حفظت دواءين — وهو الحدّ المجاني دون حساب. أنشئ حساباً مجانياً لمواصلة الإضافة ومزامنة سجلّك عبر كل أجهزتك. (مجاني تماماً، وأول دواءين محفوظان لك.)',
     cta: 'أنشئ حساباً مجانياً', close: 'إغلاق'
+  } : isHu ? {
+    msg: 'Már két gyógyszert mentettél — ez az ingyenes korlát fiók nélkül. Hozz létre egy ingyenes fiókot, hogy tovább adhass hozzá bejegyzéseket, és szinkronizáld az előzményeidet minden eszközödön. (Teljesen ingyenes, és az első kettő megmarad.)',
+    cta: 'Ingyenes fiók létrehozása', close: 'Bezárás'
   } : {
     msg: 'You’ve saved 2 medications — the free limit without an account. Create a free account to keep adding and sync your history across all your devices. (It’s completely free, and your first two are kept.)',
     cta: 'Create a free account', close: 'Close'
@@ -56,7 +60,7 @@
     trackerBox.appendChild(gate);
     gate.querySelector('.g-cta').addEventListener('click', function () {
       var ab = document.getElementById('authBtn'); if (ab) ab.click();
-      var tog = document.getElementById('authToggle'), hint = isHe ? 'חדש כאן' : isAr ? 'جديد' : 'New here';
+      var tog = document.getElementById('authToggle'), hint = isHe ? 'חדש כאן' : isAr ? 'جديد' : isHu ? 'Új' : 'New here';
       if (tog && tog.textContent.indexOf(hint) > -1) tog.click();
     });
     gate.querySelector('.g-no').addEventListener('click', removeGate);

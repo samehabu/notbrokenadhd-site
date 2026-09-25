@@ -3,8 +3,8 @@
    Trilingual. Cadence: cadenceadhd.com — a study app for ADHD brains. */
 (function () {
   "use strict";
-  var URL = 'https://cadenceadhd.com';
-  function u(c){ return URL + '/?utm_source=notbrokenadhd&utm_medium=referral&utm_campaign=' + c; }
+  var CADENCE_URL = 'https://cadenceadhd.com';
+  function u(c){ return CADENCE_URL + '/?utm_source=notbrokenadhd&utm_medium=referral&utm_campaign=' + c; }
   var isHe = document.documentElement.lang === 'he';
   var isAr = document.documentElement.dir === 'rtl' && !isHe;
   var isHu = document.documentElement.lang === 'hu';
