@@ -133,3 +133,7 @@ body{
 @media (prefers-reduced-motion:reduce){
   .btn-primary:hover,.btn-ghost:hover,.medcard:hover,.dx-card:hover,.dl-card:hover{transform:none}
 }
+
+/* ---- video tap feedback ---- */
+video{cursor:pointer}
+.video-tap-active{opacity:.85}
