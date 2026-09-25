@@ -34,25 +34,28 @@
     var campaign = trackedCampaign(href);
     if (campaign === null) return;
 
-    var lang = document.documentElement.lang;
-    var body = JSON.stringify({
-      campaign: campaign,
-      lang: (lang === 'ar' || lang === 'he') ? lang : 'en',
-      path: String(location.pathname || '/').slice(0, 120)
-    });
-    try {
-      fetch(SB + '/rest/v1/cadence_clicks', {
-        method: 'POST',
-        keepalive: true,
-        headers: {
-          'apikey': KEY,
-          'Authorization': 'Bearer ' + KEY,
-          'Content-Type': 'application/json',
-          'Prefer': 'return=minimal'
-        },
-        body: body
-      }).catch(function () {});
-    } catch (e) {}
+    // Run the analytical ping asynchronously so it never blocks paint.
+    setTimeout(function () {
+      var lang = document.documentElement.lang;
+      var body = JSON.stringify({
+        campaign: campaign,
+        lang: (lang === 'ar' || lang === 'he') ? lang : 'en',
+        path: String(location.pathname || '/').slice(0, 120)
+      });
+      try {
+        fetch(SB + '/rest/v1/cadence_clicks', {
+          method: 'POST',
+          keepalive: true,
+          headers: {
+            'apikey': KEY,
+            'Authorization': 'Bearer ' + KEY,
+            'Content-Type': 'application/json',
+            'Prefer': 'return=minimal'
+          },
+          body: body
+        }).catch(function () {});
+      } catch (e) {}
+    }, 0);
   }, true);
 })();
 
