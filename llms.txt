@@ -37,6 +37,7 @@ Each article is also available in other languages by adding a suffix to the URL:
 
 - [About](https://notbrokenadhd.com/about): who made the site and why
 - [All articles](https://notbrokenadhd.com/articles)
+- [Editorial policy](https://notbrokenadhd.com/editorial-policy): who writes the site, how it is sourced, updated and corrected
 - [Contact](https://notbrokenadhd.com/contact)
 
 ## Optional
