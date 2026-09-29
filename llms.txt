@@ -1,0 +1,40 @@
+# Not Broken ADHD
+
+> A free, independent, plain-language ADHD resource (also titled "The ADHD Field Guide"): the science of ADHD, signs and red flags, a private self-check, focus and coping strategies, a full medication guide with pros and cons, and help talking to a doctor. Available in English, Arabic, Hebrew and Hungarian. Educational only, not medical advice.
+
+Built by someone who lived through a late ADHD diagnosis, and kept anonymous on purpose. No sign-up is needed to read anything. Contact: notbrokenadhd@gmail.com
+
+## Main guide
+
+- [The ADHD Field Guide (English)](https://notbrokenadhd.com/): A plain-language ADHD guide: the science, signs, a self-check, focus tools and a full medication guide with pros and cons. Educational, not medical advice.
+- [الدليل الشامل لـ ADHD (Arabic)](https://notbrokenadhd.com/ar): مورد بلغة مبسطة عن اضطراب نقص الانتباه وفرط الحركة: العلم، العلامات، اختبار ذاتي، أدوات التركيز، ودليل أدوية شامل. للتثقيف فقط — ليس نصيحة طبية.
+- [המדריך המלא ל-ADHD (Hebrew)](https://notbrokenadhd.com/he): משאב בשפה פשוטה על הפרעת קשב, ריכוז והיפראקטיביות: המדע, הסימנים, בדיקה עצמית, כלי מיקוד, ומדריך תרופות מקיף. למטרות חינוך בלבד — לא ייעוץ רפואי.
+- [Az ADHD Terepkalauz (Hungarian)](https://notbrokenadhd.com/hu): Közérthető ADHD-forrás: a tudomány, a jelek, a vészjelek, egy önteszt, fókusz-eszközök és teljes gyógyszer-útmutató. Csak oktatás — nem orvosi tanács.
+
+## Articles (English)
+
+- [Active Recall & Spaced Repetition for ADHD](https://notbrokenadhd.com/active-recall-spaced-repetition-adhd): Active recall and spaced repetition are the two most effective study techniques in the research, and they suit ADHD brains especially well. Here’s how.
+- [ADHD and Exams: How to Revise and Cope](https://notbrokenadhd.com/adhd-and-exams): Revising for exams with ADHD is hard, but not impossible. Evidence-based strategies for studying, handling exam stress, and getting the accommodations you need.
+- [ADHD and sleep: why it’s so hard, and what actually helps](https://notbrokenadhd.com/adhd-and-sleep): Sleep problems are extremely common with ADHD. Here’s why the ADHD brain resists sleep — and practical, evidence-informed ways to sleep better.
+- [How to thrive with ADHD at work](https://notbrokenadhd.com/adhd-at-work): Practical, judgement-free strategies for ADHD at work — from beating task paralysis and deadlines to accommodations and playing to your strengths.
+- [ADHD in women and girls: why it’s so often missed](https://notbrokenadhd.com/adhd-in-women): ADHD is widely under-diagnosed in women and girls. Here’s how it really presents, why it gets overlooked, and what to do about a late diagnosis.
+- [How to get an ADHD diagnosis as an adult](https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis): A plain-language guide to getting assessed for ADHD as an adult: what the process involves, how to prepare, and how to advocate for yourself if dismissed.
+- [How to Study with ADHD: 10 Strategies That Actually Work](https://notbrokenadhd.com/how-to-study-with-adhd): Studying with ADHD isn’t a willpower problem. 10 evidence-based study strategies (active recall, spaced repetition, timed focus) that work with your brain.
+
+## Translations
+
+Each article is also available in other languages by adding a suffix to the URL: `-ar` (Arabic), `-he` (Hebrew), `-hu` (Hungarian where available). Examples:
+
+- [كيف تزدهر مع ADHD في العمل](https://notbrokenadhd.com/adhd-at-work-ar)
+- [איך לשגשג עם ADHD בעבודה](https://notbrokenadhd.com/adhd-at-work-he)
+- [Hogyan boldogulj ADHD-val a munkában](https://notbrokenadhd.com/adhd-at-work-hu)
+
+## About
+
+- [About](https://notbrokenadhd.com/about): who made the site and why
+- [All articles](https://notbrokenadhd.com/articles)
+- [Contact](https://notbrokenadhd.com/contact)
+
+## Optional
+
+- [Sitemap](https://notbrokenadhd.com/sitemap.xml)
