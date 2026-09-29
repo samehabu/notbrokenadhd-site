@@ -9,10 +9,10 @@
   var cur = isHe ? 'he' : isAr ? 'ar' : isHu ? 'hu' : 'en';
 
   var LANGS = [
-    { code: 'en', label: 'English', href: 'index.html', font: "'Bricolage Grotesque','Segoe UI',sans-serif" },
-    { code: 'ar', label: 'العربية', href: 'ar.html',    font: "'Tajawal','Cairo','Segoe UI',sans-serif" },
-    { code: 'he', label: 'עברית',   href: 'he.html',    font: "'Heebo','Rubik','Segoe UI',sans-serif" },
-    { code: 'hu', label: 'Magyar', href: 'hu.html',    font: "'Bricolage Grotesque','Segoe UI',sans-serif" }
+    { code: 'en', label: 'English', href: '/',          font: "'Bricolage Grotesque','Segoe UI',sans-serif" },
+    { code: 'ar', label: 'العربية', href: '/ar',        font: "'Tajawal','Cairo','Segoe UI',sans-serif" },
+    { code: 'he', label: 'עברית',   href: '/he',        font: "'Heebo','Rubik','Segoe UI',sans-serif" },
+    { code: 'hu', label: 'Magyar', href: '/hu',        font: "'Bricolage Grotesque','Segoe UI',sans-serif" }
   ];
   var ARIA = 'Language · اللغة · שפה';
 
@@ -46,7 +46,8 @@
 
     // remove the old inline language links (anchors pointing at the 3 pages)
     Array.prototype.forEach.call(tools.querySelectorAll('a.icon-btn'), function (a) {
-      if (/(^|\/)(index|ar|he)\.html(\?|#|$)/.test(a.getAttribute('href') || '')) a.remove();
+      var h = a.getAttribute('href') || '';
+      if (/(^|\/)(index|ar|he)\.html(\?|#|$)/.test(h) || /^\/(ar|he)?([?#]|$)/.test(h)) a.remove();
     });
 
     var wrap = document.createElement('div'); wrap.className = 'lang-wrap';
