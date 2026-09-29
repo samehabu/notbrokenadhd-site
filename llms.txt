@@ -21,6 +21,10 @@ Built by someone who lived through a late ADHD diagnosis, and kept anonymous on 
 - [How to get an ADHD diagnosis as an adult](https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis): A plain-language guide to getting assessed for ADHD as an adult: what the process involves, how to prepare, and how to advocate for yourself if dismissed.
 - [How to Study with ADHD: 10 Strategies That Actually Work](https://notbrokenadhd.com/how-to-study-with-adhd): Studying with ADHD isn’t a willpower problem. 10 evidence-based study strategies (active recall, spaced repetition, timed focus) that work with your brain.
 
+## Articles (Arabic only)
+
+- [كونسيرتا وريتالين (ميثيلفينيديت): دليل مبسّط](https://notbrokenadhd.com/methylphenidate-concerta-ritalin-ar): Arabic guide to methylphenidate (Concerta, Ritalin): differences, onset, correct use, side effects, when to seek help.
+
 ## Translations
 
 Each article is also available in other languages by adding a suffix to the URL: `-ar` (Arabic), `-he` (Hebrew), `-hu` (Hungarian where available). Examples:
