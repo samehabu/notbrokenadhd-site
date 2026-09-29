@@ -5,283 +5,283 @@
   <url>
     <loc>https://notbrokenadhd.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/hu.html</loc>
+    <loc>https://notbrokenadhd.com/hu</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/ar.html</loc>
+    <loc>https://notbrokenadhd.com/ar</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/he.html</loc>
+    <loc>https://notbrokenadhd.com/he</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/hu"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url><loc>https://notbrokenadhd.com/about.html</loc><priority>0.6</priority></url>
-  <url><loc>https://notbrokenadhd.com/about-ar.html</loc><priority>0.6</priority></url>
-  <url><loc>https://notbrokenadhd.com/about-he.html</loc><priority>0.6</priority></url>
-  <url><loc>https://notbrokenadhd.com/contact.html</loc><priority>0.5</priority></url>
-  <url><loc>https://notbrokenadhd.com/contact-ar.html</loc><priority>0.5</priority></url>
-  <url><loc>https://notbrokenadhd.com/contact-he.html</loc><priority>0.5</priority></url>
+  <url><loc>https://notbrokenadhd.com/about</loc><priority>0.6</priority></url>
+  <url><loc>https://notbrokenadhd.com/about-ar</loc><priority>0.6</priority></url>
+  <url><loc>https://notbrokenadhd.com/about-he</loc><priority>0.6</priority></url>
+  <url><loc>https://notbrokenadhd.com/contact</loc><priority>0.5</priority></url>
+  <url><loc>https://notbrokenadhd.com/contact-ar</loc><priority>0.5</priority></url>
+  <url><loc>https://notbrokenadhd.com/contact-he</loc><priority>0.5</priority></url>
   <url>
-    <loc>https://notbrokenadhd.com/how-to-study-with-adhd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he.html"/>
+    <loc>https://notbrokenadhd.com/how-to-study-with-adhd</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/how-to-study-with-adhd-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he.html"/>
+    <loc>https://notbrokenadhd.com/how-to-study-with-adhd-ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/how-to-study-with-adhd-he.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he.html"/>
+    <loc>https://notbrokenadhd.com/how-to-study-with-adhd-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-study-with-adhd"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-study-with-adhd-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-study-with-adhd-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-and-exams.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he.html"/>
+    <loc>https://notbrokenadhd.com/adhd-and-exams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-and-exams-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he.html"/>
+    <loc>https://notbrokenadhd.com/adhd-and-exams-ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-and-exams-he.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he.html"/>
+    <loc>https://notbrokenadhd.com/adhd-and-exams-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-exams"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-exams-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-exams-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html"/>
+    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html"/>
+    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he.html"/>
+    <loc>https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/active-recall-spaced-repetition-adhd-he"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/articles.html</loc>
+    <loc>https://notbrokenadhd.com/articles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
+    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
+    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
+    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis.html"/>
+    <loc>https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/how-to-get-an-adhd-diagnosis"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-in-women.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women.html"/>
+    <loc>https://notbrokenadhd.com/adhd-in-women</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-in-women-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women.html"/>
+    <loc>https://notbrokenadhd.com/adhd-in-women-ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-in-women-he.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women.html"/>
+    <loc>https://notbrokenadhd.com/adhd-in-women-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-in-women-hu.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women.html"/>
+    <loc>https://notbrokenadhd.com/adhd-in-women-hu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-in-women"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-in-women-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-in-women-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-in-women-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-in-women"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-and-sleep.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
+    <loc>https://notbrokenadhd.com/adhd-and-sleep</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-and-sleep-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
+    <loc>https://notbrokenadhd.com/adhd-and-sleep-ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-and-sleep-he.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
+    <loc>https://notbrokenadhd.com/adhd-and-sleep-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-and-sleep-hu.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep.html"/>
+    <loc>https://notbrokenadhd.com/adhd-and-sleep-hu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-and-sleep"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-and-sleep-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-and-sleep-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-and-sleep-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-and-sleep"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-at-work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work.html"/>
+    <loc>https://notbrokenadhd.com/adhd-at-work</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-at-work-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work.html"/>
+    <loc>https://notbrokenadhd.com/adhd-at-work-ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-at-work-he.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work.html"/>
+    <loc>https://notbrokenadhd.com/adhd-at-work-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://notbrokenadhd.com/adhd-at-work-hu.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work.html"/>
+    <loc>https://notbrokenadhd.com/adhd-at-work-hu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notbrokenadhd.com/adhd-at-work"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notbrokenadhd.com/adhd-at-work-ar"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://notbrokenadhd.com/adhd-at-work-he"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://notbrokenadhd.com/adhd-at-work-hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notbrokenadhd.com/adhd-at-work"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
