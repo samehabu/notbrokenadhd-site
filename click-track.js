@@ -10,9 +10,9 @@
   "use strict";
   var cfg = window.ADHD_CONFIG || {};
   // anon key is public by design — security is the table's Row Level Security.
-  var SB  = cfg.SUPABASE_URL || "https://sxrwebtwxbluogduqqru.supabase.co";
+  var SB  = cfg.SUPABASE_URL || "https://dzootsexxtnewdgaiqls.supabase.co";
   var KEY = cfg.SUPABASE_ANON_KEY ||
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4cndlYnR3eGJsdW9nZHVxcXJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg1MDUyNzcsImV4cCI6MjEwNDA4MTI3N30.oiK1vmvH8XVN_3ejjY2WpmmKpUJRY1IzqcZ7kfuyh9I";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR6b290c2V4eHRuZXdkZ2FpcWxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA3MTc2MjgsImV4cCI6MjEwNjI5MzYyOH0.Bvx1p20h0xdY8VyDbjflg831KRCdSZTIoChGWSd5zWw";
   if (!SB || !KEY) return;
 
   function campaignOf(href) {
@@ -39,7 +39,7 @@
       var lang = document.documentElement.lang;
       var body = JSON.stringify({
         campaign: campaign,
-        lang: (lang === 'ar' || lang === 'he') ? lang : 'en',
+        lang: (lang === 'ar' || lang === 'he' || lang === 'hu') ? lang : 'en',
         path: String(location.pathname || '/').slice(0, 120)
       });
       try {
@@ -65,7 +65,7 @@
    create table if not exists public.cadence_clicks (
      id         bigint generated always as identity primary key,
      campaign   text check (char_length(campaign) <= 60),
-     lang       text check (lang in ('en','ar','he')),
+     lang       text check (lang in ('en','ar','he','hu')),
      path       text check (char_length(path) <= 120),
      created_at timestamptz not null default now()
    );

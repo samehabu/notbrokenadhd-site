@@ -12,8 +12,8 @@
  * Security comes from the database's Row Level Security policies (see the setup guide).
  */
 window.ADHD_CONFIG = {
-  SUPABASE_URL: "https://sxrwebtwxbluogduqqru.supabase.co",
-  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4cndlYnR3eGJsdW9nZHVxcXJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg1MDUyNzcsImV4cCI6MjEwNDA4MTI3N30.oiK1vmvH8XVN_3ejjY2WpmmKpUJRY1IzqcZ7kfuyh9I",
+  SUPABASE_URL: "https://dzootsexxtnewdgaiqls.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR6b290c2V4eHRuZXdkZ2FpcWxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA3MTc2MjgsImV4cCI6MjEwNjI5MzYyOH0.Bvx1p20h0xdY8VyDbjflg831KRCdSZTIoChGWSd5zWw",
 
   /* Optional ads (Google AdSense). Ads stay OFF until ENABLED is true AND you
    * paste your publisher ID + ad-unit slot IDs below. No ad loads and no ad
