@@ -12,7 +12,7 @@
     eyebrow: 'המדע, בפשטות', h2: 'המוח שלך עם ADHD — ומה שעוזר',
     intro: 'שני מוחות נראים זהים. ההבדל הוא ב<b>פעילות</b> וב<b>כימיה</b>. גלגל כדי לראות — בתרשים או על מודל תלת־ממד.',
     typ: 'מוח טיפוסי', adhd: 'מוח ADHD', tre: 'עם טיפול וניהול',
-    pfc: 'הקליפה הקדם-מצחית', pfcSub: 'מיקוד · שליטה', reward: 'התגמול (דופמין)', pill: 'תרופה + טיפול',
+    pfc: 'הקליפה הקדם-מצחית', pfcSub: 'מיקוד · שליטה', reward: 'תגמול (דופמין)', ne: 'נוראדרנלין', pill: 'תרופה + טיפול',
     viewAria: 'תצוגת המוח', viewFlat: 'תרשים', view3d: 'מודל תלת־ממד',
     drag: 'גררו כדי לסובב', illus: 'להמחשה — האור מראה פעילות וכימיה, לא סריקה.',
     loading3d: 'טוען את מודל המוח…', fail3d: 'לא ניתן לטעון את המודל.',
@@ -35,7 +35,7 @@
     eyebrow: 'العلم، ببساطة', h2: 'دماغك مع ADHD — وما الذي يساعد',
     intro: 'الدماغان يبدوان متطابقين. الفرق في <b>النشاط</b> و<b>الكيمياء</b>. تنقّل لتراه — كمخطط أو على نموذج ثلاثي الأبعاد.',
     typ: 'دماغ نمطي', adhd: 'دماغ ADHD', tre: 'مع العلاج والتدبير',
-    pfc: 'القشرة الجبهية', pfcSub: 'تركيز · تحكّم', reward: 'المكافأة (الدوبامين)', pill: 'دواء + رعاية',
+    pfc: 'القشرة الجبهية', pfcSub: 'تركيز · تحكّم', reward: 'المكافأة (الدوبامين)', ne: 'النورإبينفرين', pill: 'دواء + رعاية',
     viewAria: 'عرض الدماغ', viewFlat: 'مخطط', view3d: 'نموذج ثلاثي الأبعاد',
     drag: 'اسحب للتدوير', illus: 'للتوضيح — الضوء يبيّن النشاط والكيمياء، وليس فحصًا.',
     loading3d: 'جارٍ تحميل نموذج الدماغ…', fail3d: 'تعذّر تحميل النموذج.',
@@ -58,7 +58,7 @@
     eyebrow: 'A tudomány, egyszerűen', h2: 'Az agyad ADHD-val — és mi segít',
     intro: 'Két agy kinézetre azonos. A különbség az <b>aktivitásban</b> és a <b>kémiában</b> van. Kattints, és nézd meg — ábrán vagy egy 3D agyon.',
     typ: 'Tipikus agy', adhd: 'ADHD-agy', tre: 'Kezeléssel és odafigyeléssel',
-    pfc: 'Prefrontális kéreg', pfcSub: 'fókusz · irányítás', reward: 'Jutalom (dopamin)', pill: 'Kezelés',
+    pfc: 'Prefrontális kéreg', pfcSub: 'fókusz · irányítás', reward: 'Jutalom (dopamin)', ne: 'Noradrenalin', pill: 'Kezelés',
     viewAria: 'Agynézet', viewFlat: 'Ábra', view3d: '3D modell',
     drag: 'Húzd a forgatáshoz', illus: 'Szemléltetés — a fény a működést és a kémiát mutatja, nem felvételt.',
     loading3d: 'Az agymodell betöltése…', fail3d: 'A 3D modellt nem sikerült betölteni.',
@@ -81,7 +81,7 @@
     eyebrow: 'The science, simply', h2: 'Your brain on ADHD — and what helps',
     intro: 'Two brains look identical. The difference is in <b>activity</b> and <b>chemistry</b>. Tap through to see it — as a diagram, or on a 3D brain.',
     typ: 'Typical brain', adhd: 'ADHD brain', tre: 'With treatment & management',
-    pfc: 'Prefrontal cortex', pfcSub: 'focus · control', reward: 'Reward (dopamine)', pill: 'Rx + care',
+    pfc: 'Prefrontal cortex', pfcSub: 'focus · control', reward: 'Reward (dopamine)', ne: 'Norepinephrine', pill: 'Rx + care',
     viewAria: 'Brain view', viewFlat: 'Diagram', view3d: '3D model',
     drag: 'Drag to turn', illus: 'Illustrative — the light shows activity and chemistry, not a scan.',
     loading3d: 'Loading 3D brain…', fail3d: 'Couldn’t load the 3D model.',
@@ -162,6 +162,7 @@
     '<text class="region-label" x="224" y="240">' + L.reward + '</text>' +
     '<g><circle class="sig" cx="235" cy="188" r="6" style="animation-delay:0s"/><circle class="sig drop" cx="212" cy="182" r="6" style="animation-delay:.2s"/><circle class="sig" cx="190" cy="176" r="6" style="animation-delay:.4s"/><circle class="sig drop" cx="168" cy="168" r="6" style="animation-delay:.6s"/><circle class="sig" cx="147" cy="160" r="6" style="animation-delay:.8s"/><circle class="sig drop" cx="128" cy="154" r="6" style="animation-delay:1s"/></g>' +
     '<g><circle class="attn" cx="180" cy="95" r="5" style="--dx:-18px;--dy:-14px"/><circle class="attn" cx="210" cy="82" r="5" style="--dx:22px;--dy:-10px"/><circle class="attn" cx="245" cy="88" r="5" style="--dx:26px;--dy:16px"/><circle class="attn" cx="278" cy="100" r="5" style="--dx:20px;--dy:-18px"/></g>' +
+    '<text class="region-label" x="330" y="66">' + L.ne + '</text>' +
     '<path class="focus-ray" d="M96,150 L30,150"/><path class="focus-ray" d="M40,150 l14,-8 M40,150 l14,8"/>' +
     '<g class="pill-rx" transform="translate(298,286)"><rect x="-12" y="-13" width="72" height="26" rx="13" fill="#e0a144"/><text x="24" y="5" text-anchor="middle" font-family="IBM Plex Mono,Tajawal,monospace" font-size="11.5" font-weight="700" fill="#fff">' + L.pill + '</text></g>' +
     '</svg>';
@@ -232,30 +233,69 @@
     return parseInt(v.slice(1), 16);
   }
 
-  function makeLabel(THREE, lines) {
+  function makeLabel(THREE, lines, opts) {
+    opts = opts || {};
     var c = document.createElement('canvas');
-    c.width = 640; c.height = 180;
+    var W = 760, H = 210;
+    c.width = W; c.height = H;
     var ctx = c.getContext('2d');
-    var grey = getComputedStyle(document.documentElement).getPropertyValue('--grey').trim() || '#59626f';
-    ctx.clearRect(0, 0, 640, 180);
     ctx.direction = document.documentElement.dir === 'rtl' ? 'rtl' : 'ltr';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
+
+    var ink = getComputedStyle(document.documentElement).getPropertyValue('--ink').trim() || '#181f2a';
     var surface = getComputedStyle(document.documentElement).getPropertyValue('--surface').trim() || '#ffffff';
-    lines.forEach(function (line, i) {
-      var y = 58 + i * 52;
-      ctx.font = (i === 0 ? '600 42px ' : '500 30px ') + '"IBM Plex Mono", Tajawal, sans-serif';
-      ctx.lineWidth = 10;
-      ctx.strokeStyle = surface;
-      ctx.strokeText(line, 320, y);
-      ctx.fillStyle = grey;
-      ctx.fillText(line, 320, y);
-    });
+    var accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#f2551f';
+
+    ctx.clearRect(0, 0, W, H);
+
+    var padX = 38, padY = 24, gap = 10;
+    ctx.font = '600 48px "Bricolage Grotesque", "Source Serif 4", sans-serif';
+    var w1 = lines[0] ? ctx.measureText(lines[0]).width : 0;
+    ctx.font = '500 30px "IBM Plex Mono", "Tajawal", monospace';
+    var w2 = lines[1] ? ctx.measureText(lines[1]).width : 0;
+    var pillW = Math.max(w1, w2) + padX * 2;
+    var pillH = (lines[0] ? 62 : 0) + (lines[1] ? 44 : 0) + padY * 2 + (lines[1] ? gap : 0);
+    var r = 28;
+    var x = (W - pillW) / 2, y = (H - pillH) / 2;
+
+    ctx.save();
+    ctx.shadowColor = 'rgba(0,0,0,0.10)';
+    ctx.shadowBlur = 28;
+    ctx.shadowOffsetY = 8;
+    ctx.beginPath();
+    ctx.roundRect(x, y, pillW, pillH, r);
+    ctx.fillStyle = surface + 'f2';
+    ctx.fill();
+    ctx.restore();
+
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = accent + '35';
+    ctx.beginPath();
+    ctx.roundRect(x, y, pillW, pillH, r);
+    ctx.stroke();
+
+    var cy = y + padY + 31;
+    if (lines[0]) {
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = '600 48px "Bricolage Grotesque", "Source Serif 4", sans-serif';
+      ctx.fillStyle = ink;
+      ctx.fillText(lines[0], W / 2, cy);
+      cy += 62 + gap;
+    }
+    if (lines[1]) {
+      ctx.font = '500 30px "IBM Plex Mono", "Tajawal", monospace';
+      ctx.fillStyle = accent;
+      ctx.fillText(lines[1], W / 2, cy);
+    }
+
     var tex = new THREE.CanvasTexture(c);
     if ('colorSpace' in tex && THREE.SRGBColorSpace) tex.colorSpace = THREE.SRGBColorSpace;
     tex.needsUpdate = true;
-    var sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false }));
-    sprite.scale.set(0.92, 0.26, 1);
+    var sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+      map: tex, transparent: true, depthTest: false, opacity: 0.98
+    }));
+    var width = opts.width || 0.68;
+    sprite.scale.set(width, width * H / W, 1);
     sprite.userData.lines = lines;
     return sprite;
   }
@@ -304,13 +344,16 @@
       controls.minPolarAngle = 0.2;
       controls.maxPolarAngle = Math.PI - 0.2;
 
-      scene.add(new THREE.HemisphereLight(0xfff7f4, 0x2a2424, 0.95));
-      var key = new THREE.DirectionalLight(0xffffff, 1.35);
-      key.position.set(2.4, 3.2, 2.2);
+      scene.add(new THREE.HemisphereLight(0xfff7f4, 0x3a3532, 1.05));
+      var key = new THREE.DirectionalLight(0xfff4ed, 0.95);
+      key.position.set(2.2, 2.6, 1.8);
       scene.add(key);
-      var fill = new THREE.DirectionalLight(0xffd9cc, 0.4);
-      fill.position.set(-2.2, 0.4, -1.2);
+      var fill = new THREE.DirectionalLight(0xe8f4ff, 0.42);
+      fill.position.set(-2.0, 0.2, -1.4);
       scene.add(fill);
+      var rim = new THREE.DirectionalLight(0xffffff, 0.28);
+      rim.position.set(0, 1.2, -2.4);
+      scene.add(rim);
 
       var pivot = new THREE.Group();
       scene.add(pivot);
@@ -350,16 +393,19 @@
         pivot.add(sm);
         signals.push(sm);
       }
-      var attnGeo = new THREE.SphereGeometry(0.046, 14, 12);
-      var homes = [
-        [0.62, 0.5, 0.48], [0.7, 0.38, 0.28], [0.56, 0.58, 0.62], [0.66, 0.32, 0.12]
+      var neColor = 0x0f8f8a;
+      var neGeo = new THREE.SphereGeometry(0.044, 16, 14);
+      var neHomes = [
+        [0.55, 0.72, 0.42], [0.68, 0.62, 0.28], [0.48, 0.78, 0.56], [0.62, 0.52, 0.18]
       ];
-      var drifts = [
-        [-0.2, 0.22, -0.62], [-0.22, 0.28, -0.48], [-0.12, 0.16, -0.7], [-0.18, 0.26, -0.4]
+      var neDrifts = [
+        [-0.18, 0.14, -0.52], [-0.24, 0.18, -0.38], [-0.1, 0.1, -0.58], [-0.2, 0.16, -0.32]
       ];
-      var attns = homes.map(function (h) {
-        var m = new THREE.Mesh(attnGeo, new THREE.MeshBasicMaterial({
-          color: 0x149e96, transparent: true, opacity: 1, depthWrite: false, depthTest: false
+      var nepis = neHomes.map(function (h, i) {
+        var m = new THREE.Mesh(neGeo, new THREE.MeshStandardMaterial({
+          color: neColor, emissive: neColor, emissiveIntensity: 0.55,
+          transparent: true, opacity: 0.92, roughness: 0.35, metalness: 0.1,
+          depthWrite: false
         }));
         m.position.set(h[0], h[1], h[2]);
         m.renderOrder = 4;
@@ -367,22 +413,22 @@
         return m;
       });
 
-      var rayMat = new THREE.MeshBasicMaterial({ color: 0x2f8f83, transparent: true, opacity: 0.15, depthWrite: false });
-      var shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.011, 0.38, 10), rayMat);
+      var rayMat = new THREE.MeshBasicMaterial({ color: neColor, transparent: true, opacity: 0.16, depthWrite: false });
+      var shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.011, 0.34, 10), rayMat);
       shaft.rotation.x = Math.PI / 2;
-      shaft.position.set(0, 0.16, 1.18);
-      var head = new THREE.Mesh(new THREE.ConeGeometry(0.038, 0.1, 12), rayMat);
+      shaft.position.set(0.08, 0.18, 1.18);
+      var head = new THREE.Mesh(new THREE.ConeGeometry(0.036, 0.09, 12), rayMat);
       head.rotation.x = Math.PI / 2;
-      head.position.set(0, 0.16, 1.4);
+      head.position.set(0.08, 0.18, 1.36);
       pivot.add(shaft, head);
 
       var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub]);
-      pfcLabel.scale.set(0.58, 0.16, 1);
-      pfcLabel.position.set(0.36, 0.34, 0.78);
-      var rewardLabel = makeLabel(THREE, [L.reward]);
-      rewardLabel.scale.set(0.56, 0.16, 1);
-      rewardLabel.position.set(0.02, -0.48, 0.42);
-      pivot.add(pfcLabel, rewardLabel);
+      pfcLabel.position.set(0.32, 0.42, 0.86);
+      var rewardLabel = makeLabel(THREE, [L.reward], { width: 0.56 });
+      rewardLabel.position.set(0.62, -0.16, 0.22);
+      var neLabel = makeLabel(THREE, [L.ne], { width: 0.5 });
+      neLabel.position.set(0.26, 0.86, 0.38);
+      pivot.add(pfcLabel, rewardLabel, neLabel);
 
       var shaders = [];
       function hookMaterial(mat) {
@@ -479,13 +525,16 @@
           var dropped = shown.flick > 0.45 && (i % 2 === 1);
           m.material.opacity = dropped ? 0.06 : (0.2 + 0.8 * Math.sin(u * Math.PI)) * (0.35 + 0.65 * Math.max(0, sigNow));
         });
-        attns.forEach(function (m, i) {
+        nepis.forEach(function (m, i) {
           var amp = reduced ? shown.drift : shown.drift * (0.55 + 0.45 * Math.sin(t * 1.25 + i));
           m.position.set(
-            homes[i][0] + drifts[i][0] * amp,
-            homes[i][1] + drifts[i][1] * amp,
-            homes[i][2] + drifts[i][2] * amp
+            neHomes[i][0] + neDrifts[i][0] * amp,
+            neHomes[i][1] + neDrifts[i][1] * amp,
+            neHomes[i][2] + neDrifts[i][2] * amp
           );
+          var steady = 1 - shown.drift;
+          m.material.emissiveIntensity = 0.3 + 0.45 * steady + 0.15 * Math.sin(t * 2.2 + i);
+          m.material.opacity = 0.75 + 0.2 * steady;
         });
         if (autospin && viewMode === '3d') pivot.rotation.y += dt * 0.28;
         controls.update();
@@ -513,8 +562,8 @@
         haloMat.color.copy(pfcLight.color);
         rewardCore.material.color.copy(rewardLight.color);
         signals.forEach(function (m) { m.material.color.copy(rewardLight.color); });
-        [pfcLabel, rewardLabel].forEach(function (s) {
-          var next = makeLabel(THREE, s.userData.lines);
+        [pfcLabel, rewardLabel, neLabel].forEach(function (s) {
+          var next = makeLabel(THREE, s.userData.lines, s === neLabel ? { width: 0.5 } : undefined);
           s.material.map.dispose();
           s.material.map = next.material.map;
           s.material.needsUpdate = true;
