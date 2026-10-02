@@ -514,74 +514,87 @@
         });
         pivot.add(model);
         brainModel = model;
-        model.updateMatrixWorld(true);
-        var raycaster = new THREE.Raycaster();
-        function onSurface(dir, lift) {
-          var origin = dir.clone().normalize().multiplyScalar(5);
-          var worldOrigin = origin.applyMatrix4(model.matrixWorld);
-          var center = new THREE.Vector3().setFromMatrixPosition(model.matrixWorld);
-          raycaster.set(worldOrigin, center.clone().sub(worldOrigin).normalize());
-          var hits = raycaster.intersectObject(model, true);
-          if (!hits.length) return dir.clone().normalize().multiplyScalar(0.88);
-          var local = model.worldToLocal(hits[0].point.clone());
-          var n = hits[0].face ? hits[0].face.normal.clone() : dir.clone().normalize();
-          n.transformDirection(hits[0].object.matrixWorld);
-          n.transformDirection(new THREE.Matrix4().copy(model.matrixWorld).invert());
-          if (n.lengthSq() > 0.0001) local.add(n.normalize().multiplyScalar(lift || 0.04));
-          return local;
-        }
-        function adopt(obj) {
-          pivot.remove(obj);
-          model.add(obj);
-        }
-        [rewardCore, shaft, head, pfcLabel, rewardLabel, neLabel, pfcLight, rewardLight, halo].forEach(adopt);
-        signals.forEach(adopt);
-        nepis.forEach(adopt);
-        var dopPts = [
-          new THREE.Vector3(-0.02, -0.42, 0.72),
-          new THREE.Vector3(-0.22, -0.12, 0.78),
-          new THREE.Vector3(-0.42, 0.08, 0.74),
-          new THREE.Vector3(-0.62, 0.22, 0.62),
-          new THREE.Vector3(-0.78, 0.3, 0.42)
-        ].map(function (d) { return onSurface(d, 0.05); });
-        dopCurve = new THREE.CatmullRomCurve3(dopPts);
-        rewardPos.copy(dopPts[0]);
-        pfcPos.copy(dopPts[dopPts.length - 1]);
-        rewardCore.position.copy(rewardPos);
-        rewardLight.position.copy(rewardPos);
-        pfcLight.position.copy(pfcPos);
-        halo.position.copy(pfcPos);
-        rewardLabel.position.copy(rewardPos).add(new THREE.Vector3(0.05, -0.28, 0.38));
-        pfcLabel.position.copy(pfcPos).add(new THREE.Vector3(-0.28, 0.22, 0.18));
-        var end = dopPts[dopPts.length - 1];
-        var prev = dopPts[dopPts.length - 2];
-        var tang = end.clone().sub(prev);
-        if (tang.lengthSq() > 0.0001) {
-          tang.normalize();
-          var aim = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), tang);
-          shaft.position.copy(end).addScaledVector(tang, -0.16);
-          shaft.quaternion.copy(aim);
-          head.position.copy(end).addScaledVector(tang, 0.02);
-          head.quaternion.copy(aim);
-        }
-        var neDirs = [
-          new THREE.Vector3(-0.15, 0.92, 0.28),
-          new THREE.Vector3(0.12, 0.9, 0.22),
-          new THREE.Vector3(-0.35, 0.86, 0.18),
-          new THREE.Vector3(0.02, 0.94, 0.08)
-        ];
-        neDirs.forEach(function (d, i) {
-          var p = onSurface(d, 0.045);
-          neHomes[i][0] = p.x; neHomes[i][1] = p.y; neHomes[i][2] = p.z;
-          neDrifts[i][0] = 0; neDrifts[i][1] = 0.02; neDrifts[i][2] = 0;
-          nepis[i].position.copy(p);
-        });
-        neLabel.position.copy(nepis[0].position).add(new THREE.Vector3(0.05, 0.32, 0.02));
         if (statusEl) statusEl.classList.add('hide');
+        try {
+          model.updateMatrixWorld(true);
+          var brainMeshes = [];
+          model.traverse(function (obj) { if (obj.isMesh) brainMeshes.push(obj); });
+          var raycaster = new THREE.Raycaster();
+          raycaster.camera = camera;
+          function onSurface(dir, lift) {
+            var origin = dir.clone().normalize().multiplyScalar(5);
+            var worldOrigin = origin.applyMatrix4(model.matrixWorld);
+            var center = new THREE.Vector3().setFromMatrixPosition(model.matrixWorld);
+            raycaster.set(worldOrigin, center.clone().sub(worldOrigin).normalize());
+            var hits = [];
+            brainMeshes.forEach(function (mesh) {
+              var found = raycaster.intersectObject(mesh, false);
+              if (found.length) hits.push(found[0]);
+            });
+            hits.sort(function (a, b) { return a.distance - b.distance; });
+            if (!hits.length) return dir.clone().normalize().multiplyScalar(0.9);
+            var local = model.worldToLocal(hits[0].point.clone());
+            var n = hits[0].face ? hits[0].face.normal.clone() : dir.clone().normalize();
+            n.transformDirection(hits[0].object.matrixWorld);
+            var inv = new THREE.Matrix4().copy(model.matrixWorld).invert();
+            n.transformDirection(inv);
+            if (n.lengthSq() > 0.0001) local.add(n.normalize().multiplyScalar(lift || 0.06));
+            return local;
+          }
+          function adopt(obj) {
+            pivot.remove(obj);
+            model.add(obj);
+          }
+          [rewardCore, shaft, head, pfcLabel, rewardLabel, neLabel, pfcLight, rewardLight, halo].forEach(adopt);
+          signals.forEach(adopt);
+          nepis.forEach(adopt);
+          var dopPts = [
+            new THREE.Vector3(-0.02, -0.42, 0.72),
+            new THREE.Vector3(-0.22, -0.12, 0.78),
+            new THREE.Vector3(-0.42, 0.08, 0.74),
+            new THREE.Vector3(-0.62, 0.22, 0.62),
+            new THREE.Vector3(-0.78, 0.3, 0.42)
+          ].map(function (d) { return onSurface(d, 0.07); });
+          dopCurve = new THREE.CatmullRomCurve3(dopPts);
+          rewardPos.copy(dopPts[0]);
+          pfcPos.copy(dopPts[dopPts.length - 1]);
+          rewardCore.position.copy(rewardPos);
+          rewardLight.position.copy(rewardPos);
+          pfcLight.position.copy(pfcPos);
+          halo.position.copy(pfcPos);
+          rewardLabel.position.copy(rewardPos).add(new THREE.Vector3(0.02, -0.34, 0.42));
+          pfcLabel.position.copy(pfcPos).add(new THREE.Vector3(-0.28, 0.26, 0.16));
+          var end = dopPts[dopPts.length - 1];
+          var prev = dopPts[dopPts.length - 2];
+          var tang = end.clone().sub(prev);
+          if (tang.lengthSq() > 0.0001) {
+            tang.normalize();
+            var aim = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), tang);
+            shaft.position.copy(end).addScaledVector(tang, -0.16);
+            shaft.quaternion.copy(aim);
+            head.position.copy(end).addScaledVector(tang, 0.02);
+            head.quaternion.copy(aim);
+          }
+          var neDirs = [
+            new THREE.Vector3(-0.15, 0.92, 0.28),
+            new THREE.Vector3(0.12, 0.9, 0.22),
+            new THREE.Vector3(-0.35, 0.86, 0.18),
+            new THREE.Vector3(0.02, 0.94, 0.08)
+          ];
+          neDirs.forEach(function (d, i) {
+            var p = onSurface(d, 0.06);
+            neHomes[i][0] = p.x; neHomes[i][1] = p.y; neHomes[i][2] = p.z;
+            neDrifts[i][0] = 0; neDrifts[i][1] = 0.02; neDrifts[i][2] = 0;
+            nepis[i].position.copy(p);
+          });
+          neLabel.position.copy(nepis[0].position).add(new THREE.Vector3(0.05, 0.34, 0.02));
+        } catch (err) {
+          dopCurve = null;
+        }
       }, function (ev) {
         if (statusEl && ev.total) statusEl.textContent = L.loading3d.replace('…', '') + ' ' + Math.round(100 * ev.loaded / ev.total) + '%';
       }, function () {
-        if (statusEl) statusEl.textContent = L.fail3d;
+        if (statusEl && !brainModel) statusEl.textContent = L.fail3d;
       });
 
       var goals = {
@@ -704,7 +717,7 @@
         });
       }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'class'] });
     }).catch(function () {
-      if (statusEl) statusEl.textContent = L.fail3d;
+      if (statusEl && !(statusEl.classList.contains('hide'))) statusEl.textContent = L.fail3d;
       mounting = false;
     });
   }
