@@ -12,7 +12,7 @@
     eyebrow: 'המדע, בפשטות', h2: 'המוח שלך עם ADHD — ומה שעוזר',
     intro: 'שני מוחות נראים זהים. ההבדל הוא ב<b>פעילות</b> וב<b>כימיה</b>. גלגל כדי לראות — בתרשים או על מודל תלת־ממד.',
     typ: 'מוח טיפוסי', adhd: 'מוח ADHD', tre: 'עם טיפול וניהול',
-    pfc: 'הקליפה הקדם-מצחית', pfcSub: 'מיקוד · שליטה', reward: 'תגמול (דופמין)', ne: 'נוראדרנלין', pill: 'תרופה + טיפול',
+    pfc: 'הקליפה הקדם-מצחית', pfcSub: 'מיקוד · שליטה', reward: 'תגמול (דופמין)', rewSub: 'מוטיבציה · תגמול', str: 'סטריאטום (גרעין הזנב)', strSub: 'בחירת תגובה · תנועה', acc: 'קליפת החגורה הקדמית', accSub: 'הקצאת קשב · ניטור טעויות', ne: 'נוראדרנלין', pill: 'תרופה + טיפול',
     key: 'מקרא', keyIntro: 'הצבעים מייצגים מערכות נוירו־שליחים — להמחשה בלבד, לא סריקה.',
     dop: 'דופמין', ser: 'סרוטונין', gab: 'GABA', glu: 'גלוטמט',
     viewAria: 'תצוגת המוח', viewFlat: 'תרשים', view3d: 'מודל תלת־ממד',
@@ -37,7 +37,7 @@
     eyebrow: 'العلم، ببساطة', h2: 'دماغك مع ADHD — وما الذي يساعد',
     intro: 'الدماغان يبدوان متطابقين. الفرق في <b>النشاط</b> و<b>الكيمياء</b>. تنقّل لتراه — كمخطط أو على نموذج ثلاثي الأبعاد.',
     typ: 'دماغ نمطي', adhd: 'دماغ ADHD', tre: 'مع العلاج والتدبير',
-    pfc: 'القشرة الجبهية', pfcSub: 'تركيز · تحكّم', reward: 'المكافأة (الدوبامين)', ne: 'النورإبينفرين', pill: 'دواء + رعاية',
+    pfc: 'القشرة الجبهية', pfcSub: 'تركيز · تحكّم', reward: 'المكافأة (الدوبامين)', rewSub: 'الدافعية · المكافأة', str: 'الجسم المخطط (النواة المذنبة)', strSub: 'اختيار الاستجابة · الحركة', acc: 'القشرة الحزامية الأمامية', accSub: 'توزيع الانتباه · رصد الأخطاء', ne: 'النورإبينفرين', pill: 'دواء + رعاية',
     key: 'مفتاح', keyIntro: 'الألوان تمثّل أنظمة الناقلات العصبية — للتوضيح فقط، وليس فحصًا.',
     dop: 'الدوبامين', ser: 'السيروتونين', gab: 'GABA', glu: 'الغلوتامات',
     viewAria: 'عرض الدماغ', viewFlat: 'مخطط', view3d: 'نموذج ثلاثي الأبعاد',
@@ -62,7 +62,7 @@
     eyebrow: 'A tudomány, egyszerűen', h2: 'Az agyad ADHD-val — és mi segít',
     intro: 'Két agy kinézetre azonos. A különbség az <b>aktivitásban</b> és a <b>kémiában</b> van. Kattints, és nézd meg — ábrán vagy egy 3D agyon.',
     typ: 'Tipikus agy', adhd: 'ADHD-agy', tre: 'Kezeléssel és odafigyeléssel',
-    pfc: 'Prefrontális kéreg', pfcSub: 'fókusz · irányítás', reward: 'Jutalom (dopamin)', ne: 'Noradrenalin', pill: 'Kezelés',
+    pfc: 'Prefrontális kéreg', pfcSub: 'fókusz · irányítás', reward: 'Jutalom (dopamin)', rewSub: 'motiváció · jutalom', str: 'Striatum (nucleus caudatus)', strSub: 'válaszválasztás · mozgás', acc: 'Elülső cinguláris kéreg', accSub: 'figyelem · hibafigyelés', ne: 'Noradrenalin', pill: 'Kezelés',
     key: 'Jelmagyarázat', keyIntro: 'A színek a neurotranszmitter-rendszereket jelölik — szemléltetés, nem felvétel.',
     dop: 'Dopamin', ser: 'Szerotonin', gab: 'GABA', glu: 'Glutamát',
     viewAria: 'Agynézet', viewFlat: 'Ábra', view3d: '3D modell',
@@ -87,7 +87,7 @@
     eyebrow: 'The science, simply', h2: 'Your brain on ADHD — and what helps',
     intro: 'Two brains look identical. The difference is in <b>activity</b> and <b>chemistry</b>. Tap through to see it — as a diagram, or on a 3D brain.',
     typ: 'Typical brain', adhd: 'ADHD brain', tre: 'With treatment & management',
-    pfc: 'Prefrontal cortex', pfcSub: 'focus · control', reward: 'Reward (dopamine)', ne: 'Norepinephrine', pill: 'Rx + care',
+    pfc: 'Prefrontal cortex', pfcSub: 'focus · planning · control', reward: 'Reward circuit (dopamine)', rewSub: 'motivation · reward', str: 'Striatum (caudate)', strSub: 'response choice · movement', acc: 'Anterior cingulate', accSub: 'attention · error checking', ne: 'Norepinephrine', pill: 'Rx + care',
     key: 'Key', keyIntro: 'Colors show broad neurotransmitter systems — illustrative, not a scan.',
     dop: 'Dopamine', ser: 'Serotonin', gab: 'GABA', glu: 'Glutamate',
     viewAria: 'Brain view', viewFlat: 'Diagram', view3d: '3D model',
@@ -345,7 +345,7 @@
     }));
     var width = opts.width || 0.78;
     sprite.scale.set(width, width * H / W, 1);
-    sprite.renderOrder = 10;
+    sprite.renderOrder = 20;
     sprite.userData.lines = lines;
     return sprite;
   }
@@ -379,11 +379,11 @@
       renderer.setClearColor(0x000000, 0);
       if (THREE.SRGBColorSpace) renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.18;
+      renderer.toneMappingExposure = 1.05;
 
       var scene = new THREE.Scene();
       var camera = new THREE.PerspectiveCamera(34, 1, 0.05, 30);
-      camera.position.set(2.2, 0.88, 4.4);
+      camera.position.set(3.7, 0.9, 2.9);
       var controls = new OrbitControls(camera, canvas);
       controls.enableDamping = true;
       controls.dampingFactor = 0.08;
@@ -411,132 +411,116 @@
       var pivot = new THREE.Group();
       scene.add(pivot);
 
-      var accent = cssHex('--accent', 0xf2551f);
-      var amber = cssHex('--amber', 0xc9781b);
-      var pfcLight = new THREE.PointLight(0xfff4ed, 0.6, 1.5, 2);
-      pfcLight.position.set(0, 0.28, 1.18);
-      var rewardLight = new THREE.PointLight(0xfff4ed, 0.6, 0.7, 2);
-      rewardLight.position.set(0.16, 0.02, 0.2);
-      pivot.add(pfcLight, rewardLight);
+      var pfcColor = 0xf2551f;
+      var accColor = 0xe0457b;
+      var strColor = 0x7a5cff;
+      var rewColor = 0xff9a1a;
+      var dopColor = 0xff7a00;
+      var neColor = 0x0fa39b;
+      var overlay = new THREE.Group();
+      overlay.visible = false;
+      pivot.add(overlay);
 
-      var haloMat = new THREE.MeshBasicMaterial({
-        color: accent, transparent: true, opacity: 0.08, depthWrite: false,
-        blending: THREE.AdditiveBlending
-      });
-      var halo = new THREE.Mesh(new THREE.SphereGeometry(0.2, 28, 20), haloMat);
-      halo.position.set(0, 0.2, 0.72);
-      pivot.add(halo);
-      var dopColor = 0xff6a00;
-      var rewardCore = new THREE.Mesh(
-        new THREE.SphereGeometry(0.095, 24, 18),
-        new THREE.MeshStandardMaterial({
-          color: dopColor, emissive: dopColor, emissiveIntensity: 0.9,
-          transparent: true, opacity: 1, roughness: 0.25, depthTest: false, depthWrite: false
-        })
-      );
-      rewardCore.position.copy(rewardLight.position);
-      rewardCore.renderOrder = 6;
-      var rewardGlow = new THREE.Mesh(
-        new THREE.SphereGeometry(0.15, 20, 16),
-        new THREE.MeshBasicMaterial({
-          color: dopColor, transparent: true, opacity: 0.22, depthTest: false, depthWrite: false
-        })
-      );
-      rewardGlow.renderOrder = 5;
-      rewardCore.add(rewardGlow);
-      pivot.add(rewardCore);
-
-      var rewardPos = new THREE.Vector3(0.42, -0.18, 0.55);
-      var pfcPos = new THREE.Vector3(0.12, 0.32, 0.82);
-      var dopCurve = null;
-      var sigGeo = new THREE.SphereGeometry(0.058, 16, 12);
-      var signals = [];
-      for (var i = 0; i < 7; i++) {
-        var sm = new THREE.Mesh(sigGeo, new THREE.MeshStandardMaterial({
-          color: dopColor, emissive: dopColor, emissiveIntensity: 0.85,
-          transparent: true, opacity: 1, roughness: 0.32, depthTest: false, depthWrite: false
-        }));
-        var sg = new THREE.Mesh(
-          new THREE.SphereGeometry(0.095, 14, 10),
-          new THREE.MeshBasicMaterial({
-            color: dopColor, transparent: true, opacity: 0.2, depthTest: false, depthWrite: false
-          })
-        );
-        sm.add(sg);
-        sm.renderOrder = 6;
-        pivot.add(sm);
-        signals.push(sm);
+      function v3(p) { return new THREE.Vector3(p[0], p[1], p[2]); }
+      function glowMat(color, opacity) {
+        return new THREE.MeshStandardMaterial({
+          color: color, emissive: color, emissiveIntensity: 0.7, roughness: 0.4,
+          transparent: true, opacity: opacity, depthTest: false, depthWrite: false
+        });
       }
-      var neColor = 0x0f8f8a;
-      var neGeo = new THREE.SphereGeometry(0.044, 16, 14);
-      var neHomes = [
-        [0.55, 0.72, 0.42], [0.68, 0.62, 0.28], [0.48, 0.78, 0.56], [0.62, 0.52, 0.18]
+      var regions = [];
+      function region(mesh, kind) {
+        mesh.renderOrder = 3;
+        overlay.add(mesh);
+        regions.push({ mesh: mesh, kind: kind });
+        return mesh;
+      }
+      function blob(color, r, pos, scl, kind) {
+        var m = new THREE.Mesh(new THREE.SphereGeometry(r, 24, 18), glowMat(color, 0.85));
+        m.position.copy(v3(pos));
+        if (scl) m.scale.set(scl[0], scl[1], scl[2]);
+        return region(m, kind);
+      }
+      function tube(color, pts, r, kind) {
+        var curve = new THREE.CatmullRomCurve3(pts.map(v3));
+        return region(new THREE.Mesh(new THREE.TubeGeometry(curve, 48, r, 12, false), glowMat(color, 0.85)), kind);
+      }
+
+      [-1, 1].forEach(function (s) {
+        tube(strColor, [[s * 0.14, 0.04, 0.36], [s * 0.16, 0.2, 0.18], [s * 0.18, 0.26, -0.04], [s * 0.21, 0.18, -0.26]], 0.04, 'str');
+        blob(strColor, 0.085, [s * 0.14, 0.04, 0.36], [1, 1.1, 1.3], 'str');
+        blob(strColor, 0.1, [s * 0.29, 0.0, 0.14], [0.55, 0.85, 1.35], 'str');
+        blob(rewColor, 0.06, [s * 0.1, -0.12, 0.36], [1, 0.9, 1.1], 'rew');
+      });
+      tube(accColor, [[0.03, 0.02, 0.52], [0.03, 0.24, 0.5], [0.03, 0.38, 0.3], [0.03, 0.42, 0.04], [0.03, 0.38, -0.18]], 0.05, 'acc');
+      blob(rewColor, 0.07, [0, -0.3, -0.06], [1.3, 0.9, 1], 'rew');
+      blob(neColor, 0.05, [0, -0.46, -0.22], [1.4, 0.9, 1], 'ne');
+
+      var paths = [
+        { pts: [[0, -0.3, -0.06], [0.06, -0.24, 0.14], [0.1, -0.12, 0.36]], color: dopColor, n: 3 },
+        { pts: [[0, -0.3, -0.06], [0.08, -0.08, 0.2], [0.18, 0.2, 0.5], [0.28, 0.34, 0.74]], color: dopColor, n: 4 },
+        { pts: [[0, -0.3, -0.06], [-0.1, -0.12, 0.12], [-0.14, 0.04, 0.36]], color: dopColor, n: 3 },
+        { pts: [[0, -0.46, -0.22], [-0.08, -0.18, -0.02], [-0.18, 0.22, 0.36], [-0.28, 0.34, 0.74]], color: neColor, n: 4 }
       ];
-      var neDrifts = [
-        [-0.18, 0.14, -0.52], [-0.24, 0.18, -0.38], [-0.1, 0.1, -0.58], [-0.2, 0.16, -0.32]
-      ];
-      var nepis = neHomes.map(function (h, i) {
-        var m = new THREE.Mesh(neGeo, new THREE.MeshStandardMaterial({
-          color: neColor, emissive: neColor, emissiveIntensity: 0.55,
-          transparent: true, opacity: 0.92, roughness: 0.35, metalness: 0.1,
-          depthWrite: false
-        }));
-        m.position.set(h[0], h[1], h[2]);
-        m.renderOrder = 4;
-        pivot.add(m);
-        return m;
+      var dotGeo = new THREE.SphereGeometry(0.034, 14, 10);
+      var dotHaloGeo = new THREE.SphereGeometry(0.06, 12, 8);
+      var dots = [];
+      paths.forEach(function (p, pi) {
+        p.curve = new THREE.CatmullRomCurve3(p.pts.map(v3));
+        p.line = new THREE.Mesh(new THREE.TubeGeometry(p.curve, 40, 0.012, 8, false),
+          new THREE.MeshBasicMaterial({ color: p.color, transparent: true, opacity: 0.3, depthTest: false, depthWrite: false }));
+        p.line.renderOrder = 4;
+        overlay.add(p.line);
+        for (var i = 0; i < p.n; i++) {
+          var d = new THREE.Mesh(dotGeo, glowMat(p.color, 1));
+          var h = new THREE.Mesh(dotHaloGeo, new THREE.MeshBasicMaterial({
+            color: p.color, transparent: true, opacity: 0.22, depthTest: false, depthWrite: false
+          }));
+          h.renderOrder = 5;
+          d.add(h);
+          d.renderOrder = 6;
+          overlay.add(d);
+          dots.push({ mesh: d, halo: h, curve: p.curve, phase: i / p.n + pi * 0.17, idx: i });
+        }
       });
 
-      var rayMat = new THREE.MeshBasicMaterial({ color: neColor, transparent: true, opacity: 0.22, depthWrite: false });
-      var shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.011, 0.42, 10), rayMat);
-      shaft.rotation.x = -Math.PI / 2;
-      shaft.position.set(0.12, 0.22, 1.34);
-      var head = new THREE.Mesh(new THREE.ConeGeometry(0.038, 0.095, 12), rayMat);
-      head.rotation.x = -Math.PI / 2;
-      head.position.set(0.12, 0.22, 1.12);
-      pivot.add(shaft, head);
-
-      var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub], { width: 1.0 });
-      pfcLabel.position.set(0.34, 0.48, 0.92);
-      var rewardLabel = makeLabel(THREE, [L.reward], { width: 0.78 });
-      rewardLabel.position.set(0.72, 0.1, 0.26);
-      var neLabel = makeLabel(THREE, [L.ne], { width: 0.72 });
-      neLabel.position.set(0.34, 1.0, 0.42);
-      pivot.add(pfcLabel, rewardLabel, neLabel);
+      function label(lines, width, pos, target, color) {
+        var s = makeLabel(THREE, lines, { width: width });
+        s.userData.width = width;
+        s.position.copy(v3(pos));
+        overlay.add(s);
+        var tip = v3(pos).add(new THREE.Vector3(0, -width * 280 / 840 / 2, 0));
+        var lead = new THREE.Line(
+          new THREE.BufferGeometry().setFromPoints([tip, v3(target)]),
+          new THREE.LineBasicMaterial({ color: color, transparent: true, opacity: 0.7, depthTest: false, depthWrite: false })
+        );
+        lead.renderOrder = 21;
+        overlay.add(lead);
+        return s;
+      }
+      var labels = [
+        label([L.pfc, L.pfcSub], 0.95, [0.45, 1.0, 0.95], [0.3, 0.3, 0.8], pfcColor),
+        label([L.acc, L.accSub], 0.95, [-0.35, 1.2, 0.25], [0.03, 0.38, 0.3], accColor),
+        label([L.str, L.strSub], 0.95, [0.95, 0.62, -0.1], [0.19, 0.24, 0.0], strColor),
+        label([L.reward, L.rewSub], 0.95, [0.55, -0.55, 0.85], [0.1, -0.12, 0.36], rewColor),
+        label([L.ne], 0.62, [-0.6, -0.72, -0.45], [0, -0.46, -0.22], neColor)
+      ];
 
       var shaders = [];
       function hookMaterial(mat) {
         mat.onBeforeCompile = function (shader) {
           shader.uniforms.uAct = { value: 1 };
-          shader.uniforms.uSig = { value: 1 };
           shader.vertexShader = shader.vertexShader
-            .replace('#include <common>', '#include <common>\nvarying float vDop;\nvarying float vPfc;\nvarying float vNe;\nfloat nbDistSeg(vec3 p, vec3 a, vec3 b){vec3 ab=b-a;float t=clamp(dot(p-a,ab)/max(dot(ab,ab),0.0001),0.0,1.0);return distance(p,a+ab*t);}')
-            .replace('#include <begin_vertex>', '#include <begin_vertex>\nvec3 nb0=vec3(-0.02,-0.42,0.72);vec3 nb1=vec3(-0.22,-0.12,0.78);vec3 nb2=vec3(-0.42,0.08,0.74);vec3 nb3=vec3(-0.62,0.22,0.62);vec3 nb4=vec3(-0.78,0.30,0.42);\nfloat nbPath=min(min(nbDistSeg(transformed,nb0,nb1),nbDistSeg(transformed,nb1,nb2)),min(nbDistSeg(transformed,nb2,nb3),nbDistSeg(transformed,nb3,nb4)));\nvDop=1.0-smoothstep(0.04,0.30,nbPath);\nvPfc=1.0-smoothstep(0.02,0.38,distance(transformed,nb4));\nvNe=1.0-smoothstep(0.04,0.24,distance(transformed,vec3(-0.12,0.88,0.20)));');
+            .replace('#include <common>', '#include <common>\nvarying float vPfc;')
+            .replace('#include <begin_vertex>', '#include <begin_vertex>\nvPfc = smoothstep(0.36, 0.72, transformed.z) * smoothstep(-0.32, -0.06, transformed.y);');
           shader.fragmentShader = shader.fragmentShader
-            .replace('#include <common>', '#include <common>\nuniform float uAct;\nuniform float uSig;\nvarying float vDop;\nvarying float vPfc;\nvarying float vNe;\nfloat nbFr = 0.0;')
-            .replace('#include <map_fragment>', '#include <map_fragment>\nfloat dop=vDop;\nfloat pfc=vPfc;\nfloat ne=vNe;\nfloat hot=clamp(max(dop,max(pfc,ne)),0.0,1.0);\nvec3 base=diffuseColor.rgb;\nfloat lum=dot(base,vec3(0.299,0.587,0.114));\nvec3 vivid=clamp(mix(vec3(lum),base,2.3)*1.05,0.0,1.0);\nvec3 washed=mix(vec3(0.84,0.90,0.98),vivid,0.86);\nvec3 painted=vec3(1.0,0.42,0.02);\npainted=mix(painted,vec3(0.98,0.20,0.32),smoothstep(0.2,0.85,pfc)*(1.0-dop*0.3));\npainted=mix(painted,vec3(0.0,0.66,0.62),smoothstep(0.15,0.8,ne));\ndiffuseColor.rgb=mix(washed,painted,smoothstep(0.05,0.55,hot));\ndiffuseColor.a=mix(0.5,1.0,smoothstep(0.04,0.42,hot));')
-            .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\nnbFr=pow(1.0-abs(dot(normalize(normal),normalize(vViewPosition))),2.4);\ntotalEmissiveRadiance+=vec3(0.45,0.70,1.0)*nbFr*0.45;\ntotalEmissiveRadiance+=vec3(1.0,0.40,0.0)*vDop*(0.5+0.5*uSig);\ntotalEmissiveRadiance+=vec3(1.0,0.18,0.28)*vPfc*(0.3+0.6*uAct);\ntotalEmissiveRadiance+=vec3(0.0,0.62,0.58)*vNe*0.45;')
-            .replace('#include <opaque_fragment>', 'diffuseColor.a=max(diffuseColor.a,nbFr*0.85);\n#include <opaque_fragment>');
+            .replace('#include <common>', '#include <common>\nuniform float uAct;\nvarying float vPfc;')
+            .replace('#include <map_fragment>', '#include <map_fragment>\nvec3 nbBase = diffuseColor.rgb;\nfloat nbLum = dot(nbBase, vec3(0.299, 0.587, 0.114));\nvec3 nbFaded = mix(vec3(nbLum), nbBase, 0.3) * 0.3 + vec3(0.64, 0.62, 0.64);\nvec3 nbHot = mix(nbBase, vec3(0.95, 0.32, 0.12), 0.65);\ndiffuseColor.rgb = mix(nbFaded, nbHot, vPfc * (0.45 + 0.55 * uAct));')
+            .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += vec3(0.95, 0.3, 0.08) * vPfc * (0.06 + 0.38 * uAct);');
           mat.userData.shader = shader;
         };
+        mat.needsUpdate = true;
         shaders.push(mat);
-      }
-      function glassFrom(src) {
-        var glass = new THREE.MeshPhysicalMaterial({
-          map: src.map || null,
-          normalMap: src.normalMap || null,
-          color: 0xf3f8fb,
-          roughness: 0.16,
-          metalness: 0.0,
-          clearcoat: 1,
-          clearcoatRoughness: 0.04,
-          transparent: true,
-          opacity: 1,
-          depthWrite: false,
-          side: THREE.FrontSide
-        });
-        hookMaterial(glass);
-        return glass;
       }
 
       var scriptEl = document.querySelector('script[src$="brain.js"]');
@@ -548,88 +532,13 @@
         model.traverse(function (obj) {
           if (obj.isMesh && obj.material) {
             var mats = Array.isArray(obj.material) ? obj.material : [obj.material];
-            obj.material = mats.length === 1 ? glassFrom(mats[0]) : mats.map(glassFrom);
+            mats.forEach(hookMaterial);
           }
         });
         pivot.add(model);
         brainModel = model;
+        overlay.visible = true;
         if (statusEl) statusEl.classList.add('hide');
-        try {
-          model.updateMatrixWorld(true);
-          var brainMeshes = [];
-          model.traverse(function (obj) { if (obj.isMesh) brainMeshes.push(obj); });
-          var raycaster = new THREE.Raycaster();
-          raycaster.camera = camera;
-          function onSurface(dir, lift) {
-            var origin = dir.clone().normalize().multiplyScalar(5);
-            var worldOrigin = origin.applyMatrix4(model.matrixWorld);
-            var center = new THREE.Vector3().setFromMatrixPosition(model.matrixWorld);
-            raycaster.set(worldOrigin, center.clone().sub(worldOrigin).normalize());
-            var hits = [];
-            brainMeshes.forEach(function (mesh) {
-              var found = raycaster.intersectObject(mesh, false);
-              if (found.length) hits.push(found[0]);
-            });
-            hits.sort(function (a, b) { return a.distance - b.distance; });
-            if (!hits.length) return dir.clone().normalize().multiplyScalar(0.9);
-            var local = model.worldToLocal(hits[0].point.clone());
-            var n = hits[0].face ? hits[0].face.normal.clone() : dir.clone().normalize();
-            n.transformDirection(hits[0].object.matrixWorld);
-            var inv = new THREE.Matrix4().copy(model.matrixWorld).invert();
-            n.transformDirection(inv);
-            if (n.lengthSq() > 0.0001) local.add(n.normalize().multiplyScalar(lift || 0.06));
-            return local;
-          }
-          function adopt(obj) {
-            pivot.remove(obj);
-            model.add(obj);
-          }
-          [rewardCore, shaft, head, pfcLabel, rewardLabel, neLabel, pfcLight, rewardLight, halo].forEach(adopt);
-          signals.forEach(adopt);
-          nepis.forEach(adopt);
-          var dopPts = [
-            new THREE.Vector3(-0.02, -0.42, 0.72),
-            new THREE.Vector3(-0.22, -0.12, 0.78),
-            new THREE.Vector3(-0.42, 0.08, 0.74),
-            new THREE.Vector3(-0.62, 0.22, 0.62),
-            new THREE.Vector3(-0.78, 0.3, 0.42)
-          ].map(function (d) { return onSurface(d, 0.1); });
-          dopCurve = new THREE.CatmullRomCurve3(dopPts);
-          rewardPos.copy(dopPts[0]);
-          pfcPos.copy(dopPts[dopPts.length - 1]);
-          rewardCore.position.copy(rewardPos);
-          rewardLight.position.copy(rewardPos);
-          pfcLight.position.copy(pfcPos);
-          halo.position.copy(pfcPos);
-          rewardLabel.position.copy(rewardPos).add(new THREE.Vector3(0.02, -0.34, 0.42));
-          pfcLabel.position.copy(pfcPos).add(new THREE.Vector3(-0.28, 0.26, 0.16));
-          var end = dopPts[dopPts.length - 1];
-          var prev = dopPts[dopPts.length - 2];
-          var tang = prev.clone().sub(end);
-          if (tang.lengthSq() > 0.0001) {
-            tang.normalize();
-            var aim = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), tang);
-            shaft.position.copy(end).addScaledVector(tang, 0.18);
-            shaft.quaternion.copy(aim);
-            head.position.copy(end).addScaledVector(tang, 0.4);
-            head.quaternion.copy(aim);
-          }
-          var neDirs = [
-            new THREE.Vector3(-0.15, 0.92, 0.28),
-            new THREE.Vector3(0.12, 0.9, 0.22),
-            new THREE.Vector3(-0.35, 0.86, 0.18),
-            new THREE.Vector3(0.02, 0.94, 0.08)
-          ];
-          neDirs.forEach(function (d, i) {
-            var p = onSurface(d, 0.06);
-            neHomes[i][0] = p.x; neHomes[i][1] = p.y; neHomes[i][2] = p.z;
-            neDrifts[i][0] = 0; neDrifts[i][1] = 0.02; neDrifts[i][2] = 0;
-            nepis[i].position.copy(p);
-          });
-          neLabel.position.copy(nepis[0].position).add(new THREE.Vector3(0.05, 0.34, 0.02));
-        } catch (err) {
-          dopCurve = null;
-        }
       }, function (ev) {
         if (statusEl && ev.total) statusEl.textContent = L.loading3d.replace('…', '') + ' ' + Math.round(100 * ev.loaded / ev.total) + '%';
       }, function () {
@@ -688,36 +597,26 @@
           var sh = mat.userData.shader;
           if (!sh) return;
           sh.uniforms.uAct.value = actNow;
-          sh.uniforms.uSig.value = Math.max(0, sigNow);
         });
-        pfcLight.intensity = 0.25 + 3.4 * actNow;
-        rewardLight.intensity = 0.35 + 2.4 * Math.max(0, sigNow);
-        haloMat.opacity = 0.03 + 0.16 * actNow;
-        rayMat.opacity = shown.ray;
-        var speed = 0.22 + 0.52 * (1 - shown.flick);
-        signals.forEach(function (m, i) {
-          var u = (t * speed + i / 6) % 1;
-          var ease = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
-          if (dopCurve) m.position.copy(dopCurve.getPoint(1 - ease));
-          else m.position.lerpVectors(pfcPos, rewardPos, ease);
-          var dropped = shown.flick > 0.45 && (i % 2 === 1);
-          var pulse = 0.55 + 0.45 * Math.sin(u * Math.PI);
-          m.material.opacity = dropped ? 0.22 : 0.85 + 0.15 * pulse;
-          m.material.emissiveIntensity = dropped ? 0.25 : 0.7 + 0.6 * pulse;
-          var s = 1.05 + 0.4 * pulse;
-          m.scale.setScalar(dropped ? 0.72 : s);
+        regions.forEach(function (r) {
+          var lvl = actNow;
+          if (r.kind === 'rew') lvl = 0.35 + 0.65 * Math.max(0, sigNow);
+          else if (r.kind === 'ne') lvl = 0.55 + 0.45 * (1 - shown.flick);
+          r.mesh.material.opacity = 0.35 + 0.55 * lvl;
+          r.mesh.material.emissiveIntensity = 0.25 + 0.85 * lvl;
         });
-        nepis.forEach(function (m, i) {
-          var amp = reduced ? shown.drift : shown.drift * (0.55 + 0.45 * Math.sin(t * 1.25 + i));
-          m.position.set(
-            neHomes[i][0] + neDrifts[i][0] * amp,
-            neHomes[i][1] + neDrifts[i][1] * amp,
-            neHomes[i][2] + neDrifts[i][2] * amp
-          );
-          var steady = 1 - shown.drift;
-          m.material.emissiveIntensity = 0.3 + 0.45 * steady + 0.15 * Math.sin(t * 2.2 + i);
-          m.material.opacity = 0.75 + 0.2 * steady;
+        var speed = 0.16 + 0.3 * (1 - shown.flick);
+        dots.forEach(function (d) {
+          var u = (t * speed + d.phase) % 1;
+          d.mesh.position.copy(d.curve.getPoint(u));
+          var dropped = shown.flick > 0.45 && (d.idx % 2 === 1);
+          var fade = Math.sin(u * Math.PI);
+          d.mesh.material.opacity = dropped ? 0.12 : 0.35 + 0.65 * fade;
+          d.mesh.material.emissiveIntensity = dropped ? 0.2 : 0.6 + 0.6 * fade;
+          d.halo.material.opacity = dropped ? 0.03 : 0.22 * fade;
+          d.mesh.scale.setScalar(dropped ? 0.7 : 0.85 + 0.35 * fade);
         });
+        paths.forEach(function (p) { p.line.material.opacity = 0.14 + 0.22 * (1 - shown.flick); });
         if (autospin && viewMode === '3d') pivot.rotation.y += dt * 0.28;
         if (brainModel) {
           var breath = 1 + 0.006 * Math.sin(t * 1.6) * actNow;
@@ -743,13 +642,8 @@
       mounting = false;
 
       new MutationObserver(function () {
-        var accent = cssHex('--accent', 0xf2551f);
-        var amber = cssHex('--amber', 0xc9781b);
-        haloMat.color.setHex(accent);
-        rewardCore.material.color.setHex(amber);
-        signals.forEach(function (m) { m.material.color.setHex(amber); });
-        [pfcLabel, rewardLabel, neLabel].forEach(function (s) {
-          var next = makeLabel(THREE, s.userData.lines, s === neLabel ? { width: 0.5 } : undefined);
+        labels.forEach(function (s) {
+          var next = makeLabel(THREE, s.userData.lines, { width: s.userData.width });
           s.material.map.dispose();
           s.material.map = next.material.map;
           s.material.needsUpdate = true;
