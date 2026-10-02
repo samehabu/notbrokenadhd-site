@@ -24,6 +24,7 @@
     gluT: 'אות ה״קדימה״ המרכזי שמחבר בין הקליפה הקדם-מצחית לסטריאטום. מחקרי הדמיה מרמזים שרמות הגלוטמט במעגלים אלה עשויות להיות לא מאוזנות ב-ADHD. הראיות עדיין מתגבשות.',
     rxH: "איך התרופות עובדות", rxIntro: "בחרו תרופה כדי לראות על אילו מסלולים היא פועלת בתרשים.",
     rx: [["מתילפנידאט", "ריטלין, קונסרטה", "חוסם את משאבות הספיגה החוזרת של דופמין ונוראדרנלין (DAT ו-NET), כך שהאותות האלה נשארים פעילים זמן רב יותר — בעיקר בסטריאטום ובקליפה הקדם-מצחית."], ["אמפטמינים", "ויואנס, אדרל", "גם חוסמים ספיגה חוזרת, וגם דוחפים דופמין ונוראדרנלין החוצה מקצות העצבים (היפוך DAT ופעולה על VMAT2) — אפקט שחרור חזק יותר."], ["אטומוקסטין, וילוקסזין", "סטרטרה · לא-ממריצים", "חוסמים את משאבת הנוראדרנלין. בקליפה הקדם-מצחית זה מעלה גם דופמין, כי שם אותה משאבה מפנה את שניהם. ההשפעה נבנית במשך כמה שבועות."], ["גואנפצין, קלונידין", "אינטוניב · אגוניסטים של α2A", "מפעילים קולטני α2A בתאי העצב של הקליפה הקדם-מצחית, מחזקים את אותות הרשת ומסננים \"רעש\". עוזרים גם בהיפראקטיביות, בשינה ובתגובתיות רגשית."]],
+    rxMore: "עוד על התרופה בפרק התרופות ↓",
     rxFoot: "הסבר מפושט לצורכי לימוד — לא ייעוץ רפואי. בחירת התרופה והמינון נעשות יחד עם הרופא/ה.",
     cap: {
       typical: { lbl: 'מוח טיפוסי', h: 'עובד בחלקות', items: [
@@ -55,6 +56,7 @@
     gluT: 'إشارة «الانطلاق» الرئيسية التي تربط القشرة الجبهية بالجسم المخطط. تشير دراسات التصوير إلى أن الغلوتامات قد يكون غير متوازن في هذه الدوائر لدى ADHD. الأدلة ما زالت في طور التكوّن.',
     rxH: "كيف تعمل الأدوية", rxIntro: "اختر دواءً لترى المسارات التي يؤثر فيها على الرسم.",
     rx: [["ميثيلفينيديت", "ريتالين، كونسرتا", "يحجب مضخّات إعادة امتصاص الدوبامين والنورأدرينالين (DAT وNET)، فتبقى هذه الإشارات نشطة لفترة أطول — خاصة في الجسم المخطط والقشرة الجبهية."], ["الأمفيتامينات", "فيفانس، أديرال", "تحجب إعادة الامتصاص أيضًا، وتدفع الدوبامين والنورأدرينالين إلى خارج نهايات الأعصاب (بعكس عمل DAT والتأثير على VMAT2) — أي تأثير إطلاق أقوى."], ["أتوموكسيتين، فيلوكسازين", "ستراتيرا · غير منشّطة", "تحجب مضخّة النورأدرينالين. وفي القشرة الجبهية يرفع ذلك الدوبامين أيضًا، لأن المضخّة نفسها تزيل الاثنين هناك. يتراكم التأثير على مدى عدة أسابيع."], ["غوانفاسين، كلونيدين", "إنتونيف · منبّهات α2A", "تنشّط مستقبلات α2A في خلايا القشرة الجبهية، فتقوّي إشارات الشبكة وتصفّي «الضجيج». تساعد أيضًا في فرط الحركة والنوم والتفاعل العاطفي."]],
+    rxMore: "المزيد عن هذا الدواء في قسم الأدوية ↓",
     rxFoot: "شرح مبسّط لأغراض تعليمية — ليس نصيحة طبية. يُحدَّد الدواء والجرعة مع طبيبك.",
     cap: {
       typical: { lbl: 'دماغ نمطي', h: 'يعمل بسلاسة', items: [
@@ -86,6 +88,7 @@
     gluT: 'A fő „indító” jel, amely összeköti a prefrontális kérget és a striatumot. Képalkotó vizsgálatok szerint ADHD-ban ezekben a körökben felborulhat a glutamát egyensúlya. A bizonyítékok még gyűlnek.',
     rxH: "Hogyan hatnak a gyógyszerek?", rxIntro: "Válassz egy gyógyszert, és az ábrán látod, mely pályákra hat.",
     rx: [["Metilfenidát", "Ritalin, Concerta, Medikinet", "Gátolja a dopamin- és noradrenalin-visszavételi pumpákat (DAT, NET), így ezek a jelek tovább aktívak maradnak — főleg a striatumban és a prefrontális kéregben."], ["Amfetaminok", "Elvanse (lisdexamfetamin)", "Szintén gátolják a visszavételt, emellett ki is préselik a dopamint és a noradrenalint az idegvégződésekből (a DAT megfordításával, a VMAT2-re hatva) — erősebb felszabadító hatás."], ["Atomoxetin, viloxazin", "Strattera · nem stimulánsok", "Gátolják a noradrenalin-pumpát. A prefrontális kéregben ez a dopamint is emeli, mert ott ugyanez a pumpa takarítja el mindkettőt. A hatás néhány hét alatt épül fel."], ["Guanfacin, klonidin", "Intuniv · α2A-agonisták", "A prefrontális idegsejtek α2A-receptoraira hatnak: erősítik a hálózat jeleit és kiszűrik a „zajt”. A hiperaktivitásban, az alvásban és az érzelmi reaktivitásban is segíthetnek."]],
+    rxMore: "Bővebben a Gyógyszerek részben ↓",
     rxFoot: "Oktatási célú egyszerűsítés — nem orvosi tanács. A gyógyszert és az adagot az orvosoddal közösen választjátok ki.",
     cap: {
       typical: { lbl: 'Tipikus agy', h: 'Zökkenőmentesen működik', items: [
@@ -117,6 +120,7 @@
     gluT: 'The main “go” signal linking the prefrontal cortex and striatum. Imaging studies suggest glutamate can be out of balance in these circuits in ADHD. The evidence is still emerging.',
     rxH: "How the medicines work", rxIntro: "Pick a medicine to see which pathways it acts on in the diagram.",
     rx: [["Methylphenidate", "Ritalin, Concerta", "Blocks the dopamine and norepinephrine reuptake pumps (DAT and NET), so these signals stay active for longer — mainly in the striatum and prefrontal cortex."], ["Amphetamines", "Vyvanse, Adderall", "Also block reuptake, and additionally push dopamine and norepinephrine out of nerve endings (reversing DAT and acting on VMAT2) — a stronger release effect."], ["Atomoxetine, viloxazine", "Strattera · non-stimulants", "Block the norepinephrine pump. In the prefrontal cortex this raises dopamine too, because the same pump clears both there. The effect builds over several weeks."], ["Guanfacine, clonidine", "Intuniv · α2A agonists", "Act on α2A receptors on prefrontal neurons, strengthening the network’s signals and filtering out “noise”. They can also help with hyperactivity, sleep and emotional reactivity."]],
+    rxMore: "See more in the Meds section ↓",
     rxFoot: "Simplified for education — not medical advice. The choice of medicine and dose is made with your doctor.",
     cap: {
       typical: { lbl: 'Typical brain', h: 'Running smoothly', items: [
@@ -195,6 +199,7 @@
     '#brainmap .bm-rx-tabs{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.6rem}#brainmap .bm-rx-tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);font:600 .8rem/1.2 inherit;font-family:inherit;padding:.4rem .7rem;border-radius:999px;cursor:pointer}#brainmap .bm-rx-tabs button.on{background:var(--amber);border-color:var(--amber);color:#fff}' +
     '#brainmap .bm-rx-card{background:var(--bg,#faf7f2);border:1px solid var(--line);border-radius:12px;padding:.7rem .85rem;font-size:.86rem;line-height:1.55;color:var(--ink-soft)}#brainmap .bm-rx-card b{color:var(--ink)}#brainmap .bm-rx-card .br{display:block;font-size:.74rem;color:var(--grey);margin-bottom:.3rem}#brainmap .bm-rx-foot{margin:.55rem 0 0;font-size:.74rem;color:var(--grey);font-style:italic}' +
     '#brainmap .viz.state-treated.rx-on .da-path,#brainmap .viz.state-treated.rx-on .ne-path{opacity:.15;transition:opacity .4s,stroke-width .4s}#brainmap .viz.state-treated.rx-da .da-path,#brainmap .viz.state-treated.rx-ne .ne-path{opacity:1;stroke-width:3.5}#brainmap .viz.state-treated.rx-on .sig{opacity:.25}#brainmap .viz.state-treated.rx-da .sig{opacity:1}#brainmap .viz.state-treated.rx-on .attn{opacity:.3}#brainmap .viz.state-treated.rx-ne .attn{opacity:1}#brainmap .viz.state-treated.rx-pfc .pfc-glow{opacity:1;filter:blur(12px)}#brainmap .viz.state-treated.rx-on:not(.rx-pfc) .pfc-glow{opacity:.35}' +
+    '#brainmap .bm-rx-more{display:inline-block;margin-top:.5rem;font-weight:700;font-size:.82rem;color:var(--amber);text-decoration:none}#brainmap .bm-rx-more:hover{text-decoration:underline}@keyframes bmflash{0%,60%{box-shadow:0 0 0 3px var(--amber)}100%{box-shadow:0 0 0 3px transparent}}.medcard.bm-flash{animation:bmflash 2.2s ease-out}' +
     '#brainmap .bm-keybar{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.42rem .85rem;margin:0 0 .85rem;font-size:.72rem;line-height:1.3;color:var(--ink-soft)}' +
     '#brainmap .bm-keybar .bm-key-title{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;color:var(--ink);margin-inline-end:.2rem}' +
     '#brainmap .bm-keybar .bm-key-item{display:inline-flex;align-items:center;gap:.32rem;white-space:nowrap}' +
@@ -223,6 +228,7 @@
     '</svg>';
 
   var RX_HL = ['rx-da rx-ne', 'rx-da rx-ne', 'rx-ne rx-pfc', 'rx-pfc'], rxSel = 0;
+  var RX_MED = [['mph', 0], ['amp', 3], ['non', 6], ['non', 8]];
   var REGION_COLORS = ['var(--accent)', '#e0457b', '#7a5cff', 'var(--amber)', '#2f8f83'];
   var sec = document.createElement('section');
   sec.id = 'brainmap'; sec.className = 'sec';
@@ -255,11 +261,20 @@
   function pickRx(i) {
     rxSel = i;
     var m = L.rx[i], card = sec.querySelector('.bm-rx-card');
-    if (card) card.innerHTML = '<b>' + m[0] + '</b><span class="br">' + m[1] + '</span>' + m[2];
+    if (card) card.innerHTML = '<b>' + m[0] + '</b><span class="br">' + m[1] + '</span>' + m[2] +
+      (document.getElementById('medGrid') ? '<a class="bm-rx-more" href="#meds" data-medgo="' + i + '">' + L.rxMore + '</a>' : '');
     [].forEach.call(sec.querySelectorAll('.bm-rx-tabs button'), function (b) {
       var on = +b.getAttribute('data-rx') === i; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on);
     });
     document.getElementById('bmViz').className = 'viz state-treated rx-on ' + RX_HL[i];
+  }
+  function goMed(t) {
+    var f = document.querySelector('#meds [data-filter="' + t[0] + '"]'); if (f) f.click();
+    var c = document.querySelectorAll('#medGrid .medcard')[t[1]] || document.getElementById('meds');
+    c.classList.add('in');
+    var aim = function () { c.scrollIntoView({ block: 'center' }); };
+    aim(); setTimeout(aim, 250); setTimeout(aim, 800);
+    c.classList.remove('bm-flash'); setTimeout(function () { c.classList.add('bm-flash'); }, 1100);
   }
   function render(state) {
     if (!L.cap[state]) state = 'adhd';
@@ -279,6 +294,7 @@
 
   document.getElementById('bmCap').addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('[data-rx]'); if (b) pickRx(+b.getAttribute('data-rx'));
+    var g = e.target.closest && e.target.closest('[data-medgo]'); if (g) { e.preventDefault(); goMed(RX_MED[+g.getAttribute('data-medgo')]); }
   });
 
   render('adhd');
