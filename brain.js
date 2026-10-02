@@ -378,7 +378,7 @@
       renderer.setClearColor(0x000000, 0);
       if (THREE.SRGBColorSpace) renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.05;
+      renderer.toneMappingExposure = 1.18;
 
       var scene = new THREE.Scene();
       var camera = new THREE.PerspectiveCamera(34, 1, 0.05, 30);
@@ -425,24 +425,46 @@
       var halo = new THREE.Mesh(new THREE.SphereGeometry(0.2, 28, 20), haloMat);
       halo.position.set(0, 0.2, 0.72);
       pivot.add(halo);
+      var dopColor = 0xff8a14;
       var rewardCore = new THREE.Mesh(
-        new THREE.SphereGeometry(0.055, 18, 14),
-        new THREE.MeshBasicMaterial({ color: amber, transparent: true, opacity: 0.95, depthTest: true, depthWrite: false })
+        new THREE.SphereGeometry(0.16, 22, 16),
+        new THREE.MeshStandardMaterial({
+          color: dopColor, emissive: dopColor, emissiveIntensity: 0.9,
+          transparent: true, opacity: 1, roughness: 0.3, depthTest: false, depthWrite: false
+        })
       );
       rewardCore.position.copy(rewardLight.position);
-      rewardCore.renderOrder = 2;
+      rewardCore.renderOrder = 6;
+      var rewardGlow = new THREE.Mesh(
+        new THREE.SphereGeometry(0.28, 20, 16),
+        new THREE.MeshBasicMaterial({
+          color: dopColor, transparent: true, opacity: 0.38, depthTest: false, depthWrite: false,
+          blending: THREE.AdditiveBlending
+        })
+      );
+      rewardGlow.renderOrder = 5;
+      rewardCore.add(rewardGlow);
       pivot.add(rewardCore);
 
       var rewardPos = new THREE.Vector3(0.42, -0.18, 0.55);
       var pfcPos = new THREE.Vector3(0.12, 0.32, 0.82);
       var dopCurve = null;
-      var sigGeo = new THREE.SphereGeometry(0.028, 12, 10);
+      var sigGeo = new THREE.SphereGeometry(0.11, 16, 12);
       var signals = [];
-      for (var i = 0; i < 6; i++) {
-        var sm = new THREE.Mesh(sigGeo, new THREE.MeshBasicMaterial({
-          color: amber, transparent: true, opacity: 0.95, depthWrite: false, depthTest: true
+      for (var i = 0; i < 7; i++) {
+        var sm = new THREE.Mesh(sigGeo, new THREE.MeshStandardMaterial({
+          color: dopColor, emissive: dopColor, emissiveIntensity: 0.85,
+          transparent: true, opacity: 1, roughness: 0.32, depthTest: false, depthWrite: false
         }));
-        sm.renderOrder = 3;
+        var sg = new THREE.Mesh(
+          new THREE.SphereGeometry(0.18, 14, 10),
+          new THREE.MeshBasicMaterial({
+            color: dopColor, transparent: true, opacity: 0.32, depthTest: false, depthWrite: false,
+            blending: THREE.AdditiveBlending
+          })
+        );
+        sm.add(sg);
+        sm.renderOrder = 6;
         pivot.add(sm);
         signals.push(sm);
       }
@@ -489,15 +511,32 @@
           shader.uniforms.uAct = { value: 1 };
           shader.uniforms.uSig = { value: 1 };
           shader.vertexShader = shader.vertexShader
-            .replace('#include <common>', '#include <common>\nvarying float vFront;\nvarying float vRew;')
-            .replace('#include <begin_vertex>', '#include <begin_vertex>\nvFront = smoothstep(0.02, 0.7, transformed.z);\nvRew = 1.0 - smoothstep(0.04, 0.34, distance(transformed, vec3(0.0, -0.08, 0.18)));');
+            .replace('#include <common>', '#include <common>\nvarying float vDop;\nvarying float vPfc;\nvarying float vNe;\nfloat nbDistSeg(vec3 p, vec3 a, vec3 b){vec3 ab=b-a;float t=clamp(dot(p-a,ab)/max(dot(ab,ab),0.0001),0.0,1.0);return distance(p,a+ab*t);}')
+            .replace('#include <begin_vertex>', '#include <begin_vertex>\nvec3 nb0=vec3(-0.02,-0.42,0.72);vec3 nb1=vec3(-0.22,-0.12,0.78);vec3 nb2=vec3(-0.42,0.08,0.74);vec3 nb3=vec3(-0.62,0.22,0.62);vec3 nb4=vec3(-0.78,0.30,0.42);\nfloat nbPath=min(min(nbDistSeg(transformed,nb0,nb1),nbDistSeg(transformed,nb1,nb2)),min(nbDistSeg(transformed,nb2,nb3),nbDistSeg(transformed,nb3,nb4)));\nvDop=1.0-smoothstep(0.04,0.30,nbPath);\nvPfc=1.0-smoothstep(0.02,0.38,distance(transformed,nb4));\nvNe=1.0-smoothstep(0.04,0.24,distance(transformed,vec3(-0.12,0.88,0.20)));');
           shader.fragmentShader = shader.fragmentShader
-            .replace('#include <common>', '#include <common>\nuniform float uAct;\nuniform float uSig;\nvarying float vFront;\nvarying float vRew;')
-            .replace('#include <map_fragment>', '#include <map_fragment>\nfloat actBoost = mix(0.94, 1.06, uAct);\ndiffuseColor.rgb = mix(diffuseColor.rgb * actBoost, diffuseColor.rgb, 0.75);')
-            .replace('#include <emissive_fragment>', '#include <emissive_fragment>\ntotalEmissiveRadiance += vec3(0.9, 0.35, 0.12) * vFront * uAct * 0.06;\ntotalEmissiveRadiance += vec3(0.95, 0.55, 0.12) * vRew * uSig * 0.07;');
+            .replace('#include <common>', '#include <common>\nuniform float uAct;\nuniform float uSig;\nvarying float vDop;\nvarying float vPfc;\nvarying float vNe;')
+            .replace('#include <map_fragment>', '#include <map_fragment>\nfloat dop=vDop;\nfloat pfc=vPfc;\nfloat ne=vNe;\nfloat hot=clamp(max(dop,max(pfc,ne)),0.0,1.0);\nvec3 glassTint=vec3(0.82,0.90,0.95);\nvec3 washed=mix(glassTint,diffuseColor.rgb,0.08);\nvec3 painted=vec3(1.0,0.46,0.04);\npainted=mix(painted,vec3(0.96,0.24,0.10),smoothstep(0.2,0.85,pfc)*(1.0-dop*0.25));\npainted=mix(painted,vec3(0.02,0.62,0.58),smoothstep(0.15,0.8,ne));\ndiffuseColor.rgb=mix(washed,painted,smoothstep(0.05,0.55,hot));\ndiffuseColor.a=mix(0.22,1.0,smoothstep(0.04,0.42,hot));')
+            .replace('#include <emissive_fragment>', '#include <emissive_fragment>\ntotalEmissiveRadiance+=vec3(1.0,0.46,0.02)*vDop*(0.55+0.45*uSig);\ntotalEmissiveRadiance+=vec3(1.0,0.30,0.06)*vPfc*(0.35+0.65*uAct);\ntotalEmissiveRadiance+=vec3(0.02,0.70,0.66)*vNe*0.4;');
           mat.userData.shader = shader;
         };
         shaders.push(mat);
+      }
+      function glassFrom(src) {
+        var glass = new THREE.MeshPhysicalMaterial({
+          map: src.map || null,
+          normalMap: src.normalMap || null,
+          color: 0xf3f8fb,
+          roughness: 0.16,
+          metalness: 0.0,
+          clearcoat: 1,
+          clearcoatRoughness: 0.04,
+          transparent: true,
+          opacity: 1,
+          depthWrite: false,
+          side: THREE.FrontSide
+        });
+        hookMaterial(glass);
+        return glass;
       }
 
       var scriptEl = document.querySelector('script[src$="brain.js"]');
@@ -509,7 +548,7 @@
         model.traverse(function (obj) {
           if (obj.isMesh && obj.material) {
             var mats = Array.isArray(obj.material) ? obj.material : [obj.material];
-            mats.forEach(hookMaterial);
+            obj.material = mats.length === 1 ? glassFrom(mats[0]) : mats.map(glassFrom);
           }
         });
         pivot.add(model);
@@ -554,7 +593,7 @@
             new THREE.Vector3(-0.42, 0.08, 0.74),
             new THREE.Vector3(-0.62, 0.22, 0.62),
             new THREE.Vector3(-0.78, 0.3, 0.42)
-          ].map(function (d) { return onSurface(d, 0.07); });
+          ].map(function (d) { return onSurface(d, 0.1); });
           dopCurve = new THREE.CatmullRomCurve3(dopPts);
           rewardPos.copy(dopPts[0]);
           pfcPos.copy(dopPts[dopPts.length - 1]);
@@ -662,10 +701,11 @@
           if (dopCurve) m.position.copy(dopCurve.getPoint(1 - ease));
           else m.position.lerpVectors(pfcPos, rewardPos, ease);
           var dropped = shown.flick > 0.45 && (i % 2 === 1);
-          var pulse = 0.2 + 0.8 * Math.sin(u * Math.PI);
-          m.material.opacity = dropped ? 0.05 : pulse * (0.3 + 0.7 * Math.max(0, sigNow));
-          var s = 0.7 + 0.55 * pulse;
-          m.scale.setScalar(dropped ? 0.5 : s);
+          var pulse = 0.55 + 0.45 * Math.sin(u * Math.PI);
+          m.material.opacity = dropped ? 0.22 : 0.85 + 0.15 * pulse;
+          m.material.emissiveIntensity = dropped ? 0.25 : 0.7 + 0.6 * pulse;
+          var s = 1.05 + 0.4 * pulse;
+          m.scale.setScalar(dropped ? 0.72 : s);
         });
         nepis.forEach(function (m, i) {
           var amp = reduced ? shown.drift : shown.drift * (0.55 + 0.45 * Math.sin(t * 1.25 + i));
