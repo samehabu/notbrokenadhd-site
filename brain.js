@@ -16,6 +16,12 @@
     key: 'מקרא', keyIntro: 'הצבעים מייצגים מערכות נוירו־שליחים — להמחשה בלבד, לא סריקה.',
     dop: 'דופמין', ser: 'סרוטונין', gab: 'GABA', glu: 'גלוטמט',
     note: 'ההבדלים האלה תפקודיים וכימיים — ואינם עדות לכך שמשהו «תקול».',
+    regions: [['הקליפה הקדם-מצחית', 'קשב, תכנון, זיכרון עבודה ושליטה בדחפים'], ['קליפת החגורה הקדמית', 'הכוונת הקשב וזיהוי טעויות'], ['סטריאטום (גרעין הזנב)', 'בחירת התגובה הנכונה וויסות תנועה'], ['מעגל התגמול', 'מוטיבציה ותגמול — כשהוא פעיל פחות, קשה לחכות והבחירה האימפולסיבית מנצחת'], ['נוראדרנלין (לוקוס קרולאוס)', 'ערנות ושמירה על אותות מיקוד ברורים בקליפה הקדם-מצחית']],
+    regionsFoot: 'יחד, המעגלים הפרונטו-סטריאטליים האלה מפעילים את השליטה הניהולית. איתות לא סדיר של דופמין ונוראדרנלין בהם מתבטא בקשב לקוי ו/או בהיפראקטיביות-אימפולסיביות.',
+    moreH: 'ומה לגבי סרוטונין, GABA וגלוטמט?', moreIntro: 'לדופמין ולנוראדרנלין יש את הראיות החזקות ביותר ב-ADHD, ובהם פועלות התרופות ל-ADHD. נוירו-שליחים אחרים ממלאים תפקידים משניים:',
+    serT: 'משפיע על מצב הרוח, הסבלנות ומהירות התגובה. הוא אינו גורם מרכזי ל-ADHD, אבל הוא חשוב כש-ADHD מגיע יחד עם חרדה או דיכאון. תרופות סרוטונין (SSRI) אינן מטפלות בתסמיני הליבה של ADHD.',
+    gabT: 'הבלם המרכזי של המוח. כמה מחקרי הדמיה מצאו רמות GABA נמוכות יותר באזורי התנועה אצל ילדים עם ADHD, מה שעשוי להיות קשור לעכבה חלשה יותר ולאי-שקט. הממצאים אינם אחידים.',
+    gluT: 'אות ה״קדימה״ המרכזי שמחבר בין הקליפה הקדם-מצחית לסטריאטום. מחקרי הדמיה מרמזים שרמות הגלוטמט במעגלים אלה עשויות להיות לא מאוזנות ב-ADHD. הראיות עדיין מתגבשות.',
     cap: {
       typical: { lbl: 'מוח טיפוסי', h: 'עובד בחלקות', items: [
         '<b>הקליפה הקדם-מצחית</b> — מרכז המיקוד וריסון הדחף — פעילה באופן יציב.',
@@ -38,6 +44,12 @@
     key: 'مفتاح', keyIntro: 'الألوان تمثّل أنظمة الناقلات العصبية — للتوضيح فقط، وليس فحصًا.',
     dop: 'الدوبامين', ser: 'السيروتونين', gab: 'GABA', glu: 'الغلوتامات',
     note: 'هذه الفروق وظيفية وكيميائية — وليست دليلاً على أن شيئاً «معطوب».',
+    regions: [['القشرة الجبهية', 'الانتباه والتخطيط والذاكرة العاملة وكبح الاندفاع'], ['القشرة الحزامية الأمامية', 'توجيه الانتباه ورصد الأخطاء'], ['الجسم المخطط (النواة المذنبة)', 'اختيار الاستجابة الصحيحة وتنظيم الحركة'], ['دائرة المكافأة', 'الدافعية والمكافأة — حين يضعف نشاطها يصعب الانتظار ويغلب الاختيار المندفع'], ['النورإبينفرين (الموضع الأزرق)', 'اليقظة والحفاظ على وضوح إشارات التركيز في القشرة الجبهية']],
+    regionsFoot: 'معاً، تدير هذه الدوائر الجبهية المخططية التحكّم التنفيذي. وعدم انتظام إشارات الدوبامين والنورإبينفرين فيها يظهر في صورة ضعف الانتباه و/أو فرط الحركة والاندفاع.',
+    moreH: 'وماذا عن السيروتونين وGABA والغلوتامات؟', moreIntro: 'للدوبامين والنورإبينفرين أقوى الأدلة في ADHD، وعليهما تعمل أدوية ADHD. أما النواقل الأخرى فأدوارها مساندة:',
+    serT: 'يؤثر في المزاج والصبر وسرعة ردّ الفعل. ليس سبباً رئيسياً لـ ADHD، لكنه مهم حين يترافق ADHD مع القلق أو الاكتئاب. أدوية السيروتونين (SSRIs) لا تعالج الأعراض الأساسية لـ ADHD.',
+    gabT: 'المكبح الرئيسي في الدماغ. وجدت بعض دراسات التصوير مستويات أقل من GABA في مناطق الحركة لدى أطفال لديهم ADHD، وقد يرتبط ذلك بضعف الكبح والتململ. النتائج متباينة.',
+    gluT: 'إشارة «الانطلاق» الرئيسية التي تربط القشرة الجبهية بالجسم المخطط. تشير دراسات التصوير إلى أن الغلوتامات قد يكون غير متوازن في هذه الدوائر لدى ADHD. الأدلة ما زالت في طور التكوّن.',
     cap: {
       typical: { lbl: 'دماغ نمطي', h: 'يعمل بسلاسة', items: [
         '<b>القشرة الجبهية</b> — مركز التركيز وكبح الاندفاع — نشطة باستمرار.',
@@ -60,6 +72,12 @@
     key: 'Jelmagyarázat', keyIntro: 'A színek a neurotranszmitter-rendszereket jelölik — szemléltetés, nem felvétel.',
     dop: 'Dopamin', ser: 'Szerotonin', gab: 'GABA', glu: 'Glutamát',
     note: 'Ezek a különbségek működésbeli és kémiai jellegűek — nem jelei annak, hogy bármi „elromlott”.',
+    regions: [['Prefrontális kéreg', 'figyelem, tervezés, munkamemória és impulzuskontroll'], ['Elülső cinguláris kéreg', 'a figyelem irányítása és a hibák észlelése'], ['Striatum (nucleus caudatus)', 'a megfelelő válasz kiválasztása és a mozgás szabályozása'], ['Jutalmazó rendszer', 'motiváció és jutalom — ha alulműködik, nehéz várni, és az impulzív döntés győz'], ['Noradrenalin (locus coeruleus)', 'éberség és tiszta fókuszjelek a prefrontális kéregben']],
+    regionsFoot: 'Ezek a frontostriatális körök együtt működtetik a végrehajtó irányítást. Ha bennük egyenetlen a dopamin- és noradrenalin-jelzés, az figyelemzavarként és/vagy hiperaktivitás-impulzivitásként jelenik meg.',
+    moreH: 'És mi a helyzet a szerotoninnal, a GABA-val és a glutamáttal?', moreIntro: 'ADHD-ban a dopaminra és a noradrenalinra van a legerősebb bizonyíték, és az ADHD-gyógyszerek is ezekre hatnak. A többi hírvivő molekula kiegészítő szerepet játszik:',
+    serT: 'Hatással van a hangulatra, a türelemre és a reakciók gyorsaságára. Nem fő oka az ADHD-nak, de fontos, ha az ADHD szorongással vagy depresszióval együtt jár. A szerotoninra ható gyógyszerek (SSRI-k) nem kezelik az ADHD alaptüneteit.',
+    gabT: 'Az agy fő fékje. Egyes képalkotó vizsgálatok alacsonyabb GABA-szintet találtak ADHD-s gyerekek mozgásért felelős agyterületein, ami összefügghet a gyengébb gátlással és a nyugtalansággal. Az eredmények vegyesek.',
+    gluT: 'A fő „indító” jel, amely összeköti a prefrontális kérget és a striatumot. Képalkotó vizsgálatok szerint ADHD-ban ezekben a körökben felborulhat a glutamát egyensúlya. A bizonyítékok még gyűlnek.',
     cap: {
       typical: { lbl: 'Tipikus agy', h: 'Zökkenőmentesen működik', items: [
         '<b>A prefrontális kéreg</b> — a fókusz és az impulzuskontroll központja — folyamatosan aktív.',
@@ -82,6 +100,12 @@
     key: 'Key', keyIntro: 'Colors show broad neurotransmitter systems — illustrative, not a scan.',
     dop: 'Dopamine', ser: 'Serotonin', gab: 'GABA', glu: 'Glutamate',
     note: 'These differences are functional and chemical — not a sign that anything is “broken.”',
+    regions: [['Prefrontal cortex', 'attention, planning, working memory and impulse control'], ['Anterior cingulate', 'where attention goes, and catching mistakes'], ['Striatum (caudate)', 'choosing the right response and regulating movement'], ['Reward circuit', 'motivation and reward — when it runs low, waiting feels hard and impulsive choices win'], ['Norepinephrine (locus coeruleus)', 'alertness, and keeping focus signals clear in the prefrontal cortex']],
+    regionsFoot: 'Together these frontostriatal circuits run executive control. Uneven dopamine and norepinephrine signalling here shows up as inattention and/or hyperactivity-impulsivity.',
+    moreH: 'What about serotonin, GABA and glutamate?', moreIntro: 'Dopamine and norepinephrine have the strongest evidence in ADHD, and they are what ADHD medicines act on. Other messengers play supporting roles:',
+    serT: 'Shapes mood, patience and how quickly you react. It isn’t a core cause of ADHD, but it matters when ADHD comes with anxiety or depression. Serotonin medicines (SSRIs) don’t treat core ADHD symptoms.',
+    gabT: 'The brain’s main brake. Some brain-imaging studies find lower GABA in movement areas in children with ADHD, which may relate to weaker inhibition and restlessness. Results are mixed.',
+    gluT: 'The main “go” signal linking the prefrontal cortex and striatum. Imaging studies suggest glutamate can be out of balance in these circuits in ADHD. The evidence is still emerging.',
     cap: {
       typical: { lbl: 'Typical brain', h: 'Running smoothly', items: [
         '<b>The prefrontal cortex</b> — your focus &amp; impulse-control centre — is steadily active.',
@@ -141,6 +165,20 @@
     '#brainmap .viz.state-treated .pfc,#brainmap .viz.state-treated .pfc-glow{opacity:1}#brainmap .viz.state-treated .sig{animation:bmflow 1.5s ease-in-out infinite}#brainmap .viz.state-treated .attn{opacity:1;transform:none}#brainmap .viz.state-treated .focus-ray{opacity:1}#brainmap .viz.state-treated .pill-rx{opacity:1}' +
     '#brainmap .pill-rx{opacity:0;transition:opacity .5s}' +
     '@media(prefers-reduced-motion:reduce){#brainmap .sig,#brainmap .pfc,#brainmap .attn{animation:none!important}}' +
+    '#brainmap .acc{fill:none;stroke:#e0457b;stroke-width:7;stroke-linecap:round;transition:opacity .5s}' +
+    '#brainmap .str{fill:none;stroke:#7a5cff;stroke-width:9;stroke-linecap:round;transition:opacity .5s}#brainmap .str-head{fill:#7a5cff;transition:opacity .5s}' +
+    '#brainmap .da-path{fill:none;stroke:var(--amber);stroke-width:2;stroke-dasharray:3 5;opacity:.55}#brainmap .ne-path{fill:none;stroke:#2f8f83;stroke-width:2;stroke-dasharray:3 5;opacity:.45}#brainmap .lc{fill:#2f8f83}' +
+    '#brainmap .num text{font:700 11px "IBM Plex Mono",monospace;fill:#fff}#brainmap .num circle{stroke:#fff;stroke-width:2}' +
+    '#brainmap .viz.state-adhd .acc,#brainmap .viz.state-adhd .str,#brainmap .viz.state-adhd .str-head{opacity:.4;animation:bmflick 2.6s ease-in-out infinite}#brainmap .viz.state-adhd .reward{opacity:.6}' +
+    '#brainmap .bm-regions{list-style:none;margin:.9rem 0 0;padding:.8rem 0 0;border-top:1px solid var(--line);display:grid;gap:.45rem;font-size:.84rem}' +
+    '#brainmap .bm-regions li{display:flex;gap:.55rem;align-items:flex-start;color:var(--ink-soft);line-height:1.45}#brainmap .bm-regions li b{color:var(--ink)}' +
+    '#brainmap .bm-regions .n{flex:0 0 auto;width:20px;height:20px;border-radius:50%;color:#fff;font:700 .7rem/20px "IBM Plex Mono",monospace;text-align:center;margin-top:.05rem}' +
+    '#brainmap .bm-regions-foot{margin:.7rem 0 0;font-size:.8rem;color:var(--grey);line-height:1.5}' +
+    '#brainmap .bm-more{margin-top:1.6rem}#brainmap .bm-more h3{font-size:1.2rem;margin:0 0 .35rem}#brainmap .bm-more>p{color:var(--grey);margin:0 0 .9rem;max-width:70ch}' +
+    '#brainmap .bm-more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}@media(max-width:760px){#brainmap .bm-more-grid{grid-template-columns:1fr}}' +
+    '#brainmap .bm-nt{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;border-top:4px solid var(--c)}' +
+    '#brainmap .bm-nt h4{margin:0 0 .4rem;font-size:1rem;display:flex;align-items:center;gap:.45rem}#brainmap .bm-nt h4:before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c)}' +
+    '#brainmap .bm-nt p{margin:0;font-size:.88rem;line-height:1.55;color:var(--ink-soft)}' +
     '#brainmap .bm-keybar{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.42rem .85rem;margin:0 0 .85rem;font-size:.72rem;line-height:1.3;color:var(--ink-soft)}' +
     '#brainmap .bm-keybar .bm-key-title{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;color:var(--ink);margin-inline-end:.2rem}' +
     '#brainmap .bm-keybar .bm-key-item{display:inline-flex;align-items:center;gap:.32rem;white-space:nowrap}' +
@@ -155,16 +193,20 @@
     '<path class="fold" d="M120,110 C150,120 150,150 122,158"/><path class="fold" d="M150,185 C185,190 190,220 158,230"/><path class="fold" d="M250,95 C285,105 285,140 255,150"/><path class="fold" d="M270,185 C305,192 305,222 275,232"/>' +
     '<ellipse class="pfc-glow" cx="112" cy="150" rx="46" ry="52"/>' +
     '<path class="pfc" d="M150,70 C110,55 70,80 78,120 C48,128 42,175 72,192 C64,210 78,232 100,236 C120,210 128,175 126,140 C132,108 128,86 138,74 C142,72 146,71 150,70 Z"/>' +
-    '<text class="region-label" x="60" y="272">' + L.pfc + '</text><text class="region-label" x="60" y="286" font-size="9">' + L.pfcSub + '</text>' +
-    '<circle class="reward-glow" cx="250" cy="190" r="26"/><circle class="reward" cx="250" cy="190" r="15"/>' +
-    '<text class="region-label" x="224" y="240">' + L.reward + '</text>' +
-    '<g><circle class="sig" cx="235" cy="188" r="6" style="animation-delay:0s"/><circle class="sig drop" cx="212" cy="182" r="6" style="animation-delay:.2s"/><circle class="sig" cx="190" cy="176" r="6" style="animation-delay:.4s"/><circle class="sig drop" cx="168" cy="168" r="6" style="animation-delay:.6s"/><circle class="sig" cx="147" cy="160" r="6" style="animation-delay:.8s"/><circle class="sig drop" cx="128" cy="154" r="6" style="animation-delay:1s"/></g>' +
+    '<path class="da-path" d="M258,236 C232,232 206,224 184,214 C160,202 134,186 112,168"/>' +
+    '<path class="ne-path" d="M296,256 C322,206 302,120 232,96 C182,82 132,100 106,128"/>' +
+    '<path class="acc" d="M146,198 C140,152 164,124 210,118"/>' +
+    '<path class="str" d="M192,186 C176,168 180,144 202,136 C224,129 248,136 262,152"/><ellipse class="str-head" cx="194" cy="182" rx="12" ry="14"/>' +
+    '<circle class="reward-glow" cx="184" cy="214" r="13" style="opacity:.45"/><circle class="reward" cx="184" cy="214" r="9"/><circle class="reward" cx="258" cy="236" r="10"/>' +
+    '<circle class="lc" cx="296" cy="256" r="7"/>' +
+    '<g><circle class="sig" cx="246" cy="234" r="6" style="animation-delay:0s"/><circle class="sig drop" cx="226" cy="229" r="6" style="animation-delay:.2s"/><circle class="sig" cx="205" cy="222" r="6" style="animation-delay:.4s"/><circle class="sig drop" cx="163" cy="203" r="6" style="animation-delay:.6s"/><circle class="sig" cx="143" cy="191" r="6" style="animation-delay:.8s"/><circle class="sig drop" cx="124" cy="178" r="6" style="animation-delay:1s"/></g>' +
     '<g><circle class="attn" cx="180" cy="95" r="5" style="--dx:-18px;--dy:-14px"/><circle class="attn" cx="210" cy="82" r="5" style="--dx:22px;--dy:-10px"/><circle class="attn" cx="245" cy="88" r="5" style="--dx:26px;--dy:16px"/><circle class="attn" cx="278" cy="100" r="5" style="--dx:20px;--dy:-18px"/></g>' +
-    '<text class="region-label" x="330" y="66">' + L.ne + '</text>' +
     '<path class="focus-ray" d="M96,150 L30,150"/><path class="focus-ray" d="M40,150 l14,-8 M40,150 l14,8"/>' +
     '<g class="pill-rx" transform="translate(298,286)"><rect x="-12" y="-13" width="72" height="26" rx="13" fill="#e0a144"/><text x="24" y="5" text-anchor="middle" font-family="IBM Plex Mono,Tajawal,monospace" font-size="11.5" font-weight="700" fill="#fff">' + L.pill + '</text></g>' +
+    '<g class="num"><circle cx="96" cy="104" r="9" style="fill:var(--accent)"/><text x="96" y="108" text-anchor="middle">1</text></g><g class="num"><circle cx="134" cy="152" r="9" style="fill:#e0457b"/><text x="134" y="156" text-anchor="middle">2</text></g><g class="num"><circle cx="276" cy="148" r="9" style="fill:#7a5cff"/><text x="276" y="152" text-anchor="middle">3</text></g><g class="num"><circle cx="222" cy="250" r="9" style="fill:var(--amber)"/><text x="222" y="254" text-anchor="middle">4</text></g><g class="num"><circle cx="318" cy="248" r="9" style="fill:#2f8f83"/><text x="318" y="252" text-anchor="middle">5</text></g>' +
     '</svg>';
 
+  var REGION_COLORS = ['var(--accent)', '#e0457b', '#7a5cff', 'var(--amber)', '#2f8f83'];
   var sec = document.createElement('section');
   sec.id = 'brainmap'; sec.className = 'sec';
   sec.innerHTML =
@@ -176,8 +218,16 @@
     '<button type="button" data-s="adhd" class="on">' + L.adhd + '</button>' +
     '<button type="button" data-s="treated">' + L.tre + '</button></div>' +
     keyHtml +
-    '<div class="bm-grid"><div class="bm-stage"><div class="viz state-adhd" id="bmViz">' + svg + '</div></div>' +
-    '<div class="bm-cap viz state-adhd" id="bmCap"></div></div></div></div>';
+    '<div class="bm-grid"><div class="bm-stage"><div class="viz state-adhd" id="bmViz">' + svg + '</div>' +
+    '<ol class="bm-regions">' + L.regions.map(function (r, i) {
+      return '<li><span class="n" style="background:' + REGION_COLORS[i] + '">' + (i + 1) + '</span><span><b>' + r[0] + '</b> — ' + r[1] + '</span></li>';
+    }).join('') + '</ol><p class="bm-regions-foot">' + L.regionsFoot + '</p></div>' +
+    '<div class="bm-cap viz state-adhd" id="bmCap"></div></div>' +
+    '<div class="bm-more"><h3>' + L.moreH + '</h3><p>' + L.moreIntro + '</p><div class="bm-more-grid">' +
+    '<div class="bm-nt" style="--c:#c45cff"><h4>' + L.ser + '</h4><p>' + L.serT + '</p></div>' +
+    '<div class="bm-nt" style="--c:#ff8fab"><h4>' + L.gab + '</h4><p>' + L.gabT + '</p></div>' +
+    '<div class="bm-nt" style="--c:#a8c94a"><h4>' + L.glu + '</h4><p>' + L.gluT + '</p></div>' +
+    '</div></div></div></div>';
   anchor.parentNode.insertBefore(sec, anchor);
 
   function render(state) {
