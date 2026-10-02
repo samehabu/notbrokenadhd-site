@@ -566,13 +566,13 @@
           pfcLabel.position.copy(pfcPos).add(new THREE.Vector3(-0.28, 0.26, 0.16));
           var end = dopPts[dopPts.length - 1];
           var prev = dopPts[dopPts.length - 2];
-          var tang = end.clone().sub(prev);
+          var tang = prev.clone().sub(end);
           if (tang.lengthSq() > 0.0001) {
             tang.normalize();
             var aim = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), tang);
-            shaft.position.copy(end).addScaledVector(tang, -0.16);
+            shaft.position.copy(end).addScaledVector(tang, 0.18);
             shaft.quaternion.copy(aim);
-            head.position.copy(end).addScaledVector(tang, 0.02);
+            head.position.copy(end).addScaledVector(tang, 0.4);
             head.quaternion.copy(aim);
           }
           var neDirs = [
@@ -659,8 +659,8 @@
         signals.forEach(function (m, i) {
           var u = (t * speed + i / 6) % 1;
           var ease = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
-          if (dopCurve) m.position.copy(dopCurve.getPoint(ease));
-          else m.position.lerpVectors(rewardPos, pfcPos, ease);
+          if (dopCurve) m.position.copy(dopCurve.getPoint(1 - ease));
+          else m.position.lerpVectors(pfcPos, rewardPos, ease);
           var dropped = shown.flick > 0.45 && (i % 2 === 1);
           var pulse = 0.2 + 0.8 * Math.sin(u * Math.PI);
           m.material.opacity = dropped ? 0.05 : pulse * (0.3 + 0.7 * Math.max(0, sigNow));
