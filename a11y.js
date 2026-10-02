@@ -231,15 +231,26 @@
       pgPrev.addEventListener('click', function (e) { e.preventDefault(); if (pgPrev._t) goTo(pgPrev._t); });
       pgNext.addEventListener('click', function (e) { e.preventDefault(); if (pgNext._t) goTo(pgNext._t); });
     }
+    var geo = null, geoAt = 0, lastTop = '', lastAnchor = '', shown = null;
+    function measure() {
+      var nh = navH(), ph = pager.offsetHeight;
+      geo = { nav: nh, pager: ph, tops: cats.map(function (c) { return topOf(c.el); }) };
+      geoAt = Date.now();
+      var t = nh + 'px', a = (nh + ph + 12) + 'px';
+      if (t !== lastTop) { pager.style.top = t; lastTop = t; }
+      if (a !== lastAnchor) { document.documentElement.style.setProperty('--a11y-anchor', a); lastAnchor = a; }
+    }
+    window.addEventListener('resize', function () { geo = null; }, { passive: true });
+    window.addEventListener('load', function () { geo = null; });
     function updatePager(y) {
       if (!pager) return;
-      pager.style.top = navH() + 'px';
-      document.documentElement.style.setProperty('--a11y-anchor', (navH() + pager.offsetHeight + 12) + 'px');
-      if (y < 500) { pager.classList.remove('show'); return; }
-      pager.classList.add('show');
-      var probe = y + navH() + pager.offsetHeight + 24;
+      if (!geo || Date.now() - geoAt > 1500) measure();
+      var on = y >= 500;
+      if (on !== shown) { pager.classList.toggle('show', on); shown = on; }
+      if (!on) return;
+      var probe = y + geo.nav + geo.pager + 24;
       var idx = 0;
-      for (var i = 0; i < cats.length; i++) { if (topOf(cats[i].el) <= probe) idx = i; else break; }
+      for (var i = 0; i < cats.length; i++) { if (geo.tops[i] <= probe) idx = i; else break; }
       if (idx === lastIdx) return; lastIdx = idx;
       var prev = cats[idx - 1], next = cats[idx + 1];
       if (prev) { pgPrev.classList.remove('pg-off'); pgPrev._t = prev.el; pgPrev.querySelector('.tt2').textContent = prev.title; pgPrev.setAttribute('aria-label', T.prevLbl + ': ' + prev.title); }
@@ -249,7 +260,7 @@
       pgNow.textContent = cats[idx].title;
     }
 
-    var ticking = false;
+    var ticking = false, topShown = null;
     function onScroll() {
       if (ticking) return; ticking = true;
       requestAnimationFrame(function () {
@@ -257,7 +268,8 @@
         var h = doc.scrollHeight - doc.clientHeight;
         var y = window.scrollY || doc.scrollTop || 0;
         prog.style.width = (h > 0 ? Math.min(100, (y / h) * 100) : 0) + '%';
-        if (y > 700) top.classList.add('show'); else top.classList.remove('show');
+        var topOn = y > 700;
+        if (topOn !== topShown) { top.classList.toggle('show', topOn); topShown = topOn; }
         updatePager(y);
         ticking = false;
       });

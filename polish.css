@@ -137,3 +137,4 @@ body{
 /* ---- video tap feedback ---- */
 video{cursor:pointer}
 .video-tap-active{opacity:.85}
+@media (max-width:760px){.nav,#a11y-pager{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}.nav{background:var(--paper)!important}#a11y-pager{background:var(--surface,#fff)!important}}

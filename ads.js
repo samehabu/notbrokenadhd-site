@@ -82,7 +82,7 @@
     banner.className = 'ad-consent';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Ad consent');
-    var priv = isHe ? '/privacy-he' : isAr ? '/privacy-ar' : isHu ? '/privacy-hu' : '/privacy';
+    var priv = isHe ? '/privacy-he.html' : isAr ? '/privacy-ar.html' : isHu ? '/privacy-hu.html' : '/privacy.html';
     banner.innerHTML =
       '<span class="acm">' + T.msg + ' <a href="' + priv + '">' + T.privacy + '</a></span>' +
       '<span class="acb"><button type="button" class="ac-decline">' + T.decline + '</button>' +

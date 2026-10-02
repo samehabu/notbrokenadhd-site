@@ -19,10 +19,14 @@
     var h = window.innerHeight || document.documentElement.clientHeight;
     return r.top < h * 0.95 && r.bottom > 0;
   }
-  function sweep() {
+  var queued = 0;
+  function sweepNow() {
+    queued = 0;
     var hidden = document.querySelectorAll('.reveal:not(.in)');
+    if (!hidden.length) { window.removeEventListener('scroll', sweep); return; }
     for (var i = 0; i < hidden.length; i++) { if (inView(hidden[i])) reveal(hidden[i]); }
   }
+  function sweep() { if (!queued) queued = requestAnimationFrame(sweepNow); }
   // lenient observer (threshold 0) also catches JS-injected sections like the brain map
   if ('IntersectionObserver' in window) {
     try {

@@ -1330,7 +1330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.addEventListener('click',function(e){ if(!a11yPanel.contains(e.target) && e.target!==a11yBtn){ a11yPanel.classList.remove('open'); a11yBtn.setAttribute('aria-expanded','false'); } });
 
   var prog=document.getElementById('scrollProg');
-  function onScroll(){ var h=document.documentElement.scrollHeight-window.innerHeight; prog.style.width=(h>0?(window.scrollY/h*100):0)+'%'; }
+  function onScroll(){ if(onScroll.t) return; onScroll.t=requestAnimationFrame(function(){ onScroll.t=0; var h=document.documentElement.scrollHeight-window.innerHeight; prog.style.width=(h>0?(window.scrollY/h*100):0)+'%'; }); }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
   var idx=[

@@ -1443,10 +1443,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   // ---- Scroll progress ----
   var prog=document.getElementById('scrollProg');
-  function onScroll(){
-    var h=document.documentElement.scrollHeight-window.innerHeight;
-    prog.style.width=(h>0 ? (window.scrollY/h*100) : 0)+'%';
-  }
+  function onScroll(){ if(onScroll.t) return; onScroll.t=requestAnimationFrame(function(){ onScroll.t=0; var h=document.documentElement.scrollHeight-window.innerHeight; prog.style.width=(h>0?(window.scrollY/h*100):0)+'%'; }); }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
   // ---- In-page navigation (works inside the merged app's frame too) ----
