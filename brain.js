@@ -345,6 +345,7 @@
     }));
     var width = opts.width || 0.78;
     sprite.scale.set(width, width * H / W, 1);
+    sprite.renderOrder = 10;
     sprite.userData.lines = lines;
     return sprite;
   }
@@ -425,21 +426,20 @@
       var halo = new THREE.Mesh(new THREE.SphereGeometry(0.2, 28, 20), haloMat);
       halo.position.set(0, 0.2, 0.72);
       pivot.add(halo);
-      var dopColor = 0xff8a14;
+      var dopColor = 0xff6a00;
       var rewardCore = new THREE.Mesh(
-        new THREE.SphereGeometry(0.16, 22, 16),
+        new THREE.SphereGeometry(0.095, 24, 18),
         new THREE.MeshStandardMaterial({
           color: dopColor, emissive: dopColor, emissiveIntensity: 0.9,
-          transparent: true, opacity: 1, roughness: 0.3, depthTest: false, depthWrite: false
+          transparent: true, opacity: 1, roughness: 0.25, depthTest: false, depthWrite: false
         })
       );
       rewardCore.position.copy(rewardLight.position);
       rewardCore.renderOrder = 6;
       var rewardGlow = new THREE.Mesh(
-        new THREE.SphereGeometry(0.28, 20, 16),
+        new THREE.SphereGeometry(0.15, 20, 16),
         new THREE.MeshBasicMaterial({
-          color: dopColor, transparent: true, opacity: 0.38, depthTest: false, depthWrite: false,
-          blending: THREE.AdditiveBlending
+          color: dopColor, transparent: true, opacity: 0.22, depthTest: false, depthWrite: false
         })
       );
       rewardGlow.renderOrder = 5;
@@ -449,7 +449,7 @@
       var rewardPos = new THREE.Vector3(0.42, -0.18, 0.55);
       var pfcPos = new THREE.Vector3(0.12, 0.32, 0.82);
       var dopCurve = null;
-      var sigGeo = new THREE.SphereGeometry(0.11, 16, 12);
+      var sigGeo = new THREE.SphereGeometry(0.058, 16, 12);
       var signals = [];
       for (var i = 0; i < 7; i++) {
         var sm = new THREE.Mesh(sigGeo, new THREE.MeshStandardMaterial({
@@ -457,10 +457,9 @@
           transparent: true, opacity: 1, roughness: 0.32, depthTest: false, depthWrite: false
         }));
         var sg = new THREE.Mesh(
-          new THREE.SphereGeometry(0.18, 14, 10),
+          new THREE.SphereGeometry(0.095, 14, 10),
           new THREE.MeshBasicMaterial({
-            color: dopColor, transparent: true, opacity: 0.32, depthTest: false, depthWrite: false,
-            blending: THREE.AdditiveBlending
+            color: dopColor, transparent: true, opacity: 0.2, depthTest: false, depthWrite: false
           })
         );
         sm.add(sg);
@@ -514,9 +513,10 @@
             .replace('#include <common>', '#include <common>\nvarying float vDop;\nvarying float vPfc;\nvarying float vNe;\nfloat nbDistSeg(vec3 p, vec3 a, vec3 b){vec3 ab=b-a;float t=clamp(dot(p-a,ab)/max(dot(ab,ab),0.0001),0.0,1.0);return distance(p,a+ab*t);}')
             .replace('#include <begin_vertex>', '#include <begin_vertex>\nvec3 nb0=vec3(-0.02,-0.42,0.72);vec3 nb1=vec3(-0.22,-0.12,0.78);vec3 nb2=vec3(-0.42,0.08,0.74);vec3 nb3=vec3(-0.62,0.22,0.62);vec3 nb4=vec3(-0.78,0.30,0.42);\nfloat nbPath=min(min(nbDistSeg(transformed,nb0,nb1),nbDistSeg(transformed,nb1,nb2)),min(nbDistSeg(transformed,nb2,nb3),nbDistSeg(transformed,nb3,nb4)));\nvDop=1.0-smoothstep(0.04,0.30,nbPath);\nvPfc=1.0-smoothstep(0.02,0.38,distance(transformed,nb4));\nvNe=1.0-smoothstep(0.04,0.24,distance(transformed,vec3(-0.12,0.88,0.20)));');
           shader.fragmentShader = shader.fragmentShader
-            .replace('#include <common>', '#include <common>\nuniform float uAct;\nuniform float uSig;\nvarying float vDop;\nvarying float vPfc;\nvarying float vNe;')
-            .replace('#include <map_fragment>', '#include <map_fragment>\nfloat dop=vDop;\nfloat pfc=vPfc;\nfloat ne=vNe;\nfloat hot=clamp(max(dop,max(pfc,ne)),0.0,1.0);\nvec3 glassTint=vec3(0.82,0.90,0.95);\nvec3 washed=mix(glassTint,diffuseColor.rgb,0.08);\nvec3 painted=vec3(1.0,0.46,0.04);\npainted=mix(painted,vec3(0.96,0.24,0.10),smoothstep(0.2,0.85,pfc)*(1.0-dop*0.25));\npainted=mix(painted,vec3(0.02,0.62,0.58),smoothstep(0.15,0.8,ne));\ndiffuseColor.rgb=mix(washed,painted,smoothstep(0.05,0.55,hot));\ndiffuseColor.a=mix(0.22,1.0,smoothstep(0.04,0.42,hot));')
-            .replace('#include <emissive_fragment>', '#include <emissive_fragment>\ntotalEmissiveRadiance+=vec3(1.0,0.46,0.02)*vDop*(0.55+0.45*uSig);\ntotalEmissiveRadiance+=vec3(1.0,0.30,0.06)*vPfc*(0.35+0.65*uAct);\ntotalEmissiveRadiance+=vec3(0.02,0.70,0.66)*vNe*0.4;');
+            .replace('#include <common>', '#include <common>\nuniform float uAct;\nuniform float uSig;\nvarying float vDop;\nvarying float vPfc;\nvarying float vNe;\nfloat nbFr = 0.0;')
+            .replace('#include <map_fragment>', '#include <map_fragment>\nfloat dop=vDop;\nfloat pfc=vPfc;\nfloat ne=vNe;\nfloat hot=clamp(max(dop,max(pfc,ne)),0.0,1.0);\nvec3 base=diffuseColor.rgb;\nfloat lum=dot(base,vec3(0.299,0.587,0.114));\nvec3 vivid=clamp(mix(vec3(lum),base,2.3)*1.05,0.0,1.0);\nvec3 washed=mix(vec3(0.84,0.90,0.98),vivid,0.86);\nvec3 painted=vec3(1.0,0.42,0.02);\npainted=mix(painted,vec3(0.98,0.20,0.32),smoothstep(0.2,0.85,pfc)*(1.0-dop*0.3));\npainted=mix(painted,vec3(0.0,0.66,0.62),smoothstep(0.15,0.8,ne));\ndiffuseColor.rgb=mix(washed,painted,smoothstep(0.05,0.55,hot));\ndiffuseColor.a=mix(0.5,1.0,smoothstep(0.04,0.42,hot));')
+            .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\nnbFr=pow(1.0-abs(dot(normalize(normal),normalize(vViewPosition))),2.4);\ntotalEmissiveRadiance+=vec3(0.45,0.70,1.0)*nbFr*0.45;\ntotalEmissiveRadiance+=vec3(1.0,0.40,0.0)*vDop*(0.5+0.5*uSig);\ntotalEmissiveRadiance+=vec3(1.0,0.18,0.28)*vPfc*(0.3+0.6*uAct);\ntotalEmissiveRadiance+=vec3(0.0,0.62,0.58)*vNe*0.45;')
+            .replace('#include <opaque_fragment>', 'diffuseColor.a=max(diffuseColor.a,nbFr*0.85);\n#include <opaque_fragment>');
           mat.userData.shader = shader;
         };
         shaders.push(mat);
