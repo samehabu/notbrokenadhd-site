@@ -10,9 +10,12 @@
 
   var L = isHe ? {
     eyebrow: 'המדע, בפשטות', h2: 'המוח שלך עם ADHD — ומה שעוזר',
-    intro: 'שני מוחות נראים זהים. ההבדל הוא ב<b>פעילות</b> וב<b>כימיה</b>. גלגל כדי לראות.',
+    intro: 'שני מוחות נראים זהים. ההבדל הוא ב<b>פעילות</b> וב<b>כימיה</b>. גלגל כדי לראות — בתרשים או על מודל תלת־ממד.',
     typ: 'מוח טיפוסי', adhd: 'מוח ADHD', tre: 'עם טיפול וניהול',
     pfc: 'הקליפה הקדם-מצחית', pfcSub: 'מיקוד · שליטה', reward: 'התגמול (דופמין)', pill: 'תרופה + טיפול',
+    viewAria: 'תצוגת המוח', viewFlat: 'תרשים', view3d: 'מודל תלת־ממד',
+    drag: 'גררו כדי לסובב', illus: 'להמחשה — האור מראה פעילות וכימיה, לא סריקה.',
+    loading3d: 'טוען את מודל המוח…', fail3d: 'לא ניתן לטעון את המודל.',
     note: 'ההבדלים האלה תפקודיים וכימיים — ואינם עדות לכך שמשהו «תקול».',
     cap: {
       typical: { lbl: 'מוח טיפוסי', h: 'עובד בחלקות', items: [
@@ -30,9 +33,12 @@
     }
   } : isAr ? {
     eyebrow: 'العلم، ببساطة', h2: 'دماغك مع ADHD — وما الذي يساعد',
-    intro: 'الدماغان يبدوان متطابقين. الفرق في <b>النشاط</b> و<b>الكيمياء</b>. تنقّل لتراه.',
+    intro: 'الدماغان يبدوان متطابقين. الفرق في <b>النشاط</b> و<b>الكيمياء</b>. تنقّل لتراه — كمخطط أو على نموذج ثلاثي الأبعاد.',
     typ: 'دماغ نمطي', adhd: 'دماغ ADHD', tre: 'مع العلاج والتدبير',
     pfc: 'القشرة الجبهية', pfcSub: 'تركيز · تحكّم', reward: 'المكافأة (الدوبامين)', pill: 'دواء + رعاية',
+    viewAria: 'عرض الدماغ', viewFlat: 'مخطط', view3d: 'نموذج ثلاثي الأبعاد',
+    drag: 'اسحب للتدوير', illus: 'للتوضيح — الضوء يبيّن النشاط والكيمياء، وليس فحصًا.',
+    loading3d: 'جارٍ تحميل نموذج الدماغ…', fail3d: 'تعذّر تحميل النموذج.',
     note: 'هذه الفروق وظيفية وكيميائية — وليست دليلاً على أن شيئاً «معطوب».',
     cap: {
       typical: { lbl: 'دماغ نمطي', h: 'يعمل بسلاسة', items: [
@@ -50,9 +56,12 @@
     }
   } : isHu ? {
     eyebrow: 'A tudomány, egyszerűen', h2: 'Az agyad ADHD-val — és mi segít',
-    intro: 'Két agy kinézetre azonos. A különbség az <b>aktivitásban</b> és a <b>kémiában</b> van. Kattints, és nézd meg.',
+    intro: 'Két agy kinézetre azonos. A különbség az <b>aktivitásban</b> és a <b>kémiában</b> van. Kattints, és nézd meg — ábrán vagy egy 3D agyon.',
     typ: 'Tipikus agy', adhd: 'ADHD-agy', tre: 'Kezeléssel és odafigyeléssel',
     pfc: 'Prefrontális kéreg', pfcSub: 'fókusz · irányítás', reward: 'Jutalom (dopamin)', pill: 'Kezelés',
+    viewAria: 'Agynézet', viewFlat: 'Ábra', view3d: '3D modell',
+    drag: 'Húzd a forgatáshoz', illus: 'Szemléltetés — a fény a működést és a kémiát mutatja, nem felvételt.',
+    loading3d: 'Az agymodell betöltése…', fail3d: 'A 3D modellt nem sikerült betölteni.',
     note: 'Ezek a különbségek működésbeli és kémiai jellegűek — nem jelei annak, hogy bármi „elromlott”.',
     cap: {
       typical: { lbl: 'Tipikus agy', h: 'Zökkenőmentesen működik', items: [
@@ -70,9 +79,12 @@
     }
   } : {
     eyebrow: 'The science, simply', h2: 'Your brain on ADHD — and what helps',
-    intro: 'Two brains look identical. The difference is in <b>activity</b> and <b>chemistry</b>. Tap through to see it.',
+    intro: 'Two brains look identical. The difference is in <b>activity</b> and <b>chemistry</b>. Tap through to see it — as a diagram, or on a 3D brain.',
     typ: 'Typical brain', adhd: 'ADHD brain', tre: 'With treatment & management',
     pfc: 'Prefrontal cortex', pfcSub: 'focus · control', reward: 'Reward (dopamine)', pill: 'Rx + care',
+    viewAria: 'Brain view', viewFlat: 'Diagram', view3d: '3D model',
+    drag: 'Drag to turn', illus: 'Illustrative — the light shows activity and chemistry, not a scan.',
+    loading3d: 'Loading 3D brain…', fail3d: 'Couldn’t load the 3D model.',
     note: 'These differences are functional and chemical — not a sign that anything is “broken.”',
     cap: {
       typical: { lbl: 'Typical brain', h: 'Running smoothly', items: [
@@ -122,7 +134,21 @@
     '#brainmap .viz.state-adhd .pfc{opacity:.35;animation:bmflick 2.2s ease-in-out infinite}#brainmap .viz.state-adhd .pfc-glow{opacity:.15}#brainmap .viz.state-adhd .sig{animation:bmflow 2.6s ease-in-out infinite}#brainmap .viz.state-adhd .sig.drop{opacity:.08!important;animation:none}#brainmap .viz.state-adhd .attn{animation:bmdrift 2.4s ease-in-out infinite alternate;opacity:.85}#brainmap .viz.state-adhd .focus-ray{opacity:.12}' +
     '#brainmap .viz.state-treated .pfc,#brainmap .viz.state-treated .pfc-glow{opacity:1}#brainmap .viz.state-treated .sig{animation:bmflow 1.5s ease-in-out infinite}#brainmap .viz.state-treated .attn{opacity:1;transform:none}#brainmap .viz.state-treated .focus-ray{opacity:1}#brainmap .viz.state-treated .pill-rx{opacity:1}' +
     '#brainmap .pill-rx{opacity:0;transition:opacity .5s}' +
-    '@media(prefers-reduced-motion:reduce){#brainmap .sig,#brainmap .pfc,#brainmap .attn{animation:none!important}}';
+    '@media(prefers-reduced-motion:reduce){#brainmap .sig,#brainmap .pfc,#brainmap .attn{animation:none!important}}' +
+    '#brainmap .bm-views{display:flex;gap:.4rem;align-items:center;margin:-.15rem 0 1.15rem;flex-wrap:wrap}' +
+    '#brainmap .bm-views button{border:1px solid var(--line);background:var(--surface);font-family:inherit;font-weight:700;font-size:.82rem;color:var(--grey);padding:.4rem .9rem;border-radius:999px;cursor:pointer;transition:.15s}' +
+    '#brainmap .bm-views button.on{background:var(--ink);color:var(--surface);border-color:var(--ink)}' +
+    '#brainmap .bm-3d{position:relative;height:420px;border-radius:12px;overflow:hidden}' +
+    '#brainmap .bm-3d canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}' +
+    '#brainmap .bm-3d canvas:active{cursor:grabbing}' +
+    '#brainmap .bm-3d-status{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--grey);font-size:.92rem;pointer-events:none;text-align:center;padding:1rem}' +
+    '#brainmap .bm-3d-status.hide{display:none}' +
+    '#brainmap .bm-3d-hint{position:absolute;left:.75rem;right:.75rem;bottom:.55rem;display:flex;justify-content:space-between;gap:.75rem;flex-wrap:wrap;font-size:.72rem;line-height:1.35;color:var(--grey);pointer-events:none}' +
+    '#brainmap .bm-3d-pill{position:absolute;top:.75rem;inset-inline-end:.75rem;background:#e0a144;color:#fff;font-family:"IBM Plex Mono","Tajawal",monospace;font-size:.72rem;font-weight:700;padding:.38rem .75rem;border-radius:999px;opacity:0;transition:opacity .5s;pointer-events:none}' +
+    '#brainmap .bm-3d-pill.show{opacity:1}' +
+    '#brainmap .bm-stage.is-3d .viz{display:none}' +
+    '#brainmap .bm-stage:not(.is-3d) .bm-3d{display:none}' +
+    '@media(max-width:760px){#brainmap .bm-3d{height:320px}#brainmap .bm-3d-hint{font-size:.68rem}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   var svg =
@@ -147,10 +173,17 @@
     '<div class="bm-eyebrow">' + L.eyebrow + '</div>' +
     '<h2>' + L.h2 + '</h2><p class="bm-intro">' + L.intro + '</p>' +
     '<div class="bm-toggle">' +
-    '<button data-s="typical">' + L.typ + '</button>' +
-    '<button data-s="adhd" class="on">' + L.adhd + '</button>' +
-    '<button data-s="treated">' + L.tre + '</button></div>' +
-    '<div class="bm-grid"><div class="bm-stage"><div class="viz state-adhd" id="bmViz">' + svg + '</div></div>' +
+    '<button type="button" data-s="typical">' + L.typ + '</button>' +
+    '<button type="button" data-s="adhd" class="on">' + L.adhd + '</button>' +
+    '<button type="button" data-s="treated">' + L.tre + '</button></div>' +
+    '<div class="bm-views" role="group" aria-label="' + L.viewAria + '">' +
+    '<button type="button" data-v="flat" class="on" aria-pressed="true">' + L.viewFlat + '</button>' +
+    '<button type="button" data-v="3d" aria-pressed="false">' + L.view3d + '</button></div>' +
+    '<div class="bm-grid"><div class="bm-stage"><div class="viz state-adhd" id="bmViz">' + svg + '</div>' +
+    '<div class="bm-3d" id="bm3d"><canvas id="bm3dCanvas" aria-hidden="true"></canvas>' +
+    '<div class="bm-3d-status" id="bm3dStatus">' + L.loading3d + '</div>' +
+    '<div class="bm-3d-pill" id="bm3dPill">' + L.pill + '</div>' +
+    '<div class="bm-3d-hint"><span>' + L.drag + '</span><span>' + L.illus + '</span></div></div></div>' +
     '<div class="bm-cap viz state-adhd" id="bmCap"></div></div></div></div>';
   anchor.parentNode.insertBefore(sec, anchor);
 
@@ -162,11 +195,337 @@
     cap.innerHTML = '<div class="lbl">' + c.lbl + '</div><h3>' + c.h + '</h3><ul>' +
       c.items.map(function (i) { return '<li>' + i + '</li>'; }).join('') +
       '</ul><div class="bm-note">' + L.note + '</div>';
+    currentState = state;
     var pill = sec.querySelector('.pill-rx'); if (pill) pill.style.opacity = (state === 'treated') ? '1' : '0';
+    var pill3 = document.getElementById('bm3dPill'); if (pill3) pill3.classList.toggle('show', state === 'treated');
     [].forEach.call(sec.querySelectorAll('.bm-toggle button'), function (b) { b.classList.toggle('on', b.getAttribute('data-s') === state); });
+    if (viewer) viewer.setState(state);
   }
   [].forEach.call(sec.querySelectorAll('.bm-toggle button'), function (b) {
     b.addEventListener('click', function () { render(b.getAttribute('data-s')); });
   });
+
+  var currentState = 'adhd';
+  var viewMode = 'flat';
+  var viewer = null;
+  var mounting = false;
+
+  function setView(mode) {
+    viewMode = mode === '3d' ? '3d' : 'flat';
+    var stage = sec.querySelector('.bm-stage');
+    if (stage) stage.classList.toggle('is-3d', viewMode === '3d');
+    [].forEach.call(sec.querySelectorAll('.bm-views button'), function (b) {
+      var on = b.getAttribute('data-v') === viewMode;
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    if (viewMode === '3d') mount3d();
+    else if (viewer) viewer.pause();
+  }
+  [].forEach.call(sec.querySelectorAll('.bm-views button'), function (b) {
+    b.addEventListener('click', function () { setView(b.getAttribute('data-v')); });
+  });
+
+  function cssHex(name, fallback) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    if (!v || v.charAt(0) !== '#') return fallback;
+    return parseInt(v.slice(1), 16);
+  }
+
+  function makeLabel(THREE, lines) {
+    var c = document.createElement('canvas');
+    c.width = 640; c.height = 180;
+    var ctx = c.getContext('2d');
+    var grey = getComputedStyle(document.documentElement).getPropertyValue('--grey').trim() || '#59626f';
+    ctx.clearRect(0, 0, 640, 180);
+    ctx.direction = document.documentElement.dir === 'rtl' ? 'rtl' : 'ltr';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    var surface = getComputedStyle(document.documentElement).getPropertyValue('--surface').trim() || '#ffffff';
+    lines.forEach(function (line, i) {
+      var y = 58 + i * 52;
+      ctx.font = (i === 0 ? '600 42px ' : '500 30px ') + '"IBM Plex Mono", Tajawal, sans-serif';
+      ctx.lineWidth = 10;
+      ctx.strokeStyle = surface;
+      ctx.strokeText(line, 320, y);
+      ctx.fillStyle = grey;
+      ctx.fillText(line, 320, y);
+    });
+    var tex = new THREE.CanvasTexture(c);
+    if ('colorSpace' in tex && THREE.SRGBColorSpace) tex.colorSpace = THREE.SRGBColorSpace;
+    tex.needsUpdate = true;
+    var sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false }));
+    sprite.scale.set(0.92, 0.26, 1);
+    sprite.userData.lines = lines;
+    return sprite;
+  }
+
+  function mount3d() {
+    if (viewer) { viewer.resume(); viewer.setState(currentState); return; }
+    if (mounting) return;
+    mounting = true;
+    var statusEl = document.getElementById('bm3dStatus');
+    var host = document.getElementById('bm3d');
+    var canvas = document.getElementById('bm3dCanvas');
+    var THREE_URL = 'https://esm.sh/three@0.170.0';
+    Promise.all([
+      import(THREE_URL),
+      import(THREE_URL + '/examples/jsm/loaders/GLTFLoader.js'),
+      import(THREE_URL + '/examples/jsm/controls/OrbitControls.js')
+    ]).then(function (mods) {
+      var THREE = mods[0];
+      var GLTFLoader = mods[1].GLTFLoader;
+      var OrbitControls = mods[2].OrbitControls;
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var renderer;
+      try {
+        renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+      } catch (err) {
+        if (statusEl) statusEl.textContent = L.fail3d;
+        mounting = false;
+        return;
+      }
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      renderer.setClearColor(0x000000, 0);
+      if (THREE.SRGBColorSpace) renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.05;
+
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(32, 1, 0.05, 30);
+      camera.position.set(1.45, 0.58, 2.95);
+      var controls = new OrbitControls(camera, canvas);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.08;
+      controls.enablePan = false;
+      controls.minDistance = 2.1;
+      controls.maxDistance = 6.5;
+      controls.target.set(0, 0.02, 0.12);
+      controls.minPolarAngle = 0.2;
+      controls.maxPolarAngle = Math.PI - 0.2;
+
+      scene.add(new THREE.HemisphereLight(0xfff7f4, 0x2a2424, 0.95));
+      var key = new THREE.DirectionalLight(0xffffff, 1.35);
+      key.position.set(2.4, 3.2, 2.2);
+      scene.add(key);
+      var fill = new THREE.DirectionalLight(0xffd9cc, 0.4);
+      fill.position.set(-2.2, 0.4, -1.2);
+      scene.add(fill);
+
+      var pivot = new THREE.Group();
+      scene.add(pivot);
+
+      var accent = cssHex('--accent', 0xf2551f);
+      var amber = cssHex('--amber', 0xc9781b);
+      var pfcLight = new THREE.PointLight(accent, 1.2, 1.5, 2);
+      pfcLight.position.set(0, 0.28, 1.18);
+      var rewardLight = new THREE.PointLight(amber, 1.4, 0.7, 2);
+      rewardLight.position.set(0.16, 0.02, 0.2);
+      pivot.add(pfcLight, rewardLight);
+
+      var haloMat = new THREE.MeshBasicMaterial({
+        color: accent, transparent: true, opacity: 0.12, depthWrite: false,
+        blending: THREE.AdditiveBlending
+      });
+      var halo = new THREE.Mesh(new THREE.SphereGeometry(0.2, 28, 20), haloMat);
+      halo.position.set(0, 0.2, 0.72);
+      pivot.add(halo);
+      var rewardCore = new THREE.Mesh(
+        new THREE.SphereGeometry(0.055, 18, 14),
+        new THREE.MeshBasicMaterial({ color: amber, transparent: true, opacity: 0.95, depthTest: false, depthWrite: false })
+      );
+      rewardCore.position.copy(rewardLight.position);
+      rewardCore.renderOrder = 2;
+      pivot.add(rewardCore);
+
+      var rewardPos = new THREE.Vector3(0.16, 0.02, 0.2);
+      var pfcPos = new THREE.Vector3(0.12, 0.22, 0.78);
+      var sigGeo = new THREE.SphereGeometry(0.028, 12, 10);
+      var signals = [];
+      for (var i = 0; i < 6; i++) {
+        var sm = new THREE.Mesh(sigGeo, new THREE.MeshBasicMaterial({
+          color: amber, transparent: true, opacity: 0.9, depthWrite: false, depthTest: false
+        }));
+        sm.renderOrder = 3;
+        pivot.add(sm);
+        signals.push(sm);
+      }
+      var attnGeo = new THREE.SphereGeometry(0.046, 14, 12);
+      var homes = [
+        [0.62, 0.5, 0.48], [0.7, 0.38, 0.28], [0.56, 0.58, 0.62], [0.66, 0.32, 0.12]
+      ];
+      var drifts = [
+        [-0.2, 0.22, -0.62], [-0.22, 0.28, -0.48], [-0.12, 0.16, -0.7], [-0.18, 0.26, -0.4]
+      ];
+      var attns = homes.map(function (h) {
+        var m = new THREE.Mesh(attnGeo, new THREE.MeshBasicMaterial({
+          color: 0x149e96, transparent: true, opacity: 1, depthWrite: false, depthTest: false
+        }));
+        m.position.set(h[0], h[1], h[2]);
+        m.renderOrder = 4;
+        pivot.add(m);
+        return m;
+      });
+
+      var rayMat = new THREE.MeshBasicMaterial({ color: 0x2f8f83, transparent: true, opacity: 0.15, depthWrite: false });
+      var shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.011, 0.38, 10), rayMat);
+      shaft.rotation.x = Math.PI / 2;
+      shaft.position.set(0, 0.16, 1.18);
+      var head = new THREE.Mesh(new THREE.ConeGeometry(0.038, 0.1, 12), rayMat);
+      head.rotation.x = Math.PI / 2;
+      head.position.set(0, 0.16, 1.4);
+      pivot.add(shaft, head);
+
+      var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub]);
+      pfcLabel.scale.set(0.58, 0.16, 1);
+      pfcLabel.position.set(0.36, 0.34, 0.78);
+      var rewardLabel = makeLabel(THREE, [L.reward]);
+      rewardLabel.scale.set(0.56, 0.16, 1);
+      rewardLabel.position.set(0.02, -0.48, 0.42);
+      pivot.add(pfcLabel, rewardLabel);
+
+      var shaders = [];
+      function hookMaterial(mat) {
+        mat.onBeforeCompile = function (shader) {
+          shader.uniforms.uAct = { value: 1 };
+          shader.uniforms.uSig = { value: 1 };
+          shader.vertexShader = shader.vertexShader
+            .replace('#include <common>', '#include <common>\nvarying float vFront;\nvarying float vRew;')
+            .replace('#include <begin_vertex>', '#include <begin_vertex>\nvFront = smoothstep(0.02, 0.7, transformed.z);\nvRew = 1.0 - smoothstep(0.04, 0.34, distance(transformed, vec3(0.0, -0.08, 0.18)));');
+          shader.fragmentShader = shader.fragmentShader
+            .replace('#include <common>', '#include <common>\nuniform float uAct;\nuniform float uSig;\nvarying float vFront;\nvarying float vRew;')
+            .replace('#include <map_fragment>', '#include <map_fragment>\ndiffuseColor.rgb *= mix(1.0, mix(0.32, 1.02, uAct), vFront);')
+            .replace('#include <emissive_fragment>', '#include <emissive_fragment>\ntotalEmissiveRadiance += vec3(0.85, 0.24, 0.06) * vFront * uAct * 0.22;\ntotalEmissiveRadiance += vec3(0.9, 0.48, 0.06) * vRew * uSig * 0.28;');
+          mat.userData.shader = shader;
+        };
+        shaders.push(mat);
+      }
+
+      var scriptEl = document.querySelector('script[src$="brain.js"]');
+      var glbUrl = new URL('brain-3d.glb', scriptEl ? scriptEl.src : document.baseURI).href;
+      var loader = new GLTFLoader();
+      loader.load(glbUrl, function (gltf) {
+        var model = gltf.scene;
+        model.traverse(function (obj) {
+          if (obj.isMesh && obj.material) {
+            var mats = Array.isArray(obj.material) ? obj.material : [obj.material];
+            mats.forEach(hookMaterial);
+          }
+        });
+        pivot.add(model);
+        if (statusEl) statusEl.classList.add('hide');
+      }, function (ev) {
+        if (statusEl && ev.total) statusEl.textContent = L.loading3d.replace('…', '') + ' ' + Math.round(100 * ev.loaded / ev.total) + '%';
+      }, function () {
+        if (statusEl) statusEl.textContent = L.fail3d;
+      });
+
+      var goals = {
+        typical: { act: 1, drift: 0, ray: 1, flick: 0 },
+        adhd: { act: 0.36, drift: 1, ray: 0.12, flick: 1 },
+        treated: { act: 1, drift: 0, ray: 1, flick: 0 }
+      };
+      var shown = { act: 0.36, drift: 1, ray: 0.12, flick: 1 };
+      var goal = goals.adhd;
+      var running = false;
+      var autospin = false;
+      var last = 0;
+      controls.addEventListener('start', function () { autospin = false; });
+
+      function resize() {
+        var w = host.clientWidth || 640;
+        var h = host.clientHeight || 420;
+        renderer.setSize(w, h, false);
+        camera.aspect = w / Math.max(1, h);
+        camera.updateProjectionMatrix();
+      }
+      resize();
+      if (window.ResizeObserver) new ResizeObserver(resize).observe(host);
+
+      function frame(now) {
+        if (!running) return;
+        var dt = Math.min(0.05, last ? (now - last) / 1000 : 0.016);
+        last = now;
+        var t = now / 1000;
+        var k = 1 - Math.pow(0.04, dt * 3);
+        shown.act += (goal.act - shown.act) * k;
+        shown.drift += (goal.drift - shown.drift) * k;
+        shown.ray += (goal.ray - shown.ray) * k;
+        shown.flick += (goal.flick - shown.flick) * k;
+        var flickWave = Math.abs(Math.sin(t * 2.6) * Math.sin(t * 6.4));
+        var actNow = shown.flick > 0.02
+          ? shown.act * (1 - shown.flick) + (0.06 + 0.22 * flickWave) * shown.flick
+          : shown.act;
+        var smoothPulse = 0.78 + 0.22 * Math.sin(t * 2.3);
+        var chopPulse = Math.pow(Math.abs(Math.sin(t * 1.7) * Math.sin(t * 5.6)), 1.35);
+        var sigNow = smoothPulse * (1 - shown.flick) + chopPulse * shown.flick;
+        if (reduced) { actNow = goal.flick ? 0.34 : goal.act; sigNow = goal.flick ? 0.4 : 0.9; }
+        shaders.forEach(function (mat) {
+          var sh = mat.userData.shader;
+          if (!sh) return;
+          sh.uniforms.uAct.value = actNow;
+          sh.uniforms.uSig.value = Math.max(0, sigNow);
+        });
+        pfcLight.intensity = 0.25 + 3.4 * actNow;
+        rewardLight.intensity = 0.35 + 2.4 * Math.max(0, sigNow);
+        haloMat.opacity = 0.03 + 0.16 * actNow;
+        rayMat.opacity = shown.ray;
+        var speed = 0.18 + 0.42 * (1 - shown.flick);
+        signals.forEach(function (m, i) {
+          var u = (t * speed + i / 6) % 1;
+          m.position.lerpVectors(rewardPos, pfcPos, u);
+          m.position.x += Math.sin(u * Math.PI) * 0.2;
+          m.position.y += Math.sin(u * Math.PI) * 0.14;
+          var dropped = shown.flick > 0.45 && (i % 2 === 1);
+          m.material.opacity = dropped ? 0.06 : (0.2 + 0.8 * Math.sin(u * Math.PI)) * (0.35 + 0.65 * Math.max(0, sigNow));
+        });
+        attns.forEach(function (m, i) {
+          var amp = reduced ? shown.drift : shown.drift * (0.55 + 0.45 * Math.sin(t * 1.25 + i));
+          m.position.set(
+            homes[i][0] + drifts[i][0] * amp,
+            homes[i][1] + drifts[i][1] * amp,
+            homes[i][2] + drifts[i][2] * amp
+          );
+        });
+        if (autospin && viewMode === '3d') pivot.rotation.y += dt * 0.28;
+        controls.update();
+        renderer.render(scene, camera);
+        requestAnimationFrame(frame);
+      }
+
+      viewer = {
+        setState: function (name) { goal = goals[name] || goals.adhd; },
+        pause: function () { running = false; },
+        resume: function () {
+          if (running) return;
+          running = true;
+          last = 0;
+          requestAnimationFrame(frame);
+        }
+      };
+      viewer.setState(currentState);
+      if (viewMode === '3d') viewer.resume();
+      mounting = false;
+
+      new MutationObserver(function () {
+        pfcLight.color.setHex(cssHex('--accent', 0xf2551f));
+        rewardLight.color.setHex(cssHex('--amber', 0xc9781b));
+        haloMat.color.copy(pfcLight.color);
+        rewardCore.material.color.copy(rewardLight.color);
+        signals.forEach(function (m) { m.material.color.copy(rewardLight.color); });
+        [pfcLabel, rewardLabel].forEach(function (s) {
+          var next = makeLabel(THREE, s.userData.lines);
+          s.material.map.dispose();
+          s.material.map = next.material.map;
+          s.material.needsUpdate = true;
+          next.material.dispose();
+        });
+      }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'class'] });
+    }).catch(function () {
+      if (statusEl) statusEl.textContent = L.fail3d;
+      mounting = false;
+    });
+  }
+
   render('adhd');
 })();
