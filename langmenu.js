@@ -9,10 +9,10 @@
   var cur = isHe ? 'he' : isAr ? 'ar' : isHu ? 'hu' : 'en';
 
   var LANGS = [
-    { code: 'en', label: 'English', href: '/',          font: "'Bricolage Grotesque','Segoe UI',sans-serif" },
-    { code: 'ar', label: 'العربية', href: '/ar',        font: "'Tajawal','Cairo','Segoe UI',sans-serif" },
-    { code: 'he', label: 'עברית',   href: '/he',        font: "'Heebo','Rubik','Segoe UI',sans-serif" },
-    { code: 'hu', label: 'Magyar', href: '/hu',        font: "'Bricolage Grotesque','Segoe UI',sans-serif" }
+    { code: 'en', label: 'English', href: '/index.html', font: "'Bricolage Grotesque','Segoe UI',sans-serif" },
+    { code: 'ar', label: 'العربية', href: '/ar.html',    font: "'Tajawal','Cairo','Segoe UI',sans-serif" },
+    { code: 'he', label: 'עברית',   href: '/he.html',    font: "'Heebo','Rubik','Segoe UI',sans-serif" },
+    { code: 'hu', label: 'Magyar', href: '/hu.html',    font: "'Bricolage Grotesque','Segoe UI',sans-serif" }
   ];
   var ARIA = 'Language · اللغة · שפה';
 
