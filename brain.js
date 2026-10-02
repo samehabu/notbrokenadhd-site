@@ -110,6 +110,16 @@
     }
   };
 
+  var keyHtml =
+    '<div class="bm-keybar" aria-hidden="true">' +
+    '<span class="bm-key-title">' + L.key + '</span>' +
+    '<span class="bm-key-item"><span class="dot" style="background:#c45cff"></span>' + L.ser + '</span>' +
+    '<span class="bm-key-item"><span class="dot" style="background:#ff8fab"></span>' + L.gab + '</span>' +
+    '<span class="bm-key-item"><span class="dot" style="background:#c8e66c"></span>' + L.glu + '</span>' +
+    '<span class="bm-key-item"><span class="dot" style="background:#0f8f8a"></span>' + L.ne + '</span>' +
+    '<span class="bm-key-item"><span class="dot" style="background:#c9781b"></span>' + L.dop + '</span>' +
+    '<span class="bm-key-note">' + L.keyIntro + '</span></div>';
+
   var css =
     '#brainmap .bm-eyebrow{font-family:"IBM Plex Mono","Tajawal",monospace;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}' +
     '#brainmap .bm-intro{color:var(--grey);max-width:60ch}' +
@@ -154,15 +164,14 @@
     '#brainmap .bm-3d-hint{position:absolute;left:.75rem;right:.75rem;bottom:.55rem;display:flex;justify-content:space-between;gap:.75rem;flex-wrap:wrap;font-size:.72rem;line-height:1.35;color:var(--grey);pointer-events:none}' +
     '#brainmap .bm-3d-pill{position:absolute;top:.75rem;inset-inline-end:.75rem;background:#e0a144;color:#fff;font-family:"IBM Plex Mono","Tajawal",monospace;font-size:.72rem;font-weight:700;padding:.38rem .75rem;border-radius:999px;opacity:0;transition:opacity .5s;pointer-events:none}' +
     '#brainmap .bm-3d-pill.show{opacity:1}' +
-    '#brainmap .bm-3d-key{position:absolute;top:.75rem;left:.75rem;max-width:min(220px,42%);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.55rem .7rem;box-shadow:0 6px 18px rgba(0,0,0,.08);font-size:.72rem;line-height:1.35;color:var(--ink-soft);pointer-events:none}' +
-    '#brainmap .bm-3d-key h4{margin:0 0 .35rem;font-family:"Bricolage Grotesque",sans-serif;font-size:.78rem;color:var(--ink)}' +
-    '#brainmap .bm-3d-key p{margin:0 0 .35rem;font-size:.68rem;color:var(--grey)}' +
-    '#brainmap .bm-3d-key .k{display:flex;align-items:center;gap:.4rem;margin:.22rem 0}' +
-    '#brainmap .bm-3d-key .dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}' +
-    '#brainmap .bm-3d-key .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}' +
-    '@media(max-width:760px){#brainmap .bm-3d-key{max-width:52%;font-size:.65rem;padding:.45rem .55rem}#brainmap .bm-3d-key h4{font-size:.68rem}#brainmap .bm-3d-key p{font-size:.6rem}}' +
     '#brainmap .bm-stage.is-3d .viz{display:none}' +
     '#brainmap .bm-stage:not(.is-3d) .bm-3d{display:none}' +
+    '#brainmap .bm-keybar{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.42rem .85rem;margin:0 0 .85rem;font-size:.72rem;line-height:1.3;color:var(--ink-soft)}' +
+    '#brainmap .bm-keybar .bm-key-title{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;color:var(--ink);margin-inline-end:.2rem}' +
+    '#brainmap .bm-keybar .bm-key-item{display:inline-flex;align-items:center;gap:.32rem;white-space:nowrap}' +
+    '#brainmap .bm-keybar .dot{width:10px;height:10px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}' +
+    '#brainmap .bm-keybar .bm-key-note{flex:1 1 100%;font-size:.65rem;color:var(--grey);margin-top:-.15rem}' +
+    '@media(max-width:760px){#brainmap .bm-keybar{font-size:.65rem;gap:.4rem .7rem;padding:.35rem .7rem;border-radius:14px}#brainmap .bm-keybar .bm-key-note{font-size:.58rem}}' +
     '@media(max-width:760px){#brainmap .bm-3d{height:320px}#brainmap .bm-3d-hint{font-size:.68rem}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
@@ -195,16 +204,11 @@
     '<div class="bm-views" role="group" aria-label="' + L.viewAria + '">' +
     '<button type="button" data-v="flat" class="on" aria-pressed="true">' + L.viewFlat + '</button>' +
     '<button type="button" data-v="3d" aria-pressed="false">' + L.view3d + '</button></div>' +
+    keyHtml +
     '<div class="bm-grid"><div class="bm-stage"><div class="viz state-adhd" id="bmViz">' + svg + '</div>' +
     '<div class="bm-3d" id="bm3d"><canvas id="bm3dCanvas" aria-hidden="true"></canvas>' +
     '<div class="bm-3d-status" id="bm3dStatus">' + L.loading3d + '</div>' +
     '<div class="bm-3d-pill" id="bm3dPill">' + L.pill + '</div>' +
-    '<div class="bm-3d-key" aria-hidden="true"><h4>' + L.key + '</h4><p>' + L.keyIntro + '</p>' +
-    '<div class="k"><span class="dot" style="background:#c45cff"></span><span class="txt">' + L.ser + '</span></div>' +
-    '<div class="k"><span class="dot" style="background:#ff8fab"></span><span class="txt">' + L.gab + '</span></div>' +
-    '<div class="k"><span class="dot" style="background:#c8e66c"></span><span class="txt">' + L.glu + '</span></div>' +
-    '<div class="k"><span class="dot" style="background:#0f8f8a"></span><span class="txt">' + L.ne + '</span></div>' +
-    '<div class="k"><span class="dot" style="background:#c9781b"></span><span class="txt">' + L.dop + '</span></div></div>' +
     '<div class="bm-3d-hint"><span>' + L.drag + '</span><span>' + L.illus + '</span></div></div></div>' +
     '<div class="bm-cap viz state-adhd" id="bmCap"></div></div></div></div>';
   anchor.parentNode.insertBefore(sec, anchor);
@@ -257,7 +261,7 @@
   function makeLabel(THREE, lines, opts) {
     opts = opts || {};
     var c = document.createElement('canvas');
-    var W = 760, H = 210;
+    var W = 760, H = 260;
     c.width = W; c.height = H;
     var ctx = c.getContext('2d');
     ctx.direction = document.documentElement.dir === 'rtl' ? 'rtl' : 'ltr';
@@ -268,7 +272,7 @@
 
     ctx.clearRect(0, 0, W, H);
 
-    var padX = 38, padY = 24, gap = 10;
+    var padX = 38, padY = 26, gap = 10;
     ctx.font = '600 48px "Bricolage Grotesque", "Source Serif 4", sans-serif';
     var w1 = lines[0] ? ctx.measureText(lines[0]).width : 0;
     ctx.font = '500 30px "IBM Plex Mono", "Tajawal", monospace';
@@ -276,38 +280,57 @@
     var pillW = Math.max(w1, w2) + padX * 2;
     var pillH = (lines[0] ? 62 : 0) + (lines[1] ? 44 : 0) + padY * 2 + (lines[1] ? gap : 0);
     var r = 28;
-    var x = (W - pillW) / 2, y = (H - pillH) / 2;
+    var x = (W - pillW) / 2, y = 24;
 
     ctx.save();
-    ctx.shadowColor = 'rgba(0,0,0,0.10)';
-    ctx.shadowBlur = 28;
-    ctx.shadowOffsetY = 8;
+    ctx.shadowColor = 'rgba(0,0,0,0.12)';
+    ctx.shadowBlur = 32;
+    ctx.shadowOffsetY = 10;
     ctx.beginPath();
     ctx.roundRect(x, y, pillW, pillH, r);
-    ctx.fillStyle = surface + 'f2';
+    var grad = ctx.createLinearGradient(x, y, x, y + pillH);
+    grad.addColorStop(0, surface + 'fc');
+    grad.addColorStop(1, surface + 'e8');
+    ctx.fillStyle = grad;
     ctx.fill();
     ctx.restore();
 
     ctx.lineWidth = 3;
-    ctx.strokeStyle = accent + '35';
+    ctx.strokeStyle = accent + '45';
     ctx.beginPath();
     ctx.roundRect(x, y, pillW, pillH, r);
     ctx.stroke();
 
-    var cy = y + padY + 31;
+    var cx = W / 2, cy = y + padY + 31;
     if (lines[0]) {
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.font = '600 48px "Bricolage Grotesque", "Source Serif 4", sans-serif';
       ctx.fillStyle = ink;
-      ctx.fillText(lines[0], W / 2, cy);
+      ctx.fillText(lines[0], cx, cy);
       cy += 62 + gap;
     }
     if (lines[1]) {
       ctx.font = '500 30px "IBM Plex Mono", "Tajawal", monospace';
       ctx.fillStyle = accent;
-      ctx.fillText(lines[1], W / 2, cy);
+      ctx.fillText(lines[1], cx, cy);
     }
+
+    var anchorY = y + pillH;
+    ctx.strokeStyle = accent + '50';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(cx, anchorY);
+    ctx.lineTo(cx, H - 6);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(cx, H - 6, 7, 0, Math.PI * 2);
+    ctx.fillStyle = accent;
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(cx, H - 6, 4, 0, Math.PI * 2);
+    ctx.fillStyle = surface;
+    ctx.fill();
 
     var tex = new THREE.CanvasTexture(c);
     if ('colorSpace' in tex && THREE.SRGBColorSpace) tex.colorSpace = THREE.SRGBColorSpace;
@@ -365,16 +388,19 @@
       controls.minPolarAngle = 0.2;
       controls.maxPolarAngle = Math.PI - 0.2;
 
-      scene.add(new THREE.HemisphereLight(0xfff7f4, 0x3a3532, 1.05));
-      var key = new THREE.DirectionalLight(0xfff4ed, 0.95);
-      key.position.set(2.2, 2.6, 1.8);
+      scene.add(new THREE.HemisphereLight(0xfff7f4, 0x3a3532, 1.25));
+      var key = new THREE.DirectionalLight(0xfff4ed, 1.45);
+      key.position.set(2.6, 2.8, 2.2);
       scene.add(key);
-      var fill = new THREE.DirectionalLight(0xe8f4ff, 0.42);
-      fill.position.set(-2.0, 0.2, -1.4);
+      var fill = new THREE.DirectionalLight(0xddefff, 0.62);
+      fill.position.set(-2.4, 0.6, -1.6);
       scene.add(fill);
-      var rim = new THREE.DirectionalLight(0xffffff, 0.28);
-      rim.position.set(0, 1.2, -2.4);
+      var rim = new THREE.DirectionalLight(0xffffff, 0.55);
+      rim.position.set(0, 1.4, -2.8);
       scene.add(rim);
+      var warm = new THREE.PointLight(0xffe0c2, 0.35, 5, 2);
+      warm.position.set(0, -0.8, 1.2);
+      scene.add(warm);
 
       var pivot = new THREE.Group();
       scene.add(pivot);
@@ -434,13 +460,13 @@
         return m;
       });
 
-      var rayMat = new THREE.MeshBasicMaterial({ color: neColor, transparent: true, opacity: 0.16, depthWrite: false });
-      var shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.011, 0.34, 10), rayMat);
-      shaft.rotation.x = Math.PI / 2;
-      shaft.position.set(0.08, 0.18, 1.18);
-      var head = new THREE.Mesh(new THREE.ConeGeometry(0.036, 0.09, 12), rayMat);
-      head.rotation.x = Math.PI / 2;
-      head.position.set(0.08, 0.18, 1.36);
+      var rayMat = new THREE.MeshBasicMaterial({ color: neColor, transparent: true, opacity: 0.22, depthWrite: false });
+      var shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.011, 0.42, 10), rayMat);
+      shaft.rotation.x = -Math.PI / 2;
+      shaft.position.set(0.12, 0.22, 1.34);
+      var head = new THREE.Mesh(new THREE.ConeGeometry(0.038, 0.095, 12), rayMat);
+      head.rotation.x = -Math.PI / 2;
+      head.position.set(0.12, 0.22, 1.12);
       pivot.add(shaft, head);
 
       var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub]);
@@ -471,6 +497,7 @@
       var scriptEl = document.querySelector('script[src$="brain.js"]');
       var glbUrl = new URL('brain-3d.glb', scriptEl ? scriptEl.src : document.baseURI).href;
       var loader = new GLTFLoader();
+      var brainModel = null;
       loader.load(glbUrl, function (gltf) {
         var model = gltf.scene;
         model.traverse(function (obj) {
@@ -480,6 +507,7 @@
           }
         });
         pivot.add(model);
+        brainModel = model;
         if (statusEl) statusEl.classList.add('hide');
       }, function (ev) {
         if (statusEl && ev.total) statusEl.textContent = L.loading3d.replace('…', '') + ' ' + Math.round(100 * ev.loaded / ev.total) + '%';
@@ -495,9 +523,17 @@
       var shown = { act: 0.36, drift: 1, ray: 0.12, flick: 1 };
       var goal = goals.adhd;
       var running = false;
-      var autospin = false;
+      var autospin = true;
       var last = 0;
-      controls.addEventListener('start', function () { autospin = false; });
+      var spinResumeTimer = null;
+      controls.addEventListener('start', function () {
+        autospin = false;
+        if (spinResumeTimer) clearTimeout(spinResumeTimer);
+      });
+      controls.addEventListener('end', function () {
+        if (spinResumeTimer) clearTimeout(spinResumeTimer);
+        spinResumeTimer = setTimeout(function () { autospin = true; }, 3500);
+      });
 
       function resize() {
         var w = host.clientWidth || 640;
@@ -537,14 +573,18 @@
         rewardLight.intensity = 0.35 + 2.4 * Math.max(0, sigNow);
         haloMat.opacity = 0.03 + 0.16 * actNow;
         rayMat.opacity = shown.ray;
-        var speed = 0.18 + 0.42 * (1 - shown.flick);
+        var speed = 0.22 + 0.52 * (1 - shown.flick);
         signals.forEach(function (m, i) {
           var u = (t * speed + i / 6) % 1;
-          m.position.lerpVectors(rewardPos, pfcPos, u);
-          m.position.x += Math.sin(u * Math.PI) * 0.2;
-          m.position.y += Math.sin(u * Math.PI) * 0.14;
+          var ease = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
+          m.position.lerpVectors(rewardPos, pfcPos, ease);
+          m.position.x += Math.sin(u * Math.PI) * 0.22;
+          m.position.y += Math.sin(u * Math.PI) * 0.16;
           var dropped = shown.flick > 0.45 && (i % 2 === 1);
-          m.material.opacity = dropped ? 0.06 : (0.2 + 0.8 * Math.sin(u * Math.PI)) * (0.35 + 0.65 * Math.max(0, sigNow));
+          var pulse = 0.2 + 0.8 * Math.sin(u * Math.PI);
+          m.material.opacity = dropped ? 0.05 : pulse * (0.3 + 0.7 * Math.max(0, sigNow));
+          var s = 0.7 + 0.55 * pulse;
+          m.scale.setScalar(dropped ? 0.5 : s);
         });
         nepis.forEach(function (m, i) {
           var amp = reduced ? shown.drift : shown.drift * (0.55 + 0.45 * Math.sin(t * 1.25 + i));
@@ -558,6 +598,10 @@
           m.material.opacity = 0.75 + 0.2 * steady;
         });
         if (autospin && viewMode === '3d') pivot.rotation.y += dt * 0.28;
+        if (brainModel) {
+          var breath = 1 + 0.006 * Math.sin(t * 1.6) * actNow;
+          brainModel.scale.setScalar(breath);
+        }
         controls.update();
         renderer.render(scene, camera);
         requestAnimationFrame(frame);
