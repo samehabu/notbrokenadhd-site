@@ -261,7 +261,7 @@
   function makeLabel(THREE, lines, opts) {
     opts = opts || {};
     var c = document.createElement('canvas');
-    var W = 760, H = 260;
+    var W = 840, H = 280;
     c.width = W; c.height = H;
     var ctx = c.getContext('2d');
     ctx.direction = document.documentElement.dir === 'rtl' ? 'rtl' : 'ltr';
@@ -272,20 +272,20 @@
 
     ctx.clearRect(0, 0, W, H);
 
-    var padX = 38, padY = 26, gap = 10;
-    ctx.font = '600 48px "Bricolage Grotesque", "Source Serif 4", sans-serif';
+    var padX = 44, padY = 30, gap = 12;
+    ctx.font = '700 54px "Bricolage Grotesque", "Source Serif 4", sans-serif';
     var w1 = lines[0] ? ctx.measureText(lines[0]).width : 0;
-    ctx.font = '500 30px "IBM Plex Mono", "Tajawal", monospace';
+    ctx.font = '600 34px "IBM Plex Mono", "Tajawal", monospace';
     var w2 = lines[1] ? ctx.measureText(lines[1]).width : 0;
     var pillW = Math.max(w1, w2) + padX * 2;
-    var pillH = (lines[0] ? 62 : 0) + (lines[1] ? 44 : 0) + padY * 2 + (lines[1] ? gap : 0);
-    var r = 28;
+    var pillH = (lines[0] ? 68 : 0) + (lines[1] ? 48 : 0) + padY * 2 + (lines[1] ? gap : 0);
+    var r = 30;
     var x = (W - pillW) / 2, y = 24;
 
     ctx.save();
-    ctx.shadowColor = 'rgba(0,0,0,0.12)';
-    ctx.shadowBlur = 32;
-    ctx.shadowOffsetY = 10;
+    ctx.shadowColor = 'rgba(0,0,0,0.14)';
+    ctx.shadowBlur = 36;
+    ctx.shadowOffsetY = 12;
     ctx.beginPath();
     ctx.roundRect(x, y, pillW, pillH, r);
     var grad = ctx.createLinearGradient(x, y, x, y + pillH);
@@ -295,40 +295,45 @@
     ctx.fill();
     ctx.restore();
 
-    ctx.lineWidth = 3;
-    ctx.strokeStyle = accent + '45';
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = accent + '55';
     ctx.beginPath();
     ctx.roundRect(x, y, pillW, pillH, r);
     ctx.stroke();
 
-    var cx = W / 2, cy = y + padY + 31;
+    var cx = W / 2, cy = y + padY + 35;
     if (lines[0]) {
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.font = '600 48px "Bricolage Grotesque", "Source Serif 4", sans-serif';
+      ctx.font = '700 54px "Bricolage Grotesque", "Source Serif 4", sans-serif';
+      ctx.shadowColor = 'rgba(255,255,255,0.6)';
+      ctx.shadowBlur = 8;
       ctx.fillStyle = ink;
       ctx.fillText(lines[0], cx, cy);
-      cy += 62 + gap;
+      cy += 68 + gap;
     }
     if (lines[1]) {
-      ctx.font = '500 30px "IBM Plex Mono", "Tajawal", monospace';
+      ctx.font = '600 34px "IBM Plex Mono", "Tajawal", monospace';
+      ctx.shadowColor = 'rgba(255,255,255,0.5)';
+      ctx.shadowBlur = 6;
       ctx.fillStyle = accent;
       ctx.fillText(lines[1], cx, cy);
     }
+    ctx.shadowColor = 'transparent';
 
     var anchorY = y + pillH;
-    ctx.strokeStyle = accent + '50';
-    ctx.lineWidth = 3;
+    ctx.strokeStyle = accent + '60';
+    ctx.lineWidth = 4;
     ctx.beginPath();
     ctx.moveTo(cx, anchorY);
-    ctx.lineTo(cx, H - 6);
+    ctx.lineTo(cx, H - 7);
     ctx.stroke();
     ctx.beginPath();
-    ctx.arc(cx, H - 6, 7, 0, Math.PI * 2);
+    ctx.arc(cx, H - 7, 8, 0, Math.PI * 2);
     ctx.fillStyle = accent;
     ctx.fill();
     ctx.beginPath();
-    ctx.arc(cx, H - 6, 4, 0, Math.PI * 2);
+    ctx.arc(cx, H - 7, 4, 0, Math.PI * 2);
     ctx.fillStyle = surface;
     ctx.fill();
 
@@ -338,7 +343,7 @@
     var sprite = new THREE.Sprite(new THREE.SpriteMaterial({
       map: tex, transparent: true, depthTest: false, opacity: 0.98
     }));
-    var width = opts.width || 0.68;
+    var width = opts.width || 0.78;
     sprite.scale.set(width, width * H / W, 1);
     sprite.userData.lines = lines;
     return sprite;
@@ -388,17 +393,17 @@
       controls.minPolarAngle = 0.2;
       controls.maxPolarAngle = Math.PI - 0.2;
 
-      scene.add(new THREE.HemisphereLight(0xfff7f4, 0x3a3532, 1.25));
-      var key = new THREE.DirectionalLight(0xfff4ed, 1.45);
+      scene.add(new THREE.HemisphereLight(0xfff7f4, 0x4a4542, 1.45));
+      var key = new THREE.DirectionalLight(0xfff4ed, 1.05);
       key.position.set(2.6, 2.8, 2.2);
       scene.add(key);
-      var fill = new THREE.DirectionalLight(0xddefff, 0.62);
+      var fill = new THREE.DirectionalLight(0xe8f4ff, 0.72);
       fill.position.set(-2.4, 0.6, -1.6);
       scene.add(fill);
-      var rim = new THREE.DirectionalLight(0xffffff, 0.55);
+      var rim = new THREE.DirectionalLight(0xffffff, 0.42);
       rim.position.set(0, 1.4, -2.8);
       scene.add(rim);
-      var warm = new THREE.PointLight(0xffe0c2, 0.35, 5, 2);
+      var warm = new THREE.PointLight(0xffe0c2, 0.28, 5, 2);
       warm.position.set(0, -0.8, 1.2);
       scene.add(warm);
 
@@ -469,12 +474,12 @@
       head.position.set(0.12, 0.22, 1.12);
       pivot.add(shaft, head);
 
-      var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub]);
-      pfcLabel.position.set(0.32, 0.42, 0.86);
-      var rewardLabel = makeLabel(THREE, [L.reward], { width: 0.56 });
-      rewardLabel.position.set(0.62, -0.16, 0.22);
-      var neLabel = makeLabel(THREE, [L.ne], { width: 0.5 });
-      neLabel.position.set(0.26, 0.86, 0.38);
+      var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub], { width: 0.82 });
+      pfcLabel.position.set(0.34, 0.48, 0.92);
+      var rewardLabel = makeLabel(THREE, [L.reward], { width: 0.64 });
+      rewardLabel.position.set(0.72, 0.1, 0.26);
+      var neLabel = makeLabel(THREE, [L.ne], { width: 0.58 });
+      neLabel.position.set(0.34, 1.0, 0.42);
       pivot.add(pfcLabel, rewardLabel, neLabel);
 
       var shaders = [];
