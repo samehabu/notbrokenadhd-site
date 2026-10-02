@@ -13,6 +13,8 @@
     intro: 'שני מוחות נראים זהים. ההבדל הוא ב<b>פעילות</b> וב<b>כימיה</b>. גלגל כדי לראות — בתרשים או על מודל תלת־ממד.',
     typ: 'מוח טיפוסי', adhd: 'מוח ADHD', tre: 'עם טיפול וניהול',
     pfc: 'הקליפה הקדם-מצחית', pfcSub: 'מיקוד · שליטה', reward: 'תגמול (דופמין)', ne: 'נוראדרנלין', pill: 'תרופה + טיפול',
+    key: 'מקרא', keyIntro: 'הצבעים מייצגים מערכות נוירו־שליחים — להמחשה בלבד, לא סריקה.',
+    dop: 'דופמין', ser: 'סרוטונין', gab: 'GABA', glu: 'גלוטמט',
     viewAria: 'תצוגת המוח', viewFlat: 'תרשים', view3d: 'מודל תלת־ממד',
     drag: 'גררו כדי לסובב', illus: 'להמחשה — האור מראה פעילות וכימיה, לא סריקה.',
     loading3d: 'טוען את מודל המוח…', fail3d: 'לא ניתן לטעון את המודל.',
@@ -36,6 +38,8 @@
     intro: 'الدماغان يبدوان متطابقين. الفرق في <b>النشاط</b> و<b>الكيمياء</b>. تنقّل لتراه — كمخطط أو على نموذج ثلاثي الأبعاد.',
     typ: 'دماغ نمطي', adhd: 'دماغ ADHD', tre: 'مع العلاج والتدبير',
     pfc: 'القشرة الجبهية', pfcSub: 'تركيز · تحكّم', reward: 'المكافأة (الدوبامين)', ne: 'النورإبينفرين', pill: 'دواء + رعاية',
+    key: 'مفتاح', keyIntro: 'الألوان تمثّل أنظمة الناقلات العصبية — للتوضيح فقط، وليس فحصًا.',
+    dop: 'الدوبامين', ser: 'السيروتونين', gab: 'GABA', glu: 'الغلوتامات',
     viewAria: 'عرض الدماغ', viewFlat: 'مخطط', view3d: 'نموذج ثلاثي الأبعاد',
     drag: 'اسحب للتدوير', illus: 'للتوضيح — الضوء يبيّن النشاط والكيمياء، وليس فحصًا.',
     loading3d: 'جارٍ تحميل نموذج الدماغ…', fail3d: 'تعذّر تحميل النموذج.',
@@ -59,6 +63,8 @@
     intro: 'Két agy kinézetre azonos. A különbség az <b>aktivitásban</b> és a <b>kémiában</b> van. Kattints, és nézd meg — ábrán vagy egy 3D agyon.',
     typ: 'Tipikus agy', adhd: 'ADHD-agy', tre: 'Kezeléssel és odafigyeléssel',
     pfc: 'Prefrontális kéreg', pfcSub: 'fókusz · irányítás', reward: 'Jutalom (dopamin)', ne: 'Noradrenalin', pill: 'Kezelés',
+    key: 'Jelmagyarázat', keyIntro: 'A színek a neurotranszmitter-rendszereket jelölik — szemléltetés, nem felvétel.',
+    dop: 'Dopamin', ser: 'Szerotonin', gab: 'GABA', glu: 'Glutamát',
     viewAria: 'Agynézet', viewFlat: 'Ábra', view3d: '3D modell',
     drag: 'Húzd a forgatáshoz', illus: 'Szemléltetés — a fény a működést és a kémiát mutatja, nem felvételt.',
     loading3d: 'Az agymodell betöltése…', fail3d: 'A 3D modellt nem sikerült betölteni.',
@@ -82,6 +88,8 @@
     intro: 'Two brains look identical. The difference is in <b>activity</b> and <b>chemistry</b>. Tap through to see it — as a diagram, or on a 3D brain.',
     typ: 'Typical brain', adhd: 'ADHD brain', tre: 'With treatment & management',
     pfc: 'Prefrontal cortex', pfcSub: 'focus · control', reward: 'Reward (dopamine)', ne: 'Norepinephrine', pill: 'Rx + care',
+    key: 'Key', keyIntro: 'Colors show broad neurotransmitter systems — illustrative, not a scan.',
+    dop: 'Dopamine', ser: 'Serotonin', gab: 'GABA', glu: 'Glutamate',
     viewAria: 'Brain view', viewFlat: 'Diagram', view3d: '3D model',
     drag: 'Drag to turn', illus: 'Illustrative — the light shows activity and chemistry, not a scan.',
     loading3d: 'Loading 3D brain…', fail3d: 'Couldn’t load the 3D model.',
@@ -146,6 +154,13 @@
     '#brainmap .bm-3d-hint{position:absolute;left:.75rem;right:.75rem;bottom:.55rem;display:flex;justify-content:space-between;gap:.75rem;flex-wrap:wrap;font-size:.72rem;line-height:1.35;color:var(--grey);pointer-events:none}' +
     '#brainmap .bm-3d-pill{position:absolute;top:.75rem;inset-inline-end:.75rem;background:#e0a144;color:#fff;font-family:"IBM Plex Mono","Tajawal",monospace;font-size:.72rem;font-weight:700;padding:.38rem .75rem;border-radius:999px;opacity:0;transition:opacity .5s;pointer-events:none}' +
     '#brainmap .bm-3d-pill.show{opacity:1}' +
+    '#brainmap .bm-3d-key{position:absolute;top:.75rem;left:.75rem;max-width:min(220px,42%);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.55rem .7rem;box-shadow:0 6px 18px rgba(0,0,0,.08);font-size:.72rem;line-height:1.35;color:var(--ink-soft);pointer-events:none}' +
+    '#brainmap .bm-3d-key h4{margin:0 0 .35rem;font-family:"Bricolage Grotesque",sans-serif;font-size:.78rem;color:var(--ink)}' +
+    '#brainmap .bm-3d-key p{margin:0 0 .35rem;font-size:.68rem;color:var(--grey)}' +
+    '#brainmap .bm-3d-key .k{display:flex;align-items:center;gap:.4rem;margin:.22rem 0}' +
+    '#brainmap .bm-3d-key .dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}' +
+    '#brainmap .bm-3d-key .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}' +
+    '@media(max-width:760px){#brainmap .bm-3d-key{max-width:52%;font-size:.65rem;padding:.45rem .55rem}#brainmap .bm-3d-key h4{font-size:.68rem}#brainmap .bm-3d-key p{font-size:.6rem}}' +
     '#brainmap .bm-stage.is-3d .viz{display:none}' +
     '#brainmap .bm-stage:not(.is-3d) .bm-3d{display:none}' +
     '@media(max-width:760px){#brainmap .bm-3d{height:320px}#brainmap .bm-3d-hint{font-size:.68rem}}';
@@ -184,6 +199,12 @@
     '<div class="bm-3d" id="bm3d"><canvas id="bm3dCanvas" aria-hidden="true"></canvas>' +
     '<div class="bm-3d-status" id="bm3dStatus">' + L.loading3d + '</div>' +
     '<div class="bm-3d-pill" id="bm3dPill">' + L.pill + '</div>' +
+    '<div class="bm-3d-key" aria-hidden="true"><h4>' + L.key + '</h4><p>' + L.keyIntro + '</p>' +
+    '<div class="k"><span class="dot" style="background:#c45cff"></span><span class="txt">' + L.ser + '</span></div>' +
+    '<div class="k"><span class="dot" style="background:#ff8fab"></span><span class="txt">' + L.gab + '</span></div>' +
+    '<div class="k"><span class="dot" style="background:#c8e66c"></span><span class="txt">' + L.glu + '</span></div>' +
+    '<div class="k"><span class="dot" style="background:#0f8f8a"></span><span class="txt">' + L.ne + '</span></div>' +
+    '<div class="k"><span class="dot" style="background:#c9781b"></span><span class="txt">' + L.dop + '</span></div></div>' +
     '<div class="bm-3d-hint"><span>' + L.drag + '</span><span>' + L.illus + '</span></div></div></div>' +
     '<div class="bm-cap viz state-adhd" id="bmCap"></div></div></div></div>';
   anchor.parentNode.insertBefore(sec, anchor);
@@ -360,14 +381,14 @@
 
       var accent = cssHex('--accent', 0xf2551f);
       var amber = cssHex('--amber', 0xc9781b);
-      var pfcLight = new THREE.PointLight(accent, 1.2, 1.5, 2);
+      var pfcLight = new THREE.PointLight(0xfff4ed, 0.6, 1.5, 2);
       pfcLight.position.set(0, 0.28, 1.18);
-      var rewardLight = new THREE.PointLight(amber, 1.4, 0.7, 2);
+      var rewardLight = new THREE.PointLight(0xfff4ed, 0.6, 0.7, 2);
       rewardLight.position.set(0.16, 0.02, 0.2);
       pivot.add(pfcLight, rewardLight);
 
       var haloMat = new THREE.MeshBasicMaterial({
-        color: accent, transparent: true, opacity: 0.12, depthWrite: false,
+        color: accent, transparent: true, opacity: 0.08, depthWrite: false,
         blending: THREE.AdditiveBlending
       });
       var halo = new THREE.Mesh(new THREE.SphereGeometry(0.2, 28, 20), haloMat);
@@ -440,8 +461,8 @@
             .replace('#include <begin_vertex>', '#include <begin_vertex>\nvFront = smoothstep(0.02, 0.7, transformed.z);\nvRew = 1.0 - smoothstep(0.04, 0.34, distance(transformed, vec3(0.0, -0.08, 0.18)));');
           shader.fragmentShader = shader.fragmentShader
             .replace('#include <common>', '#include <common>\nuniform float uAct;\nuniform float uSig;\nvarying float vFront;\nvarying float vRew;')
-            .replace('#include <map_fragment>', '#include <map_fragment>\ndiffuseColor.rgb *= mix(1.0, mix(0.32, 1.02, uAct), vFront);')
-            .replace('#include <emissive_fragment>', '#include <emissive_fragment>\ntotalEmissiveRadiance += vec3(0.85, 0.24, 0.06) * vFront * uAct * 0.22;\ntotalEmissiveRadiance += vec3(0.9, 0.48, 0.06) * vRew * uSig * 0.28;');
+            .replace('#include <map_fragment>', '#include <map_fragment>\nfloat actBoost = mix(0.94, 1.06, uAct);\ndiffuseColor.rgb = mix(diffuseColor.rgb * actBoost, diffuseColor.rgb, 0.75);')
+            .replace('#include <emissive_fragment>', '#include <emissive_fragment>\ntotalEmissiveRadiance += vec3(0.9, 0.35, 0.12) * vFront * uAct * 0.06;\ntotalEmissiveRadiance += vec3(0.95, 0.55, 0.12) * vRew * uSig * 0.07;');
           mat.userData.shader = shader;
         };
         shaders.push(mat);
@@ -557,11 +578,11 @@
       mounting = false;
 
       new MutationObserver(function () {
-        pfcLight.color.setHex(cssHex('--accent', 0xf2551f));
-        rewardLight.color.setHex(cssHex('--amber', 0xc9781b));
-        haloMat.color.copy(pfcLight.color);
-        rewardCore.material.color.copy(rewardLight.color);
-        signals.forEach(function (m) { m.material.color.copy(rewardLight.color); });
+        var accent = cssHex('--accent', 0xf2551f);
+        var amber = cssHex('--amber', 0xc9781b);
+        haloMat.color.setHex(accent);
+        rewardCore.material.color.setHex(amber);
+        signals.forEach(function (m) { m.material.color.setHex(amber); });
         [pfcLabel, rewardLabel, neLabel].forEach(function (s) {
           var next = makeLabel(THREE, s.userData.lines, s === neLabel ? { width: 0.5 } : undefined);
           s.material.map.dispose();
