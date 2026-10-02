@@ -381,14 +381,14 @@
       renderer.toneMappingExposure = 1.05;
 
       var scene = new THREE.Scene();
-      var camera = new THREE.PerspectiveCamera(32, 1, 0.05, 30);
-      camera.position.set(1.45, 0.58, 2.95);
+      var camera = new THREE.PerspectiveCamera(34, 1, 0.05, 30);
+      camera.position.set(2.2, 0.88, 4.4);
       var controls = new OrbitControls(camera, canvas);
       controls.enableDamping = true;
       controls.dampingFactor = 0.08;
       controls.enablePan = false;
-      controls.minDistance = 2.1;
-      controls.maxDistance = 6.5;
+      controls.minDistance = 3.2;
+      controls.maxDistance = 10.5;
       controls.target.set(0, 0.02, 0.12);
       controls.minPolarAngle = 0.2;
       controls.maxPolarAngle = Math.PI - 0.2;
@@ -409,6 +409,8 @@
 
       var pivot = new THREE.Group();
       scene.add(pivot);
+      var overlay = new THREE.Group();
+      scene.add(overlay);
 
       var accent = cssHex('--accent', 0xf2551f);
       var amber = cssHex('--amber', 0xc9781b);
@@ -424,14 +426,14 @@
       });
       var halo = new THREE.Mesh(new THREE.SphereGeometry(0.2, 28, 20), haloMat);
       halo.position.set(0, 0.2, 0.72);
-      pivot.add(halo);
+      overlay.add(halo);
       var rewardCore = new THREE.Mesh(
         new THREE.SphereGeometry(0.055, 18, 14),
         new THREE.MeshBasicMaterial({ color: amber, transparent: true, opacity: 0.95, depthTest: false, depthWrite: false })
       );
       rewardCore.position.copy(rewardLight.position);
       rewardCore.renderOrder = 2;
-      pivot.add(rewardCore);
+      overlay.add(rewardCore);
 
       var rewardPos = new THREE.Vector3(0.16, 0.02, 0.2);
       var pfcPos = new THREE.Vector3(0.12, 0.22, 0.78);
@@ -442,7 +444,7 @@
           color: amber, transparent: true, opacity: 0.9, depthWrite: false, depthTest: false
         }));
         sm.renderOrder = 3;
-        pivot.add(sm);
+        overlay.add(sm);
         signals.push(sm);
       }
       var neColor = 0x0f8f8a;
@@ -461,7 +463,7 @@
         }));
         m.position.set(h[0], h[1], h[2]);
         m.renderOrder = 4;
-        pivot.add(m);
+        overlay.add(m);
         return m;
       });
 
@@ -472,15 +474,15 @@
       var head = new THREE.Mesh(new THREE.ConeGeometry(0.038, 0.095, 12), rayMat);
       head.rotation.x = -Math.PI / 2;
       head.position.set(0.12, 0.22, 1.12);
-      pivot.add(shaft, head);
+      overlay.add(shaft, head);
 
-      var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub], { width: 0.82 });
+      var pfcLabel = makeLabel(THREE, [L.pfc, L.pfcSub], { width: 1.0 });
       pfcLabel.position.set(0.34, 0.48, 0.92);
-      var rewardLabel = makeLabel(THREE, [L.reward], { width: 0.64 });
+      var rewardLabel = makeLabel(THREE, [L.reward], { width: 0.78 });
       rewardLabel.position.set(0.72, 0.1, 0.26);
-      var neLabel = makeLabel(THREE, [L.ne], { width: 0.58 });
+      var neLabel = makeLabel(THREE, [L.ne], { width: 0.72 });
       neLabel.position.set(0.34, 1.0, 0.42);
-      pivot.add(pfcLabel, rewardLabel, neLabel);
+      overlay.add(pfcLabel, rewardLabel, neLabel);
 
       var shaders = [];
       function hookMaterial(mat) {
