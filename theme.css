@@ -167,7 +167,7 @@ a{color:var(--teal)}
 .hero-grid > :last-child{position:relative}
 .hero-grid > :last-child::before{
   content:"";position:absolute;z-index:-1;pointer-events:none;
-  top:50%;left:50%;width:580px;aspect-ratio:760/620;transform:translate(-40%,-50%);
+  top:50%;left:50%;width:720px;aspect-ratio:760/620;transform:translate(-40%,-50%);
   background:url("/hero-brain.jpg") center/contain no-repeat;
   -webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
           mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
@@ -217,3 +217,10 @@ a{color:var(--teal)}
   .hero-grid > :last-child::before,.hero::after{display:none!important}
   body{background:#fff!important}
 }
+
+/* ---------- hero fit (wider Latin font) ---------- */
+.hl{white-space:normal!important}
+@media (min-width:861px){
+  .hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(300px,.9fr)!important}
+}
+html:is([lang="en"],[lang="hu"]) .hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem)!important}
