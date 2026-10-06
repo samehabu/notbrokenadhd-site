@@ -1,0 +1,219 @@
+/* ADHD Field Guide - "Cognitive Equilibrium" theme layer.
+   Loaded LAST on every page. Re-skins the existing markup only: colors,
+   type, cards, buttons and the hero artwork. No layout or behavior changes.
+   Warm linen canvas, deep forest accent, soft tactile cards. */
+
+/* ---------- palette ---------- */
+:root{
+  --paper:#fbf9f5;
+  --surface:#ffffff;
+  --surface-2:#f5f2eb;
+  --ink:#171d1a;
+  --ink-soft:#414844;
+  --grey:#626d66;
+  --line:#e6e2d9;
+  --accent:#1d4332;
+  --accent-soft:#e8f0eb;
+  --teal:#2d6a4f;
+  --teal-soft:#e6efe9;
+  --blue:#436c82;
+  --amber:#b27a38;
+  --amber-soft:#f9f0e2;
+  --red:#9e3b30;
+  --green:#2d6a4f;
+  --shadow:0 4px 6px -1px rgba(30,36,33,.03),0 20px 35px -8px rgba(30,36,33,.07);
+  --shadow-lg:0 6px 12px -2px rgba(30,36,33,.05),0 30px 60px -12px rgba(30,36,33,.14);
+  --ce-glass:rgba(255,255,255,.62);
+  --ce-cta-shadow:0 8px 24px -4px rgba(29,67,50,.28);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1412;
+    --surface:#171d1a;
+    --surface-2:#1e2622;
+    --ink:#ecf2ed;
+    --ink-soft:#c1c8c2;
+    --grey:#9aa59e;
+    --line:#2a332e;
+    --accent:#7fbf9c;
+    --accent-soft:#1c2e25;
+    --teal:#7fbf9c;
+    --teal-soft:#1a2b23;
+    --blue:#8fb8cf;
+    --amber:#e2b77f;
+    --amber-soft:#2e2517;
+    --red:#e8857a;
+    --green:#7fbf9c;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
+    --shadow-lg:0 2px 6px rgba(0,0,0,.4),0 22px 50px rgba(0,0,0,.5);
+    --ce-glass:rgba(23,29,26,.78);
+    --ce-cta-shadow:0 8px 24px -6px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1412;
+  --surface:#171d1a;
+  --surface-2:#1e2622;
+  --ink:#ecf2ed;
+  --ink-soft:#c1c8c2;
+  --grey:#9aa59e;
+  --line:#2a332e;
+  --accent:#7fbf9c;
+  --accent-soft:#1c2e25;
+  --teal:#7fbf9c;
+  --teal-soft:#1a2b23;
+  --blue:#8fb8cf;
+  --amber:#e2b77f;
+  --amber-soft:#2e2517;
+  --red:#e8857a;
+  --green:#7fbf9c;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
+  --shadow-lg:0 2px 6px rgba(0,0,0,.4),0 22px 50px rgba(0,0,0,.5);
+  --ce-glass:rgba(23,29,26,.78);
+  --ce-cta-shadow:0 8px 24px -6px rgba(0,0,0,.6);
+}
+
+/* ---------- type (Latin-script pages: English, Hungarian) ----------
+   Arabic and Hebrew keep their own script fonts. */
+html:is([lang="en"],[lang="hu"]){
+  --fh:"Plus Jakarta Sans",system-ui,sans-serif;
+  --fb:"Inter",system-ui,sans-serif;
+  --fm:"Inter",system-ui,sans-serif;
+}
+html:is([lang="en"],[lang="hu"]) body,
+html:is([lang="en"],[lang="hu"]) body *:not(code,pre,kbd,samp,svg,svg *){
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif!important;
+}
+html:is([lang="en"],[lang="hu"]) body :is(h1,h2,h3,h4,.display,.brand,.dl-t,.tool-t,.exp-go,.btn,.auth-primary),
+html:is([lang="en"],[lang="hu"]) body :is(h1,h2,h3,h4,.display,.brand) *{
+  font-family:"Plus Jakarta Sans","Inter",system-ui,sans-serif!important;
+}
+html:is([lang="en"],[lang="hu"]) body{font-size:17px;line-height:1.7;letter-spacing:-.003em}
+h1,h2,h3,h4,.display{letter-spacing:-.02em}
+html:is([lang="en"],[lang="hu"]) h1{font-weight:700;letter-spacing:-.03em}
+html:is([lang="en"],[lang="hu"]) h2{font-weight:700}
+html:is([lang="en"],[lang="hu"]) h3{font-weight:650}
+
+/* ---------- canvas ---------- */
+body{
+  background:
+    radial-gradient(1100px 620px at 100% -8%, rgba(178,122,56,.07), transparent 60%),
+    radial-gradient(950px 700px at -12% 112%, rgba(45,106,79,.06), transparent 55%),
+    var(--paper)!important;
+  background-attachment:fixed;
+}
+::selection{background:var(--accent);color:#fff}
+a{color:var(--teal)}
+
+/* ---------- nav: frosted linen ---------- */
+.nav{
+  background:color-mix(in srgb,var(--paper) 88%,transparent)!important;
+  -webkit-backdrop-filter:saturate(1.3) blur(12px);backdrop-filter:saturate(1.3) blur(12px);
+  border-bottom:1px solid var(--line)!important;
+}
+@media (max-width:760px){.nav{background:color-mix(in srgb,var(--paper) 97%,transparent)!important;-webkit-backdrop-filter:none;backdrop-filter:none}}
+.nav-links a{letter-spacing:.1em;font-weight:600;font-size:.7rem}
+.nav-links a:hover{color:var(--accent)}
+
+/* ---------- eyebrows: label-caps ---------- */
+.eyebrow{
+  color:var(--teal)!important;
+  font-weight:600;letter-spacing:.12em;
+}
+.eyebrow::before{background:var(--amber)!important}
+
+/* ---------- buttons: pills ---------- */
+.btn,.kofi-btn,.auth-primary,.exp-go{border-radius:999px!important}
+.btn-primary,.kofi-btn,.auth-primary{
+  background:var(--accent)!important;color:#fff!important;border-color:var(--accent)!important;
+  box-shadow:var(--ce-cta-shadow)!important;
+}
+:root[data-theme="dark"] :is(.btn-primary,.kofi-btn,.auth-primary,.cad-nav){color:#0d1f17!important}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) :is(.btn-primary,.kofi-btn,.auth-primary,.cad-nav){color:#0d1f17!important}}
+.btn-primary:hover,.kofi-btn:hover{transform:translateY(-1px) scale(1.02)}
+.btn-ghost{background:transparent!important;border:1px solid color-mix(in srgb,var(--ink) 15%,transparent)!important;color:var(--ink)!important}
+.btn-ghost:hover{background:var(--surface-2)!important}
+
+/* ---------- cards: soft tactile ---------- */
+.medcard,.dx-card,.dl-card,.tool-card,.support-card,.focus-card,
+#diagnosis .dx-card{
+  border-radius:24px!important;
+  border:1px solid color-mix(in srgb,var(--ink) 7%,transparent)!important;
+  box-shadow:var(--shadow)!important;
+}
+.medcard:hover,.dx-card:hover,.dl-card:hover,.tool-card:hover{
+  border-color:color-mix(in srgb,var(--teal) 35%,transparent)!important;
+  box-shadow:var(--shadow-lg)!important;
+}
+.dl-ic,.dx-n{border-radius:12px!important}
+
+/* the big "Live a day with ADHD" banner */
+.exp-card{
+  background:linear-gradient(135deg,#2d6a4f 0%,#1d4332 55%,#143326 100%)!important;
+  box-shadow:0 18px 44px -10px rgba(29,67,50,.45)!important;
+  border-radius:28px!important;
+}
+.exp-card:hover{box-shadow:0 26px 60px -10px rgba(29,67,50,.55)!important}
+.exp-go{color:#1d4332!important}
+
+/* ---------- hero: glass brain behind the profile card ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{
+  background:
+    radial-gradient(560px 320px at 18% 22%, rgba(178,122,56,.10), transparent 62%),
+    radial-gradient(520px 340px at 92% 8%, rgba(45,106,79,.08), transparent 60%)!important;
+}
+@media (max-width:760px){.hero-grid > *{min-width:0}}
+.hero-grid > :last-child{position:relative}
+.hero-grid > :last-child::before{
+  content:"";position:absolute;z-index:-1;pointer-events:none;
+  top:50%;left:50%;width:580px;aspect-ratio:760/620;transform:translate(-40%,-50%);
+  background:url("/hero-brain.jpg") center/contain no-repeat;
+  -webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
+          mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
+  opacity:.95;
+}
+[dir="rtl"] .hero-grid > :last-child::before{transform:translate(-60%,-50%)}
+.focus-card{
+  background:var(--ce-glass)!important;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+}
+@media (max-width:760px){
+  .hero-grid > :last-child::before{width:118vw;opacity:.55}
+  .focus-card{-webkit-backdrop-filter:none;backdrop-filter:none}
+}
+:root[data-theme="dark"] .hero-grid > :last-child::before{opacity:.35}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero-grid > :last-child::before{opacity:.35}}
+
+/* article / subpage heroes: faint neural pathways */
+.hero:not(:has(.hero-grid))::after{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:url("/neural-bg.jpg") center/cover no-repeat;
+  opacity:.22;
+  -webkit-mask-image:linear-gradient(#000 40%,transparent);
+          mask-image:linear-gradient(#000 40%,transparent);
+}
+.hero:not(:has(.hero-grid)) > *{position:relative;z-index:1}
+:root[data-theme="dark"] .hero:not(:has(.hero-grid))::after{opacity:.06}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero:not(:has(.hero-grid))::after{opacity:.06}}
+
+/* headline highlight word: forest instead of orange */
+:root:not([data-calm="on"]) .hl{
+  background:linear-gradient(115deg,#2d6a4f 0%,#1d4332 60%,#436c82 100%)!important;
+  -webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;
+}
+:root[data-theme="dark"]:not([data-calm="on"]) .hl{background:linear-gradient(115deg,#a6d0b9,#7fbf9c 60%,#8fb8cf)!important;-webkit-background-clip:text!important;background-clip:text!important}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]):not([data-calm="on"]) .hl{background:linear-gradient(115deg,#a6d0b9,#7fbf9c 60%,#8fb8cf)!important;-webkit-background-clip:text!important;background-clip:text!important}}
+@media (max-width:520px){.hl{white-space:normal!important}}
+.hl::after{background:linear-gradient(90deg,rgba(178,122,56,.22),rgba(178,122,56,.08))!important}
+
+/* ---------- calm mode & reduced motion: keep it flat ---------- */
+:root[data-calm="on"] .hero-grid > :last-child::before,
+:root[data-calm="on"] .hero:not(:has(.hero-grid))::after{display:none}
+@media (prefers-reduced-motion:reduce){
+  .btn-primary:hover,.kofi-btn:hover{transform:none}
+}
+@media print{
+  .hero-grid > :last-child::before,.hero::after{display:none!important}
+  body{background:#fff!important}
+}

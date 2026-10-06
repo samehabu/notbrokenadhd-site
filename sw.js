@@ -1,6 +1,6 @@
 /* ADHD Field Guide - offline service worker (network-first) */
-const CACHE = 'adhd-guide-v59';
-const ASSETS = ['./', './index.html', './ar.html', './he.html', './hu.html', './polish.css', './config.js', './auth.js', './brain.js', './a11y.js', './reveal-fix.js', './langmenu.js', './manifest.json', './icon-192.png'];
+const CACHE = 'adhd-guide-v60';
+const ASSETS = ['./', './index.html', './ar.html', './he.html', './hu.html', './polish.css', './theme.css', './config.js', './auth.js', './brain.js', './a11y.js', './reveal-fix.js', './langmenu.js', './manifest.json', './icon-192.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));

@@ -28,8 +28,8 @@
       'padding:.5rem .7rem;border-radius:8px;text-decoration:none;color:var(--ink,#141a21);' +
       'font-size:.92rem;line-height:1.2}' +
     '.lang-menu a:hover,.lang-menu a:focus{background:var(--surface-2,#f6f8fa)}' +
-    '.lang-menu a.is-cur{color:var(--accent,#f2551f);font-weight:700}' +
-    '.lang-menu a .chk{flex:none;color:var(--accent,#f2551f)}' +
+    '.lang-menu a.is-cur{color:var(--accent,#1d4332);font-weight:700}' +
+    '.lang-menu a .chk{flex:none;color:var(--accent,#1d4332)}' +
     ':root[data-calm="on"] .lang-globe .cav{transition:none}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 

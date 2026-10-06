@@ -83,7 +83,7 @@
     '#cadence .cad-cta{display:inline-block;background:#fff;color:#1f4e86;font-weight:800;border-radius:999px;padding:.8rem 1.6rem;font-size:1rem;box-shadow:0 6px 18px rgba(0,0,0,.18)}' +
     '#cadence .cad-mark{position:absolute;inset-inline-end:-30px;top:-30px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.09)}' +
     '#sources a.src.cad-src .org{color:#2f6db5}' +
-    '.cad-nav{background:var(--accent,#f2551f)!important;color:#fff!important;border-color:var(--accent,#f2551f)!important;font-weight:700}' +
+    '.cad-nav{background:var(--accent,#1d4332)!important;color:#fff!important;border-color:var(--accent,#1d4332)!important;font-weight:700}' +
     '.cad-foot{color:inherit}' +
     '.cad-tin{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem;justify-content:space-between;background:linear-gradient(135deg,#eef4fb,#e7f1f0);border:1px solid #cfe0f3;border-radius:16px;padding:1.1rem 1.3rem;margin-top:1.6rem}' +
     '.cad-tin .tt{font-weight:800;color:#123a63;font-size:1.05rem;margin:0 0 .2rem}' +

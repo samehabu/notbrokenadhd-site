@@ -79,7 +79,7 @@
   var css =
     // progress bar
     '#a11y-prog{position:fixed;inset-block-start:0;inset-inline-start:0;height:3px;width:0;' +
-      'background:linear-gradient(90deg,var(--accent,#f2551f),#f2a51f);z-index:1200;' +
+      'background:linear-gradient(90deg,var(--accent,#1d4332),#f2a51f);z-index:1200;' +
       'transition:width .12s linear;pointer-events:none}' +
     // back to top
     '#a11y-top{position:fixed;inset-block-end:20px;inset-inline-end:18px;z-index:1200;' +
@@ -88,7 +88,7 @@
       'padding:.55rem .8rem;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.16);cursor:pointer;' +
       'opacity:0;transform:translateY(10px);transition:opacity .2s,transform .2s;pointer-events:none}' +
     '#a11y-top.show{opacity:1;transform:none;pointer-events:auto}' +
-    '#a11y-top:hover{border-color:var(--accent,#f2551f);color:var(--accent,#f2551f)}' +
+    '#a11y-top:hover{border-color:var(--accent,#1d4332);color:var(--accent,#1d4332)}' +
     '#a11y-top .ar{font-size:1rem;line-height:1}' +
     // reading-time badge
     '.rt-badge{display:inline-flex;align-items:center;gap:.35rem;margin:-.2rem 0 1rem;' +
@@ -103,18 +103,18 @@
     '.rsch-credit p{margin:.2rem 0 .6rem;font-size:.9rem;line-height:1.7;color:var(--grey,#59626f)}' +
     '.rsch-credit ul{margin:.2rem 0 0;padding-inline-start:1.1rem;font-size:.85rem;line-height:1.65}' +
     '.rsch-credit li{margin:.25rem 0}' +
-    '.rsch-credit a{color:var(--accent,#f2551f);font-weight:600}' +
+    '.rsch-credit a{color:var(--accent,#1d4332);font-weight:600}' +
     '.rsch-credit strong{color:var(--ink,#141a21)}' +
     // "built on research" evidence bar at the top of the page
     '#evbar{max-width:var(--maxw,1080px);margin:1.3rem auto 0;padding:0 1.5rem;box-sizing:border-box}' +
     '#evbar .in{display:flex;gap:.75rem;align-items:flex-start;background:var(--surface,#fff);' +
-      'border:1px solid var(--line,#dbe1e8);border-inline-start:3px solid var(--accent,#f2551f);' +
+      'border:1px solid var(--line,#dbe1e8);border-inline-start:3px solid var(--accent,#1d4332);' +
       'border-radius:12px;padding:.8rem 1.05rem;box-shadow:var(--shadow);' +
       'font-size:.9rem;line-height:1.55;color:var(--ink-soft,#39424e)}' +
     '#evbar .ic{font-size:1.15rem;flex:none;line-height:1.35}' +
     '#evbar p{margin:0}' +
     '#evbar strong{color:var(--ink,#141a21)}' +
-    '#evbar a{color:var(--accent,#f2551f);font-weight:700;text-decoration:none}' +
+    '#evbar a{color:var(--accent,#1d4332);font-weight:700;text-decoration:none}' +
     '#evbar a:hover{text-decoration:underline}' +
     // section pager (previous / next category), sticky under the nav
     '#a11y-pager{position:fixed;inset-inline:0;z-index:40;display:flex;gap:.4rem;align-items:center;' +
@@ -127,9 +127,9 @@
     '#a11y-pager a{display:inline-flex;align-items:center;gap:.45rem;max-width:44%;min-width:0;' +
       'text-decoration:none;color:var(--ink-soft,#39424e);padding:.3rem .5rem;border-radius:9px;' +
       'transition:color .15s,background .15s}' +
-    '#a11y-pager a:hover{color:var(--accent,#f2551f);background:var(--surface-2,#f6f8fa)}' +
+    '#a11y-pager a:hover{color:var(--accent,#1d4332);background:var(--surface-2,#f6f8fa)}' +
     '#a11y-pager a.pg-off{visibility:hidden;pointer-events:none}' +
-    '#a11y-pager .ar{font-size:1.05rem;flex:none;color:var(--accent,#f2551f)}' +
+    '#a11y-pager .ar{font-size:1.05rem;flex:none;color:var(--accent,#1d4332)}' +
     '#a11y-pager .pg-txt{display:flex;flex-direction:column;min-width:0;line-height:1.15}' +
     '#a11y-pager .lb{font-size:.6rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;' +
       'color:var(--grey,#59626f)}' +
