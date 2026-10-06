@@ -164,22 +164,19 @@ a{color:var(--teal)}
     radial-gradient(520px 340px at 92% 8%, rgba(45,106,79,.08), transparent 60%)!important;
 }
 @media (max-width:760px){.hero-grid > *{min-width:0}}
-.hero-grid > :last-child{position:relative}
+/* right column: the brain sits on top, fully visible; the profile card sits below it */
+.hero-grid > :last-child{position:relative;display:flex;flex-direction:column;align-items:center}
 .hero-grid > :last-child::before{
-  content:"";position:absolute;z-index:-1;pointer-events:none;
-  top:50%;left:50%;width:820px;aspect-ratio:760/620;transform:translate(-50%,-50%);
+  content:"";display:block;position:relative;z-index:0;pointer-events:none;
+  width:min(500px,118%);aspect-ratio:760/620;margin:-3rem 0 -4.5rem;
   background:url("/hero-brain.jpg") center/contain no-repeat;
   -webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
           mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
   opacity:.95;
 }
-.focus-card{
-  background:var(--ce-glass)!important;
-  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
-}
-@media (max-width:760px){
-  .hero-grid > :last-child::before{width:118vw;opacity:.55}
-  .focus-card{-webkit-backdrop-filter:none;backdrop-filter:none}
+.hero-grid > :last-child > .focus-card{position:relative;z-index:1;width:100%;max-width:420px}
+@media (max-width:860px){
+  .hero-grid > :last-child::before{width:min(420px,100%);margin:-1rem 0 -3.5rem;opacity:.9}
 }
 :root[data-theme="dark"] .hero-grid > :last-child::before{opacity:.35}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero-grid > :last-child::before{opacity:.35}}
