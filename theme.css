@@ -73,20 +73,20 @@
   --ce-cta-shadow:0 8px 24px -6px rgba(0,0,0,.6);
 }
 
-/* ---------- type (Latin-script pages: English, Hungarian) ----------
+/* ---------- type: Figtree (Latin-script pages: English, Hungarian) ----------
    Arabic and Hebrew keep their own script fonts. */
 html:is([lang="en"],[lang="hu"]){
-  --fh:"Plus Jakarta Sans",system-ui,sans-serif;
-  --fb:"Inter",system-ui,sans-serif;
-  --fm:"Inter",system-ui,sans-serif;
+  --fh:"Figtree",system-ui,sans-serif;
+  --fb:"Figtree",system-ui,sans-serif;
+  --fm:"Figtree",system-ui,sans-serif;
 }
 html:is([lang="en"],[lang="hu"]) body,
 html:is([lang="en"],[lang="hu"]) body *:not(code,pre,kbd,samp,svg,svg *){
-  font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif!important;
+  font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif!important;
 }
 html:is([lang="en"],[lang="hu"]) body :is(h1,h2,h3,h4,.display,.brand,.dl-t,.tool-t,.exp-go,.btn,.auth-primary),
 html:is([lang="en"],[lang="hu"]) body :is(h1,h2,h3,h4,.display,.brand) *{
-  font-family:"Plus Jakarta Sans","Inter",system-ui,sans-serif!important;
+  font-family:"Figtree",system-ui,sans-serif!important;
 }
 html:is([lang="en"],[lang="hu"]) body{font-size:17px;line-height:1.7;letter-spacing:-.003em}
 h1,h2,h3,h4,.display{letter-spacing:-.02em}
