@@ -169,7 +169,7 @@ a{color:var(--teal)}
 .hero-grid > :last-child::before{
   content:"";display:block;position:relative;z-index:0;pointer-events:none;
   width:min(500px,118%);aspect-ratio:760/620;margin:-3rem 0 -4.5rem;
-  background:url("/hero-brain-glass.jpg") center/contain no-repeat;
+  background:url("/hero-brain-glass.webp") center/contain no-repeat;
   -webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
           mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
   opacity:.95;
@@ -234,11 +234,10 @@ html:is([lang="en"],[lang="hu"]) .hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem)!i
 }
 .hero-grid > :last-child::before{
   margin:-2.5rem 0 calc(min(600px,140%) * 104 / 1070 + .4rem);opacity:1;
-  background:url("/hero-brain-glass.jpg") center/contain no-repeat;
+  background:url("/hero-brain-glass.webp") center/contain no-repeat;
   mix-blend-mode:multiply;
   -webkit-mask-image:radial-gradient(farthest-side,#000 82%,transparent 100%);
           mask-image:radial-gradient(farthest-side,#000 82%,transparent 100%);
-  filter:saturate(1.1) contrast(1.05);
 }
 .hero-grid > :last-child::after{
   content:"";position:absolute;z-index:0;pointer-events:none;
@@ -263,3 +262,12 @@ html[lang="hu"] .hero-grid > :last-child::after{background-image:url("/brain-che
   .hero-grid > :last-child::after{display:none}
 }
 @media print{.hero-grid > :last-child::after{display:none!important}}
+
+/* ---------- no header jump when langmenu.js swaps in the globe button ----------
+   the inline language links are hidden from first paint and the globe's exact box is reserved,
+   so the late (deferred) swap doesn't change the nav's size */
+.nav-tools > a.icon-btn:is([href="/"],[href="/ar"],[href="/he"],[href="/hu"],[href$="index.html"],[href$="ar.html"],[href$="he.html"],[href$="hu.html"]){display:none}
+.nav-tools:has(> a.icon-btn:is([href="/"],[href="/ar"],[href="/he"],[href="/hu"]))::before{content:"";flex:0 0 55.5px;height:30.8px}
+/* on narrow screens the late-shown Sign in / Saved buttons wrap to two lines (37.8px);
+   reserve that row height up front so the hero isn't pushed down when they appear */
+@media (max-width:900px){.nav-inner .nav-tools{min-height:38px;align-items:center}}
