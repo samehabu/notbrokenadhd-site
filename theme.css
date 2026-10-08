@@ -169,7 +169,7 @@ a{color:var(--teal)}
 .hero-grid > :last-child::before{
   content:"";display:block;position:relative;z-index:0;pointer-events:none;
   width:min(500px,118%);aspect-ratio:760/620;margin:-3rem 0 -4.5rem;
-  background:url("/hero-brain.jpg") center/contain no-repeat;
+  background:url("/hero-brain-glass.jpg") center/contain no-repeat;
   -webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
           mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);
   opacity:.95;
