@@ -220,3 +220,46 @@ a{color:var(--teal)}
   .hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(300px,.9fr)!important}
 }
 html:is([lang="en"],[lang="hu"]) .hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem)!important}
+
+/* ---------- hero brain: glass brain + animated ADHD neurotransmitter pathways ---------- */
+@keyframes brainFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+/* both layers share one width so the pathways stay locked to the anatomy (image 1070x847; svg adds a 104px key strip below) */
+.hero-grid > :last-child::before,
+.hero-grid > :last-child::after{
+  width:min(600px,140%);aspect-ratio:1070/847;
+  animation:brainFloat 7s ease-in-out infinite;
+}
+.hero-grid > :last-child::before{
+  margin:-2.5rem 0 calc(min(600px,140%) * 104 / 1070 + .4rem);opacity:1;
+  background:url("/hero-brain-glass.jpg") center/contain no-repeat;
+  mix-blend-mode:multiply;
+  -webkit-mask-image:radial-gradient(farthest-side,#000 82%,transparent 100%);
+          mask-image:radial-gradient(farthest-side,#000 82%,transparent 100%);
+  filter:saturate(1.1) contrast(1.05);
+}
+.hero-grid > :last-child::after{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  top:-2.5rem;left:50%;translate:-50% 0;aspect-ratio:1070/951;
+  background:url("/brain-chemicals-en.svg") center/contain no-repeat;
+}
+html[lang="ar"] .hero-grid > :last-child::after{background-image:url("/brain-chemicals-ar.svg")}
+html[lang="he"] .hero-grid > :last-child::after{background-image:url("/brain-chemicals-he.svg")}
+html[lang="hu"] .hero-grid > :last-child::after{background-image:url("/brain-chemicals-hu.svg")}
+@media (max-width:860px){
+  .hero-grid > :last-child::before,
+  .hero-grid > :last-child::after{width:min(480px,112%)}
+  .hero-grid > :last-child::before{margin:-1rem 0 calc(min(480px,112%) * 104 / 1070 + .4rem)}
+  .hero-grid > :last-child::after{top:-1rem}
+}
+/* dark backgrounds: multiply would swallow the glass, so draw it normally and dimmer */
+:root[data-theme="dark"] .hero-grid > :last-child::before{mix-blend-mode:normal;opacity:.55}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero-grid > :last-child::before{mix-blend-mode:normal;opacity:.55}}
+:root[data-calm="on"] .hero-grid > :last-child::after{display:none}
+@media (prefers-reduced-motion:reduce){
+  .hero-grid > :last-child::before,.hero-grid > :last-child::after{animation:none}
+  .hero-grid > :last-child::after{display:none}
+}
+@media print{.hero-grid > :last-child::after{display:none!important}}
