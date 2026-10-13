@@ -271,3 +271,36 @@ html[lang="hu"] .hero-grid > :last-child::after{background-image:url("/brain-che
 /* on narrow screens the late-shown Sign in / Saved buttons wrap to two lines (37.8px);
    reserve that row height up front so the hero isn't pushed down when they appear */
 @media (max-width:900px){.nav-inner .nav-tools{min-height:38px;align-items:center}}
+
+/* =========================================================================
+   frontend-design pass: fewer template tells, one memorable element.
+   ========================================================================= */
+
+/* 1. Labels in sentence case, not tracked capitals (Latin-script pages; Arabic/Hebrew have no case) */
+html:is([lang="en"],[lang="hu"]) :is(.eyebrow,.nav-links a,.focus-card h2,.exp-badge,.med-badge,.movr .badge,
+  .strat .k,.pc h4,.medcard .mpc h5,.cmdk-item .kind,.timer-mode,.a11y-panel h4,#diagnosis .dx-group,
+  .tracker-form label,.auth-modal label){
+  text-transform:none!important;letter-spacing:0!important;
+}
+html:is([lang="en"],[lang="hu"]) .eyebrow{font-size:.95rem!important;font-weight:600}
+html:is([lang="en"],[lang="hu"]) .nav-links a{font-size:.88rem!important;font-weight:500!important}
+html:is([lang="en"],[lang="hu"]) .focus-card h2{font-size:1rem!important;font-weight:700}
+
+/* 2. The headline: one ink colour; the wave of weights (wave-type.js) carries the idea */
+.hero h1 .hl,
+:root:not([data-calm="on"]) .hero h1 .hl{
+  background:none!important;-webkit-text-fill-color:currentColor!important;color:inherit!important;
+}
+.hero h1 .hl span{font-variation-settings:normal}
+
+/* 3. Card hierarchy: the hero card keeps its depth; small grid cards go flat */
+.dx-card,#diagnosis .dx-card,.dl-card,.tool-card,.medcard{
+  border-radius:14px!important;box-shadow:none!important;
+  border:1px solid var(--line)!important;background:var(--surface)!important;
+}
+.dx-card:hover,.dl-card:hover,.tool-card:hover,.medcard:hover{
+  transform:none!important;box-shadow:none!important;border-color:var(--teal)!important;
+}
+
+/* 4. No slide-in on scroll: content is simply there */
+.reveal,.reveal.in{opacity:1!important;transform:none!important;transition:none!important}
