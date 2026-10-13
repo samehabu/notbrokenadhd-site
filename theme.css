@@ -304,3 +304,39 @@ html:is([lang="en"],[lang="hu"]) .focus-card h2{font-size:1rem!important;font-we
 
 /* 4. No slide-in on scroll: content is simply there */
 .reveal,.reveal.in{opacity:1!important;transform:none!important;transition:none!important}
+
+/* =========================================================================
+   ui-ux-pro-max pass: article reading comfort & accessibility
+   ========================================================================= */
+
+/* Keyboard focus is always visible (none was defined) */
+:focus-visible{outline:2px solid var(--teal)!important;outline-offset:3px;border-radius:6px}
+summary:focus-visible{border-radius:8px}
+
+/* Article header links: readable size, AA contrast, >=32px tap targets */
+.nav .lnks a{font-size:.86rem!important;padding:.45rem .8rem!important;min-height:32px;display:inline-flex;align-items:center;color:var(--ink-soft)!important}
+.nav .lnks a.on{color:var(--accent)!important;font-weight:600}
+
+/* Article pages only (not the homepages): comfortable 65-75 character measure */
+html:not(:has(.hero-grid)) .wrap > :is(p,ul,ol,blockquote,details){max-width:60ch}
+html:not(:has(.hero-grid)) .wrap h2[id],html:not(:has(.hero-grid)) .wrap h3[id]{scroll-margin-top:96px}
+
+/* "On this page" (article-toc.js) */
+.toc-otp{max-width:46rem;margin:1.6rem 0 .4rem;border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:.2rem 1.1rem}
+.toc-otp summary{cursor:pointer;font-weight:600;padding:.7rem 0;color:var(--ink);list-style-position:inside}
+.toc-otp ol{margin:0 0 .9rem;padding-inline-start:1.3rem;columns:2;column-gap:2rem}
+.toc-otp li{margin:.25rem 0;break-inside:avoid;line-height:1.45;font-size:.95rem}
+.toc-otp li::marker{color:var(--grey)}
+.toc-otp a{color:var(--ink-soft);text-decoration:none;padding:.15rem 0}
+.toc-otp a:hover{color:var(--teal);text-decoration:underline}
+@media (max-width:760px){.toc-otp ol{columns:1}}
+@media print{.toc-otp{display:none}}
+/* Phones: brand on its own line, header links in one swipeable row (keeps 32px targets) */
+@media (max-width:760px){
+  .nav .in:has(> .lnks){flex-wrap:wrap;row-gap:.5rem}
+  .nav .in > .brand{white-space:nowrap}
+  .nav .in > .lnks{flex:1 0 100%;flex-wrap:nowrap;overflow-x:auto;gap:.4rem;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .nav .in > .lnks::-webkit-scrollbar{display:none}
+  .nav .lnks a{flex:0 0 auto;font-size:.82rem!important;padding:.4rem .7rem!important}
+}
+html:is([lang="he"],[lang="ar"]) :is(.eyebrow,.nav-links a,.focus-card h2){letter-spacing:0!important}
